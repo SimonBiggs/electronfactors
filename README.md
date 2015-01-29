@@ -1,5 +1,6 @@
 # Equivalent Ellipse Spline Modelling
 Model electron output factors using the equivalent ellipse spline modelling method
+
 Copyright (C) 2015  Simon Biggs
 
 This program is free software: you can redistribute it and/or modify

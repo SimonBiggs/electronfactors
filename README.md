@@ -5,6 +5,7 @@ To run:
     mkdir -p ~/Documents/electrons; \
     docker run -p 8000:8000 -v ~/Documents/electrons:/mnt --dns=208.67.222.222 simonbiggs/electrons
 
+Default login is user `admin`, password `admin`.
 
 ### Description
 Model electron output factors using the equivalent ellipse spline modelling method

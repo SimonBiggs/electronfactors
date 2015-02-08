@@ -2,6 +2,7 @@
 
 To run:
 
+    mkdir -p ~/Documents/electrons; \
     docker run -p 8000:8000 -v ~/Documents/electrons:/mnt --dns=208.67.222.222 simonbiggs/electrons
 
 

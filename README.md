@@ -1,4 +1,11 @@
 # Equivalent Ellipse Spline Modelling
+
+To run:
+
+    docker run -p 8000:8000 -v ~:/mnt --dns=208.67.222.222 simonbiggs/electrons
+
+
+### Description
 Model electron output factors using the equivalent ellipse spline modelling method
 
 Copyright &#169; 2015  Simon Biggs

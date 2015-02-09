@@ -2,4 +2,6 @@ FROM simonbiggs/jupyter
 
 ADD . /home/admin
 
-RUN chown admin:admin /home/admin/*.ipynb
+RUN mkdir -p /home/admin/output
+
+RUN chown admin:admin /home/admin/*

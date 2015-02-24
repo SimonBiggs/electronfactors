@@ -1,4 +1,6 @@
 *.csv
 *.html
-*~
+~*
+__pycache__
+.ipynb_checkpoints
 key.txt

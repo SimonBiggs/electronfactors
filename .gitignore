@@ -6,3 +6,5 @@ __pycache__
 key.txt
 tel.1
 tempImportedPlan_*
+*.xls
+*.xlsx

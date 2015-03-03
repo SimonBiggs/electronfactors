@@ -1,0 +1,139 @@
+import numpy as np
+
+from scipy.optimize import basinhopping
+
+import shapely.geometry as geo
+import shapely.affinity as aff
+
+
+def shapely_cutout(XCoords,YCoords):
+    """Returns the shapely cutout defined by the x and y coordinates.
+    """
+    return geo.Polygon(np.transpose((XCoords,YCoords)))
+
+
+def shapely_ellipse(ellipseRaw):
+    """Given raw ellipse values create a shapely ellipse.
+    """
+    xPosition = ellipseRaw[0]
+    yPosition = ellipseRaw[1]
+
+    width = ellipseRaw[2]
+    length = ellipseRaw[3]
+
+    rotation = ellipseRaw[4]
+
+
+    unitCircle = geo.Point(0,0).buffer(1)        
+    ellipse = aff.scale(unitCircle, xfact=width/2, yfact=length/2)    # Stretched
+    ellipse = aff.translate(ellipse, xoff=xPosition, yoff=yPosition)  # Translated
+    ellipse = aff.rotate(ellipse, rotation)                           # Rotated
+
+    return ellipse
+
+
+class FitEllipse(object):
+    """An equivalent ellipse given the x and y coordinates of a cutout.
+    """
+    def __init__(self, n=5, debug=False, **kwargs):
+        
+        self.debug = debug
+        
+        self.cutoutXCoords = kwargs['x']
+        self.cutoutYCoords = kwargs['y']
+        self.cutout = shapely_cutout(self.cutoutXCoords,self.cutoutYCoords)
+                
+        self.basinRequiredSuccess = n
+        self.ellipseRaw = self._ellipse_basinhopping()
+        
+        if abs(self.ellipseRaw[2]) < abs(self.ellipseRaw[3]):
+            
+            self.width = abs(self.ellipseRaw[2])
+            self.length = abs(self.ellipseRaw[3])
+            
+        else:
+            
+            self.width = abs(self.ellipseRaw[3])
+            self.length = abs(self.ellipseRaw[2])
+ 
+            
+        self.ellipse = shapely_ellipse(self.ellipseRaw)
+        
+        self.ellipseXCoords, self.ellipseYCoords = self.ellipse.exterior.xy
+ 
+ 
+    def _minimise_function(self, ellipseRaw):
+        """Returns the sum of area differences between the an ellipse and the given cutout.
+        """
+        ellipse = shapely_ellipse(ellipseRaw)
+        
+        return ellipse.difference(self.cutout).area + self.cutout.difference(ellipse).area
+        
+ 
+    def _ellipse_basinhopping(self):
+        """Fitting the ellipse to the cutout via scipy.optimize.basinhopping.
+        """
+        self.functionReturns = np.empty(self.basinRequiredSuccess)
+        self.functionReturns[:] = np.nan
+        
+        self.numSuccess = 0
+        
+        minimizerConfig = {"method": 'BFGS'}
+        
+        initial_input = np.array([0,0,3,4,0])
+        
+        
+        basinhoppingOutput = basinhopping(self._minimise_function,
+                                          initial_input,
+                                          niter=1000,
+                                          minimizer_kwargs=minimizerConfig,
+                                          take_step=self._step_function,
+                                          callback=self._callback_function)
+        
+        return basinhoppingOutput.x
+        
+        
+    def _step_function(self,optimiserInput):
+        """Step function used by self.ellipse_basinhopping.
+        """
+        optimiserInput[0] += np.random.normal(scale=1.5)   # x-position
+        optimiserInput[1] += np.random.normal(scale=1.5)   # y-position
+        optimiserInput[2] += np.random.normal(scale=3)     # width
+        optimiserInput[3] += np.random.normal(scale=4)     # length
+        optimiserInput[4] += np.random.normal(scale=90)    # rotation
+        
+        return optimiserInput
+    
+    
+    def _callback_function(self, optimiserOutput, minimiseFunctionOutput, minimiseAccepted):
+        """Callback function used by self.ellipse_basinhopping.
+        """        
+        if self.debug:
+            print(optimiserOutput)
+            print(minimiseFunctionOutput)
+            print(minimiseAccepted)
+            print(" ")
+        
+        if minimiseAccepted:
+            
+            if self.numSuccess == 0:
+                # First result
+                self.functionReturns[0] = minimiseFunctionOutput
+                self.numSuccess = 1
+                
+            elif minimiseFunctionOutput >= np.nanmin(self.functionReturns) + 0.0001:
+                # Reject result
+                0
+                
+            elif minimiseFunctionOutput >= np.nanmin(self.functionReturns) - 0.0001:
+                # Agreeing result
+                self.functionReturns[self.numSuccess] = minimiseFunctionOutput
+                self.numSuccess += 1
+            
+            elif minimiseFunctionOutput < np.nanmin(self.functionReturns) - 0.0001:
+                # New result
+                self.functionReturns[0] = minimiseFunctionOutput
+                self.numSuccess = 1
+        
+        if self.numSuccess >= self.basinRequiredSuccess:
+            return True

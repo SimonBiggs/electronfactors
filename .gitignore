@@ -1,4 +1,3 @@
-*.csv
 *.html
 ~*
 __pycache__
@@ -8,3 +7,4 @@ tel.1
 tempImportedPlan_*
 *.xls
 *.xlsx
+*[private]*

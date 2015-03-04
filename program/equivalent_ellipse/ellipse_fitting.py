@@ -88,7 +88,6 @@ class FitEllipse(object):
 
         initial_input = np.array([0,0,3,4,0])
 
-
         basinhoppingOutput = basinhopping(
             self._minimise_function,
             initial_input,

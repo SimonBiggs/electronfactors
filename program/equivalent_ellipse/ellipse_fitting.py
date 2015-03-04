@@ -6,7 +6,7 @@ import shapely.geometry as geo
 import shapely.affinity as aff
 
 
-def shapely_cutout(XCoords,YCoords):
+def shapely_cutout(XCoords, YCoords):
     """Returns the shapely cutout defined by the x and y coordinates."""
     return geo.Polygon(np.transpose((XCoords,YCoords)))
 
@@ -20,7 +20,6 @@ def shapely_ellipse(ellipseRaw):
     length = ellipseRaw[3]
 
     rotation = ellipseRaw[4]
-
 
     unitCircle = geo.Point(0,0).buffer(1)
     stretched = aff.scale(unitCircle, xfact=width/2, yfact=length/2)
@@ -64,7 +63,6 @@ class FitEllipse(object):
         self.ellipseXCoords = ellipseXCoords
         self.ellipseYCoords = ellipseYCoords
 
-
     def _minimise_function(self, ellipseRaw):
         """Returns the sum of area differences between the an ellipse
         and the given cutout.
@@ -73,7 +71,6 @@ class FitEllipse(object):
 
         return (ellipse.difference(self.cutout).area +
                 self.cutout.difference(ellipse).area)
-
 
     def _ellipse_basinhopping(self):
         """Fitting the ellipse to the cutout via

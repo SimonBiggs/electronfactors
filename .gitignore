@@ -8,3 +8,4 @@ tel.1
 tempImportedPlan_*
 *.xls
 *.xlsx
+.remote-sync.json

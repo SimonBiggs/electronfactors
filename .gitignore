@@ -9,3 +9,5 @@ tempImportedPlan_*
 *.xls
 *.xlsx
 .remote-sync.json
+wheelhouse
+dist

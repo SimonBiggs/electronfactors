@@ -11,5 +11,5 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from . import inpututilities
-from . import ellipseutilities
+from . import inputs
+from . import ellipse

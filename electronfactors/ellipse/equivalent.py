@@ -1,4 +1,4 @@
-# Copyright © 2015 Simon Biggs
+# Copyright (C) 2015 Simon Biggs
 # This program is free software: you can redistribute it and/or
 # modify it under the terms of the GNU Affero General Public
 # License as published by the Free Software Foundation, either
@@ -11,9 +11,9 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from .ellipseutilities.findingcentre import FindCentre
-from .ellipseutilities.straightening import Straighten
-from .ellipseutilities.ellipsefitting import FitEllipse
+from .centre import FindCentre
+from .straightening import Straighten
+from .fitting import FitEllipse
 
 
 class EquivalentEllipse(object):

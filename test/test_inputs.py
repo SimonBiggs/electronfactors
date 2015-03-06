@@ -1,4 +1,4 @@
-# Copyright © 2015 Simon Biggs
+# Copyright (C) 2015 Simon Biggs
 # This program is free software: you can redistribute it and/or
 # modify it under the terms of the GNU Affero General Public
 # License as published by the Free Software Foundation, either
@@ -11,8 +11,8 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from electronfactors.inpututilities.genericshape import convert_generic
-from electronfactors.inpututilities.rawcoords import convert_raw
+from electronfactors.inputs.genericshape import convert_generic
+from electronfactors.inputs.rawcoords import convert_raw
 
 
 def test_run_generic():

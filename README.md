@@ -6,6 +6,14 @@
 ## Description
 Model electron output factors using the equivalent ellipse spline modelling method
 
+## Install via pip
+
+    pip install electronfactors
+
+## Examples
+
+Examples can be found [here](http://nbviewer.ipython.org/github/simonbiggs/equivalent-ellipse-spline-modelling/tree/master/examples/).
+
 ## Docker install method
 
 To run:

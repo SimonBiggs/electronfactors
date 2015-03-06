@@ -10,3 +10,44 @@
 # You should have received a copy of the GNU Affero General Public
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
+
+import pandas as pd
+import numpy as np
+import yaml
+
+
+def convert_raw(**kwargs):
+    XCoordsFilepath = kwargs['XCoords']
+    YCoordsFilepath = kwargs['YCoords']
+    metadataFilepath = kwargs['metadata']
+    outputpath = kwargs['output']
+
+    XCoordsData = pd.read_csv(XCoordsFilepath)
+    YCoordsData = pd.read_csv(YCoordsFilepath)
+    metadata = pd.read_csv(metadataFilepath)
+
+    data = dict()
+
+    for i, index in enumerate(metadata['index'].values):
+
+        data[index] = dict()
+
+        numCoords = sum(~np.isnan(XCoordsData[index].values))
+
+        XCoords = [0] * numCoords
+        YCoords = [0] * numCoords
+
+        for j in range(numCoords):
+            XCoords[j] = float(round(XCoordsData[index].values[j], 2))
+            YCoords[j] = float(round(YCoordsData[index].values[j], 2))
+
+        data[index]['XCoords'] = XCoords
+        data[index]['YCoords'] = YCoords
+
+        data[index]['energy'] = float(metadata['energy'].values[i])
+        data[index]['applicator'] = float(metadata['applicator'].values[i])
+        data[index]['ssd'] = float(metadata['ssd'].values[i])
+        data[index]['factor'] = float(metadata['factor'].values[i])
+
+    with open(outputpath, 'w') as outfile:
+        outfile.write(yaml.dump(data, default_flow_style=False))

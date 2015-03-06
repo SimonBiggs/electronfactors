@@ -2,6 +2,11 @@
 
 [![Build Status](https://travis-ci.org/SimonBiggs/equivalent-ellipse-spline-modelling.svg?branch=master)](https://travis-ci.org/SimonBiggs/equivalent-ellipse-spline-modelling)
 
+## Description
+Model electron output factors using the equivalent ellipse spline modelling method
+
+## Docker install method
+
 To run:
 
     mkdir -p ~/Documents/electrons; \
@@ -13,9 +18,7 @@ To run:
 
 Default login is user `admin`, password `admin`.
 
-### Description
-Model electron output factors using the equivalent ellipse spline modelling method
-
+## Copyright information
 Copyright &#169; 2015  Simon Biggs
 
 This program is free software: you can redistribute it and/or modify

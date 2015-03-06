@@ -11,5 +11,19 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from . import _inpututilities
-from . import _ellipseutilities
+from electronfactors._inpututilities.genericshape import convert_generic
+from electronfactors._inpututilities.rawcoords import convert_raw
+
+
+def test_run_generic():
+    convert_generic(
+        input="examples/input/GenericShapeImport.csv",
+        output="examples/output/GenericShape_coords.yml")
+
+
+def test_run_raw():
+    convert_raw(
+        XCoords="examples/input/RawCoordsImport_XCoords.csv",
+        YCoords="examples/input/RawCoordsImport_YCoords.csv",
+        metadata="examples/input/RawCoordsImport_metadata.csv",
+        output="examples/output/RawCoords_coords.yml")

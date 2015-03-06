@@ -12,5 +12,10 @@ before_install:
 
 install:
   - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy scipy nose shapely pandas
+  - pip install coveralls
 
-script: nosetests
+script:
+  - coverage run --source=nosetests
+
+after_success:
+  - coveralls

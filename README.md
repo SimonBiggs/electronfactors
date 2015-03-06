@@ -1,6 +1,7 @@
 # Equivalent Ellipse Spline Modelling
 
 [![Build Status](https://travis-ci.org/SimonBiggs/equivalent-ellipse-spline-modelling.svg?branch=master)](https://travis-ci.org/SimonBiggs/equivalent-ellipse-spline-modelling)
+[![Coverage Status](https://coveralls.io/repos/SimonBiggs/equivalent-ellipse-spline-modelling/badge.svg)](https://coveralls.io/r/SimonBiggs/equivalent-ellipse-spline-modelling)
 
 ## Description
 Model electron output factors using the equivalent ellipse spline modelling method

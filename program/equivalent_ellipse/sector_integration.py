@@ -1,22 +1,36 @@
+# Copyright © 2015 Simon Biggs
+# This program is free software: you can redistribute it and/or
+# modify it under the terms of the GNU Affero General Public
+# License as published by the Free Software Foundation, either
+# version 3 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Affero General Public License for more details.
+# You should have received a copy of the GNU Affero General Public
+# License along with this program. If not, see
+# http://www.gnu.org/licenses/.
+
 import numpy as np
 import shapely.geometry as geo
 
 
-def shapely_cutout(XCoords,YCoords):
+def shapely_cutout(XCoords, YCoords):
     """Returns the shapely cutout defined by the x and y coordinates.
     """
-    return geo.Polygon(np.transpose((XCoords,YCoords)))
+    return geo.Polygon(np.transpose((XCoords, YCoords)))
 
 
+# This doesn't need to be an object. I need to flatten this and turn it into
+# a clear set of functions.
 class SectorIntegration(object):
 
     def __init__(self,
                  sectors=100,
                  bound=25,
                  ignoreErrors=False,
-                 debug = False,
+                 debug=False,
                  **kwargs):
-
 
         self.ignoreErrors = ignoreErrors
 
@@ -27,7 +41,7 @@ class SectorIntegration(object):
 
         self.cutoutXCoords = kwargs['x']
         self.cutoutYCoords = kwargs['y']
-        self.cutout = shapely_cutout(self.cutoutXCoords,self.cutoutYCoords)
+        self.cutout = shapely_cutout(self.cutoutXCoords, self.cutoutYCoords)
 
         self.circle_fit = kwargs['circle_fit']
 
@@ -43,15 +57,14 @@ class SectorIntegration(object):
 
         self.factor = self._factor_calculate()
 
-
-
+    # This function is too complex.
     def _factor_calculate(self):
 
-        self.sectorMidline = [0,]*self.numSectors
-        self.intersectionSet = [0,]*self.numSectors
+        self.sectorMidline = [0]*self.numSectors
+        self.intersectionSet = [0]*self.numSectors
 
         self.sectorFactors = np.zeros(self.numSectors)
-        self.dist = [0,]*self.numSectors
+        self.dist = [0]*self.numSectors
 
         for i in range(self.numSectors):
             self.sectorMidline[i] = geo.LineString(
@@ -89,14 +102,14 @@ class SectorIntegration(object):
 
                 self.dist[i] = np.sort(self.dist[i])
 
-                if ((np.mod(len(self.intersectionSet[i]),2) == 1 ) &
+                if ((np.mod(len(self.intersectionSet[i]), 2) == 1 ) &
                     (self.centreIsWithin)):
                     # If the centre is within the shape,
                     # number of intersections must be odd
                     self.sectorFactors[i] = (
                         sum(self.circle_fit(self.dist[i][::2])) -
                         sum(self.circle_fit(self.dist[i][1::2])))
-                elif ((np.mod(len(self.intersectionSet[i]),2) == 0 ) &
+                elif ((np.mod(len(self.intersectionSet[i]), 2) == 0 ) &
                       (not(self.centreIsWithin))):
                     # If the centre is outside the shape,
                     # number of intersections must be even

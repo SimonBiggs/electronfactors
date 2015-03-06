@@ -1,14 +1,27 @@
+# Copyright © 2015 Simon Biggs
+# This program is free software: you can redistribute it and/or
+# modify it under the terms of the GNU Affero General Public
+# License as published by the Free Software Foundation, either
+# version 3 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Affero General Public License for more details.
+# You should have received a copy of the GNU Affero General Public
+# License along with this program. If not, see
+# http://www.gnu.org/licenses/.
+
 import numpy as np
 import shapely.geometry as geo
 from scipy.optimize import basinhopping
 
-from sector_integration import SectorIntegration
+from .sector_integration import SectorIntegration
 
 
-def shapely_cutout(XCoords,YCoords):
+def shapely_cutout(XCoords, YCoords):
     """Returns the shapely cutout defined by the x and y coordinates.
     """
-    return geo.Polygon(np.transpose((XCoords,YCoords)))
+    return geo.Polygon(np.transpose((XCoords, YCoords)))
 
 
 class FindCentre(object):
@@ -28,10 +41,12 @@ class FindCentre(object):
 
         self.cutoutXCoords = kwargs['x']
         self.cutoutYCoords = kwargs['y']
-        self.cutout = shapely_cutout(self.cutoutXCoords,self.cutoutYCoords)
+        self.cutout = shapely_cutout(self.cutoutXCoords, self.cutoutYCoords)
 
-        self.bounds = ((np.min(self.cutoutXCoords),np.max(self.cutoutXCoords)),
-                       (np.min(self.cutoutYCoords),np.max(self.cutoutYCoords)))
+        self.bounds = ((np.min(self.cutoutXCoords),
+                        np.max(self.cutoutXCoords)),
+                       (np.min(self.cutoutYCoords),
+                        np.max(self.cutoutYCoords)))
 
         self.basinNoise = np.hypot(np.diff(self.cutout.bounds[::2]),
                                    np.diff(self.cutout.bounds[1::2]))/3
@@ -41,8 +56,6 @@ class FindCentre(object):
         self.numCalls = 0
         self.basinRequiredSuccess = n
         self.centre = self._centre_basinhopping()
-
-
 
     def _minimise_function(self, centre):
 
@@ -58,7 +71,6 @@ class FindCentre(object):
 
         return -sectorIntegrationInstance.factor
 
-
     def _centre_basinhopping(self):
 
         self.functionReturns = np.empty(self.basinRequiredSuccess)
@@ -70,7 +82,7 @@ class FindCentre(object):
                            "options": {'gtol': self.confidence},
                            "bounds": self.bounds}
 
-        initial_input = np.array([0,0])
+        initial_input = np.array([0, 0])
 
         basinhoppingOutput = basinhopping(self._minimise_function,
                                           initial_input,
@@ -81,16 +93,12 @@ class FindCentre(object):
 
         return basinhoppingOutput.x
 
-
-    def _step_function(self,optimiserInput):
-
-
+    def _step_function(self, optimiserInput):
 
         optimiserInput[0] += np.random.normal(scale=self.basinNoise)
         optimiserInput[1] += np.random.normal(scale=self.basinNoise)
 
         return optimiserInput
-
 
     def _callback_function(self,
                            optimiserOutput,

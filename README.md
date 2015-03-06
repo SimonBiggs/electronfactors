@@ -12,7 +12,7 @@ Model electron output factors using the equivalent ellipse spline modelling meth
 
 ## Examples
 
-Examples can be found [here](http://nbviewer.ipython.org/github/simonbiggs/equivalent-ellipse-spline-modelling/tree/master/examples/).
+Examples can be found [here](http://nbviewer.ipython.org/github/simonbiggs/electronfactors/tree/master/examples/).
 
 ## Docker install method
 

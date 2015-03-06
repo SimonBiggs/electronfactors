@@ -11,3 +11,5 @@ tempImportedPlan_*
 .remote-sync.json
 wheelhouse
 dist
+*.pyc
+*.whl

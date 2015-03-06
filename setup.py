@@ -9,7 +9,7 @@ setup(
     author='Simon Biggs',
     author_email='mail@simonbiggs.net',
     url='https://github.com/SimonBiggs/equivalent-ellipse-spline-modelling',
-    download_url='https://github.com/SimonBiggs/equivalent-ellipse-spline-modelling/tarball/0.1.0.dev1',
+    download_url='https://github.com/SimonBiggs/equivalent-ellipse-spline-modelling/tarball/0.1.0.dev2',
     license='AGPLv3',
     classifiers=[
         'Development Status :: 1 - Development',

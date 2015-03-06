@@ -109,7 +109,7 @@ class FitEllipse(object):
         return basinhoppingOutput.x
 
     def _step_function(self, optimiserInput):
-        """Step function used by self.ellipse_basinhopping."""
+        """Step function used by self._ellipse_basinhopping."""
 
         optimiserInput[0] += np.random.normal(scale=1.5)   # x-position
         optimiserInput[1] += np.random.normal(scale=1.5)   # y-position
@@ -123,7 +123,7 @@ class FitEllipse(object):
                            optimiserOutput,
                            minimiseFunctionOutput,
                            minimiseAccepted):
-        """Callback function used by self.ellipse_basinhopping."""
+        """Callback function used by self._ellipse_basinhopping."""
         if self.debug:
             print(optimiserOutput)
             print(minimiseFunctionOutput)

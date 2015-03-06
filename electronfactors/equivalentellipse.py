@@ -11,9 +11,9 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from .finding_centre import FindCentre
-from .straightening import Straighten
-from .ellipse_fitting import FitEllipse
+from ._ellipseutilities.findingcentre import FindCentre
+from ._ellipseutilities.straightening import Straighten
+from ._ellipseutilities.ellipsefitting import FitEllipse
 
 
 class EquivalentEllipse(object):

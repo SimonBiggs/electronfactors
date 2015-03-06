@@ -15,7 +15,7 @@ import numpy as np
 import shapely.geometry as geo
 from scipy.optimize import basinhopping
 
-from .sector_integration import SectorIntegration
+from .sectorintegration import SectorIntegration
 
 
 def shapely_cutout(XCoords, YCoords):

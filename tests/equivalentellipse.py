@@ -13,7 +13,7 @@
 
 import numpy as np
 from scipy.interpolate import UnivariateSpline
-from .equivalent_ellipse import EquivalentEllipse
+from electronfactors.equivalentellipse import EquivalentEllipse
 
 circle_diameter = np.array([3, 4, 5, 6, 7, 8, 9])
 circle_factors = np.array(
@@ -41,3 +41,5 @@ equivalentEllipse = EquivalentEllipse(
 
 assert np.abs(equivalentEllipse.width - 5.15) < 0.1
 assert np.abs(equivalentEllipse.length - 7.99) < 0.1
+
+raise Exception("boo")

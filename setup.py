@@ -11,6 +11,6 @@ setup(
     url='https://github.com/SimonBiggs/equivalent-ellipse-spline-modelling',
     packages=[
         'electronfactors',
-        'electronfactors._ellipseutilities',
-        'electronfactors._inpututilities'],
+        'electronfactors.ellipseutilities',
+        'electronfactors.inpututilities'],
      )

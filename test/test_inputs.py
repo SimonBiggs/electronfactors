@@ -11,8 +11,8 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from electronfactors._inpututilities.genericshape import convert_generic
-from electronfactors._inpututilities.rawcoords import convert_raw
+from electronfactors.inpututilities.genericshape import convert_generic
+from electronfactors.inpututilities.rawcoords import convert_raw
 
 
 def test_run_generic():

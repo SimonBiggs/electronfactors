@@ -1,5 +1,7 @@
 # Equivalent Ellipse Spline Modelling
 
+[![Build Status](https://travis-ci.org/SimonBiggs/equivalent-ellipse-spline-modelling.svg?branch=master)](https://travis-ci.org/SimonBiggs/equivalent-ellipse-spline-modelling)
+
 To run:
 
     mkdir -p ~/Documents/electrons; \

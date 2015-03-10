@@ -13,7 +13,8 @@
 
 from .centre import FindCentre
 from .straightening import Straighten
-from .fitting import FitEllipse
+# from .fitting import WeightedFitEllipse
+from .fitting import StandardFitEllipse
 
 
 class EquivalentEllipse(object):
@@ -41,7 +42,13 @@ class EquivalentEllipse(object):
                                         y=self.cutoutYCoords,
                                         centre=self.centre)
 
-        self._FittedEllipse = FitEllipse(
+        # self._FittedEllipse = WeightedFitEllipse(
+        #     x=self._Straightened.straightenedXCoords,
+        #     y=self._Straightened.straightenedYCoords,
+        #     n=n,
+        #     circle_fit=self.circle_fit)
+
+        self._FittedEllipse = StandardFitEllipse(
             x=self._Straightened.straightenedXCoords,
             y=self._Straightened.straightenedYCoords,
             n=n)

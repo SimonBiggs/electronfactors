@@ -40,6 +40,7 @@ class Straighten(object):
 
         self.zoneMidDist, self.zoneRegions = create_zones(
             self.numZones, self.maxRadii)
+
         self._straighten()
 
     def _straighten(self):

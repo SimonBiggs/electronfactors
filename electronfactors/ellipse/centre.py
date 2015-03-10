@@ -12,16 +12,10 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-import shapely.geometry as geo
 from scipy.optimize import basinhopping
 
 from .sectorintegration import SectorIntegration
-
-
-def shapely_cutout(XCoords, YCoords):
-    """Returns the shapely cutout defined by the x and y coordinates.
-    """
-    return geo.Polygon(np.transpose((XCoords, YCoords)))
+from .utilities import shapely_cutout
 
 
 class FindCentre(object):

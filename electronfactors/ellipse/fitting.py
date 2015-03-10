@@ -12,39 +12,9 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-
 from scipy.optimize import basinhopping
 
-import shapely.geometry as geo
-import shapely.affinity as aff
-
-
-def shapely_cutout(XCoords, YCoords):
-    """Returns the shapely cutout defined by the x and y coordinates."""
-    return geo.Polygon(np.transpose((XCoords, YCoords)))
-
-
-def shapely_ellipse(ellipseRaw):
-    """Given raw ellipse values create a shapely ellipse."""
-    xPosition = ellipseRaw[0]
-    yPosition = ellipseRaw[1]
-
-    width = ellipseRaw[2]
-    length = ellipseRaw[3]
-
-    rotation = ellipseRaw[4]
-
-    unitCircle = geo.Point(0, 0).buffer(1)
-    stretched = aff.scale(unitCircle, xfact=width/2, yfact=length/2)
-    translated = aff.translate(
-        stretched,
-        xoff=xPosition,
-        yoff=yPosition)
-    rotated = aff.rotate(translated, rotation)
-
-    ellipse = rotated
-
-    return ellipse
+from .utilities import shapely_cutout, shapely_ellipse
 
 
 class FitEllipse(object):

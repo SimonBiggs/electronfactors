@@ -14,11 +14,7 @@
 import numpy as np
 import shapely.geometry as geo
 
-
-def shapely_cutout(XCoords, YCoords):
-    """Returns the shapely cutout defined by the x and y coordinates.
-    """
-    return geo.Polygon(np.transpose((XCoords, YCoords)))
+from .utilities import shapely_cutout
 
 
 # This doesn't need to be an object. I need to flatten this and turn it into

@@ -12,29 +12,9 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-
-import shapely.geometry as geo
 import shapely.affinity as aff
 
-
-def shapely_cutout(XCoords, YCoords):
-    """Returns the shapely cutout defined by the x and y coordinates."""
-    return geo.Polygon(np.transpose((XCoords, YCoords)))
-
-
-def create_zones(numZones, maxRadii):
-    zoneBoundaryRadii = np.linspace(0, maxRadii, numZones + 1)
-    zoneBoundaries = [0]*(numZones+1)
-    zoneRegions = [0]*numZones
-    zoneMidDist = (zoneBoundaryRadii[0:-1] + zoneBoundaryRadii[1:])/2
-
-    for i in range(numZones + 1):
-        zoneBoundaries[i] = geo.Point(0, 0).buffer(zoneBoundaryRadii[i])
-
-    for i in range(numZones):
-        zoneRegions[i] = zoneBoundaries[i+1].difference(zoneBoundaries[i])
-
-    return zoneMidDist, zoneRegions
+from .utilities import shapely_cutout, create_zones
 
 
 # This could likely be flattened and made functional instead of an object.

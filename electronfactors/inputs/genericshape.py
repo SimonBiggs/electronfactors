@@ -56,8 +56,8 @@ def generic_shape_convert(width, length, shape):
 
 
 def convert_generic(**kwargs):
-    inputpath = kwargs['input']
-    outputpath = kwargs['output']
+    inputpath = kwargs['inputFilepath']
+    outputpath = kwargs['outputFilepath']
 
     genericShapeData = pd.read_csv(inputpath)
 

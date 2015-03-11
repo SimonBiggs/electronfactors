@@ -13,15 +13,14 @@
 
 from .centre import FindCentre
 from .straightening import Straighten
-# from .fitting import WeightedFitEllipse
-from .fitting import StandardFitEllipse
+from .fitting import WeightedFitEllipse, StandardFitEllipse
 
 
 class EquivalentEllipse(object):
     """Returns an equivalent ellipse. Requires the input of cutout X and
        Y coords along with the centre_fit function.
     """
-    def __init__(self, quick=False, **kwargs):
+    def __init__(self, quick=False, weighted=False, **kwargs):
         self.cutoutXCoords = kwargs['x']
         self.cutoutYCoords = kwargs['y']
         self.circle_fit = kwargs['circle_fit']
@@ -41,17 +40,17 @@ class EquivalentEllipse(object):
         self._Straightened = Straighten(x=self.cutoutXCoords,
                                         y=self.cutoutYCoords,
                                         centre=self.centre)
-
-        # self._FittedEllipse = WeightedFitEllipse(
-        #     x=self._Straightened.straightenedXCoords,
-        #     y=self._Straightened.straightenedYCoords,
-        #     n=n,
-        #     circle_fit=self.circle_fit)
-
-        self._FittedEllipse = StandardFitEllipse(
-            x=self._Straightened.straightenedXCoords,
-            y=self._Straightened.straightenedYCoords,
-            n=n)
+        if weighted:
+            self._FittedEllipse = WeightedFitEllipse(
+                x=self._Straightened.straightenedXCoords,
+                y=self._Straightened.straightenedYCoords,
+                n=n,
+                circle_fit=self.circle_fit)
+        else:
+            self._FittedEllipse = StandardFitEllipse(
+                x=self._Straightened.straightenedXCoords,
+                y=self._Straightened.straightenedYCoords,
+                n=n)
 
         self.inputCutout = self._Straightened.cutout
         self.centredCutout = self._Straightened.centredCutout

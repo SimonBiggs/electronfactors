@@ -17,10 +17,10 @@ import yaml
 
 
 def convert_raw(**kwargs):
-    XCoordsFilepath = kwargs['XCoords']
-    YCoordsFilepath = kwargs['YCoords']
-    metadataFilepath = kwargs['metadata']
-    outputpath = kwargs['output']
+    XCoordsFilepath = kwargs['XCoordsFilepath']
+    YCoordsFilepath = kwargs['YCoordsFilepath']
+    metadataFilepath = kwargs['metadataFilepath']
+    outputFilepath = kwargs['outputFilepath']
 
     XCoordsData = pd.read_csv(XCoordsFilepath)
     YCoordsData = pd.read_csv(YCoordsFilepath)
@@ -49,5 +49,5 @@ def convert_raw(**kwargs):
         data[index]['ssd'] = float(metadata['ssd'].values[i])
         data[index]['factor'] = float(metadata['factor'].values[i])
 
-    with open(outputpath, 'w') as outfile:
+    with open(outputFilepath, 'w') as outfile:
         outfile.write(yaml.dump(data, default_flow_style=False))

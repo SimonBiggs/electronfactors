@@ -55,7 +55,7 @@ def make_rays(point_of_interest, cutout, num_rays):
     ray_length = furthest_possible_distance(point_of_interest, cutout)
 
     dtheta = 2*np.pi / num_rays
-    theta = np.arange(-np.pi, np.pi, dtheta) + np.random.uniform(-np.pi, np.pi)
+    theta = np.arange(-np.pi, np.pi, dtheta) - 0.009365454751752392
 
     x_points = x_POI + ray_length * np.cos(theta)
     y_points = y_POI + ray_length * np.sin(theta)

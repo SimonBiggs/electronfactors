@@ -21,10 +21,10 @@ from .utilities import shapely_cutout, shapely_point
 class FindCentre(object):
 
     def __init__(self,
-                 n=5,
+                 n=3,
                  debug=False,
-                 confidence=0.001,
-                 sectors=100,
+                 confidence=0.0001,
+                 sectors=200,
                  **kwargs):
 
         self.debug = debug
@@ -37,13 +37,10 @@ class FindCentre(object):
 
         self.min_distance = kwargs['min_distance']
 
-        self.bounds = ((np.min(self.cutoutXCoords),
-                        np.max(self.cutoutXCoords)),
-                       (np.min(self.cutoutYCoords),
-                        np.max(self.cutoutYCoords)))
+        # self.basinNoise = np.hypot(np.diff(self.cutout.bounds[::2]),
+        #                            np.diff(self.cutout.bounds[1::2]))/3
 
-        self.basinNoise = np.hypot(np.diff(self.cutout.bounds[::2]),
-                                   np.diff(self.cutout.bounds[1::2]))/3
+        self.basinNoise = 0.5
 
         self.circle_fit = kwargs['circle_fit']
 
@@ -84,9 +81,8 @@ class FindCentre(object):
 
         self.numSuccess = 0
 
-        minimizerConfig = {"method": 'L-BFGS-B',
-                           "options": {'gtol': self.confidence},
-                           "bounds": self.bounds}
+        minimizerConfig = {"method": 'BFGS',
+                           "options": {'gtol': self.confidence}}
 
         initial_input = np.array([0, 0])
 
@@ -112,11 +108,6 @@ class FindCentre(object):
                            minimiseAccepted):
         """Callback function used by self.ellipse_basinhopping.
         """
-        if self.debug:
-            print(optimiserOutput)
-            print(minimiseFunctionOutput)
-            print(minimiseAccepted)
-            print(" ")
 
         if minimiseAccepted:
 
@@ -142,5 +133,35 @@ class FindCentre(object):
                 self.functionReturns[0] = minimiseFunctionOutput
                 self.numSuccess = 1
 
+        if self.debug:
+            self.debug_print(optimiserOutput, minimiseFunctionOutput)
+
         if self.numSuccess >= self.basinRequiredSuccess:
             return True
+
+    def debug_print(self, optimiserOutput, minimiseFunctionOutput):
+        point_of_interest = shapely_point(*optimiserOutput)
+        is_within = self.cutout.contains(point_of_interest)
+        distance = point_of_interest.distance(self.cutout.boundary)
+
+        if not(is_within):
+            distance = -distance
+
+        try:
+            factor = sector_integration(
+                x=self.cutoutXCoords,
+                y=self.cutoutYCoords,
+                min_distance=1.5,
+                circle_fit=self.circle_fit,
+                point_of_interest=optimiserOutput,
+                num_rays=self.sectors)
+        except:
+            factor = 0
+
+        print("Successes: %d" % (self.numSuccess))
+        print("Coords: (%f, %f)" % (
+            optimiserOutput[0], optimiserOutput[1]))
+        print("Minimise Function: %f" % (minimiseFunctionOutput))
+        print("Distance: %f" % (distance))
+        print("Factor: %f" % (factor))
+        print(" ")

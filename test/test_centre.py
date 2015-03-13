@@ -13,7 +13,11 @@
 
 import numpy as np
 from scipy.interpolate import UnivariateSpline
-from electronfactors.ellipse.equivalent import EquivalentEllipse
+from electronfactors.ellipse.centre import FindCentre
+
+
+XCoords = np.array([-3, 3, 3, -3])
+YCoords = np.array([3, 3, -3, -3])
 
 circle_diameter = np.array([3, 4, 5, 6, 7, 8, 9])
 circle_factors = np.array(
@@ -33,13 +37,10 @@ def circle_fit(radii):
     return results
 
 
-XCoords = np.array([-1, -0.2, 0, 0.7, 1, 0])*4
-YCoords = np.array([0, -1, -.8, 0, .6, 1])*4
+def test_centre():
+    centre = FindCentre(
+        x=XCoords, y=YCoords, n=1, circle_fit=circle_fit, min_distance=1.5
+    )
 
-equivalentEllipse = EquivalentEllipse(
-    x=XCoords, y=YCoords, circle_fit=circle_fit, n=1, min_distance=1.5)
-
-
-def test_ellipse_dimensions():
-    assert np.abs(equivalentEllipse.width - 5.15) < 0.1
-    assert np.abs(equivalentEllipse.length - 7.99) < 0.1
+    assert np.abs(centre.centre[0]) < 0.1
+    assert np.abs(centre.centre[1]) < 0.1

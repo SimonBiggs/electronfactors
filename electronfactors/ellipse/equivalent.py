@@ -20,19 +20,16 @@ class EquivalentEllipse(object):
     """Returns an equivalent ellipse. Requires the input of cutout X and
        Y coords along with the centre_fit function.
     """
-    def __init__(self, quick=False, weighted=False, **kwargs):
+    def __init__(self, n=5, weighted=False, **kwargs):
         self.cutoutXCoords = kwargs['x']
         self.cutoutYCoords = kwargs['y']
         self.circle_fit = kwargs['circle_fit']
-
-        if quick:
-            n = 1
-        else:
-            n = 5
+        self.min_distance = kwargs['min_distance']
 
         self._FoundCentre = FindCentre(x=self.cutoutXCoords,
                                        y=self.cutoutYCoords,
                                        n=n,
+                                       min_distance=self.min_distance,
                                        circle_fit=self.circle_fit)
 
         self.centre = self._FoundCentre.centre

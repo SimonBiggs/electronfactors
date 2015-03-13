@@ -14,8 +14,8 @@
 import numpy as np
 from scipy.optimize import basinhopping
 
-from .sectorintegration import SectorIntegration
-from .utilities import shapely_cutout
+from .sectorintegration import sector_integration
+from .utilities import shapely_cutout, shapely_point
 
 
 class FindCentre(object):
@@ -25,17 +25,17 @@ class FindCentre(object):
                  debug=False,
                  confidence=0.001,
                  sectors=100,
-                 ignoreErrors=True,
                  **kwargs):
 
         self.debug = debug
         self.confidence = confidence
         self.sectors = sectors
-        self.ignoreErrors = ignoreErrors
 
         self.cutoutXCoords = kwargs['x']
         self.cutoutYCoords = kwargs['y']
         self.cutout = shapely_cutout(self.cutoutXCoords, self.cutoutYCoords)
+
+        self.min_distance = kwargs['min_distance']
 
         self.bounds = ((np.min(self.cutoutXCoords),
                         np.max(self.cutoutXCoords)),
@@ -53,17 +53,29 @@ class FindCentre(object):
 
     def _minimise_function(self, centre):
 
-        sectorIntegrationInstance = SectorIntegration(
-            x=self.cutoutXCoords,
-            y=self.cutoutYCoords,
-            circle_fit=self.circle_fit,
-            centre=centre,
-            sectors=self.sectors,
-            ignoreErrors=self.ignoreErrors)
+        point_of_interest = shapely_point(*centre)
+        is_within = self.cutout.contains(point_of_interest)
+        distance = point_of_interest.distance(self.cutout.boundary)
+
+        if not(is_within):
+            distance = -distance
+
+        if distance > self.min_distance:
+            factor = sector_integration(
+                x=self.cutoutXCoords,
+                y=self.cutoutYCoords,
+                min_distance=self.min_distance,
+                circle_fit=self.circle_fit,
+                point_of_interest=centre,
+                num_rays=self.sectors)
+            to_minimise = -factor
+
+        else:
+            to_minimise = -(distance - self.min_distance)
 
         self.numCalls += 1
 
-        return -sectorIntegrationInstance.factor
+        return to_minimise
 
     def _centre_basinhopping(self):
 

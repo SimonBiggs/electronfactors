@@ -18,6 +18,10 @@ import shapely.geometry as geo
 import shapely.affinity as aff
 
 
+def shapely_point(x, y):
+    return geo.Point([(x, y)])
+
+
 def shapely_cutout(XCoords, YCoords):
     """Returns the shapely cutout defined by the x and y coordinates.
     """

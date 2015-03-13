@@ -13,130 +13,142 @@
 
 import numpy as np
 import shapely.geometry as geo
+import shapely.affinity as aff
 
-from .utilities import shapely_cutout
+from .utilities import shapely_cutout, shapely_point
 
 
-# This doesn't need to be an object. I need to flatten this and turn it into
-# a clear set of functions.
-class SectorIntegration(object):
+def test_min_distance(**kwargs):
+    min_distance = kwargs['min_distance']
+    point_of_interest = kwargs['point_of_interest']
+    cutout = kwargs['cutout']
 
-    def __init__(self,
-                 sectors=100,
-                 bound=25,
-                 ignoreErrors=False,
-                 debug=False,
-                 **kwargs):
+    is_within = cutout.contains(point_of_interest)
 
-        self.ignoreErrors = ignoreErrors
+    distance = point_of_interest.distance(cutout.boundary)
 
-        if ignoreErrors:
-            self.minDistance = 0
-        else:
-            self.minDistance = kwargs['minDistance']
+    if not(is_within):
+        return False
 
-        self.cutoutXCoords = kwargs['x']
-        self.cutoutYCoords = kwargs['y']
-        self.cutout = shapely_cutout(self.cutoutXCoords, self.cutoutYCoords)
+    elif distance < min_distance:
+        return False
 
-        self.circle_fit = kwargs['circle_fit']
+    else:
+        return True
 
-        self.centre = [tuple(kwargs['centre'])]
-        self.centreIsWithin = self.cutout.contains(geo.Point(self.centre))
 
-        self.numSectors = sectors
-        resolution = int(self.numSectors/4)
-        self.boundary = geo.Point(self.centre).buffer(bound*np.sqrt(2),
-                                                      resolution=resolution)
+def furthest_possible_distance(point_of_interest, cutout):
+    x = point_of_interest.xy[0][0]
+    y = point_of_interest.xy[1][0]
 
-        self.debug = debug
+    translated_cutout = aff.translate(cutout, xoff=-x, yoff=-y)
+    max_bound = np.max(np.abs(translated_cutout.boundary))
+    furthest_distance = max_bound * np.sqrt(2)
 
-        self.factor = self._factor_calculate()
+    return furthest_distance
 
-    # This function is too complex.
-    def _factor_calculate(self):
 
-        self.sectorMidline = [0]*self.numSectors
-        self.intersectionSet = [0]*self.numSectors
+def make_rays(point_of_interest, cutout, num_rays):
+    x_POI = point_of_interest.xy[0][0]
+    y_POI = point_of_interest.xy[1][0]
 
-        self.sectorFactors = np.zeros(self.numSectors)
-        self.dist = [0]*self.numSectors
+    ray_length = furthest_possible_distance(point_of_interest, cutout)
 
-        for i in range(self.numSectors):
-            self.sectorMidline[i] = geo.LineString(
-                self.centre + [self.boundary.exterior.coords[i]])
-            self.intersectionSet[i] = self.sectorMidline[i].intersection(
-                self.cutout.exterior)
+    dtheta = 2*np.pi / num_rays
+    theta = np.arange(-np.pi, np.pi, dtheta) + np.random.uniform(-np.pi, np.pi)
 
-            if type(self.intersectionSet[i]) is geo.point.Point:
-                # One intersection occured
+    x_points = x_POI + ray_length * np.cos(theta)
+    y_points = y_POI + ray_length * np.sin(theta)
 
-                if self.centreIsWithin:
-                    # One intersection should only happen if
-                    # the centre is within the shape
-                    self.dist[i] = self.sectorMidline[i].project(
-                        self.intersectionSet[i])
-                    self.sectorFactors[i] = self.circle_fit(self.dist[i])
+    coords = [
+        ((x_POI, y_POI), (x_points[i], y_points[i])) for i in range(num_rays)
+    ]
 
-                    if self.dist[i] < self.minDistance and not(
-                        self.ignoreErrors):
-                        raise Exception("Centre too close to edge")
+    rays = geo.MultiLineString(coords)
 
-                else:
-                    if self.ignoreErrors:
-                        self.sectorFactors[i] = np.nan
-                    else:
-                        raise Exception("Unexpected intersection result")
+    return rays
 
-            elif type(self.intersectionSet[i]) is geo.multipoint.MultiPoint:
-                # Multiple intersections have occured
-                self.dist[i] = np.zeros(len(self.intersectionSet[i]))
 
-                for j in range(len(self.intersectionSet[i])):
-                    point = self.intersectionSet[i][j]
-                    self.dist[i][j] = self.sectorMidline[i].project(point)
+def determine_line_segmentation(distances):
 
-                self.dist[i] = np.sort(self.dist[i])
+    begin_at_POI = np.array(
+        [distances[i][0] == 0.0 for i in range(len(distances))]
+    )
 
-                if ((np.mod(len(self.intersectionSet[i]), 2) == 1 ) &
-                    (self.centreIsWithin)):
-                    # If the centre is within the shape,
-                    # number of intersections must be odd
-                    self.sectorFactors[i] = (
-                        sum(self.circle_fit(self.dist[i][::2])) -
-                        sum(self.circle_fit(self.dist[i][1::2])))
-                elif ((np.mod(len(self.intersectionSet[i]), 2) == 0 ) &
-                      (not(self.centreIsWithin))):
-                    # If the centre is outside the shape,
-                    # number of intersections must be even
-                    self.sectorFactors[i] = (
-                        sum(self.circle_fit(self.dist[i][1::2])) -
-                        sum(self.circle_fit(self.dist[i][::2])))
-                else:
-                    if self.ignoreErrors:
-                        self.sectorFactors[i] = np.nan
-                    else:
-                        raise Exception("Unexpected intersection result")
+    segment_groups_indices = []
+    full_lines_index = np.arange(len(begin_at_POI)).astype('float')
 
-                if (self.dist[i][0] <
-                    self.minDistance and not(self.ignoreErrors)):
+    for i in range(1, len(begin_at_POI)):
 
-                    raise Exception("Centre too close to edge")
+        if (~begin_at_POI[i]) & (begin_at_POI[i-1]):
+            j = int(i)
+            new_segment = [j - 1]
+            full_lines_index[j - 1] = np.nan
 
-            elif ((self.sectorMidline[i].disjoint(self.cutout.exterior)) &
-                  (not(self.centreIsWithin))):
-                # No intersection
-                0
+            while ~(begin_at_POI[j]):
+                new_segment.append(j)
+                full_lines_index[j] = np.nan
+                j += 1
+                if j == len(begin_at_POI):
+                    break
 
-            else:
-                if self.ignoreErrors:
-                    self.sectorFactors[i] = np.nan
-                else:
-                    raise Exception("Unexpected intersection result")
+            segment_groups_indices.append(new_segment)
 
-        if self.ignoreErrors:
-            factor = np.nanmean(self.sectorFactors)
-        else:
-            factor = np.mean(self.sectorFactors)
+    full_lines_index = full_lines_index[
+        ~np.isnan(full_lines_index)
+    ].astype('int')
 
-        return factor
+    return full_lines_index, segment_groups_indices
+
+
+def sector_integration(num_rays=200, **kwargs):
+    x = kwargs['x']
+    y = kwargs['y']
+    circle_fit = kwargs['circle_fit']
+    min_distance = kwargs['min_distance']
+    point_of_interest = shapely_point(*kwargs['point_of_interest'])
+
+    cutout = shapely_cutout(x, y)
+
+    if not(test_min_distance(min_distance=min_distance,
+                             point_of_interest=point_of_interest,
+                             cutout=cutout)):
+        raise Exception("Point of interest is too close"
+                        " to edge or is outside of cutout")
+
+    rays = make_rays(point_of_interest, cutout, num_rays)
+    intersection = cutout.intersection(rays)
+
+    line_ends = [
+        geo.MultiPoint(
+            intersection[i].coords
+        ) for i in range(len(intersection))
+    ]
+
+    distances = [
+        [
+            line_ends[j][i].distance(point_of_interest) for i in range(2)
+        ] for j in range(len(intersection))
+    ]
+
+    full_lines_index, segment_groups_indices = determine_line_segmentation(
+        distances)
+
+    ray_factor = []
+    for i in full_lines_index:
+        ray_factor.append(
+            circle_fit(distances[i][1]) - circle_fit(distances[i][0])
+        )
+
+    for item in segment_groups_indices:
+        new_segment_factor = []
+        for i in item:
+            new_segment_factor.append(
+                circle_fit(distances[i][1]) - circle_fit(distances[i][0])
+            )
+
+        ray_factor.append(np.sum(new_segment_factor))
+
+    factor = np.mean(ray_factor)
+
+    return factor

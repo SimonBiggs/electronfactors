@@ -40,13 +40,23 @@ class FindCentre(object):
         # self.basinNoise = np.hypot(np.diff(self.cutout.bounds[::2]),
         #                            np.diff(self.cutout.bounds[1::2]))/3
 
-        self.basinNoise = 0.5
+        self.basinNoise = 1.5
 
         self.circle_fit = kwargs['circle_fit']
 
         self.numCalls = 0
         self.basinRequiredSuccess = n
         self.centre = self._centre_basinhopping()
+
+        point_of_interest = shapely_point(*self.centre)
+        is_within = self.cutout.contains(point_of_interest)
+        distance = point_of_interest.distance(self.cutout.boundary)
+
+        if not(is_within):
+            distance = -distance
+
+        if distance < self.min_distance:
+            raise Exception("Centre too closer than min_distance")
 
     def _minimise_function(self, centre):
 
@@ -57,7 +67,7 @@ class FindCentre(object):
         if not(is_within):
             distance = -distance
 
-        if distance > self.min_distance:
+        if distance >= self.min_distance:
             factor = sector_integration(
                 x=self.cutoutXCoords,
                 y=self.cutoutYCoords,

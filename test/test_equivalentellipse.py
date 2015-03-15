@@ -41,5 +41,5 @@ equivalentEllipse = EquivalentEllipse(
 
 
 def test_ellipse_dimensions():
-    assert np.abs(equivalentEllipse.width - 5.15) < 0.1
+    assert np.abs(equivalentEllipse.width - 5.14) < 0.1
     assert np.abs(equivalentEllipse.length - 7.99) < 0.1

@@ -11,9 +11,12 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
+import shapely.affinity as aff
+
 from .centre import FindCentre
-from .straightening import Straighten
+from .straightening import straighten
 from .fitting import WeightedFitEllipse, StandardFitEllipse
+from .utilities import shapely_cutout
 
 
 class EquivalentEllipse(object):
@@ -25,6 +28,10 @@ class EquivalentEllipse(object):
         self.cutoutYCoords = kwargs['y']
         self.circle_fit = kwargs['circle_fit']
         self.min_distance = kwargs['min_distance']
+        self.inputCutout = shapely_cutout(
+            self.cutoutXCoords,
+            self.cutoutYCoords
+        )
 
         self._FoundCentre = FindCentre(x=self.cutoutXCoords,
                                        y=self.cutoutYCoords,
@@ -34,24 +41,36 @@ class EquivalentEllipse(object):
 
         self.centre = self._FoundCentre.centre
 
-        self._Straightened = Straighten(x=self.cutoutXCoords,
-                                        y=self.cutoutYCoords,
-                                        centre=self.centre)
+        x, y = straighten(
+            XCoords=self.cutoutXCoords,
+            YCoords=self.cutoutYCoords,
+            centre=self.centre
+        )
+
+        self.straightenedXCoords = x
+        self.straightenedYCoords = y
+
         if weighted:
             self._FittedEllipse = WeightedFitEllipse(
-                x=self._Straightened.straightenedXCoords,
-                y=self._Straightened.straightenedYCoords,
+                x=self.straightenedXCoords,
+                y=self.straightenedYCoords,
                 n=n,
                 circle_fit=self.circle_fit)
         else:
             self._FittedEllipse = StandardFitEllipse(
-                x=self._Straightened.straightenedXCoords,
-                y=self._Straightened.straightenedYCoords,
+                x=self.straightenedXCoords,
+                y=self.straightenedYCoords,
                 n=n)
 
-        self.inputCutout = self._Straightened.cutout
-        self.centredCutout = self._Straightened.centredCutout
-        self.straightenedCutout = self._Straightened.straightenedCutout
+        self.centredCutout = aff.translate(
+            self.inputCutout,
+            xoff=-self.centre[0],
+            yoff=-self.centre[1]
+        )
+        self.straightenedCutout = shapely_cutout(
+            self.straightenedXCoords,
+            self.straightenedYCoords
+        )
 
         self.eqEllipse = self._FittedEllipse.ellipse
         self.eqEllipseXCoords = self._FittedEllipse.ellipseXCoords

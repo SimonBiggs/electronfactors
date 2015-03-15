@@ -13,79 +13,109 @@
 
 import numpy as np
 import shapely.affinity as aff
+import shapely.geometry as geo
+import shapely.ops as ops
 
-from .utilities import shapely_cutout, create_zones
+from .utilities import shapely_cutout, shapely_circle
 
 
-# This could likely be flattened and made functional instead of an object.
-# This method is flawed
-class Straighten(object):
-    """Returns a straightened cutout. Requires defined centre and shape
-    defining X and Y coords.
-    """
-    def __init__(self, numZones=1000, debug=False, **kwargs):
-        self.debug = debug
+def create_intersection_cut(ratio, boundingDiagonal):
+    placementAngle = np.pi/2 * (1 - ratio)
+    x = boundingDiagonal * np.cos(placementAngle)
+    y = boundingDiagonal * np.sin(placementAngle)
 
-        self.cutoutXCoords = kwargs['x']
-        self.cutoutYCoords = kwargs['y']
-        self.cutout = shapely_cutout(self.cutoutXCoords, self.cutoutYCoords)
+    top_cut_coords = [(-x, y), (x, y), (0, 0)]
+    bottom_cut_coords = [(-x, -y), (x, -y), (0, 0)]
 
-        self.centre = kwargs['centre']
+    top_cut = geo.Polygon(top_cut_coords)
+    bottom_cut = geo.Polygon(bottom_cut_coords)
 
-        self.centredCutout = aff.translate(self.cutout,
-                                           xoff=-self.centre[0],
-                                           yoff=-self.centre[1])
+    intersection_cut = geo.MultiPolygon([top_cut, bottom_cut])
 
-        self.maxRadii = np.max(self.centredCutout.bounds) * np.sqrt(2)
-        self.numZones = numZones
+    return intersection_cut
 
-        self.zoneMidDist, self.zoneRegions = create_zones(
-            self.numZones, self.maxRadii)
 
-        self._straighten()
+def create_difference_cut(ratio, boundingDiagonal):
+    placementAngle = np.pi/2 * (1 - ratio)
 
-    def _straighten(self):
-        self.zoneRatioAreas = np.zeros(self.numZones)
+    x = boundingDiagonal * np.cos(placementAngle)
+    y = boundingDiagonal * np.sin(placementAngle)
 
-        for i in range(self.numZones):
-            self.zoneRatioAreas[i] = (
-                self.centredCutout.intersection(self.zoneRegions[i]).area /
-                self.zoneRegions[i].area)
+    left_cut_coords = [(-x, -y), (-x, y), (0, 0)]
+    right_cut_coords = [(x, y), (x, -y), (0, 0)]
 
-        self.placementAngles = 90 - 90*self.zoneRatioAreas
+    left_cut = geo.Polygon(left_cut_coords)
+    right_cut = geo.Polygon(right_cut_coords)
 
-        placePointRef = (
-            self.placementAngles > 0) & (self.placementAngles < 90)
+    difference_cut = geo.MultiPolygon([left_cut, right_cut])
 
-        numSectorPoints = sum(placePointRef)
-        straightenedSectorX = np.zeros(numSectorPoints)
-        straightenedSectorY = np.zeros(numSectorPoints)
+    return difference_cut
 
-        for i in range(numSectorPoints):
-            hypot = self.zoneMidDist[placePointRef][i]
-            angle = self.placementAngles[placePointRef][i]
 
-            straightenedSectorX[i] = hypot * np.cos(np.pi/180 * angle)
-            straightenedSectorY[i] = hypot * np.sin(np.pi/180 * angle)
+def create_segment(region, ratio):
+    boundingDiagonal = np.max(region.bounds) * np.sqrt(2)
 
-        self.straightenedRawXCoords = np.concatenate(
-            (straightenedSectorX,
-             -straightenedSectorX[::-1],
-             -straightenedSectorX,
-             straightenedSectorX[::-1]))
+    if (ratio >= 0.5) & (ratio < 1):
+        cut = create_difference_cut(ratio, boundingDiagonal)
+        segment = region.difference(cut)
+        return segment
 
-        self.straightenedRawYCoords = np.concatenate(
-            (straightenedSectorY,
-             straightenedSectorY[::-1],
-             -straightenedSectorY,
-             -straightenedSectorY[::-1]))
+    elif (ratio > 0):
+        cut = create_intersection_cut(ratio, boundingDiagonal)
+        segment = region.intersection(cut)
+        return segment
 
-        self.rawStraightenedCutout = aff.rotate(shapely_cutout(
-            self.straightenedRawXCoords,
-            self.straightenedRawYCoords), -45)
+    else:
+        raise Exception("Unexpected ratio")
 
-        self.straightenedCutout = self.rawStraightenedCutout.simplify(0.01)
 
-        x, y = self.straightenedCutout.exterior.xy
-        self.straightenedXCoords = x
-        self.straightenedYCoords = y
+def straighten(centre=[0, 0], **kwargs):
+
+    XCoords = kwargs['XCoords']
+    YCoords = kwargs['YCoords']
+    cutout = shapely_cutout(XCoords, YCoords)
+    centredCutout = aff.translate(cutout, xoff=-centre[0], yoff=-centre[1])
+
+    numZones = int(np.ceil(100 * np.max(centredCutout.bounds) * np.sqrt(2)))
+    maxRadii = numZones / 100
+
+    zoneWidth = maxRadii / numZones * 1.00001
+    zoneMinBound = np.arange(0, maxRadii, 0.01)
+    zoneMaxBound = zoneMinBound + zoneWidth
+
+    zone_list = [
+        shapely_circle(zoneMaxBound[i]).difference(
+            shapely_circle(zoneMinBound[i])
+        )
+        for i in range(numZones)
+        ]
+
+    zones = [geo.Polygon(zone_list[i]) for i in range(numZones)]
+
+    zoneRatioAreas = np.zeros(numZones)
+
+    for i in range(numZones):
+        intersectionArea = centredCutout.intersection(zones[i]).area
+        zoneArea = zones[i].area
+        zoneRatioAreas[i] = intersectionArea / zoneArea
+
+    ploygon_list = []
+    for i in range(numZones):
+        if zoneRatioAreas[i] == 1:
+            ploygon_list.append(zones[i])
+
+        elif zoneRatioAreas[i] > 0:
+            add_section = create_segment(zones[i], zoneRatioAreas[i])
+            ploygon_list.append(add_section)
+
+    straightened = ops.unary_union(ploygon_list)
+
+    rotated = aff.rotate(straightened, -45)
+
+    simplified = rotated.simplify(0.01)
+
+    x, y = simplified.exterior.xy
+
+    # Shifted back to cutout position and rotated for visual -- still do this?
+
+    return x, y

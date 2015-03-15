@@ -51,6 +51,10 @@ def shapely_ellipse(ellipseRaw):
     return ellipse
 
 
+def shapely_circle(radii):
+    return geo.Point(0, 0).buffer(radii)
+
+
 def create_zones(numZones, maxRadii):
     zoneBoundaryRadii = np.linspace(0, maxRadii, numZones + 1)
     zoneBoundaries = [0]*(numZones+1)

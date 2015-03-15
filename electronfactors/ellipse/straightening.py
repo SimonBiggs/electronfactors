@@ -18,6 +18,7 @@ from .utilities import shapely_cutout, create_zones
 
 
 # This could likely be flattened and made functional instead of an object.
+# This method is flawed
 class Straighten(object):
     """Returns a straightened cutout. Requires defined centre and shape
     defining X and Y coords.

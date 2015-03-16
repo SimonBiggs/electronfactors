@@ -112,6 +112,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9934
+  poi: null
   ssd: 100.0
 'Simon #106 cutout':
   XCoords:
@@ -171,6 +172,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9991
+  poi: null
   ssd: 100.0
 'Simon #109 cutout':
   XCoords:
@@ -574,6 +576,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9931
+  poi: null
   ssd: 100.0
 'Simon #112 cutout':
   XCoords:
@@ -783,6 +786,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9489
+  poi: null
   ssd: 100.0
 'Simon #14 cutout':
   XCoords:
@@ -846,6 +850,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9587
+  poi: null
   ssd: 100.0
 'Simon #16 cutout':
   XCoords:
@@ -907,6 +912,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0004
+  poi: null
   ssd: 100.0
 'Simon #18 cutout':
   XCoords:
@@ -1098,6 +1104,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0019
+  poi: null
   ssd: 100.0
 'Simon #19 cutout':
   XCoords:
@@ -1253,6 +1260,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9989
+  poi: null
   ssd: 100.0
 'Simon #20 cutout':
   XCoords:
@@ -1842,6 +1850,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9634
+  poi: null
   ssd: 100.0
 'Simon #22 cutout':
   XCoords:
@@ -1893,6 +1902,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9884
+  poi: null
   ssd: 100.0
 'Simon #3 cutout':
   XCoords:
@@ -2020,6 +2030,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9683
+  poi: null
   ssd: 100.0
 'Simon #32 cutout':
   XCoords:
@@ -2327,6 +2338,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
+  poi: null
   ssd: 100.0
 'Simon #33 cutout':
   XCoords:
@@ -2370,6 +2382,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9933
+  poi: null
   ssd: 100.0
 'Simon #34 cutout':
   XCoords:
@@ -2577,6 +2590,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
+  poi: null
   ssd: 100.0
 'Simon #38 cutout':
   XCoords:
@@ -3852,6 +3866,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9735
+  poi: null
   ssd: 100.0
 'Simon #41 cutout':
   XCoords:
@@ -4161,6 +4176,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0052
+  poi: null
   ssd: 100.0
 'Simon #43 cutout':
   XCoords:
@@ -4378,6 +4394,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9923
+  poi: null
   ssd: 100.0
 'Simon #57 cutout':
   XCoords:
@@ -5041,6 +5058,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9437
+  poi: null
   ssd: 100.0
 'Simon #58 cutout':
   XCoords:
@@ -5470,6 +5488,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9911
+  poi: null
   ssd: 100.0
 'Simon #6 cutout':
   XCoords:
@@ -5641,6 +5660,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9987
+  poi: null
   ssd: 100.0
 'Simon #70 cutout':
   XCoords:
@@ -5828,6 +5848,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0028
+  poi: null
   ssd: 100.0
 'Simon #73 cutout':
   XCoords:
@@ -6051,6 +6072,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0045
+  poi: null
   ssd: 100.0
 'Simon #82 cutout':
   XCoords:
@@ -6718,6 +6740,7 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9991
+  poi: null
   ssd: 100.0
 'Simon #83 cutout':
   XCoords:
@@ -6889,4 +6912,5 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9896
+  poi: null
   ssd: 100.0

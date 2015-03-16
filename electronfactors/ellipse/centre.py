@@ -21,7 +21,7 @@ from .utilities import shapely_cutout, shapely_point
 class FindCentre(object):
 
     def __init__(self,
-                 n=3,
+                 n=5,
                  debug=False,
                  confidence=0.0001,
                  sectors=200,
@@ -37,10 +37,10 @@ class FindCentre(object):
 
         self.min_distance = kwargs['min_distance']
 
-        # self.basinNoise = np.hypot(np.diff(self.cutout.bounds[::2]),
-        #                            np.diff(self.cutout.bounds[1::2]))/3
+        self.basinNoise = np.hypot(np.diff(self.cutout.bounds[::2]),
+                                   np.diff(self.cutout.bounds[1::2]))/3
 
-        self.basinNoise = 1.5
+        # self.basinNoise = 1.5
 
         self.circle_fit = kwargs['circle_fit']
 
@@ -161,7 +161,7 @@ class FindCentre(object):
             factor = sector_integration(
                 x=self.cutoutXCoords,
                 y=self.cutoutYCoords,
-                min_distance=1.5,
+                min_distance=self.min_distance,
                 circle_fit=self.circle_fit,
                 point_of_interest=optimiserOutput,
                 num_rays=self.sectors)

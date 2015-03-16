@@ -15,6 +15,7 @@
 # Call from these in a nose_test.py
 
 
+import numpy as np
 import pandas as pd
 import shapely.geometry as geo
 import shapely.affinity as aff
@@ -73,6 +74,9 @@ def convert_generic(**kwargs):
 
         XCoords, YCoords = generic_shape_convert(width[i], length[i], shape[i])
 
+        XCoords = [round(item, 2) for item in XCoords]
+        YCoords = [round(item, 2) for item in YCoords]
+
         data[index]['XCoords'] = list(XCoords)
         data[index]['YCoords'] = list(YCoords)
 
@@ -81,6 +85,16 @@ def convert_generic(**kwargs):
             genericShapeData['applicator'].values[i])
         data[index]['ssd'] = float(genericShapeData['ssd'].values[i])
         data[index]['factor'] = float(genericShapeData['factor'].values[i])
+
+        if isinstance(genericShapeData['poi'][i], str):
+            poi = [
+                float(
+                    genericShapeData['poi'][i].split(',')[j]
+                ) for j in range(2)
+            ]
+            data[index]['poi'] = poi
+        else:
+            data[index]['poi'] = None
 
     with open(outputpath, 'w') as outfile:
         outfile.write(yaml.dump(data, default_flow_style=False))

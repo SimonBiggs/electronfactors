@@ -48,6 +48,7 @@ def convert_raw(**kwargs):
         data[index]['applicator'] = float(metadata['applicator'].values[i])
         data[index]['ssd'] = float(metadata['ssd'].values[i])
         data[index]['factor'] = float(metadata['factor'].values[i])
+        data[index]['poi'] = None
 
     with open(outputFilepath, 'w') as outfile:
         outfile.write(yaml.dump(data, default_flow_style=False))

@@ -13,3 +13,4 @@ wheelhouse
 dist
 *.pyc
 *.whl
+.~*

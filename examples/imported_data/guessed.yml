@@ -112,10 +112,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9934
-  length: 8.33
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    Mb85jVI7IEA=
   poi: null
   ssd: 100.0
-  width: 5.62
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    4kHjUe1PFkA=
 'Simon #106 cutout':
   XCoords:
   - -0.28
@@ -174,10 +206,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9991
-  length: 9.71
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    AoVkhmlJI0A=
   poi: null
   ssd: 100.0
-  width: 6.06
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    xuTkDZArGEA=
 'Simon #109 cutout':
   XCoords:
   - -2.89
@@ -580,10 +644,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9931
-  length: 7.81
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    bWisdECMHkA=
   poi: null
   ssd: 100.0
-  width: 6.31
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    ATGqlwHqGUA=
 'Simon #112 cutout':
   XCoords:
   - -1.64
@@ -792,10 +888,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9489
-  length: 4.14
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    CMjyWtCQEEA=
   poi: null
   ssd: 100.0
-  width: 3.54
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    hD/+HuQVDEA=
 'Simon #14 cutout':
   XCoords:
   - 1.72
@@ -858,10 +986,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9587
-  length: 5.28
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    O93g626rE0A=
   poi: null
   ssd: 100.0
-  width: 4.38
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    vE1/PrcHEkA=
 'Simon #16 cutout':
   XCoords:
   - 0.94
@@ -922,10 +1082,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0004
-  length: 10.48
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    9CuVGZF4JEA=
   poi: null
   ssd: 100.0
-  width: 6.01
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    wCh3STi1GEA=
 'Simon #18 cutout':
   XCoords:
   - -3.0
@@ -1116,10 +1308,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0019
-  length: 9.98
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    TgkhpuYeI0A=
   poi: null
   ssd: 100.0
-  width: 7.59
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    ynIyE96MHkA=
 'Simon #19 cutout':
   XCoords:
   - -3.1
@@ -1274,10 +1498,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9989
-  length: 10.74
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    lnSnUDhaJEA=
   poi: null
   ssd: 100.0
-  width: 5.58
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    jjdauzY4F0A=
 'Simon #20 cutout':
   XCoords:
   - -1.0
@@ -1866,10 +2122,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9634
-  length: 5.13
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    pZCR+LoqFEA=
   poi: null
   ssd: 100.0
-  width: 4.25
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    TJQfe0cQEUA=
 'Simon #22 cutout':
   XCoords:
   - 0.95
@@ -1920,10 +2208,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9884
-  length: 10.31
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    v1jQ1tLWI0A=
   poi: null
   ssd: 100.0
-  width: 5.12
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    69oHp4vdFEA=
 'Simon #3 cutout':
   XCoords:
   - -0.3
@@ -2050,10 +2370,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9683
-  length: 6.09
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    2Xn8kZgkGEA=
   poi: null
   ssd: 100.0
-  width: 4.48
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    p/BmgeskEkA=
 'Simon #32 cutout':
   XCoords:
   - -2.2
@@ -2360,10 +2712,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 11.26
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    YaNgONbHJUA=
   poi: null
   ssd: 100.0
-  width: 7.66
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    R9n+c+vpHkA=
 'Simon #33 cutout':
   XCoords:
   - -2.92
@@ -2406,10 +2790,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9933
-  length: 6.21
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    EF51HMOQGEA=
   poi: null
   ssd: 100.0
-  width: 5.89
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    aV/tkT28F0A=
 'Simon #34 cutout':
   XCoords:
   - -1.8
@@ -2616,10 +3032,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 9.94
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    +8Yl0lbxIkA=
   poi: null
   ssd: 100.0
-  width: 6.89
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    qOf4L3VhHEA=
 'Simon #38 cutout':
   XCoords:
   - -1.15
@@ -3894,10 +4342,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9735
-  length: 5.72
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    mRhZg/qLFkA=
   poi: null
   ssd: 100.0
-  width: 4.64
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    UkwrDrZIEkA=
 'Simon #41 cutout':
   XCoords:
   - 1.55
@@ -4206,10 +4686,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0052
-  length: 10.12
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    YPDF8bQsJEA=
   poi: null
   ssd: 100.0
-  width: 6.82
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    bW8P5iaIG0A=
 'Simon #43 cutout':
   XCoords:
   - 1.0
@@ -4426,10 +4938,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9923
-  length: 7.72
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    ugxJ91DyHkA=
   poi: null
   ssd: 100.0
-  width: 6.09
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    oBGhU1dqGEA=
 'Simon #57 cutout':
   XCoords:
   - -1.93
@@ -5092,10 +5636,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9437
-  length: 4.6
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    K8wU0H+fEkA=
   poi: null
   ssd: 100.0
-  width: 3.57
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    y93bb49VDEA=
 'Simon #58 cutout':
   XCoords:
   - -2.26
@@ -5524,10 +6100,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9911
-  length: 7.46
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    IzzfgRf/HEA=
   poi: null
   ssd: 100.0
-  width: 5.85
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    HqJA7tzfF0A=
 'Simon #6 cutout':
   XCoords:
   - -2.6
@@ -5698,10 +6306,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9987
-  length: 10.67
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    e4qOYDYgJEA=
   poi: null
   ssd: 100.0
-  width: 6.95
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    19sM2QX7HEA=
 'Simon #70 cutout':
   XCoords:
   - -1.1
@@ -5888,10 +6528,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0028
-  length: 8.36
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    nMtjkiRdIEA=
   poi: null
   ssd: 100.0
-  width: 7.44
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    xTq2OPjYHUA=
 'Simon #73 cutout':
   XCoords:
   - 0.7
@@ -6114,10 +6786,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 1.0045
-  length: 9.08
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    SNxHiGnNIkA=
   poi: null
   ssd: 100.0
-  width: 7.29
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    DiovKRQDHUA=
 'Simon #82 cutout':
   XCoords:
   - 2.84
@@ -6784,10 +7488,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9991
-  length: 7.94
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    0dLtzQ9WHkA=
   poi: null
   ssd: 100.0
-  width: 6.25
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    EXEpJDUbGUA=
 'Simon #83 cutout':
   XCoords:
   - -1.0
@@ -6958,10 +7694,42 @@
   applicator: 10.0
   energy: 12.0
   factor: 0.9896
-  length: 7.93
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    APWryM2cH0A=
   poi: null
   ssd: 100.0
-  width: 5.78
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    +VJUH6W0FkA=
 Simon 3cm circle:
   XCoords:
   - 1.06
@@ -7100,12 +7868,44 @@ Simon 3cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9296
-  length: 3.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    HD6soZD+B0A=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 2.99
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    Afp+n5D+B0A=
 Simon 3x13cm oval:
   XCoords:
   - 1.06
@@ -7244,12 +8044,44 @@ Simon 3x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.953
-  length: 13.01
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    jhCUY6IAKkA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 3.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    wLtxhWkCCEA=
 Simon 3x5cm oval:
   XCoords:
   - 1.06
@@ -7388,12 +8220,44 @@ Simon 3x5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9348
-  length: 5.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    gBT/3c0BFEA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 3.01
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    CWcRX6ICCEA=
 Simon 3x6.5cm oval:
   XCoords:
   - 1.06
@@ -7532,12 +8396,44 @@ Simon 3x6.5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9484
-  length: 6.51
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    nuFK8LsEGkA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 3.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    WPdDeA7/B0A=
 Simon 3x9cm oval:
   XCoords:
   - 1.06
@@ -7676,12 +8572,44 @@ Simon 3x9cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9492
-  length: 9.01
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    gh+KjyP/IUA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 3.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    /zZbF0j/B0A=
 Simon 4cm circle:
   XCoords:
   - 1.41
@@ -7820,12 +8748,44 @@ Simon 4cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9562
-  length: 4.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    cGf4bGb8D0A=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 3.98
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    3RBUbGb8D0A=
 Simon 4x10cm oval:
   XCoords:
   - 1.41
@@ -7964,12 +8924,44 @@ Simon 4x10cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9709
-  length: 10.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    9JHihDQAJEA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 4.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    JFPsBhv9D0A=
 Simon 4x13cm oval:
   XCoords:
   - 1.41
@@ -8108,12 +9100,44 @@ Simon 4x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9757
-  length: 13.01
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    8AQYiygAKkA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 4.01
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    xhcQ43EAEEA=
 Simon 4x6.5cm oval:
   XCoords:
   - 1.41
@@ -8252,12 +9276,44 @@ Simon 4x6.5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9609
-  length: 6.51
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    mtbr+HEBGkA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 4.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    /AJdquP9D0A=
 Simon 4x8cm oval:
   XCoords:
   - 1.41
@@ -8396,12 +9452,44 @@ Simon 4x8cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9708
-  length: 8.01
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    7I2IVd0AIEA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 4.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    lKOkS733D0A=
 Simon 5cm circle:
   XCoords:
   - 1.77
@@ -8540,12 +9628,44 @@ Simon 5cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9705
-  length: 5.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    RC/NJxgBFEA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 5.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    pW3lJhgBFEA=
 Simon 5x10cm oval:
   XCoords:
   - 1.77
@@ -8684,12 +9804,44 @@ Simon 5x10cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9879
-  length: 10.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    mRAEQmv9I0A=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 5.01
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    UgTl/pQBFEA=
 Simon 5x13cm oval:
   XCoords:
   - 1.77
@@ -8828,12 +9980,44 @@ Simon 5x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9868
-  length: 13.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    UKVcqwf9KUA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 5.01
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    q9Siv18CFEA=
 Simon 5x8cm oval:
   XCoords:
   - 1.77
@@ -8972,12 +10156,44 @@ Simon 5x8cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9831
-  length: 8.01
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    nE+8hs0AIEA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 5.01
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    4OXUW7MBFEA=
 Simon 6cm circle:
   XCoords:
   - 2.12
@@ -9116,12 +10332,44 @@ Simon 6cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9858
-  length: 6.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    krvQ2wf+F0A=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 6.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    lx9o2gf+F0A=
 Simon 7cm circle:
   XCoords:
   - 2.47
@@ -9260,12 +10508,44 @@ Simon 7cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 1.0032
-  length: 7.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    T7S0C9b9G0A=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 7.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    4osrC9b9G0A=
 Simon 8cm circle:
   XCoords:
   - 2.83
@@ -9404,12 +10684,44 @@ Simon 8cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 8.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    7lkR3zMBIEA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 8.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    0WEM3zMBIEA=
 Simon 9cm circle:
   XCoords:
   - 3.18
@@ -9548,9 +10860,41 @@ Simon 9cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 1.0084
-  length: 9.0
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    7cixwx8AIkA=
   poi:
   - 0.0
   - 0.0
   ssd: 100.0
-  width: 9.0
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    7cOswx8AIkA=

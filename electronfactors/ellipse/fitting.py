@@ -14,6 +14,8 @@
 import numpy as np
 from scipy.optimize import basinhopping
 
+import shapely.affinity as aff
+
 from .utilities import shapely_cutout, shapely_ellipse, create_zones
 
 
@@ -126,6 +128,102 @@ class WeightedFitEllipse(object):
             print(minimiseFunctionOutput)
             print(minimiseAccepted)
             print(" ")
+
+        if minimiseAccepted:
+
+            if self.numSuccess == 0:
+                # First result
+                self.functionReturns[0] = minimiseFunctionOutput
+                self.numSuccess = 1
+
+            elif (minimiseFunctionOutput >=
+                  np.nanmin(self.functionReturns) + 0.0001):
+                # Reject result
+                0
+
+            elif (minimiseFunctionOutput >=
+                  np.nanmin(self.functionReturns) - 0.0001):
+                # Agreeing result
+                self.functionReturns[self.numSuccess] = minimiseFunctionOutput
+                self.numSuccess += 1
+
+            elif (minimiseFunctionOutput <
+                  np.nanmin(self.functionReturns) - 0.0001):
+                # New result
+                self.functionReturns[0] = minimiseFunctionOutput
+                self.numSuccess = 1
+
+        if self.numSuccess >= self.basinRequiredSuccess:
+            return True
+
+
+class VisualFit(object):
+    def __init__(self, rigid_shape, fluid_shape, n=2):
+
+        self.rigid_shape = rigid_shape
+        self.fluid_shape = fluid_shape
+
+        self.basinRequiredSuccess = n
+        self.result = self._shapely_basinhopping()
+
+        self.fitted_shape = self._adjust_shape(self.result)
+
+    def _adjust_shape(self, input):
+        translated = aff.translate(
+            self.fluid_shape,
+            xoff=input[0],
+            yoff=input[1])
+        rotated = aff.rotate(translated, input[2])
+        adjusted = rotated
+
+        return adjusted
+
+    def _minimise_function(self, input):
+        """Returns the sum of area differences between the an ellipse
+        and the given cutout.
+        """
+        adjusted = self._adjust_shape(input)
+
+        return (adjusted.difference(self.rigid_shape).area +
+                self.rigid_shape.difference(adjusted).area)
+
+    def _shapely_basinhopping(self):
+        """Fitting the ellipse to the cutout via
+        scipy.optimize.basinhopping.
+        """
+        self.functionReturns = np.empty(self.basinRequiredSuccess)
+        self.functionReturns[:] = np.nan
+
+        self.numSuccess = 0
+
+        minimizerConfig = {"method": 'BFGS'}
+
+        initial_input = np.array([0, 0, 0])
+
+        basinhoppingOutput = basinhopping(
+            self._minimise_function,
+            initial_input,
+            niter=1000,
+            minimizer_kwargs=minimizerConfig,
+            take_step=self._step_function,
+            callback=self._callback_function)
+
+        return basinhoppingOutput.x
+
+    def _step_function(self, optimiserInput):
+        """Step function used by self._ellipse_basinhopping."""
+
+        optimiserInput[0] += np.random.normal(scale=1.5)   # x-position
+        optimiserInput[1] += np.random.normal(scale=1.5)   # y-position
+        optimiserInput[2] += np.random.normal(scale=90)     # rotation
+
+        return optimiserInput
+
+    def _callback_function(self,
+                           optimiserOutput,
+                           minimiseFunctionOutput,
+                           minimiseAccepted):
+        """Callback function used by self._ellipse_basinhopping."""
 
         if minimiseAccepted:
 

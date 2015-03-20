@@ -16,6 +16,9 @@ import numpy as np
 import yaml
 
 
+# def file_finder()
+
+
 def convert_raw(**kwargs):
     XCoordsFilepath = kwargs['XCoordsFilepath']
     YCoordsFilepath = kwargs['YCoordsFilepath']

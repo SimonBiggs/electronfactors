@@ -56,6 +56,8 @@ def generic_shape_convert(width, length, shape):
     return XCoords, YCoords
 
 
+# def file_finder()
+
 def convert_generic(**kwargs):
     inputpath = kwargs['inputFilepath']
     outputpath = kwargs['outputFilepath']

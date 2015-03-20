@@ -15,39 +15,49 @@
 import yaml
 import numpy as np
 
-from scipy.interpolate import SmoothBivariateSpline
+from sklearn import linear_model
+# from scipy.interpolate import SmoothBivariateSpline
 
 from ..ellipse.equivalent import EquivalentEllipse
 
 
-def create_spline(width, length, factor):
+def create_fit(width, length, factor):
     ratio = width/length
     eqPonA = 2*(3*(ratio+1) - np.sqrt((3*ratio+1)*(ratio+3))) / width
 
-    spline = SmoothBivariateSpline(width, eqPonA, factor, kx=2, ky=2)
+    training_data = np.vstack([width, eqPonA])
+    clf = linear_model.LinearRegression()
+    clf.fit(training_data.T, factor)
 
-    return spline
+    a = clf.coef_
+    c = clf.intercept_
+
+    def fit(width, eqPonA):
+        return a[0] * width + a[1] * eqPonA + c
+
+    return fit
 
 
-def predict_factor(spline, width, length):
+def predict_factor(fit, width, length):
     ratio = width/length
     eqPonA = 2*(3*(ratio+1) - np.sqrt((3*ratio+1)*(ratio+3))) / width
 
-    return spline.ev(width, eqPonA)
+    return fit(width, eqPonA)
 
 
 # Include a factor guess
-def iteration(n=5, ssd=100, **kwargs):
+def iteration(filepath=None, n=5, ssd=100, **kwargs):
 
     energy = kwargs['energy']
     applicator = kwargs['applicator']
 
-    filepath = (
-        "model_cache/" +
-        str(energy) + "MeV_" +
-        str(applicator) + "app_" +
-        str(ssd) + "ssd.yml"
-    )
+    if filepath is None:
+        filepath = (
+            "model_cache/" +
+            str(energy) + "MeV_" +
+            str(applicator) + "app_" +
+            str(ssd) + "ssd.yml"
+        )
 
     with open(filepath, 'r') as inputFile:
         input_dict = yaml.load(inputFile)
@@ -58,13 +68,13 @@ def iteration(n=5, ssd=100, **kwargs):
     width = np.array([input_dict[key]['width'] for key in label])
     length = np.array([input_dict[key]['length'] for key in label])
     factor = np.array([input_dict[key]['factor'] for key in label])
-    spline = create_spline(width, length, factor)
+    fit = create_fit(width, length, factor)
 
     min_radii = np.min(width/2)
 
     def circle_fit(radii):
         if radii >= min_radii:
-            result = spline.ev(radii*2, 2/radii)
+            result = fit(radii*2, 2/radii)
         else:
             result = 0.
         return result
@@ -93,10 +103,10 @@ def iteration(n=5, ssd=100, **kwargs):
         length_test = np.delete(length_new, i)
         factor_test = np.delete(factor, i)
 
-        spline_test = create_spline(width_test, length_test, factor_test)
+        fit_test = create_fit(width_test, length_test, factor_test)
 
         predicted_factor = predict_factor(
-            spline_test, width_new[i], length_new[i])
+            fit_test, width_new[i], length_new[i])
 
         output_dict[key]['predicted_factor'] = round(
             float(predicted_factor), 4)

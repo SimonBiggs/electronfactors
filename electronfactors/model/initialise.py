@@ -14,21 +14,23 @@
 import yaml
 
 
-def create_cache(ssd=100, **kwargs):
+def create_cache(input_directory="imported_data/",
+                 filepath=None, ssd=100, **kwargs):
 
-    input_filepath = "imported_data/guessed.yml"
+    input_filepath = input_directory + "guessed.yml"
     energy = kwargs['energy']
     applicator = kwargs['applicator']
 
-    output_filepath = (
-        "model_cache/" +
-        str(energy) + "MeV_" +
-        str(applicator) + "app_" +
-        str(ssd) + "ssd.yml"
-    )
+    if filepath is None:
+        filepath = (
+            "model_cache/" +
+            str(energy) + "MeV_" +
+            str(applicator) + "app_" +
+            str(ssd) + "ssd.yml"
+        )
 
-    with open(input_filepath, 'r') as inputFile:
-        input_dict = yaml.load(inputFile)
+    with open(input_filepath, 'r') as file:
+        input_dict = yaml.load(file)
 
     output_dict = dict()
 
@@ -40,5 +42,5 @@ def create_cache(ssd=100, **kwargs):
         if sameenergy and sameapplicator and samessd:
             output_dict[key] = input_dict[key]
 
-    with open(output_filepath, 'w') as outfile:
-        outfile.write(yaml.dump(output_dict, default_flow_style=False))
+    with open(filepath, 'w') as file:
+        file.write(yaml.dump(output_dict, default_flow_style=False))

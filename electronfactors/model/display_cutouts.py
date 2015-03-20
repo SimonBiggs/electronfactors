@@ -24,10 +24,10 @@ import matplotlib.pyplot as plt
 import descartes as des
 
 from ..ellipse.utilities import shapely_ellipse, shapely_cutout
+from ..ellipse.fitting import VisualFit
 
 
-def find_cached_models():
-    directory = "model_cache/"
+def find_cached_models(directory="model_cache/"):
     return glob(directory + "*.yml")
 
 
@@ -40,12 +40,12 @@ def shapely_plot(shapes):
             shape, fc=np.random.uniform(size=3), alpha=0.3)
         ax.add_patch(patch)
 
-    plt.scatter(0, 0)
+    # plt.scatter(0, 0)
     ax.axis("equal")
 
 
-def display_cutouts():
-    filepaths = find_cached_models()
+def display_cutouts(directory="model_cache/"):
+    filepaths = find_cached_models(directory)
 
     for path in filepaths:
         print(path + "\n==================================\n")
@@ -63,10 +63,10 @@ def display_cutouts():
 
             print(
                 "  - " + str(key) + "\n"
-                "----------------------------------\n"
+                # "----------------------------------\n"
                 "    - Width: %0.2f\n"
                 "    - Length: %0.2f\n"
-                "    - Factor: %0.4f\n"
+                "    - Measured Factor: %0.4f\n"
                 "    - Predicted Factor: %0.4f\n" %
                 (
                     width, length, factor, predicted_factor
@@ -76,7 +76,9 @@ def display_cutouts():
             XCoords = cache[key]['XCoords']
             YCoords = cache[key]['YCoords']
             cutout = shapely_cutout(XCoords, YCoords)
-            ellipse = shapely_ellipse(0, 0, width, length, -45)
+            ellipse = shapely_ellipse([0, 0, width, length, -45])
 
-            shapely_plot([cutout, ellipse])
+            visual_fit = VisualFit(cutout, ellipse)
+
+            shapely_plot([cutout, visual_fit.fitted_shape])
             plt.show()

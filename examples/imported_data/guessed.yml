@@ -128,7 +128,7 @@
     - -1
     - 0
   - !!binary |
-    Mb85jVI7IEA=
+    gPbIjlI7IEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -147,7 +147,7 @@
     - -1
     - 0
   - !!binary |
-    4kHjUe1PFkA=
+    JT9fR+1PFkA=
 'Simon #106 cutout':
   XCoords:
   - -0.28
@@ -222,7 +222,7 @@
     - -1
     - 0
   - !!binary |
-    AoVkhmlJI0A=
+    sn7BmGlJI0A=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -241,7 +241,7 @@
     - -1
     - 0
   - !!binary |
-    xuTkDZArGEA=
+    ASRy+Y8rGEA=
 'Simon #109 cutout':
   XCoords:
   - -2.89
@@ -660,7 +660,7 @@
     - -1
     - 0
   - !!binary |
-    bWisdECMHkA=
+    yT4ybkCMHkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -679,7 +679,7 @@
     - -1
     - 0
   - !!binary |
-    ATGqlwHqGUA=
+    UJH5jAHqGUA=
 'Simon #112 cutout':
   XCoords:
   - -1.64
@@ -1098,7 +1098,7 @@
     - -1
     - 0
   - !!binary |
-    9CuVGZF4JEA=
+    DpokGJF4JEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -1117,7 +1117,7 @@
     - -1
     - 0
   - !!binary |
-    wCh3STi1GEA=
+    xfuXRzi1GEA=
 'Simon #18 cutout':
   XCoords:
   - -3.0
@@ -1324,7 +1324,7 @@
     - -1
     - 0
   - !!binary |
-    TgkhpuYeI0A=
+    TDbDmeYeI0A=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -1343,7 +1343,7 @@
     - -1
     - 0
   - !!binary |
-    ynIyE96MHkA=
+    K28IC96MHkA=
 'Simon #19 cutout':
   XCoords:
   - -3.1
@@ -2138,7 +2138,7 @@
     - -1
     - 0
   - !!binary |
-    pZCR+LoqFEA=
+    WKIj/7oqFEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -2157,7 +2157,7 @@
     - -1
     - 0
   - !!binary |
-    TJQfe0cQEUA=
+    aLPmbUcQEUA=
 'Simon #22 cutout':
   XCoords:
   - 0.95
@@ -2224,7 +2224,7 @@
     - -1
     - 0
   - !!binary |
-    v1jQ1tLWI0A=
+    Onux19LWI0A=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -2243,7 +2243,7 @@
     - -1
     - 0
   - !!binary |
-    69oHp4vdFEA=
+    IzIQqIvdFEA=
 'Simon #3 cutout':
   XCoords:
   - -0.3
@@ -2386,7 +2386,7 @@
     - -1
     - 0
   - !!binary |
-    2Xn8kZgkGEA=
+    T4ZhiJgkGEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -2405,7 +2405,7 @@
     - -1
     - 0
   - !!binary |
-    p/BmgeskEkA=
+    rYtxguskEkA=
 'Simon #32 cutout':
   XCoords:
   - -2.2
@@ -2728,7 +2728,7 @@
     - -1
     - 0
   - !!binary |
-    YaNgONbHJUA=
+    1OjnQNbHJUA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -2747,7 +2747,7 @@
     - -1
     - 0
   - !!binary |
-    R9n+c+vpHkA=
+    DbwtbevpHkA=
 'Simon #33 cutout':
   XCoords:
   - -2.92
@@ -2806,7 +2806,7 @@
     - -1
     - 0
   - !!binary |
-    EF51HMOQGEA=
+    JSOhFsOQGEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -2825,7 +2825,7 @@
     - -1
     - 0
   - !!binary |
-    aV/tkT28F0A=
+    LC5Vkz28F0A=
 'Simon #34 cutout':
   XCoords:
   - -1.8
@@ -3048,7 +3048,7 @@
     - -1
     - 0
   - !!binary |
-    +8Yl0lbxIkA=
+    C1ZV0lbxIkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -3067,7 +3067,7 @@
     - -1
     - 0
   - !!binary |
-    qOf4L3VhHEA=
+    Ip/MMnVhHEA=
 'Simon #38 cutout':
   XCoords:
   - -1.15
@@ -4358,7 +4358,7 @@
     - -1
     - 0
   - !!binary |
-    mRhZg/qLFkA=
+    eDa/jvqLFkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -4377,7 +4377,7 @@
     - -1
     - 0
   - !!binary |
-    UkwrDrZIEkA=
+    RZI8DbZIEkA=
 'Simon #41 cutout':
   XCoords:
   - 1.55
@@ -4702,7 +4702,7 @@
     - -1
     - 0
   - !!binary |
-    YPDF8bQsJEA=
+    wV0k9bQsJEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -4721,7 +4721,7 @@
     - -1
     - 0
   - !!binary |
-    bW8P5iaIG0A=
+    d5lB5SaIG0A=
 'Simon #43 cutout':
   XCoords:
   - 1.0
@@ -4954,7 +4954,7 @@
     - -1
     - 0
   - !!binary |
-    ugxJ91DyHkA=
+    XiXP9FDyHkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -4973,7 +4973,7 @@
     - -1
     - 0
   - !!binary |
-    oBGhU1dqGEA=
+    JgHyV1dqGEA=
 'Simon #57 cutout':
   XCoords:
   - -1.93
@@ -5652,7 +5652,7 @@
     - -1
     - 0
   - !!binary |
-    K8wU0H+fEkA=
+    vr170n+fEkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -5671,7 +5671,7 @@
     - -1
     - 0
   - !!binary |
-    y93bb49VDEA=
+    F0p1dI9VDEA=
 'Simon #58 cutout':
   XCoords:
   - -2.26
@@ -6116,7 +6116,7 @@
     - -1
     - 0
   - !!binary |
-    IzzfgRf/HEA=
+    clM8cRf/HEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -6135,7 +6135,7 @@
     - -1
     - 0
   - !!binary |
-    HqJA7tzfF0A=
+    r+Wp8dzfF0A=
 'Simon #6 cutout':
   XCoords:
   - -2.6
@@ -6544,7 +6544,7 @@
     - -1
     - 0
   - !!binary |
-    nMtjkiRdIEA=
+    xIaCkSRdIEA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -6563,7 +6563,7 @@
     - -1
     - 0
   - !!binary |
-    xTq2OPjYHUA=
+    uKnlRPjYHUA=
 'Simon #73 cutout':
   XCoords:
   - 0.7
@@ -6802,7 +6802,7 @@
     - -1
     - 0
   - !!binary |
-    SNxHiGnNIkA=
+    1mIMiWnNIkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -6821,7 +6821,7 @@
     - -1
     - 0
   - !!binary |
-    DiovKRQDHUA=
+    Ya8uJhQDHUA=
 'Simon #82 cutout':
   XCoords:
   - 2.84
@@ -7504,7 +7504,7 @@
     - -1
     - 0
   - !!binary |
-    0dLtzQ9WHkA=
+    Cc5Nxg9WHkA=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -7523,7 +7523,7 @@
     - -1
     - 0
   - !!binary |
-    EXEpJDUbGUA=
+    Oj8uKjUbGUA=
 'Simon #83 cutout':
   XCoords:
   - -1.0
@@ -7710,7 +7710,7 @@
     - -1
     - 0
   - !!binary |
-    APWryM2cH0A=
+    HmY/ys2cH0A=
   poi: null
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
@@ -7729,7 +7729,7 @@
     - -1
     - 0
   - !!binary |
-    +VJUH6W0FkA=
+    JuroKqW0FkA=
 Simon 3cm circle:
   XCoords:
   - 1.06
@@ -7884,7 +7884,7 @@ Simon 3cm circle:
     - -1
     - 0
   - !!binary |
-    HD6soZD+B0A=
+    aHVToJD+B0A=
   poi:
   - 0.0
   - 0.0
@@ -7905,7 +7905,7 @@ Simon 3cm circle:
     - -1
     - 0
   - !!binary |
-    Afp+n5D+B0A=
+    r9tLn5D+B0A=
 Simon 3x13cm oval:
   XCoords:
   - 1.06
@@ -8060,7 +8060,7 @@ Simon 3x13cm oval:
     - -1
     - 0
   - !!binary |
-    jhCUY6IAKkA=
+    O7oMZqIAKkA=
   poi:
   - 0.0
   - 0.0
@@ -8081,7 +8081,7 @@ Simon 3x13cm oval:
     - -1
     - 0
   - !!binary |
-    wLtxhWkCCEA=
+    J5MXg2kCCEA=
 Simon 3x5cm oval:
   XCoords:
   - 1.06
@@ -8236,7 +8236,7 @@ Simon 3x5cm oval:
     - -1
     - 0
   - !!binary |
-    gBT/3c0BFEA=
+    YRUl3s0BFEA=
   poi:
   - 0.0
   - 0.0
@@ -8257,7 +8257,7 @@ Simon 3x5cm oval:
     - -1
     - 0
   - !!binary |
-    CWcRX6ICCEA=
+    M14hX6ICCEA=
 Simon 3x6.5cm oval:
   XCoords:
   - 1.06
@@ -8588,7 +8588,7 @@ Simon 3x9cm oval:
     - -1
     - 0
   - !!binary |
-    gh+KjyP/IUA=
+    aPiLjiP/IUA=
   poi:
   - 0.0
   - 0.0
@@ -8609,7 +8609,7 @@ Simon 3x9cm oval:
     - -1
     - 0
   - !!binary |
-    /zZbF0j/B0A=
+    AoEvFkj/B0A=
 Simon 4cm circle:
   XCoords:
   - 1.41
@@ -8764,7 +8764,7 @@ Simon 4cm circle:
     - -1
     - 0
   - !!binary |
-    cGf4bGb8D0A=
+    pTcJbGb8D0A=
   poi:
   - 0.0
   - 0.0
@@ -8785,7 +8785,7 @@ Simon 4cm circle:
     - -1
     - 0
   - !!binary |
-    3RBUbGb8D0A=
+    JjRia2b8D0A=
 Simon 4x10cm oval:
   XCoords:
   - 1.41
@@ -9116,7 +9116,7 @@ Simon 4x13cm oval:
     - -1
     - 0
   - !!binary |
-    8AQYiygAKkA=
+    vPlNiygAKkA=
   poi:
   - 0.0
   - 0.0
@@ -9137,7 +9137,7 @@ Simon 4x13cm oval:
     - -1
     - 0
   - !!binary |
-    xhcQ43EAEEA=
+    98gQ43EAEEA=
 Simon 4x6.5cm oval:
   XCoords:
   - 1.41
@@ -9292,7 +9292,7 @@ Simon 4x6.5cm oval:
     - -1
     - 0
   - !!binary |
-    mtbr+HEBGkA=
+    YIJK+XEBGkA=
   poi:
   - 0.0
   - 0.0
@@ -9313,7 +9313,7 @@ Simon 4x6.5cm oval:
     - -1
     - 0
   - !!binary |
-    /AJdquP9D0A=
+    AIneqOP9D0A=
 Simon 4x8cm oval:
   XCoords:
   - 1.41
@@ -9468,7 +9468,7 @@ Simon 4x8cm oval:
     - -1
     - 0
   - !!binary |
-    7I2IVd0AIEA=
+    w/4GVt0AIEA=
   poi:
   - 0.0
   - 0.0
@@ -9489,7 +9489,7 @@ Simon 4x8cm oval:
     - -1
     - 0
   - !!binary |
-    lKOkS733D0A=
+    xJ8JS733D0A=
 Simon 5cm circle:
   XCoords:
   - 1.77
@@ -9644,7 +9644,7 @@ Simon 5cm circle:
     - -1
     - 0
   - !!binary |
-    RC/NJxgBFEA=
+    /OBIJxgBFEA=
   poi:
   - 0.0
   - 0.0
@@ -9665,7 +9665,7 @@ Simon 5cm circle:
     - -1
     - 0
   - !!binary |
-    pW3lJhgBFEA=
+    vuwdJxgBFEA=
 Simon 5x10cm oval:
   XCoords:
   - 1.77
@@ -9820,7 +9820,7 @@ Simon 5x10cm oval:
     - -1
     - 0
   - !!binary |
-    mRAEQmv9I0A=
+    toCcQmv9I0A=
   poi:
   - 0.0
   - 0.0
@@ -9841,7 +9841,7 @@ Simon 5x10cm oval:
     - -1
     - 0
   - !!binary |
-    UgTl/pQBFEA=
+    kesM/5QBFEA=
 Simon 5x13cm oval:
   XCoords:
   - 1.77
@@ -9996,7 +9996,7 @@ Simon 5x13cm oval:
     - -1
     - 0
   - !!binary |
-    UKVcqwf9KUA=
+    OJhSqgf9KUA=
   poi:
   - 0.0
   - 0.0
@@ -10017,7 +10017,7 @@ Simon 5x13cm oval:
     - -1
     - 0
   - !!binary |
-    q9Siv18CFEA=
+    FTxov18CFEA=
 Simon 5x8cm oval:
   XCoords:
   - 1.77
@@ -10172,7 +10172,7 @@ Simon 5x8cm oval:
     - -1
     - 0
   - !!binary |
-    nE+8hs0AIEA=
+    xmLVhs0AIEA=
   poi:
   - 0.0
   - 0.0
@@ -10193,7 +10193,7 @@ Simon 5x8cm oval:
     - -1
     - 0
   - !!binary |
-    4OXUW7MBFEA=
+    bE0qW7MBFEA=
 Simon 6cm circle:
   XCoords:
   - 2.12
@@ -10348,7 +10348,7 @@ Simon 6cm circle:
     - -1
     - 0
   - !!binary |
-    krvQ2wf+F0A=
+    Mj+M2gf+F0A=
   poi:
   - 0.0
   - 0.0
@@ -10369,7 +10369,7 @@ Simon 6cm circle:
     - -1
     - 0
   - !!binary |
-    lx9o2gf+F0A=
+    8KqD2gf+F0A=
 Simon 7cm circle:
   XCoords:
   - 2.47
@@ -10524,7 +10524,7 @@ Simon 7cm circle:
     - -1
     - 0
   - !!binary |
-    T7S0C9b9G0A=
+    DyJtC9b9G0A=
   poi:
   - 0.0
   - 0.0
@@ -10545,7 +10545,7 @@ Simon 7cm circle:
     - -1
     - 0
   - !!binary |
-    4osrC9b9G0A=
+    ielrC9b9G0A=
 Simon 8cm circle:
   XCoords:
   - 2.83
@@ -10876,7 +10876,7 @@ Simon 9cm circle:
     - -1
     - 0
   - !!binary |
-    7cixwx8AIkA=
+    VV2nwx8AIkA=
   poi:
   - 0.0
   - 0.0
@@ -10897,4 +10897,4 @@ Simon 9cm circle:
     - -1
     - 0
   - !!binary |
-    7cOswx8AIkA=
+    xVmgwx8AIkA=

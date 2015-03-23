@@ -11,6 +11,7 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
+# Do both a plan predited and a spline predicted factor... see how each change
 
 import yaml
 import numpy as np

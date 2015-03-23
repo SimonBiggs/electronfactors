@@ -17,13 +17,13 @@ from electronfactors.inputs.rawcoords import convert_raw
 
 def test_run_generic():
     convert_generic(
-        inputFilepath="examples/input/GenericShapeImport.csv",
-        outputFilepath="examples/output/GenericShape_coords.yml")
+        inputFilepath="examples/user_inputs/GenericShapeImport.csv",
+        outputFilepath="examples/imported_data/GenericShape_coords.yml")
 
 
 def test_run_raw():
     convert_raw(
-        XCoordsFilepath="examples/input/RawCoordsImport_XCoords.csv",
-        YCoordsFilepath="examples/input/RawCoordsImport_YCoords.csv",
-        metadataFilepath="examples/input/RawCoordsImport_metadata.csv",
-        outputFilepath="examples/output/RawCoords_coords.yml")
+        XCoordsFilepath="examples/user_inputs/RawCoordsImport_XCoords.csv",
+        YCoordsFilepath="examples/user_inputs/RawCoordsImport_YCoords.csv",
+        metadataFilepath="examples/user_inputs/RawCoordsImport_metadata.csv",
+        outputFilepath="examples/imported_data/RawCoords_coords.yml")

@@ -59,19 +59,33 @@ def display_cutouts(directory="model_cache/"):
             width = cache[key]['width']
             length = cache[key]['length']
             factor = cache[key]['factor']
-            predicted_factor = cache[key]['predicted_factor']
 
-            print(
-                "  - " + str(key) + "\n"
-                # "----------------------------------\n"
-                "    - Width: %0.2f\n"
-                "    - Length: %0.2f\n"
-                "    - Measured Factor: %0.4f\n"
-                "    - Predicted Factor: %0.4f\n" %
-                (
-                    width, length, factor, predicted_factor
+            try:
+                predicted_factor = cache[key]['predicted_factor']
+
+                print(
+                    "  - " + str(key) + "\n"
+                    # "----------------------------------\n"
+                    "    - Width: %0.2f\n"
+                    "    - Length: %0.2f\n"
+                    "    - Measured Factor: %0.4f\n"
+                    "    - Predicted Factor: %0.4f\n" %
+                    (
+                        width, length, factor, predicted_factor
+                    )
                 )
-            )
+            except:
+                print(
+                    "  - " + str(key) + "\n"
+                    # "----------------------------------\n"
+                    "    - Width: %0.2f\n"
+                    "    - Length: %0.2f\n"
+                    "    - Measured Factor: %0.4f\n" %
+                    (
+                        width, length, factor
+                    )
+                )
+
 
             XCoords = cache[key]['XCoords']
             YCoords = cache[key]['YCoords']

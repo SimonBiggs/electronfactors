@@ -48,10 +48,10 @@ def predict_factor(fit, width, length):
 # Include a factor guess
 def iteration(filepath=None, n=5, ssd=100, **kwargs):
 
-    energy = kwargs['energy']
-    applicator = kwargs['applicator']
-
     if filepath is None:
+        energy = kwargs['energy']
+        applicator = kwargs['applicator']
+
         filepath = (
             "model_cache/" +
             str(energy) + "MeV_" +

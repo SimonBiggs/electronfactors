@@ -42,5 +42,8 @@ def create_cache(input_directory="imported_data/",
         if sameenergy and sameapplicator and samessd:
             output_dict[key] = input_dict[key]
 
-    with open(filepath, 'w') as file:
-        file.write(yaml.dump(output_dict, default_flow_style=False))
+    if len(output_dict.keys()) >= 5:
+        with open(filepath, 'w') as file:
+            file.write(yaml.dump(output_dict, default_flow_style=False))
+    else:
+        raise Exception("Not sufficient data points")

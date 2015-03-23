@@ -81,8 +81,8 @@ def guess(working_directory="imported_data/"):
 
         ellipse_fit = StandardFitEllipse(x=XCoords, y=YCoords, n=2)
 
-        output_dict[key]['width'] = ellipse_fit.width
-        output_dict[key]['length'] = ellipse_fit.length
+        output_dict[key]['width'] = float(round(ellipse_fit.width, 2))
+        output_dict[key]['length'] = float(round(ellipse_fit.length, 2))
 
     with open(output_filepath, 'w') as outfile:
         outfile.write(yaml.dump(output_dict, default_flow_style=False))

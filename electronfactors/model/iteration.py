@@ -87,7 +87,7 @@ def iteration(filepath=None, n=5, ssd=100, **kwargs):
         equivalent_ellipse = EquivalentEllipse(
             x=XCoords, y=YCoords,
             circle_fit=circle_fit, n=n,
-            min_distance=min_radii,
+            min_distance=0.5,  # This is temporary
             poi=poi[i]
         )
 

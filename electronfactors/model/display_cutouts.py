@@ -44,7 +44,45 @@ def shapely_plot(shapes):
     ax.axis("equal")
 
 
-def display_cutouts(directory="model_cache/"):
+def display_cutout(**kwargs):
+    width = kwargs['width']
+    length = kwargs['length']
+    factor = kwargs['factor']
+
+    try:
+        predicted_factor = kwargs['predicted_factor']
+
+        print(
+            "    - Width: %0.2f\n"
+            "    - Length: %0.2f\n"
+            "    - Measured Factor: %0.4f\n"
+            "    - Predicted Factor: %0.4f\n" %
+            (
+                width, length, factor, predicted_factor
+            )
+        )
+    except:
+        print(
+            "    - Width: %0.2f\n"
+            "    - Length: %0.2f\n"
+            "    - Measured Factor: %0.4f\n" %
+            (
+                width, length, factor
+            )
+        )
+
+    XCoords = kwargs['XCoords']
+    YCoords = kwargs['YCoords']
+    cutout = shapely_cutout(XCoords, YCoords)
+    ellipse = shapely_ellipse([0, 0, width, length, -45])
+
+    visual_fit = VisualFit(cutout, ellipse)
+
+    shapely_plot([cutout, visual_fit.fitted_shape])
+    plt.show()
+
+
+def load_and_display(directory="model_cache/"):
     filepaths = find_cached_models(directory)
 
     for path in filepaths:
@@ -56,43 +94,5 @@ def display_cutouts(directory="model_cache/"):
         label = [key for key in cache]
 
         for key in label:
-            width = cache[key]['width']
-            length = cache[key]['length']
-            factor = cache[key]['factor']
-
-            try:
-                predicted_factor = cache[key]['predicted_factor']
-
-                print(
-                    "  - " + str(key) + "\n"
-                    # "----------------------------------\n"
-                    "    - Width: %0.2f\n"
-                    "    - Length: %0.2f\n"
-                    "    - Measured Factor: %0.4f\n"
-                    "    - Predicted Factor: %0.4f\n" %
-                    (
-                        width, length, factor, predicted_factor
-                    )
-                )
-            except:
-                print(
-                    "  - " + str(key) + "\n"
-                    # "----------------------------------\n"
-                    "    - Width: %0.2f\n"
-                    "    - Length: %0.2f\n"
-                    "    - Measured Factor: %0.4f\n" %
-                    (
-                        width, length, factor
-                    )
-                )
-
-
-            XCoords = cache[key]['XCoords']
-            YCoords = cache[key]['YCoords']
-            cutout = shapely_cutout(XCoords, YCoords)
-            ellipse = shapely_ellipse([0, 0, width, length, -45])
-
-            visual_fit = VisualFit(cutout, ellipse)
-
-            shapely_plot([cutout, visual_fit.fitted_shape])
-            plt.show()
+            print("  - " + str(key))
+            display_cutout(**cache[key])

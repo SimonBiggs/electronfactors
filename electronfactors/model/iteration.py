@@ -15,11 +15,13 @@
 
 import yaml
 import numpy as np
+import sys
 
 from sklearn import linear_model
 # from scipy.interpolate import SmoothBivariateSpline
 
 from ..ellipse.equivalent import EquivalentEllipse
+from .display_cutouts import display_cutout
 
 
 def create_fit(width, length, factor):
@@ -47,7 +49,7 @@ def predict_factor(fit, width, length):
 
 
 # Include a factor guess
-def iteration(filepath=None, n=5, ssd=100, **kwargs):
+def iteration(filepath=None, debug=False, n=5, ssd=100, **kwargs):
 
     if filepath is None:
         energy = kwargs['energy']
@@ -71,7 +73,8 @@ def iteration(filepath=None, n=5, ssd=100, **kwargs):
     factor = np.array([input_dict[key]['factor'] for key in label])
     fit = create_fit(width, length, factor)
 
-    min_radii = np.min(width/2)
+    # min_radii = np.min(width/2)
+    min_radii = 0.5  # This is temporary
 
     def circle_fit(radii):
         if radii >= min_radii:
@@ -82,19 +85,29 @@ def iteration(filepath=None, n=5, ssd=100, **kwargs):
 
     output_dict = dict()
     for i, key in enumerate(label):
+        if debug:
+            print(str(key) + ":")
+            sys.stdout.flush()
+
         XCoords = input_dict[key]['XCoords']
         YCoords = input_dict[key]['YCoords']
 
         equivalent_ellipse = EquivalentEllipse(
             x=XCoords, y=YCoords,
             circle_fit=circle_fit, n=n,
-            min_distance=0.5,  # This is temporary
+            min_distance=min_radii,
             poi=poi[i]
         )
 
         output_dict[key] = dict()
         output_dict[key]['width'] = equivalent_ellipse.width
         output_dict[key]['length'] = equivalent_ellipse.length
+
+        if debug:
+            display_cutout(width=width, length=length,
+                           XCoords=XCoords, YCoords=YCoords,
+                           factor=factor[i])
+            sys.stdout.flush()
 
     width_new = np.array([output_dict[key]['width'] for key in label])
     length_new = np.array([output_dict[key]['length'] for key in label])

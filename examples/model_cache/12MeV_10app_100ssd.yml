@@ -774,11 +774,10 @@ P10:
   applicator: 10.0
   energy: 12.0
   factor: 0.9602458229
-  length: 7.31
+  length: 7.24
   poi: null
-  predicted_factor: 0.973
   ssd: 100.0
-  width: 4.48
+  width: 4.45
 P12_1:
   XCoords:
   - -2.4
@@ -925,11 +924,10 @@ P12_1:
   applicator: 10.0
   energy: 12.0
   factor: 1.0145074565999999
-  length: 9.68
+  length: 9.37
   poi: null
-  predicted_factor: 1.0108
   ssd: 100.0
-  width: 8.09
+  width: 8.26
 P22:
   XCoords:
   - -0.7
@@ -1060,11 +1058,10 @@ P22:
   applicator: 10.0
   energy: 12.0
   factor: 0.9990009990000001
-  length: 9.79
+  length: 8.97
   poi: null
-  predicted_factor: 1.0042
   ssd: 100.0
-  width: 7.19
+  width: 7.24
 P3:
   XCoords:
   - -4.0
@@ -1127,11 +1124,10 @@ P3:
   applicator: 10.0
   energy: 12.0
   factor: 0.9756097561
-  length: 9.02
+  length: 8.73
   poi: null
-  predicted_factor: 0.9947
   ssd: 100.0
-  width: 6.19
+  width: 5.97
 P38_1:
   XCoords:
   - -1.2
@@ -1354,11 +1350,10 @@ P38_1:
   applicator: 10.0
   energy: 12.0
   factor: 1.0101010101
-  length: 8.8
+  length: 8.74
   poi: null
-  predicted_factor: 1.0038
   ssd: 100.0
-  width: 7.38
+  width: 7.43
 P4:
   XCoords:
   - -3.5
@@ -1393,11 +1388,10 @@ P4:
   applicator: 10.0
   energy: 12.0
   factor: 0.9442870633
-  length: 7.17
+  length: 7.18
   poi: null
-  predicted_factor: 0.9634
   ssd: 100.0
-  width: 3.8
+  width: 3.78
 P40:
   XCoords:
   - -3.1
@@ -1552,11 +1546,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9871668312
-  length: 10.27
+  length: 10.18
   poi: null
-  predicted_factor: 0.9927
   ssd: 100.0
-  width: 5.86
+  width: 5.8
 'Simon #104 cutout':
   XCoords:
   - -1.3
@@ -1671,11 +1664,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9934
-  length: 8.34
+  length: 8.12
   poi: null
-  predicted_factor: 0.9871
   ssd: 100.0
-  width: 5.61
+  width: 5.58
 'Simon #106 cutout':
   XCoords:
   - -0.28
@@ -1734,11 +1726,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9991
-  length: 9.68
+  length: 9.64
   poi: null
-  predicted_factor: 0.9942
   ssd: 100.0
-  width: 6.12
+  width: 6.04
 'Simon #109 cutout':
   XCoords:
   - -2.89
@@ -2141,11 +2132,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9931
-  length: 7.76
+  length: 7.64
   poi: null
-  predicted_factor: 0.993
   ssd: 100.0
-  width: 6.31
+  width: 6.48
 'Simon #112 cutout':
   XCoords:
   - -1.64
@@ -2356,9 +2346,8 @@ P40:
   factor: 0.9489
   length: 4.14
   poi: null
-  predicted_factor: 0.9456
   ssd: 100.0
-  width: 3.53
+  width: 3.51
 'Simon #14 cutout':
   XCoords:
   - 1.72
@@ -2421,11 +2410,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9587
-  length: 5.26
+  length: 4.92
   poi: null
-  predicted_factor: 0.965
   ssd: 100.0
-  width: 4.38
+  width: 4.51
 'Simon #16 cutout':
   XCoords:
   - 0.94
@@ -2486,11 +2474,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0004
-  length: 10.47
+  length: 10.24
   poi: null
-  predicted_factor: 0.9961
   ssd: 100.0
-  width: 6.23
+  width: 6.18
 'Simon #18 cutout':
   XCoords:
   - -3.0
@@ -2681,11 +2668,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0019
-  length: 9.98
+  length: 9.56
   poi: null
-  predicted_factor: 1.0081
   ssd: 100.0
-  width: 7.62
+  width: 7.64
 'Simon #19 cutout':
   XCoords:
   - -3.1
@@ -2840,11 +2826,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9989
-  length: 10.27
+  length: 10.18
   poi: null
-  predicted_factor: 0.9923
   ssd: 100.0
-  width: 5.87
+  width: 5.8
 'Simon #20 cutout':
   XCoords:
   - -1.0
@@ -3433,11 +3418,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9634
-  length: 5.1
+  length: 5.04
   poi: null
-  predicted_factor: 0.9627
   ssd: 100.0
-  width: 4.28
+  width: 4.27
 'Simon #22 cutout':
   XCoords:
   - 0.95
@@ -3488,9 +3472,8 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9884
-  length: 10.23
+  length: 9.92
   poi: null
-  predicted_factor: 0.9855
   ssd: 100.0
   width: 5.22
 'Simon #3 cutout':
@@ -3619,11 +3602,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9683
-  length: 6.05
+  length: 6.04
   poi: null
-  predicted_factor: 0.9693
   ssd: 100.0
-  width: 4.5
+  width: 4.54
 'Simon #32 cutout':
   XCoords:
   - -2.2
@@ -3930,11 +3912,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 10.8
+  length: 10.89
   poi: null
-  predicted_factor: 1.0112
   ssd: 100.0
-  width: 7.89
+  width: 7.73
 'Simon #33 cutout':
   XCoords:
   - -2.92
@@ -3977,11 +3958,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9933
-  length: 6.2
+  length: 6.14
   poi: null
-  predicted_factor: 0.9848
   ssd: 100.0
-  width: 5.9
+  width: 5.93
 'Simon #34 cutout':
   XCoords:
   - -1.8
@@ -4188,11 +4168,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 9.64
+  length: 9.47
   poi: null
-  predicted_factor: 1.0022
   ssd: 100.0
-  width: 7.02
+  width: 7.1
 'Simon #38 cutout':
   XCoords:
   - -1.15
@@ -5467,11 +5446,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9735
-  length: 5.73
+  length: 5.64
   poi: null
-  predicted_factor: 0.9697
   ssd: 100.0
-  width: 4.63
+  width: 4.57
 'Simon #41 cutout':
   XCoords:
   - 1.55
@@ -5780,11 +5758,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0052
-  length: 10.01
+  length: 10.09
   poi: null
-  predicted_factor: 1.0017
   ssd: 100.0
-  width: 6.91
+  width: 6.88
 'Simon #43 cutout':
   XCoords:
   - 1.0
@@ -6001,11 +5978,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9923
-  length: 7.72
+  length: 7.74
   poi: null
-  predicted_factor: 0.9909
   ssd: 100.0
-  width: 6.09
+  width: 6.1
 'Simon #57 cutout':
   XCoords:
   - -1.93
@@ -6668,11 +6644,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9437
-  length: 4.62
+  length: 4.66
   poi: null
-  predicted_factor: 0.95
   ssd: 100.0
-  width: 3.56
+  width: 3.54
 'Simon #58 cutout':
   XCoords:
   - -2.26
@@ -7101,11 +7076,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9911
-  length: 7.46
+  length: 7.25
   poi: null
-  predicted_factor: 0.9876
   ssd: 100.0
-  width: 5.82
+  width: 5.97
 'Simon #6 cutout':
   XCoords:
   - -2.6
@@ -7276,11 +7250,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9987
-  length: 10.39
+  length: 10.06
   poi: null
-  predicted_factor: 1.0041
   ssd: 100.0
-  width: 7.08
+  width: 7.25
 'Simon #70 cutout':
   XCoords:
   - -1.1
@@ -7467,11 +7440,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0028
-  length: 8.35
+  length: 8.18
   poi: null
-  predicted_factor: 1.0041
   ssd: 100.0
-  width: 7.45
+  width: 7.46
 'Simon #73 cutout':
   XCoords:
   - 0.7
@@ -7694,11 +7666,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0045
-  length: 9.54
+  length: 9.4
   poi: null
-  predicted_factor: 1.0036
   ssd: 100.0
-  width: 7.18
+  width: 7.25
 'Simon #82 cutout':
   XCoords:
   - 2.84
@@ -8365,11 +8336,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9991
-  length: 7.94
+  length: 7.58
   poi: null
-  predicted_factor: 0.9927
   ssd: 100.0
-  width: 6.25
+  width: 6.28
 'Simon #83 cutout':
   XCoords:
   - -1.0
@@ -8540,11 +8510,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 0.9896
-  length: 7.93
+  length: 7.9
   poi: null
-  predicted_factor: 0.9882
   ssd: 100.0
-  width: 5.77
+  width: 5.68
 Simon 3cm circle:
   XCoords:
   - 1.06
@@ -8687,9 +8656,8 @@ Simon 3cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9201
   ssd: 100.0
-  width: 2.99
+  width: 3.0
 Simon 3x13cm oval:
   XCoords:
   - 1.06
@@ -8828,11 +8796,10 @@ Simon 3x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.953
-  length: 13.01
+  length: 13.0
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9527
   ssd: 100.0
   width: 3.0
 Simon 3x5cm oval:
@@ -8977,9 +8944,8 @@ Simon 3x5cm oval:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9416
   ssd: 100.0
-  width: 3.01
+  width: 3.0
 Simon 3x6.5cm oval:
   XCoords:
   - 1.06
@@ -9118,11 +9084,10 @@ Simon 3x6.5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9484
-  length: 6.51
+  length: 6.5
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9456
   ssd: 100.0
   width: 3.0
 Simon 3x9cm oval:
@@ -9263,11 +9228,10 @@ Simon 3x9cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9492
-  length: 9.01
+  length: 9.0
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.95
   ssd: 100.0
   width: 3.0
 Simon 4cm circle:
@@ -9412,9 +9376,8 @@ Simon 4cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9511
   ssd: 100.0
-  width: 3.98
+  width: 4.0
 Simon 4x10cm oval:
   XCoords:
   - 1.41
@@ -9557,7 +9520,6 @@ Simon 4x10cm oval:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9695
   ssd: 100.0
   width: 4.0
 Simon 4x13cm oval:
@@ -9698,13 +9660,12 @@ Simon 4x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9757
-  length: 13.01
+  length: 13.0
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9714
   ssd: 100.0
-  width: 4.01
+  width: 4.0
 Simon 4x6.5cm oval:
   XCoords:
   - 1.41
@@ -9843,11 +9804,10 @@ Simon 4x6.5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9609
-  length: 6.51
+  length: 6.5
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.964
   ssd: 100.0
   width: 4.0
 Simon 4x8cm oval:
@@ -9988,11 +9948,10 @@ Simon 4x8cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9708
-  length: 8.01
+  length: 8.0
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9668
   ssd: 100.0
   width: 4.0
 Simon 5cm circle:
@@ -10137,7 +10096,6 @@ Simon 5cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9708
   ssd: 100.0
   width: 5.0
 Simon 5x10cm oval:
@@ -10278,13 +10236,12 @@ Simon 5x10cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9879
-  length: 10.0
+  length: 9.99
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9827
   ssd: 100.0
-  width: 5.01
+  width: 5.0
 Simon 5x13cm oval:
   XCoords:
   - 1.77
@@ -10423,13 +10380,12 @@ Simon 5x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9868
-  length: 13.0
+  length: 12.99
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9852
   ssd: 100.0
-  width: 5.01
+  width: 5.0
 Simon 5x8cm oval:
   XCoords:
   - 1.77
@@ -10568,13 +10524,12 @@ Simon 5x8cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9831
-  length: 8.01
+  length: 8.0
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9801
   ssd: 100.0
-  width: 5.01
+  width: 5.0
 Simon 6cm circle:
   XCoords:
   - 2.12
@@ -10717,7 +10672,6 @@ Simon 6cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9852
   ssd: 100.0
   width: 6.0
 Simon 7cm circle:
@@ -10862,7 +10816,6 @@ Simon 7cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 0.9969
   ssd: 100.0
   width: 7.0
 Simon 8cm circle:
@@ -11007,7 +10960,6 @@ Simon 8cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 1.0077
   ssd: 100.0
   width: 8.0
 Simon 9cm circle:
@@ -11152,6 +11104,5 @@ Simon 9cm circle:
   poi:
   - 0.0
   - 0.0
-  predicted_factor: 1.0189
   ssd: 100.0
   width: 9.0

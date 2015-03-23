@@ -14,3 +14,4 @@ dist
 *.pyc
 *.whl
 .~*
+clinic/*

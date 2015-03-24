@@ -773,7 +773,6 @@ P10:
   - -2.36
   applicator: 10.0
   energy: 12.0
-  factor: 0.9602
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -790,7 +789,7 @@ P10:
     - -1
     - 0
   - !!binary |
-    9rqR4wQ5HUA=
+    6Iqh5xn9HEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -808,7 +807,7 @@ P10:
     - -1
     - 0
   - !!binary |
-    LpyyH+8KEkA=
+    6t5uE2gJEkA=
 P12_1:
   XCoords:
   - -2.4
@@ -954,7 +953,6 @@ P12_1:
   - 3.75
   applicator: 10.0
   energy: 12.0
-  factor: 1.0145
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -971,7 +969,7 @@ P12_1:
     - -1
     - 0
   - !!binary |
-    54h7Qc6aI0A=
+    JlHowlc3JEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -989,7 +987,7 @@ P12_1:
     - -1
     - 0
   - !!binary |
-    sablseXiHkA=
+    nBBgT/DiHkA=
 P12_2:
   XCoords:
   - -4.12
@@ -1041,7 +1039,6 @@ P12_2:
   - -1.03
   applicator: 10.0
   energy: 18.0
-  factor: 1.0049
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -1058,7 +1055,7 @@ P12_2:
     - -1
     - 0
   - !!binary |
-    soVNBG9bIkA=
+    EoIRS+ZbIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -1076,7 +1073,7 @@ P12_2:
     - -1
     - 0
   - !!binary |
-    4GEGcUZgG0A=
+    QHH4a+9eG0A=
 P13:
   XCoords:
   - -1.96
@@ -1472,7 +1469,6 @@ P13:
   - 3.67
   applicator: 10.0
   energy: 18.0
-  factor: 1.0183
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -1489,7 +1485,7 @@ P13:
     - -1
     - 0
   - !!binary |
-    tGOcHx06IUA=
+    V0ABXOt0IUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -1507,7 +1503,7 @@ P13:
     - -1
     - 0
   - !!binary |
-    6ugW2EWWHEA=
+    qr/byEaWHEA=
 P14_1:
   XCoords:
   - -5.73
@@ -2169,7 +2165,6 @@ P14_1:
   - 0.25
   applicator: 14.0
   energy: 9.0
-  factor: 1.0165
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -2186,7 +2181,7 @@ P14_1:
     - -1
     - 0
   - !!binary |
-    Mw28/0PjJkA=
+    1J2ioAkHKEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -2204,7 +2199,7 @@ P14_1:
     - -1
     - 0
   - !!binary |
-    qznYeRU9IUA=
+    xgkn2Ew/IUA=
 P14_2:
   XCoords:
   - -2.2
@@ -2398,7 +2393,6 @@ P14_2:
   - 4.25
   applicator: 14.0
   energy: 9.0
-  factor: 1.0178
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -2415,7 +2409,7 @@ P14_2:
     - -1
     - 0
   - !!binary |
-    OMNhz08CKUA=
+    fvzcUs1vKEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -2433,7 +2427,7 @@ P14_2:
     - -1
     - 0
   - !!binary |
-    mNOd8eK2HEA=
+    zL5BcPK2HEA=
 P15_1:
   XCoords:
   - 3.81
@@ -2811,7 +2805,6 @@ P15_1:
   - 3.56
   applicator: 14.0
   energy: 12.0
-  factor: 1.0106
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -2828,7 +2821,7 @@ P15_1:
     - -1
     - 0
   - !!binary |
-    9c/TLIR0L0A=
+    en/uTN/WKkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -2846,7 +2839,7 @@ P15_1:
     - -1
     - 0
   - !!binary |
-    +yGzRLe4HUA=
+    4e61brO4HUA=
 P15_2:
   XCoords:
   - -3.7
@@ -3208,7 +3201,6 @@ P15_2:
   - 5.85
   applicator: 14.0
   energy: 15.0
-  factor: 1.0219
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -3225,7 +3217,7 @@ P15_2:
     - -1
     - 0
   - !!binary |
-    8FX1wCuQKkA=
+    bU2CIy6oKUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -3243,7 +3235,7 @@ P15_2:
     - -1
     - 0
   - !!binary |
-    d/oUbK48IUA=
+    nnXJu6w8IUA=
 P17:
   XCoords:
   - -2.0
@@ -3413,7 +3405,6 @@ P17:
   - 4.25
   applicator: 10.0
   energy: 9.0
-  factor: 1.0111
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -3430,7 +3421,7 @@ P17:
     - -1
     - 0
   - !!binary |
-    aykZhLFsI0A=
+    70yzPg+cI0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -3448,7 +3439,7 @@ P17:
     - -1
     - 0
   - !!binary |
-    J/3PjAw4IUA=
+    f6lbcRA4IUA=
 P18:
   XCoords:
   - -2.4
@@ -3638,7 +3629,6 @@ P18:
   - 4.25
   applicator: 14.0
   energy: 9.0
-  factor: 1.0101
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -3655,7 +3645,7 @@ P18:
     - -1
     - 0
   - !!binary |
-    jccjMTggJEA=
+    t4HkXsGiJEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -3673,7 +3663,7 @@ P18:
     - -1
     - 0
   - !!binary |
-    8twtXtA4IUA=
+    F90tXtA4IUA=
 P19:
   XCoords:
   - -0.4
@@ -3871,7 +3861,6 @@ P19:
   - 5.35
   applicator: 14.0
   energy: 15.0
-  factor: 1.0215
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -3888,7 +3877,7 @@ P19:
     - -1
     - 0
   - !!binary |
-    MjwrhzfIIUA=
+    YGDPTDiBIUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -3906,7 +3895,7 @@ P19:
     - -1
     - 0
   - !!binary |
-    ct7+fSeaHEA=
+    +9jA+HOaHEA=
 P2:
   XCoords:
   - -1.15
@@ -5180,7 +5169,6 @@ P2:
   - 1.81
   applicator: 6.0
   energy: 9.0
-  factor: 0.9728
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -5197,7 +5185,7 @@ P2:
     - -1
     - 0
   - !!binary |
-    8P5SMAppF0A=
+    dTj/agGlF0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -5215,7 +5203,7 @@ P2:
     - -1
     - 0
   - !!binary |
-    lr/LXRHpEUA=
+    Dq1bQB3pEUA=
 P20:
   XCoords:
   - 3.8
@@ -5281,7 +5269,6 @@ P20:
   - -0.67
   applicator: 14.0
   energy: 6.0
-  factor: 1.006
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -5298,7 +5285,7 @@ P20:
     - -1
     - 0
   - !!binary |
-    4oRBe/BbIkA=
+    L7Y1/ONvIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -5316,7 +5303,7 @@ P20:
     - -1
     - 0
   - !!binary |
-    Y/ugnRFEIUA=
+    44b6gmVBIUA=
 P21:
   XCoords:
   - 0.0
@@ -5526,7 +5513,6 @@ P21:
   - 4.65
   applicator: 14.0
   energy: 12.0
-  factor: 1.002
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -5543,7 +5529,7 @@ P21:
     - -1
     - 0
   - !!binary |
-    JG5oW3XVJEA=
+    ocFeBjpUJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -5561,7 +5547,7 @@ P21:
     - -1
     - 0
   - !!binary |
-    DmwgUOYFH0A=
+    aP3RSvj+HkA=
 P22:
   XCoords:
   - -0.7
@@ -5691,7 +5677,6 @@ P22:
   - 4.15
   applicator: 10.0
   energy: 12.0
-  factor: 0.999
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -5708,7 +5693,7 @@ P22:
     - -1
     - 0
   - !!binary |
-    JAZbbdbZI0A=
+    ekIFvFfzI0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -5804,7 +5789,6 @@ P23:
   - 4.79
   applicator: 14.0
   energy: 6.0
-  factor: 1.005
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -5821,7 +5805,7 @@ P23:
     - -1
     - 0
   - !!binary |
-    HHXN22dGKUA=
+    X+yn8eJMKkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -5839,7 +5823,7 @@ P23:
     - -1
     - 0
   - !!binary |
-    dIxZEzfAI0A=
+    HsN6EoDBI0A=
 P24:
   XCoords:
   - -3.59
@@ -6497,7 +6481,6 @@ P24:
   - 0.12
   applicator: 10.0
   energy: 6.0
-  factor: 0.995
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -6514,7 +6497,7 @@ P24:
     - -1
     - 0
   - !!binary |
-    9XJYWqJTIEA=
+    fA9ODIV1IEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -6532,7 +6515,7 @@ P24:
     - -1
     - 0
   - !!binary |
-    8MJGSpL0GUA=
+    xMPrjY/0GUA=
 P25:
   XCoords:
   - 1.73
@@ -6570,7 +6553,6 @@ P25:
   - 3.19
   applicator: 10.0
   energy: 9.0
-  factor: 0.9852
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -6587,7 +6569,7 @@ P25:
     - -1
     - 0
   - !!binary |
-    HqD7vyFQIEA=
+    oFHNtBByIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -6605,7 +6587,7 @@ P25:
     - -1
     - 0
   - !!binary |
-    L6/TD56CFUA=
+    qLgduH6IFUA=
 P26:
   XCoords:
   - -0.1
@@ -6891,7 +6873,6 @@ P26:
   - 3.05
   applicator: 14.0
   energy: 9.0
-  factor: 1.003
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -6908,7 +6889,7 @@ P26:
     - -1
     - 0
   - !!binary |
-    2EsJ7KExJUA=
+    0BKOVksiJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -6926,7 +6907,7 @@ P26:
     - -1
     - 0
   - !!binary |
-    HmLC4JQTG0A=
+    zgUC8YoTG0A=
 P27:
   XCoords:
   - -0.6
@@ -7144,7 +7125,6 @@ P27:
   - 4.65
   applicator: 14.0
   energy: 15.0
-  factor: 1.0132
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -7161,7 +7141,7 @@ P27:
     - -1
     - 0
   - !!binary |
-    8k9PxJPxJkA=
+    +aqN9UbAJkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -7179,7 +7159,7 @@ P27:
     - -1
     - 0
   - !!binary |
-    lDZ1LAiRIkA=
+    MvWtLAiRIkA=
 P28:
   XCoords:
   - -1.4
@@ -7361,7 +7341,6 @@ P28:
   - 3.65
   applicator: 10.0
   energy: 15.0
-  factor: 1.0
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -7378,7 +7357,7 @@ P28:
     - -1
     - 0
   - !!binary |
-    n44JbkE4IkA=
+    LYz78KJ5IkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -7396,7 +7375,7 @@ P28:
     - -1
     - 0
   - !!binary |
-    6meUXxqkHUA=
+    7meUXxqkHUA=
 P3:
   XCoords:
   - -4.0
@@ -7458,7 +7437,6 @@ P3:
   - 1.37
   applicator: 10.0
   energy: 12.0
-  factor: 0.9756
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -7475,7 +7453,7 @@ P3:
     - -1
     - 0
   - !!binary |
-    dAUSB41oIkA=
+    c8lR8dxnIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -7493,7 +7471,7 @@ P3:
     - -1
     - 0
   - !!binary |
-    oMV8A+cuGEA=
+    Dm8tb9wuGEA=
 P30:
   XCoords:
   - -1.34
@@ -7567,7 +7545,6 @@ P30:
   - 2.18
   applicator: 6.0
   energy: 9.0
-  factor: 0.9597
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -7584,7 +7561,7 @@ P30:
     - -1
     - 0
   - !!binary |
-    QQSTx+2BFEA=
+    pu3E+/S/FEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -7602,7 +7579,7 @@ P30:
     - -1
     - 0
   - !!binary |
-    qVTOb+2REEA=
+    wUczaYuUEEA=
 P31_1:
   XCoords:
   - -2.1
@@ -7712,7 +7689,6 @@ P31_1:
   - 2.15
   applicator: 10.0
   energy: 18.0
-  factor: 0.9911
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -7729,7 +7705,7 @@ P31_1:
     - -1
     - 0
   - !!binary |
-    yaAnGiwkIUA=
+    QEdes/fEIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -7747,7 +7723,7 @@ P31_1:
     - -1
     - 0
   - !!binary |
-    DwJuOXikE0A=
+    CAJuOXikE0A=
 P31_2:
   XCoords:
   - -4.3
@@ -8029,7 +8005,6 @@ P31_2:
   - 7.95
   applicator: 20.0
   energy: 18.0
-  factor: 1.0142
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -8046,7 +8021,7 @@ P31_2:
     - -1
     - 0
   - !!binary |
-    j4KzJuFQMEA=
+    xiQk3VigMUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -8064,7 +8039,7 @@ P31_2:
     - -1
     - 0
   - !!binary |
-    Mwx+41VtJUA=
+    NlhM5I1tJUA=
 P32:
   XCoords:
   - -4.05
@@ -8098,7 +8073,6 @@ P32:
   - 7.0
   applicator: 20.0
   energy: 9.0
-  factor: 1.0111
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -8115,7 +8089,7 @@ P32:
     - -1
     - 0
   - !!binary |
-    36z0zXm6NEA=
+    8TkVXpmoNkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -8133,7 +8107,7 @@ P32:
     - -1
     - 0
   - !!binary |
-    Fos/19OiIkA=
+    KqEM2d2iIkA=
 P33:
   XCoords:
   - 0.94
@@ -8193,7 +8167,6 @@ P33:
   - 4.8
   applicator: 14.0
   energy: 6.0
-  factor: 0.999
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -8210,7 +8183,7 @@ P33:
     - -1
     - 0
   - !!binary |
-    Aj7SSOQKJEA=
+    VNvrHzLVJEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -8228,7 +8201,7 @@ P33:
     - -1
     - 0
   - !!binary |
-    C1rFgQH9GEA=
+    0aGfuXTfGEA=
 P34_1:
   XCoords:
   - -2.2
@@ -8534,7 +8507,6 @@ P34_1:
   - 4.95
   applicator: 14.0
   energy: 9.0
-  factor: 1.0064
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -8551,7 +8523,7 @@ P34_1:
     - -1
     - 0
   - !!binary |
-    uxYBoF3iJUA=
+    kSukC44WJkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -8569,7 +8541,7 @@ P34_1:
     - -1
     - 0
   - !!binary |
-    gAFsvCc3H0A=
+    +GKjbSU3H0A=
 P34_2:
   XCoords:
   - -2.0
@@ -8795,7 +8767,6 @@ P34_2:
   - 3.95
   applicator: 10.0
   energy: 9.0
-  factor: 0.9975
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -8812,7 +8783,7 @@ P34_2:
     - -1
     - 0
   - !!binary |
-    3dULBebDJEA=
+    vI+rCnIVJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -8830,7 +8801,7 @@ P34_2:
     - -1
     - 0
   - !!binary |
-    twmYW7PXIEA=
+    gWE8QqTXIEA=
 P34_3:
   XCoords:
   - 1.55
@@ -9138,7 +9109,6 @@ P34_3:
   - 4.24
   applicator: 10.0
   energy: 9.0
-  factor: 0.9971
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -9155,7 +9125,7 @@ P34_3:
     - -1
     - 0
   - !!binary |
-    Q9VgRCyiJEA=
+    BwnwHnV1JEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -9173,7 +9143,7 @@ P34_3:
     - -1
     - 0
   - !!binary |
-    tjPtAnf/GkA=
+    qIGR/x/oGkA=
 P35_1:
   XCoords:
   - -1.22
@@ -9261,7 +9231,6 @@ P35_1:
   - 5.0
   applicator: 14.0
   energy: 6.0
-  factor: 1.0091
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -9278,7 +9247,7 @@ P35_1:
     - -1
     - 0
   - !!binary |
-    g9ckcSeYJEA=
+    hGleEiYnJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -9296,7 +9265,7 @@ P35_1:
     - -1
     - 0
   - !!binary |
-    Ey0Dni6RIkA=
+    /ak7Ty6RIkA=
 P35_2:
   XCoords:
   - -3.0
@@ -9486,7 +9455,6 @@ P35_2:
   - 4.15
   applicator: 10.0
   energy: 6.0
-  factor: 0.9943
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -9503,7 +9471,7 @@ P35_2:
     - -1
     - 0
   - !!binary |
-    DSFnvTlPJEA=
+    awx98SOMJEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -9521,7 +9489,7 @@ P35_2:
     - -1
     - 0
   - !!binary |
-    FIa1OXDGHUA=
+    2pgAZGjGHUA=
 P35_3:
   XCoords:
   - -1.93
@@ -10183,7 +10151,6 @@ P35_3:
   - -0.66
   applicator: 6.0
   energy: 6.0
-  factor: 0.939
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -10200,7 +10167,7 @@ P35_3:
     - -1
     - 0
   - !!binary |
-    lRbaj5t6EkA=
+    TiwJTIEQE0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -10218,7 +10185,7 @@ P35_3:
     - -1
     - 0
   - !!binary |
-    fDoYk+DnC0A=
+    lw+5mODnC0A=
 P36_1:
   XCoords:
   - -2.1
@@ -10328,7 +10295,6 @@ P36_1:
   - 2.15
   applicator: 10.0
   energy: 18.0
-  factor: 0.9936
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -10345,7 +10311,7 @@ P36_1:
     - -1
     - 0
   - !!binary |
-    +2AwIyskIUA=
+    UdiSlPfEIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -10363,7 +10329,7 @@ P36_1:
     - -1
     - 0
   - !!binary |
-    9gFuOXikE0A=
+    5gFuOXikE0A=
 P36_2:
   XCoords:
   - -1.3
@@ -10477,7 +10443,6 @@ P36_2:
   - 4.15
   applicator: 10.0
   energy: 15.0
-  factor: 0.9909
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -10494,7 +10459,7 @@ P36_2:
     - -1
     - 0
   - !!binary |
-    cfSbXrS9IEA=
+    SrxMFRrkIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -10512,7 +10477,7 @@ P36_2:
     - -1
     - 0
   - !!binary |
-    Ngfw/8j4FUA=
+    XjOIpDP5FUA=
 P37_1:
   XCoords:
   - -1.7
@@ -10662,7 +10627,6 @@ P37_1:
   - 4.15
   applicator: 10.0
   energy: 15.0
-  factor: 1.005
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -10679,7 +10643,7 @@ P37_1:
     - -1
     - 0
   - !!binary |
-    D9zCCOZFIkA=
+    RtuKlJZ1IkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -10697,7 +10661,7 @@ P37_1:
     - -1
     - 0
   - !!binary |
-    0GJzm2ovIEA=
+    0FQmNjQuIEA=
 P37_3:
   XCoords:
   - -3.5
@@ -10999,7 +10963,6 @@ P37_3:
   - 4.25
   applicator: 14.0
   energy: 18.0
-  factor: 1.0132
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -11016,7 +10979,7 @@ P37_3:
     - -1
     - 0
   - !!binary |
-    2Tr1WmZyKEA=
+    CKKaQEwtKUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -11034,7 +10997,7 @@ P37_3:
     - -1
     - 0
   - !!binary |
-    LooxYpQYHkA=
+    qOYfsa8YHkA=
 P37_4:
   XCoords:
   - -0.6
@@ -11188,7 +11151,6 @@ P37_4:
   - 3.15
   applicator: 10.0
   energy: 18.0
-  factor: 1.0081
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -11205,7 +11167,7 @@ P37_4:
     - -1
     - 0
   - !!binary |
-    n/B2uulZIkA=
+    enjNIfsmIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -11223,7 +11185,7 @@ P37_4:
     - -1
     - 0
   - !!binary |
-    9NIovINHG0A=
+    fi1siNBHG0A=
 P38_1:
   XCoords:
   - -1.2
@@ -11445,7 +11407,6 @@ P38_1:
   - 3.85
   applicator: 10.0
   energy: 12.0
-  factor: 1.0101
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -11462,7 +11423,7 @@ P38_1:
     - -1
     - 0
   - !!binary |
-    EhlxINObIUA=
+    JcVWYJ7ZIUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -11480,7 +11441,7 @@ P38_1:
     - -1
     - 0
   - !!binary |
-    HtvFz1MuHUA=
+    U6WFxCEqHUA=
 P38_2:
   XCoords:
   - -1.3
@@ -11666,7 +11627,6 @@ P38_2:
   - 4.05
   applicator: 14.0
   energy: 18.0
-  factor: 1.0173
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -11683,7 +11643,7 @@ P38_2:
     - -1
     - 0
   - !!binary |
-    2j9EGVKoJkA=
+    uR0fRla4JkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -11701,7 +11661,7 @@ P38_2:
     - -1
     - 0
   - !!binary |
-    Dv/Wsl+WIUA=
+    3sdOs1+WIUA=
 P38_3:
   XCoords:
   - -2.09
@@ -12511,7 +12471,6 @@ P38_3:
   - 6.51
   applicator: 14.0
   energy: 6.0
-  factor: 1.003
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -12528,7 +12487,7 @@ P38_3:
     - -1
     - 0
   - !!binary |
-    VMGMfpiuMkA=
+    Mg7kZPYGL0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -12546,7 +12505,7 @@ P38_3:
     - -1
     - 0
   - !!binary |
-    1JUdtB+wIUA=
+    oMTK6x+wIUA=
 P4:
   XCoords:
   - -3.5
@@ -12580,7 +12539,6 @@ P4:
   - 0.2
   applicator: 10.0
   energy: 12.0
-  factor: 0.9443
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -12597,7 +12555,7 @@ P4:
     - -1
     - 0
   - !!binary |
-    AQQsezz+HEA=
+    Z/we0HC1HkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -12615,7 +12573,7 @@ P4:
     - -1
     - 0
   - !!binary |
-    XwDyqoF1DEA=
+    6Rr9a4F1DEA=
 P40:
   XCoords:
   - -3.1
@@ -12769,7 +12727,6 @@ P40:
   - 2.95
   applicator: 10.0
   energy: 12.0
-  factor: 0.9872
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -12786,7 +12743,7 @@ P40:
     - -1
     - 0
   - !!binary |
-    L0yrV2XBJEA=
+    HTC/xvHiJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -12804,7 +12761,7 @@ P40:
     - -1
     - 0
   - !!binary |
-    0CeeRPvgFUA=
+    oOqrJPvgFUA=
 P41:
   XCoords:
   - -1.1
@@ -13170,7 +13127,6 @@ P41:
   - 10.95
   applicator: 20.0
   energy: 9.0
-  factor: 1.0111
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -13187,7 +13143,7 @@ P41:
     - -1
     - 0
   - !!binary |
-    TA6uogypJUA=
+    8mqqWJbaN0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -13205,7 +13161,7 @@ P41:
     - -1
     - 0
   - !!binary |
-    HCGgloYyIEA=
+    ww3Cg30yIEA=
 P42:
   XCoords:
   - 2.25
@@ -13263,7 +13219,6 @@ P42:
   - -4.29
   applicator: 10.0
   energy: 18.0
-  factor: 0.998
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -13280,7 +13235,7 @@ P42:
     - -1
     - 0
   - !!binary |
-    uv049CA+JkA=
+    dgjOL9+dJkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -13298,7 +13253,7 @@ P42:
     - -1
     - 0
   - !!binary |
-    ZsLksihMIkA=
+    mDqYQiVMIkA=
 P45:
   XCoords:
   - -0.1
@@ -13540,7 +13495,6 @@ P45:
   - 5.95
   applicator: 14.0
   energy: 12.0
-  factor: 1.0091
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -13557,7 +13511,7 @@ P45:
     - -1
     - 0
   - !!binary |
-    xmm8W3T1J0A=
+    i8MHZD+SKEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -13575,7 +13529,7 @@ P45:
     - -1
     - 0
   - !!binary |
-    J4mFBHRQIkA=
+    uILLs2xQIkA=
 P46:
   XCoords:
   - -0.3
@@ -13701,7 +13655,6 @@ P46:
   - 2.85
   applicator: 10.0
   energy: 9.0
-  factor: 0.9606
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -13718,7 +13671,7 @@ P46:
     - -1
     - 0
   - !!binary |
-    5cE1LSJXGEA=
+    LFzOmHCqGEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -13736,7 +13689,7 @@ P46:
     - -1
     - 0
   - !!binary |
-    Npvz9WaZEUA=
+    kAtzpJqYEUA=
 P53:
   XCoords:
   - 2.9
@@ -14614,7 +14567,6 @@ P53:
   - 1.85
   applicator: 10.0
   energy: 9.0
-  factor: 0.9756
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -14631,7 +14583,7 @@ P53:
     - -1
     - 0
   - !!binary |
-    3VArQiKMGEA=
+    cka5XdYWGUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -14649,7 +14601,7 @@ P53:
     - -1
     - 0
   - !!binary |
-    5RneUE+IFEA=
+    2JbEIVuIFEA=
 P5_2:
   XCoords:
   - -1.9
@@ -14955,7 +14907,6 @@ P5_2:
   - 4.35
   applicator: 10.0
   energy: 15.0
-  factor: 0.996
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -14972,7 +14923,7 @@ P5_2:
     - -1
     - 0
   - !!binary |
-    Ily8fBazIkA=
+    WrirkG0/I0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -15056,7 +15007,6 @@ P6:
   - -1.61
   applicator: 10.0
   energy: 6.0
-  factor: 0.999
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -15073,7 +15023,7 @@ P6:
     - -1
     - 0
   - !!binary |
-    uivwAkhbJUA=
+    r3gVdRxvJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -15091,7 +15041,7 @@ P6:
     - -1
     - 0
   - !!binary |
-    JB0JaOYFIUA=
+    womldtEFIUA=
 P7:
   XCoords:
   - -2.26
@@ -15519,7 +15469,6 @@ P7:
   - 2.84
   applicator: 10.0
   energy: 6.0
-  factor: 0.9823
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -15536,7 +15485,7 @@ P7:
     - -1
     - 0
   - !!binary |
-    2k7/R85iHUA=
+    tB/tEB8+HkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -15554,7 +15503,7 @@ P7:
     - -1
     - 0
   - !!binary |
-    QLTXHovYFkA=
+    4U32bNXXFkA=
 P8:
   XCoords:
   - 1.0
@@ -15744,7 +15693,6 @@ P8:
   - 3.25
   applicator: 10.0
   energy: 9.0
-  factor: 0.9775
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -15761,7 +15709,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    PL4izLWtGkA=
+    4Z6WIr88G0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -15779,7 +15727,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    HBo6h7YQF0A=
+    w2Aid7YQF0A=
 'Simon #104 cutout':
   XCoords:
   - -1.3
@@ -15893,7 +15841,6 @@ P8:
   - 4.15
   applicator: 10.0
   energy: 12.0
-  factor: 0.9934
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -15910,7 +15857,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    yG1Hh6i+IEA=
+    O/XLd/fYIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -15928,7 +15875,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    4HcqokgEFkA=
+    dIdoMdEKFkA=
 'Simon #106 cutout':
   XCoords:
   - -0.28
@@ -15986,7 +15933,6 @@ P8:
   - 4.25
   applicator: 10.0
   energy: 12.0
-  factor: 0.9991
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -16003,7 +15949,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    bZIBOViLIkA=
+    79tHfLmnIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -16021,7 +15967,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    unnQR5lCGUA=
+    3FFDDJdCGUA=
 'Simon #109 cutout':
   XCoords:
   - -2.89
@@ -16423,7 +16369,6 @@ P8:
   - -0.55
   applicator: 10.0
   energy: 12.0
-  factor: 0.9931
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -16440,7 +16385,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    Nt6E8+dzH0A=
+    UAb9O1faH0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -16458,7 +16403,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    XqfSQPjwGEA=
+    +JAHS/jwGEA=
 'Simon #112 cutout':
   XCoords:
   - -1.64
@@ -16666,7 +16611,6 @@ P8:
   - 0.56
   applicator: 10.0
   energy: 12.0
-  factor: 0.9489
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -16683,7 +16627,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    IJ/LHb1rEEA=
+    bJHB64eSEEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -16701,7 +16645,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    tHCSGT46DEA=
+    cv9mxXQ/DEA=
 'Simon #14 cutout':
   XCoords:
   - 1.72
@@ -16763,7 +16707,6 @@ P8:
   - 1.93
   applicator: 10.0
   energy: 12.0
-  factor: 0.9587
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -16780,7 +16723,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    L/Zl8yUuFUA=
+    fdToi22MFUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -16798,7 +16741,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    f79uz3Z0EUA=
+    2kv8fXp0EUA=
 'Simon #16 cutout':
   XCoords:
   - 0.94
@@ -16858,7 +16801,6 @@ P8:
   - 4.8
   applicator: 10.0
   energy: 12.0
-  factor: 1.0004
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -16875,7 +16817,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    qGEQI+3KJEA=
+    AB4Q+VjaJEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -16893,7 +16835,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    7mDIRlDZGEA=
+    C4sVdgPcGEA=
 'Simon #18 cutout':
   XCoords:
   - -3.0
@@ -17083,7 +17025,6 @@ P8:
   - 4.15
   applicator: 10.0
   energy: 12.0
-  factor: 1.0019
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -17100,7 +17041,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    AmKoujVPJEA=
+    P6qGekOMJEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -17118,7 +17059,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    ocR8Vm/GHUA=
+    jkYziGDGHUA=
 'Simon #19 cutout':
   XCoords:
   - -3.1
@@ -17272,7 +17213,6 @@ P8:
   - 2.95
   applicator: 10.0
   energy: 12.0
-  factor: 0.9989
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -17289,7 +17229,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    bR/rZWbBJEA=
+    KgZlzvHiJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -17307,7 +17247,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    eCqi3vrgFUA=
+    mmzBHvvgFUA=
 'Simon #20 cutout':
   XCoords:
   - -1.0
@@ -17895,7 +17835,6 @@ P8:
   - 2.07
   applicator: 10.0
   energy: 12.0
-  factor: 0.9634
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -17912,7 +17851,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    qZI+RsLFFUA=
+    BHRcCg/BFEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -17930,7 +17869,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    2rQilDmtEEA=
+    dOHNkzmtEEA=
 'Simon #22 cutout':
   XCoords:
   - 0.95
@@ -17980,7 +17919,6 @@ P8:
   - 3.31
   applicator: 10.0
   energy: 12.0
-  factor: 0.9884
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -17997,7 +17935,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    fyeWLKfHJEA=
+    1cZ1C6WVJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -18015,7 +17953,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    1Eb9BgbdE0A=
+    wu4b/LbcE0A=
 'Simon #3 cutout':
   XCoords:
   - -0.3
@@ -18141,7 +18079,6 @@ P8:
   - 2.85
   applicator: 10.0
   energy: 12.0
-  factor: 0.9683
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -18158,7 +18095,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    93f0cF9eGEA=
+    ZjtYUTipGEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -18176,7 +18113,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    n4vye6SYEUA=
+    1QyeQdCYEUA=
 'Simon #32 cutout':
   XCoords:
   - -2.2
@@ -18482,7 +18419,6 @@ P8:
   - 4.95
   applicator: 10.0
   energy: 12.0
-  factor: 1.0067
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -18499,7 +18435,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    OEXG6H/hJUA=
+    CzObrksWJkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -18517,7 +18453,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    frsbjuk3H0A=
+    ALUNnjg3H0A=
 'Simon #33 cutout':
   XCoords:
   - -2.92
@@ -18559,7 +18495,6 @@ P8:
   - 2.19
   applicator: 10.0
   energy: 12.0
-  factor: 0.9933
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -18576,7 +18511,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    F4icyLLwGEA=
+    gp1B7xs3GUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -18594,7 +18529,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    8LZaeMclF0A=
+    H2lLbsUlF0A=
 'Simon #34 cutout':
   XCoords:
   - -1.8
@@ -18800,7 +18735,6 @@ P8:
   - 4.15
   applicator: 10.0
   energy: 12.0
-  factor: 1.0067
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -18817,7 +18751,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    8HPNEduWJEA=
+    6ZRYsnG9JEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -18835,7 +18769,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    SOT/M/foGUA=
+    uB8aBuDlGUA=
 'Simon #38 cutout':
   XCoords:
   - -1.15
@@ -20109,7 +20043,6 @@ P8:
   - 1.81
   applicator: 10.0
   energy: 12.0
-  factor: 0.9735
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -20126,7 +20059,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    g+RZMr1oF0A=
+    AIBJvwKlF0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -20144,7 +20077,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    WmEgyw/pEUA=
+    YAvI0iDpEUA=
 'Simon #41 cutout':
   XCoords:
   - 1.55
@@ -20452,7 +20385,6 @@ P8:
   - 4.24
   applicator: 10.0
   energy: 12.0
-  factor: 1.0052
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -20469,7 +20401,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    ipAO34uiJEA=
+    5KGwuXV1JEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -20487,7 +20419,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    KLOZiYf/GkA=
+    bAkg/x3oGkA=
 'Simon #43 cutout':
   XCoords:
   - 1.0
@@ -20703,7 +20635,6 @@ P8:
   - 3.15
   applicator: 10.0
   energy: 12.0
-  factor: 0.9923
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -20720,7 +20651,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    44J8Ip2lHkA=
+    YtgJSyoCH0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -20738,7 +20669,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    KbUAitc7GEA=
+    QvnADNM7GEA=
 'Simon #57 cutout':
   XCoords:
   - -1.93
@@ -21400,7 +21331,6 @@ P8:
   - -0.66
   applicator: 10.0
   energy: 12.0
-  factor: 0.9437
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -21417,7 +21347,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    yIuyK5t6EkA=
+    0stCiHwQE0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -21435,7 +21365,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    kL48E+HnC0A=
+    zLTXA+HnC0A=
 'Simon #58 cutout':
   XCoords:
   - -2.26
@@ -21863,7 +21793,6 @@ P8:
   - 2.84
   applicator: 10.0
   energy: 12.0
-  factor: 0.9911
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -21880,7 +21809,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    3242X+piHUA=
+    nkQ3ezk8HkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -21898,7 +21827,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    2MhcyInYFkA=
+    0J+r3InYFkA=
 'Simon #6 cutout':
   XCoords:
   - -2.6
@@ -22068,7 +21997,6 @@ P8:
   - 4.65
   applicator: 10.0
   energy: 12.0
-  factor: 0.9987
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -22085,7 +22013,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    62F2lS5TJUA=
+    iX01+3UwJUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -22103,7 +22031,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    FsGp8gCPG0A=
+    GVj1PQSPG0A=
 'Simon #70 cutout':
   XCoords:
   - -1.1
@@ -22289,7 +22217,6 @@ P8:
   - 3.85
   applicator: 10.0
   energy: 12.0
-  factor: 1.0028
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -22306,7 +22233,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    HutHxo3EIEA=
+    xORHNfboIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -22546,7 +22473,6 @@ P8:
   - 3.35
   applicator: 10.0
   energy: 12.0
-  factor: 1.0045
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -22563,7 +22489,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    Zptd9LmfIkA=
+    ezroZhfvIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -22581,7 +22507,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    1zyNrV/2HEA=
+    VILP1mb3HEA=
 'Simon #82 cutout':
   XCoords:
   - 2.84
@@ -23247,7 +23173,6 @@ P8:
   - -3.51
   applicator: 10.0
   energy: 12.0
-  factor: 0.9991
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -23264,7 +23189,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    nqXn0/9PIEA=
+    uaGiJANsIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -23282,7 +23207,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    4psWcW15GEA=
+    9XtZzGR5GEA=
 'Simon #83 cutout':
   XCoords:
   - -1.0
@@ -23452,7 +23377,6 @@ P8:
   - 3.45
   applicator: 10.0
   energy: 12.0
-  factor: 0.9896
   length: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
     args:
@@ -23469,7 +23393,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    cMVR08VFIEA=
+    7I5Zi3tGIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -23487,7 +23411,7 @@ P8:
     - -1
     - 0
   - !!binary |
-    tPxA3aBuFkA=
+    hgMT3pxuFkA=
 Simon 3cm circle:
   XCoords:
   - 1.06
@@ -23642,7 +23566,7 @@ Simon 3cm circle:
     - -1
     - 0
   - !!binary |
-    Rwi+afYACEA=
+    v8h6OP0BCEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -23815,7 +23739,7 @@ Simon 3x13cm oval:
     - -1
     - 0
   - !!binary |
-    H4i5wYMBKkA=
+    WCCdSOftKUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -23988,7 +23912,7 @@ Simon 3x5cm oval:
     - -1
     - 0
   - !!binary |
-    +5lYfJAGFEA=
+    o4i0YkkBFEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -24161,7 +24085,7 @@ Simon 3x6.5cm oval:
     - -1
     - 0
   - !!binary |
-    b/KvMNIMGkA=
+    GP7W1C/5GUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -24179,7 +24103,7 @@ Simon 3x6.5cm oval:
     - -1
     - 0
   - !!binary |
-    2dWuQb0JCEA=
+    kpN6Qb0JCEA=
 Simon 3x9cm oval:
   XCoords:
   - 1.06
@@ -24334,7 +24258,7 @@ Simon 3x9cm oval:
     - -1
     - 0
   - !!binary |
-    Qk2IdccCIkA=
+    HwqDYpr3IUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -24507,7 +24431,7 @@ Simon 4cm circle:
     - -1
     - 0
   - !!binary |
-    D6S6Fe4CEEA=
+    ya+i4jIMEEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -24680,7 +24604,7 @@ Simon 4x10cm oval:
     - -1
     - 0
   - !!binary |
-    j3KYxo8EJEA=
+    X8cmSSkCJEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -24853,7 +24777,7 @@ Simon 4x13cm oval:
     - -1
     - 0
   - !!binary |
-    X906iHwGKkA=
+    KOsWvPH/KUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -25026,7 +24950,7 @@ Simon 4x6.5cm oval:
     - -1
     - 0
   - !!binary |
-    hvrHz+wMGkA=
+    u/WCZQsLGkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -25199,7 +25123,7 @@ Simon 4x8cm oval:
     - -1
     - 0
   - !!binary |
-    bZ/0NuwFIEA=
+    C45AfGgCIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -25372,7 +25296,7 @@ Simon 5cm circle:
     - -1
     - 0
   - !!binary |
-    01LpcxcKFEA=
+    /5nP5BERFEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -25545,7 +25469,7 @@ Simon 5x10cm oval:
     - -1
     - 0
   - !!binary |
-    c1feRNgBJEA=
+    WJpptKj6I0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -25718,7 +25642,7 @@ Simon 5x13cm oval:
     - -1
     - 0
   - !!binary |
-    dDtjhPwAKkA=
+    UHRbxAj0KUA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -25891,7 +25815,7 @@ Simon 5x8cm oval:
     - -1
     - 0
   - !!binary |
-    6yfjr0AFIEA=
+    tu0UDOn7H0A=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -26064,7 +25988,7 @@ Simon 6cm circle:
     - -1
     - 0
   - !!binary |
-    WETOIEAJGEA=
+    aXMvX8kLGEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -26237,7 +26161,7 @@ Simon 7cm circle:
     - -1
     - 0
   - !!binary |
-    ZY2Q2R4HHEA=
+    o0gPZ8sFHEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -26410,7 +26334,7 @@ Simon 8cm circle:
     - -1
     - 0
   - !!binary |
-    2OCWyYAIIEA=
+    +4iCjygGIEA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype
@@ -26583,7 +26507,7 @@ Simon 9cm circle:
     - -1
     - 0
   - !!binary |
-    o7w1fGEFIkA=
+    m8m6EGIDIkA=
   ssd: 100.0
   width: !!python/object/apply:numpy.core.multiarray.scalar
   - !!python/object/apply:numpy.dtype

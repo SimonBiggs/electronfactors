@@ -23,4 +23,4 @@ result = equivalent_ellipse(
 
 def test_ellipse_dimensions():
     assert np.abs(result['width'] - 4.94) < 0.1
-    assert np.abs(result['length'] - 8.11) < 0.1
+    assert np.abs(result['length'] - 8.54) < 0.1

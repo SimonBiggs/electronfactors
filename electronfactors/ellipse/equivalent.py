@@ -12,13 +12,14 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-import shapely.geometry as geo
-import shapely.affinity as aff
+# import shapely.geometry as geo
+# import shapely.affinity as aff
 import matplotlib.pyplot as plt
 
 from .poi import find_poi
 from .straightening import straighten
-from .utilities import shapely_cutout, _CustomBasinhopping
+# from .utilities import shapely_cutout, _CustomBasinhopping
+from .utilities import shapely_cutout
 
 from ..visuals.shape_display import display_shapely, display_equivalent_ellipse
 
@@ -67,38 +68,51 @@ def find_width(**kwargs):
     return width
 
 
-def find_length(n=5, confidence=0.00001, **kwargs):
+def find_length(**kwargs):
     XCoords = kwargs['XCoords']
     YCoords = kwargs['YCoords']
-    poi = kwargs['poi']
     width = kwargs['width']
 
-    straightened = shapely_cutout(XCoords, YCoords)
+    cutout = shapely_cutout(XCoords, YCoords)
+    area = cutout.area
 
-    initial = np.array([4])
-    step_noise = np.array([2])
-
-    circle = geo.Point(*poi).buffer(0.5)
-    width_stretched = aff.scale(circle, xfact=width)
-
-    def to_minimise(optimiser_input):
-        length = optimiser_input[0]
-        ellipse = aff.scale(width_stretched, yfact=length)
-
-        disjoint_area = (
-            ellipse.difference(straightened).area +
-            straightened.difference(ellipse).area
-        )
-        return disjoint_area
-
-    optimiser = _CustomBasinhopping(
-        to_minimise=to_minimise,
-        initial=initial,
-        step_noise=step_noise,
-        n=n,
-        confidence=confidence
-    )
-
-    length = optimiser.result[0]
+    length = 4 * area / (np.pi * width)
 
     return length
+
+
+# def find_length(n=5, confidence=0.00001, **kwargs):
+#     XCoords = kwargs['XCoords']
+#     YCoords = kwargs['YCoords']
+#     poi = kwargs['poi']
+#     width = kwargs['width']
+#
+#     straightened = shapely_cutout(XCoords, YCoords)
+#
+#     initial = np.array([4])
+#     step_noise = np.array([2])
+#
+#     circle = geo.Point(*poi).buffer(0.5)
+#     width_stretched = aff.scale(circle, xfact=width)
+#
+#     def to_minimise(optimiser_input):
+#         length = optimiser_input[0]
+#         ellipse = aff.scale(width_stretched, yfact=length)
+#
+#         disjoint_area = (
+#             ellipse.difference(straightened).area +
+#             straightened.difference(ellipse).area
+#         )
+#         return disjoint_area
+#
+#     optimiser = _CustomBasinhopping(
+#         to_minimise=to_minimise,
+#         initial=initial,
+#         step_noise=step_noise,
+#         n=n,
+#         confidence=confidence
+#     )
+#
+#     length = optimiser.result[0]
+#
+#     return length

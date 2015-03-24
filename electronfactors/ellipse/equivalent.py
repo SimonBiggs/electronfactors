@@ -12,7 +12,7 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-# import shapely.geometry as geo
+import shapely.geometry as geo
 # import shapely.affinity as aff
 import matplotlib.pyplot as plt
 
@@ -29,16 +29,14 @@ def equivalent_ellipse(display=False, **kwargs):
     YCoords = kwargs['YCoords']
 
     poi = find_poi(XCoords=XCoords, YCoords=YCoords)
-    staightened_XCoords, staightened_YCoords = straighten(
-        poi=poi, XCoords=XCoords, YCoords=YCoords
-    )
 
-    width = find_width(XCoords=staightened_XCoords)
-    length = find_length(XCoords=staightened_XCoords,
-                         YCoords=staightened_YCoords,
-                         poi=poi, width=width)
+    width = find_width(XCoords=XCoords, YCoords=YCoords, poi=poi)
+    length = find_length(XCoords=XCoords, YCoords=YCoords, width=width)
 
     if display:
+        staightened_XCoords, staightened_YCoords = straighten(
+            poi=poi, XCoords=XCoords, YCoords=YCoords
+        )
         cutout = shapely_cutout(XCoords, YCoords)
         straightened = shapely_cutout(staightened_XCoords, staightened_YCoords)
 
@@ -63,9 +61,33 @@ def equivalent_ellipse(display=False, **kwargs):
 
 def find_width(**kwargs):
     XCoords = kwargs['XCoords']
-    width = np.ptp(XCoords)
+    YCoords = kwargs['YCoords']
+    poi = kwargs['poi']
+
+    cutout = shapely_cutout(XCoords, YCoords)
+
+    max_radii = np.hypot(np.ptp(XCoords), np.ptp(YCoords))
+    radii, thin_donuts = make_thin_donuts(poi, max_radii)
+
+    segment_ratios = np.array([
+        donut.intersection(cutout).area / donut.area for donut in thin_donuts
+    ])
+
+    possible_widths = 2 * radii * np.sin(segment_ratios * np.pi/2)
+    width = np.max(possible_widths)
 
     return width
+
+
+def make_thin_donuts(poi, max_radii, dr=0.01):
+    radii = np.arange(0, max_radii, dr) + dr
+    circles = [geo.Point(*poi).buffer(r) for r in np.append(0, radii)]
+
+    thin_donuts = [
+        circles[i+1].difference(circles[i]) for i in range(len(radii))
+    ]
+
+    return radii, thin_donuts
 
 
 def find_length(**kwargs):
@@ -79,40 +101,3 @@ def find_length(**kwargs):
     length = 4 * area / (np.pi * width)
 
     return length
-
-
-# def find_length(n=5, confidence=0.00001, **kwargs):
-#     XCoords = kwargs['XCoords']
-#     YCoords = kwargs['YCoords']
-#     poi = kwargs['poi']
-#     width = kwargs['width']
-#
-#     straightened = shapely_cutout(XCoords, YCoords)
-#
-#     initial = np.array([4])
-#     step_noise = np.array([2])
-#
-#     circle = geo.Point(*poi).buffer(0.5)
-#     width_stretched = aff.scale(circle, xfact=width)
-#
-#     def to_minimise(optimiser_input):
-#         length = optimiser_input[0]
-#         ellipse = aff.scale(width_stretched, yfact=length)
-#
-#         disjoint_area = (
-#             ellipse.difference(straightened).area +
-#             straightened.difference(ellipse).area
-#         )
-#         return disjoint_area
-#
-#     optimiser = _CustomBasinhopping(
-#         to_minimise=to_minimise,
-#         initial=initial,
-#         step_noise=step_noise,
-#         n=n,
-#         confidence=confidence
-#     )
-#
-#     length = optimiser.result[0]
-#
-#     return length

@@ -50,9 +50,41 @@ P12_2:
   applicator: 10.0
   energy: 18.0
   factor: 1.0049
-  length: 8.79
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    soVNBG9bIkA=
   ssd: 100.0
-  width: 7.19
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    4GEGcUZgG0A=
 P13:
   XCoords:
   - -1.96
@@ -449,9 +481,41 @@ P13:
   applicator: 10.0
   energy: 18.0
   factor: 1.0183
-  length: 8.16
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    tGOcHx06IUA=
   ssd: 100.0
-  width: 7.62
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    6ugW2EWWHEA=
 P31_1:
   XCoords:
   - -2.1
@@ -562,9 +626,41 @@ P31_1:
   applicator: 10.0
   energy: 18.0
   factor: 0.9911
-  length: 8.59
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    yaAnGiwkIUA=
   ssd: 100.0
-  width: 5.28
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    DwJuOXikE0A=
 P36_1:
   XCoords:
   - -2.1
@@ -675,9 +771,41 @@ P36_1:
   applicator: 10.0
   energy: 18.0
   factor: 0.9936
-  length: 8.59
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    +2AwIyskIUA=
   ssd: 100.0
-  width: 5.28
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    9gFuOXikE0A=
 P37_4:
   XCoords:
   - -0.6
@@ -832,9 +960,41 @@ P37_4:
   applicator: 10.0
   energy: 18.0
   factor: 1.0081
-  length: 9.01
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    n/B2uulZIkA=
   ssd: 100.0
-  width: 6.8
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    9NIovINHG0A=
 P42:
   XCoords:
   - 2.25
@@ -893,6 +1053,38 @@ P42:
   applicator: 10.0
   energy: 18.0
   factor: 0.998
-  length: 10.96
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    uv049CA+JkA=
   ssd: 100.0
-  width: 9.46
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    ZsLksihMIkA=

@@ -34,21 +34,6 @@ def find_poi(n=5, confidence=0.001, **kwargs):
 
     step_noise = [bound] * 2
 
-    # step_noise.append(step_noise[0]/2)
-
-    # def to_minimise(optimiser_input):
-    #     x = optimiser_input[0]
-    #     y = optimiser_input[1]
-    #     radii = optimiser_input[2]
-    #
-    #     circle = geo.Point(x, y).buffer(radii)
-    #
-    #     disjoint_area = (
-    #         3 * circle.difference(cutout).area +
-    #         cutout.difference(circle).area
-    #     )
-    #     return disjoint_area
-
     def to_minimise(optimiser_input):
         x = optimiser_input[0]
         y = optimiser_input[1]

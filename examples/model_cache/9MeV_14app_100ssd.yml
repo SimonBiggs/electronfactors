@@ -660,9 +660,41 @@ P14_1:
   applicator: 14.0
   energy: 9.0
   factor: 1.0165
-  length: 12.07
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    Mw28/0PjJkA=
   ssd: 100.0
-  width: 8.64
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    qznYeRU9IUA=
 P14_2:
   XCoords:
   - -2.2
@@ -857,9 +889,41 @@ P14_2:
   applicator: 14.0
   energy: 9.0
   factor: 1.0178
-  length: 11.92
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    OMNhz08CKUA=
   ssd: 100.0
-  width: 7.62
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    mNOd8eK2HEA=
 P18:
   XCoords:
   - -2.4
@@ -1050,9 +1114,41 @@ P18:
   applicator: 14.0
   energy: 9.0
   factor: 1.0101
-  length: 9.79
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    jccjMTggJEA=
   ssd: 100.0
-  width: 9.09
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    8twtXtA4IUA=
 P26:
   XCoords:
   - -0.1
@@ -1339,9 +1435,41 @@ P26:
   applicator: 14.0
   energy: 9.0
   factor: 1.003
-  length: 10.49
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    2EsJ7KExJUA=
   ssd: 100.0
-  width: 6.77
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    HmLC4JQTG0A=
 P34_1:
   XCoords:
   - -2.2
@@ -1648,6 +1776,38 @@ P34_1:
   applicator: 14.0
   energy: 9.0
   factor: 1.0064
-  length: 10.89
+  length: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    uxYBoF3iJUA=
   ssd: 100.0
-  width: 7.73
+  width: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    gAFsvCc3H0A=

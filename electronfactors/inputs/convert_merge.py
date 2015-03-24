@@ -11,9 +11,6 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-
-# Make this function later when I have a better idea how it is needed.
-
 import yaml
 
 from .genericshape import convert_generic

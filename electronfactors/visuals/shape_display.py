@@ -15,7 +15,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import descartes as des
 
-# from ..ellipse.utilities import _CustomBasinhopping, shapely_ellipse
 from ..ellipse.utilities import shapely_ellipse
 
 

@@ -12,14 +12,11 @@
 # http://www.gnu.org/licenses/.
 
 import yaml
-# import matplotlib.pyplot as plt
 
 from ..ellipse.equivalent import equivalent_ellipse
-# from ..ellipse.utilities import shapely_cutout
-# from ..visuals.shape_display import display_equivalent_ellipse, display_shapely
 
 
-def parameterise(working_directory="imported_data/", **kwargs):
+def parameterise(display=False, working_directory="imported_data/", **kwargs):
 
     input_filepath = working_directory + "merged.yml"
     output_filepath = working_directory + "parameterised.yml"
@@ -32,9 +29,11 @@ def parameterise(working_directory="imported_data/", **kwargs):
         XCoords = input_dict[key]['XCoords']
         YCoords = input_dict[key]['YCoords']
 
-        print(str(key) + ":")
+        if display:
+            print(str(key) + ":")
+
         ellipse = equivalent_ellipse(
-            XCoords=XCoords, YCoords=YCoords)
+            XCoords=XCoords, YCoords=YCoords, display=display)
 
         output_dict[key]['width'] = ellipse['width']
         output_dict[key]['length'] = ellipse['length']

@@ -16,7 +16,7 @@ import shapely.affinity as aff
 import shapely.geometry as geo
 import shapely.ops as ops
 
-from .utilities import shapely_cutout, shapely_circle, align
+from .utilities import shapely_cutout, shapely_circle
 
 
 def create_intersection_cut(ratio, boundingDiagonal):
@@ -83,8 +83,6 @@ def straighten(poi=[0, 0], **kwargs):
     )
     maxRadii = numZones / 100
 
-    print(centredCutout.bounds)
-
     zoneWidth = maxRadii / numZones * 1.00001
     zoneMinBound = np.arange(0, maxRadii, 0.01)
     zoneMaxBound = zoneMinBound + zoneWidth
@@ -117,9 +115,6 @@ def straighten(poi=[0, 0], **kwargs):
     straightened = ops.unary_union(ploygon_list)
     translated = aff.translate(straightened, xoff=poi[0], yoff=poi[1])
     simplified = translated.simplify(0.01)
-
-    # rotation_angle = align(simplified, cutout)
-    # rotated = aff.rotate(simplified, rotation_angle)
 
     x, y = simplified.exterior.xy
 

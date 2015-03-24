@@ -63,11 +63,10 @@ P20:
   - -0.67
   applicator: 14.0
   energy: 6.0
-  factor: 1.0060362173000001
-  length: 9.1
-  poi: null
+  factor: 1.006
+  length: 9.14
   ssd: 100.0
-  width: 8.72
+  width: 8.74
 P23:
   XCoords:
   - 0.94
@@ -145,11 +144,10 @@ P23:
   - 4.79
   applicator: 14.0
   energy: 6.0
-  factor: 1.0050251256
-  length: 12.6
-  poi: null
+  factor: 1.005
+  length: 13.21
   ssd: 100.0
-  width: 10.28
+  width: 9.98
 P33:
   XCoords:
   - 0.94
@@ -209,11 +207,10 @@ P33:
   - 4.8
   applicator: 14.0
   energy: 6.0
-  factor: 0.9990009990000001
-  length: 10.24
-  poi: null
+  factor: 0.999
+  length: 10.42
   ssd: 100.0
-  width: 6.18
+  width: 6.02
 P35_1:
   XCoords:
   - -1.22
@@ -301,11 +298,10 @@ P35_1:
   - 5.0
   applicator: 14.0
   energy: 6.0
-  factor: 1.0090817356
-  length: 10.31
-  poi: null
+  factor: 1.0091
+  length: 10.26
   ssd: 100.0
-  width: 9.47
+  width: 9.31
 P38_3:
   XCoords:
   - -2.09
@@ -1115,8 +1111,7 @@ P38_3:
   - 6.51
   applicator: 14.0
   energy: 6.0
-  factor: 1.0030090270999998
-  length: 14.37
-  poi: null
+  factor: 1.003
+  length: 18.3
   ssd: 100.0
-  width: 9.15
+  width: 7.97

@@ -16,7 +16,7 @@ import shapely.affinity as aff
 import shapely.geometry as geo
 import shapely.ops as ops
 
-from .utilities import shapely_cutout, shapely_circle
+from .utilities import shapely_cutout, shapely_circle, align
 
 
 def create_intersection_cut(ratio, boundingDiagonal):
@@ -69,12 +69,12 @@ def create_segment(region, ratio):
         raise Exception("Unexpected ratio")
 
 
-def straighten(centre=[0, 0], **kwargs):
+def straighten(poi=[0, 0], **kwargs):
 
     XCoords = kwargs['XCoords']
     YCoords = kwargs['YCoords']
     cutout = shapely_cutout(XCoords, YCoords)
-    centredCutout = aff.translate(cutout, xoff=-centre[0], yoff=-centre[1])
+    centredCutout = aff.translate(cutout, xoff=-poi[0], yoff=-poi[1])
 
     numZones = int(np.ceil(100 * np.max(centredCutout.bounds) * np.sqrt(2)))
     maxRadii = numZones / 100
@@ -109,13 +109,12 @@ def straighten(centre=[0, 0], **kwargs):
             ploygon_list.append(add_section)
 
     straightened = ops.unary_union(ploygon_list)
+    translated = aff.translate(straightened, xoff=poi[0], yoff=poi[1])
+    simplified = translated.simplify(0.01)
 
-    rotated = aff.rotate(straightened, -45)
-
-    simplified = rotated.simplify(0.01)
+    # rotation_angle = align(simplified, cutout)
+    # rotated = aff.rotate(simplified, rotation_angle)
 
     x, y = simplified.exterior.xy
-
-    # Shifted back to cutout position and rotated for visual -- still do this?
 
     return x, y

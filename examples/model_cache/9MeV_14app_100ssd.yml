@@ -659,9 +659,8 @@ P14_1:
   - 0.25
   applicator: 14.0
   energy: 9.0
-  factor: 1.0164667615
+  factor: 1.0165
   length: 12.07
-  poi: null
   ssd: 100.0
   width: 8.64
 P14_2:
@@ -857,9 +856,8 @@ P14_2:
   - 4.25
   applicator: 14.0
   energy: 9.0
-  factor: 1.0178117048
+  factor: 1.0178
   length: 11.92
-  poi: null
   ssd: 100.0
   width: 7.62
 P18:
@@ -1051,9 +1049,8 @@ P18:
   - 4.25
   applicator: 14.0
   energy: 9.0
-  factor: 1.0101010101
+  factor: 1.0101
   length: 9.79
-  poi: null
   ssd: 100.0
   width: 9.09
 P26:
@@ -1341,9 +1338,8 @@ P26:
   - 3.05
   applicator: 14.0
   energy: 9.0
-  factor: 1.0030090270999998
+  factor: 1.003
   length: 10.49
-  poi: null
   ssd: 100.0
   width: 6.77
 P34_1:
@@ -1651,8 +1647,7 @@ P34_1:
   - 4.95
   applicator: 14.0
   energy: 9.0
-  factor: 1.0064412238
+  factor: 1.0064
   length: 10.89
-  poi: null
   ssd: 100.0
   width: 7.73

@@ -136,9 +136,6 @@ Simon 3cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9296
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 3x13cm oval:
   XCoords:
@@ -278,9 +275,6 @@ Simon 3x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.953
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 3x5cm oval:
   XCoords:
@@ -420,9 +414,6 @@ Simon 3x5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9348
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 3x6.5cm oval:
   XCoords:
@@ -562,9 +553,6 @@ Simon 3x6.5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9484
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 3x9cm oval:
   XCoords:
@@ -704,9 +692,6 @@ Simon 3x9cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9492
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 4cm circle:
   XCoords:
@@ -846,9 +831,6 @@ Simon 4cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9562
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 4x10cm oval:
   XCoords:
@@ -988,9 +970,6 @@ Simon 4x10cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9709
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 4x13cm oval:
   XCoords:
@@ -1130,9 +1109,6 @@ Simon 4x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9757
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 4x6.5cm oval:
   XCoords:
@@ -1272,9 +1248,6 @@ Simon 4x6.5cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9609
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 4x8cm oval:
   XCoords:
@@ -1414,9 +1387,6 @@ Simon 4x8cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9708
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 5cm circle:
   XCoords:
@@ -1556,9 +1526,6 @@ Simon 5cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9705
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 5x10cm oval:
   XCoords:
@@ -1698,9 +1665,6 @@ Simon 5x10cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9879
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 5x13cm oval:
   XCoords:
@@ -1840,9 +1804,6 @@ Simon 5x13cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9868
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 5x8cm oval:
   XCoords:
@@ -1982,9 +1943,6 @@ Simon 5x8cm oval:
   applicator: 10.0
   energy: 12.0
   factor: 0.9831
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 6cm circle:
   XCoords:
@@ -2124,9 +2082,6 @@ Simon 6cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 0.9858
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 7cm circle:
   XCoords:
@@ -2266,9 +2221,6 @@ Simon 7cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 1.0032
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 8cm circle:
   XCoords:
@@ -2408,9 +2360,6 @@ Simon 8cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
 Simon 9cm circle:
   XCoords:
@@ -2550,7 +2499,4 @@ Simon 9cm circle:
   applicator: 10.0
   energy: 12.0
   factor: 1.0084
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0

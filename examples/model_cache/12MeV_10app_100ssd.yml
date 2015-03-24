@@ -773,9 +773,8 @@ P10:
   - -2.36
   applicator: 10.0
   energy: 12.0
-  factor: 0.9602458229
+  factor: 0.9602
   length: 7.24
-  poi: null
   ssd: 100.0
   width: 4.45
 P12_1:
@@ -923,9 +922,8 @@ P12_1:
   - 3.75
   applicator: 10.0
   energy: 12.0
-  factor: 1.0145074565999999
+  factor: 1.0145
   length: 9.37
-  poi: null
   ssd: 100.0
   width: 8.26
 P22:
@@ -1057,9 +1055,8 @@ P22:
   - 4.15
   applicator: 10.0
   energy: 12.0
-  factor: 0.9990009990000001
+  factor: 0.999
   length: 8.97
-  poi: null
   ssd: 100.0
   width: 7.24
 P3:
@@ -1123,9 +1120,8 @@ P3:
   - 1.37
   applicator: 10.0
   energy: 12.0
-  factor: 0.9756097561
+  factor: 0.9756
   length: 8.73
-  poi: null
   ssd: 100.0
   width: 5.97
 P38_1:
@@ -1349,9 +1345,8 @@ P38_1:
   - 3.85
   applicator: 10.0
   energy: 12.0
-  factor: 1.0101010101
+  factor: 1.0101
   length: 8.74
-  poi: null
   ssd: 100.0
   width: 7.43
 P4:
@@ -1387,9 +1382,8 @@ P4:
   - 0.2
   applicator: 10.0
   energy: 12.0
-  factor: 0.9442870633
+  factor: 0.9443
   length: 7.18
-  poi: null
   ssd: 100.0
   width: 3.78
 P40:
@@ -1545,9 +1539,8 @@ P40:
   - 2.95
   applicator: 10.0
   energy: 12.0
-  factor: 0.9871668312
+  factor: 0.9872
   length: 10.18
-  poi: null
   ssd: 100.0
   width: 5.8
 'Simon #104 cutout':
@@ -1665,7 +1658,6 @@ P40:
   energy: 12.0
   factor: 0.9934
   length: 8.12
-  poi: null
   ssd: 100.0
   width: 5.58
 'Simon #106 cutout':
@@ -1727,7 +1719,6 @@ P40:
   energy: 12.0
   factor: 0.9991
   length: 9.64
-  poi: null
   ssd: 100.0
   width: 6.04
 'Simon #109 cutout':
@@ -2133,7 +2124,6 @@ P40:
   energy: 12.0
   factor: 0.9931
   length: 7.64
-  poi: null
   ssd: 100.0
   width: 6.48
 'Simon #112 cutout':
@@ -2345,7 +2335,6 @@ P40:
   energy: 12.0
   factor: 0.9489
   length: 4.14
-  poi: null
   ssd: 100.0
   width: 3.51
 'Simon #14 cutout':
@@ -2411,7 +2400,6 @@ P40:
   energy: 12.0
   factor: 0.9587
   length: 4.92
-  poi: null
   ssd: 100.0
   width: 4.51
 'Simon #16 cutout':
@@ -2475,7 +2463,6 @@ P40:
   energy: 12.0
   factor: 1.0004
   length: 10.24
-  poi: null
   ssd: 100.0
   width: 6.18
 'Simon #18 cutout':
@@ -2669,7 +2656,6 @@ P40:
   energy: 12.0
   factor: 1.0019
   length: 9.56
-  poi: null
   ssd: 100.0
   width: 7.64
 'Simon #19 cutout':
@@ -2827,7 +2813,6 @@ P40:
   energy: 12.0
   factor: 0.9989
   length: 10.18
-  poi: null
   ssd: 100.0
   width: 5.8
 'Simon #20 cutout':
@@ -3419,7 +3404,6 @@ P40:
   energy: 12.0
   factor: 0.9634
   length: 5.04
-  poi: null
   ssd: 100.0
   width: 4.27
 'Simon #22 cutout':
@@ -3473,7 +3457,6 @@ P40:
   energy: 12.0
   factor: 0.9884
   length: 9.92
-  poi: null
   ssd: 100.0
   width: 5.22
 'Simon #3 cutout':
@@ -3603,7 +3586,6 @@ P40:
   energy: 12.0
   factor: 0.9683
   length: 6.04
-  poi: null
   ssd: 100.0
   width: 4.54
 'Simon #32 cutout':
@@ -3913,7 +3895,6 @@ P40:
   energy: 12.0
   factor: 1.0067
   length: 10.89
-  poi: null
   ssd: 100.0
   width: 7.73
 'Simon #33 cutout':
@@ -3959,7 +3940,6 @@ P40:
   energy: 12.0
   factor: 0.9933
   length: 6.14
-  poi: null
   ssd: 100.0
   width: 5.93
 'Simon #34 cutout':
@@ -4169,7 +4149,6 @@ P40:
   energy: 12.0
   factor: 1.0067
   length: 9.47
-  poi: null
   ssd: 100.0
   width: 7.1
 'Simon #38 cutout':
@@ -5447,7 +5426,6 @@ P40:
   energy: 12.0
   factor: 0.9735
   length: 5.64
-  poi: null
   ssd: 100.0
   width: 4.57
 'Simon #41 cutout':
@@ -5759,7 +5737,6 @@ P40:
   energy: 12.0
   factor: 1.0052
   length: 10.09
-  poi: null
   ssd: 100.0
   width: 6.88
 'Simon #43 cutout':
@@ -5979,7 +5956,6 @@ P40:
   energy: 12.0
   factor: 0.9923
   length: 7.74
-  poi: null
   ssd: 100.0
   width: 6.1
 'Simon #57 cutout':
@@ -6645,7 +6621,6 @@ P40:
   energy: 12.0
   factor: 0.9437
   length: 4.66
-  poi: null
   ssd: 100.0
   width: 3.54
 'Simon #58 cutout':
@@ -7077,7 +7052,6 @@ P40:
   energy: 12.0
   factor: 0.9911
   length: 7.25
-  poi: null
   ssd: 100.0
   width: 5.97
 'Simon #6 cutout':
@@ -7251,7 +7225,6 @@ P40:
   energy: 12.0
   factor: 0.9987
   length: 10.06
-  poi: null
   ssd: 100.0
   width: 7.25
 'Simon #70 cutout':
@@ -7441,7 +7414,6 @@ P40:
   energy: 12.0
   factor: 1.0028
   length: 8.18
-  poi: null
   ssd: 100.0
   width: 7.46
 'Simon #73 cutout':
@@ -7667,7 +7639,6 @@ P40:
   energy: 12.0
   factor: 1.0045
   length: 9.4
-  poi: null
   ssd: 100.0
   width: 7.25
 'Simon #82 cutout':
@@ -8337,7 +8308,6 @@ P40:
   energy: 12.0
   factor: 0.9991
   length: 7.58
-  poi: null
   ssd: 100.0
   width: 6.28
 'Simon #83 cutout':
@@ -8511,7 +8481,6 @@ P40:
   energy: 12.0
   factor: 0.9896
   length: 7.9
-  poi: null
   ssd: 100.0
   width: 5.68
 Simon 3cm circle:
@@ -8653,9 +8622,6 @@ Simon 3cm circle:
   energy: 12.0
   factor: 0.9296
   length: 3.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 3.0
 Simon 3x13cm oval:
@@ -8797,9 +8763,6 @@ Simon 3x13cm oval:
   energy: 12.0
   factor: 0.953
   length: 13.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 3.0
 Simon 3x5cm oval:
@@ -8941,9 +8904,6 @@ Simon 3x5cm oval:
   energy: 12.0
   factor: 0.9348
   length: 5.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 3.0
 Simon 3x6.5cm oval:
@@ -9085,9 +9045,6 @@ Simon 3x6.5cm oval:
   energy: 12.0
   factor: 0.9484
   length: 6.5
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 3.0
 Simon 3x9cm oval:
@@ -9229,9 +9186,6 @@ Simon 3x9cm oval:
   energy: 12.0
   factor: 0.9492
   length: 9.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 3.0
 Simon 4cm circle:
@@ -9373,9 +9327,6 @@ Simon 4cm circle:
   energy: 12.0
   factor: 0.9562
   length: 4.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 4.0
 Simon 4x10cm oval:
@@ -9517,9 +9468,6 @@ Simon 4x10cm oval:
   energy: 12.0
   factor: 0.9709
   length: 10.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 4.0
 Simon 4x13cm oval:
@@ -9661,9 +9609,6 @@ Simon 4x13cm oval:
   energy: 12.0
   factor: 0.9757
   length: 13.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 4.0
 Simon 4x6.5cm oval:
@@ -9805,9 +9750,6 @@ Simon 4x6.5cm oval:
   energy: 12.0
   factor: 0.9609
   length: 6.5
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 4.0
 Simon 4x8cm oval:
@@ -9949,9 +9891,6 @@ Simon 4x8cm oval:
   energy: 12.0
   factor: 0.9708
   length: 8.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 4.0
 Simon 5cm circle:
@@ -10093,9 +10032,6 @@ Simon 5cm circle:
   energy: 12.0
   factor: 0.9705
   length: 5.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 5.0
 Simon 5x10cm oval:
@@ -10237,9 +10173,6 @@ Simon 5x10cm oval:
   energy: 12.0
   factor: 0.9879
   length: 9.99
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 5.0
 Simon 5x13cm oval:
@@ -10381,9 +10314,6 @@ Simon 5x13cm oval:
   energy: 12.0
   factor: 0.9868
   length: 12.99
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 5.0
 Simon 5x8cm oval:
@@ -10525,9 +10455,6 @@ Simon 5x8cm oval:
   energy: 12.0
   factor: 0.9831
   length: 8.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 5.0
 Simon 6cm circle:
@@ -10669,9 +10596,6 @@ Simon 6cm circle:
   energy: 12.0
   factor: 0.9858
   length: 6.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 6.0
 Simon 7cm circle:
@@ -10813,9 +10737,6 @@ Simon 7cm circle:
   energy: 12.0
   factor: 1.0032
   length: 7.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 7.0
 Simon 8cm circle:
@@ -10957,9 +10878,6 @@ Simon 8cm circle:
   energy: 12.0
   factor: 1.0067
   length: 8.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 8.0
 Simon 9cm circle:
@@ -11101,8 +11019,5 @@ Simon 9cm circle:
   energy: 12.0
   factor: 1.0084
   length: 9.0
-  poi:
-  - 0.0
-  - 0.0
   ssd: 100.0
   width: 9.0

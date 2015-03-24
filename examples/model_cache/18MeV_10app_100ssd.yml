@@ -49,9 +49,8 @@ P12_2:
   - -1.03
   applicator: 10.0
   energy: 18.0
-  factor: 1.0049241281999999
+  factor: 1.0049
   length: 8.79
-  poi: null
   ssd: 100.0
   width: 7.19
 P13:
@@ -449,9 +448,8 @@ P13:
   - 3.67
   applicator: 10.0
   energy: 18.0
-  factor: 1.0183299389
+  factor: 1.0183
   length: 8.16
-  poi: null
   ssd: 100.0
   width: 7.62
 P31_1:
@@ -563,9 +561,8 @@ P31_1:
   - 2.15
   applicator: 10.0
   energy: 18.0
-  factor: 0.9910802775
+  factor: 0.9911
   length: 8.59
-  poi: null
   ssd: 100.0
   width: 5.28
 P36_1:
@@ -677,9 +674,8 @@ P36_1:
   - 2.15
   applicator: 10.0
   energy: 18.0
-  factor: 0.9936406995
+  factor: 0.9936
   length: 8.59
-  poi: null
   ssd: 100.0
   width: 5.28
 P37_4:
@@ -835,9 +831,8 @@ P37_4:
   - 3.15
   applicator: 10.0
   energy: 18.0
-  factor: 1.0080645161
+  factor: 1.0081
   length: 9.01
-  poi: null
   ssd: 100.0
   width: 6.8
 P42:
@@ -897,8 +892,7 @@ P42:
   - -4.29
   applicator: 10.0
   energy: 18.0
-  factor: 0.998003992
+  factor: 0.998
   length: 10.96
-  poi: null
   ssd: 100.0
   width: 9.46

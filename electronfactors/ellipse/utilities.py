@@ -17,6 +17,8 @@ import numpy as np
 import shapely.geometry as geo
 import shapely.affinity as aff
 
+from scipy.optimize import basinhopping
+
 
 def shapely_point(x, y):
     return geo.Point([(x, y)])
@@ -68,3 +70,109 @@ def create_zones(numZones, maxRadii):
         zoneRegions[i] = zoneBoundaries[i+1].difference(zoneBoundaries[i])
 
     return zoneMidDist, zoneRegions
+
+
+def align(to_be_aligned, alighn_to_this):
+    initial = np.array([0])
+    step_noise = np.array([90])
+
+    def to_minimise(optimiser_input):
+        rotated = aff.rotate(to_be_aligned, optimiser_input[0])
+
+        disjoint_area = (
+            rotated.difference(alighn_to_this).area +
+            alighn_to_this.difference(rotated).area
+        )
+        return disjoint_area
+
+    optimiser = _CustomBasinhopping(
+        to_minimise=to_minimise,
+        initial=initial,
+        step_noise=step_noise,
+        n=2,
+        confidence=0.0001
+    )
+
+    rotation_angle = optimiser.result[0]
+
+    return rotation_angle
+
+
+class _CustomBasinhopping(object):
+
+    def __init__(self, n=5, confidence=0.00001, **kwargs):
+        self.to_minimise = kwargs['to_minimise']
+        self.n = n
+        self.confidence = confidence
+
+        self.initial = kwargs['initial']
+        self.step_noise = kwargs['step_noise']
+
+        if len(self.initial) != len(self.step_noise):
+            raise Exception(
+                "Step noise and initial conditions must be equal length."
+            )
+
+        self.result = self.custom_basinhopping()
+
+    def step_function(self, optimiser_input):
+        for i, noise in enumerate(self.step_noise):
+            optimiser_input[i] += np.random.normal(scale=noise)
+
+        return optimiser_input
+
+    def callback_function(self,
+                          optimiser_output,
+                          minimise_function_result,
+                          was_accepted):
+        if not(was_accepted):
+            return
+
+        if self.current_success_number == 0:
+            # First result
+            self.successful_results[0] = minimise_function_result
+            self.current_success_number = 1
+
+        elif (minimise_function_result >=
+              np.nanmin(self.successful_results) + self.confidence):
+            # Reject result
+            0
+
+        elif (minimise_function_result >=
+              np.nanmin(self.successful_results) - self.confidence):
+            # Agreeing result
+            self.successful_results[
+                self.current_success_number
+            ] = minimise_function_result
+
+            self.current_success_number += 1
+
+        elif (minimise_function_result <
+              np.nanmin(self.successful_results) - self.confidence):
+            # New result
+            self.successful_results[0] = minimise_function_result
+            self.current_success_number = 1
+
+        if self.current_success_number >= self.n:
+            return True
+
+    def custom_basinhopping(self):
+        self.successful_results = np.empty(self.n)
+        self.successful_results[:] = np.nan
+        self.current_success_number = 0
+
+        minimizer_config = {
+            "method": 'BFGS',
+            "options": {'gtol': self.confidence}
+        }
+
+        output = basinhopping(
+            self.to_minimise,
+            self.initial,
+            niter=1000,
+            minimizer_kwargs=minimizer_config,
+            take_step=self.step_function,
+            callback=self.callback_function
+        )
+
+        return output.x

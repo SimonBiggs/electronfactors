@@ -17,6 +17,7 @@ import yaml
 from glob import glob
 
 import numpy as np
+import shapely.affinity as aff
 
 import matplotlib.pyplot as plt
 # from matplotlib import pylab
@@ -24,7 +25,7 @@ import matplotlib.pyplot as plt
 import descartes as des
 
 from ..ellipse.utilities import shapely_ellipse, shapely_cutout
-from ..ellipse.fitting import VisualFit
+from ..ellipse.fitting import VisualFit, VisualRotate
 
 
 def find_cached_models(directory="model_cache/"):
@@ -96,3 +97,39 @@ def load_and_display(directory="model_cache/"):
         for key in label:
             print("  - " + str(key))
             display_cutout(**cache[key])
+
+
+def display_equivalent_ellipse(eqivalent_ellipse):
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+
+    # rotate_fit = VisualRotate(
+    #     eqivalent_ellipse.straightenedCutout,
+    #     eqivalent_ellipse.centredCutout
+    # )
+
+    # adjusted_cutout = rotate_fit.fitted_shape
+
+    patch = des.PolygonPatch(
+        eqivalent_ellipse.centredCutout,
+        fc=np.random.uniform(size=3),
+        alpha=0.5)
+    ax.add_patch(patch)
+
+    patch = des.PolygonPatch(
+        eqivalent_ellipse.straightenedCutout,
+        fc=np.random.uniform(size=3),
+        alpha=0.3)
+    ax.add_patch(patch)
+
+    patch = des.PolygonPatch(
+        eqivalent_ellipse.eqEllipse,
+        fc=np.random.uniform(size=3),
+        alpha=0.3)
+    ax.add_patch(patch)
+
+    plt.scatter(0, 0)
+    ax.axis("equal")
+    plt.grid(True)
+
+    plt.show()

@@ -17,7 +17,7 @@ import yaml
 def create_cache(input_directory="imported_data/",
                  filepath=None, ssd=100, **kwargs):
 
-    input_filepath = input_directory + "guessed.yml"
+    input_filepath = input_directory + "parameterised.yml"
     energy = kwargs['energy']
     applicator = kwargs['applicator']
 

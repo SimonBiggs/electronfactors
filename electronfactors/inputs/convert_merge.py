@@ -19,8 +19,6 @@ import yaml
 from .genericshape import convert_generic
 from .rawcoords import convert_raw
 
-from electronfactors.ellipse.fitting import StandardFitEllipse
-
 
 # For each input method, also make a "finder function"
 # This finder function can be used to find the regex the input files
@@ -66,30 +64,7 @@ def merge(working_directory="imported_data/"):
         outfile.write(yaml.dump(merged_dict, default_flow_style=False))
 
 
-def guess(working_directory="imported_data/"):
-    input_filepath = working_directory + "merged.yml"
-    output_filepath = working_directory + "guessed.yml"
-
-    with open(input_filepath, 'r') as inputFile:
-        input_dict = yaml.load(inputFile)
-
-    output_dict = input_dict.copy()
-
-    for i, key in enumerate(input_dict):
-        XCoords = input_dict[key]['XCoords']
-        YCoords = input_dict[key]['YCoords']
-
-        ellipse_fit = StandardFitEllipse(x=XCoords, y=YCoords, n=2)
-
-        output_dict[key]['width'] = float(round(ellipse_fit.width, 2))
-        output_dict[key]['length'] = float(round(ellipse_fit.length, 2))
-
-    with open(output_filepath, 'w') as outfile:
-        outfile.write(yaml.dump(output_dict, default_flow_style=False))
-
-
-def convert_merge_guess(input_directory="user_inputs/",
-                        output_directory="imported_data/"):
+def convert_merge(input_directory="user_inputs/",
+                  output_directory="imported_data/"):
     convert(input_directory=input_directory, output_directory=output_directory)
     merge(working_directory=output_directory)
-    guess(working_directory=output_directory)

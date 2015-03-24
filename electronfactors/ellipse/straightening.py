@@ -76,8 +76,14 @@ def straighten(poi=[0, 0], **kwargs):
     cutout = shapely_cutout(XCoords, YCoords)
     centredCutout = aff.translate(cutout, xoff=-poi[0], yoff=-poi[1])
 
-    numZones = int(np.ceil(100 * np.max(centredCutout.bounds) * np.sqrt(2)))
+    numZones = int(
+        np.ceil(
+            100 * np.max(np.abs(centredCutout.bounds)) * np.sqrt(2)
+        )
+    )
     maxRadii = numZones / 100
+
+    print(centredCutout.bounds)
 
     zoneWidth = maxRadii / numZones * 1.00001
     zoneMinBound = np.arange(0, maxRadii, 0.01)

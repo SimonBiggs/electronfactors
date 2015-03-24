@@ -18,33 +18,51 @@ import shapely.geometry as geo
 from .utilities import shapely_cutout, _CustomBasinhopping
 
 
-def find_poi(n=5, confidence=0.00001, **kwargs):
+def find_poi(n=5, confidence=0.001, **kwargs):
     XCoords = kwargs['XCoords']
     YCoords = kwargs['YCoords']
 
     cutout = shapely_cutout(XCoords, YCoords)
+    center = cutout.centroid
 
-    initial = np.array([0, 0, 3])
+    initial = np.array([0, 0])
 
-    step_noise = [np.hypot(
+    bound = np.hypot(
         np.diff(cutout.bounds[::2]),
         np.diff(cutout.bounds[1::2])
-    )/3] * 2
+    )
 
-    step_noise.append(step_noise[0]/2)
+    step_noise = [bound] * 2
+
+    # step_noise.append(step_noise[0]/2)
+
+    # def to_minimise(optimiser_input):
+    #     x = optimiser_input[0]
+    #     y = optimiser_input[1]
+    #     radii = optimiser_input[2]
+    #
+    #     circle = geo.Point(x, y).buffer(radii)
+    #
+    #     disjoint_area = (
+    #         3 * circle.difference(cutout).area +
+    #         cutout.difference(circle).area
+    #     )
+    #     return disjoint_area
 
     def to_minimise(optimiser_input):
         x = optimiser_input[0]
         y = optimiser_input[1]
-        radii = optimiser_input[2]
 
-        circle = geo.Point(x, y).buffer(radii)
+        point = geo.Point(x, y)
+        is_within = cutout.contains(point)
+        edge_distance = point.distance(cutout.boundary)
 
-        disjoint_area = (
-            3 * circle.difference(cutout).area +
-            cutout.difference(circle).area
-        )
-        return disjoint_area
+        if not(is_within):
+            edge_distance = -edge_distance
+
+        centroid_weighting = point.distance(center) / bound
+
+        return centroid_weighting - edge_distance
 
     optimiser = _CustomBasinhopping(
         to_minimise=to_minimise,

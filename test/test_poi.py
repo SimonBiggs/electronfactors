@@ -12,25 +12,7 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-from scipy.interpolate import UnivariateSpline
-from electronfactors.ellipse.centre import FindCentre
-
-circle_diameter = np.array([3, 4, 5, 6, 7, 8, 9])
-circle_factors = np.array(
-    [0.9296, 0.9562, 0.9705, 0.9858, 1.0032, 1.0067, 1.0084])
-
-
-def circle_fit(radii):
-
-    circle_radii = circle_diameter/2
-
-    spline = UnivariateSpline(circle_radii, circle_factors)
-    results = spline(radii)
-
-    results[radii > np.max(circle_radii)] = np.max(circle_factors)
-    results[radii < np.min(circle_radii)] = 0
-
-    return results
+from electronfactors.ellipse.poi import find_poi
 
 
 def test_centre_of_square():
@@ -38,12 +20,12 @@ def test_centre_of_square():
     XCoords = np.array([-3, 3, 3, -3])
     YCoords = np.array([3, 3, -3, -3])
 
-    centre = FindCentre(
-        x=XCoords, y=YCoords, n=1, circle_fit=circle_fit, min_distance=1.5
+    poi = find_poi(
+        XCoords=XCoords, YCoords=YCoords
     )
 
-    assert np.abs(centre.centre[0]) < 0.1
-    assert np.abs(centre.centre[1]) < 0.1
+    assert np.abs(poi[0]) < 0.1
+    assert np.abs(poi[1]) < 0.1
 
 
 def test_centre_of_arbitrary_cutout():
@@ -51,9 +33,9 @@ def test_centre_of_arbitrary_cutout():
     XCoords = np.array([-1, -0.2, 0, 0.7, 1, 0]) * 4 + 1
     YCoords = np.array([0, -1, -.8, 0, .6, 1]) * 4 - 1
 
-    centre = FindCentre(
-        x=XCoords, y=YCoords, n=1, circle_fit=circle_fit, min_distance=1.5
+    poi = find_poi(
+        XCoords=XCoords, YCoords=YCoords
     )
 
-    assert np.abs(centre.centre[0] - 0.92) < 0.1
-    assert np.abs(centre.centre[1] + 0.62) < 0.1
+    assert np.abs(poi[0] - 0.92) < 0.1
+    assert np.abs(poi[1] + 0.62) < 0.1

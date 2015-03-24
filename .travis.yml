@@ -12,8 +12,8 @@ before_install:
   - conda update --yes conda
 
 install:
-  - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy scipy nose shapely pandas scikit-learn matplotlib descartes
-  - pip install coveralls
+  - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy scipy nose shapely pandas scikit-learn matplotlib
+  - pip install coveralls descartes
 
 script:
   - nosetests --with-coverage

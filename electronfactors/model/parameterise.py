@@ -35,8 +35,13 @@ def parameterise(display=False, working_directory="imported_data/", **kwargs):
         ellipse = equivalent_ellipse(
             XCoords=XCoords, YCoords=YCoords, display=display)
 
-        output_dict[key]['width'] = ellipse['width']
-        output_dict[key]['length'] = ellipse['length']
+        width = float(round(ellipse['width'], 2))
+        length = float(round(ellipse['length'], 2))
+        poi = [float(round(item, 2)) for item in ellipse['poi']]
+
+        output_dict[key]['width'] = width
+        output_dict[key]['length'] = length
+        output_dict[key]['poi'] = poi
 
     with open(output_filepath, 'w') as file:
         file.write(yaml.dump(output_dict, default_flow_style=False))

@@ -42,7 +42,7 @@ def create_cache(input_directory="imported_data/",
         if sameenergy and sameapplicator and samessd:
             output_dict[key] = input_dict[key]
 
-    if len(output_dict.keys()) >= 5:
+    if len(output_dict.keys()) >= 11:
         with open(filepath, 'w') as file:
             file.write(yaml.dump(output_dict, default_flow_style=False))
     else:

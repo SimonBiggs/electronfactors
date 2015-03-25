@@ -12,31 +12,25 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-import matplotlib.pyplot as plt
-import descartes as des
+import shapely.geometry as geo
 
-from .utilities import make_ellipse
+from ..ellipse.utilities import shapely_ellipse
 
 
-def display_equivalent_ellipse(ax=None, **kwargs):
+def make_ellipse(**kwargs):
     poi = kwargs['poi']
+    width = kwargs['width']
+    length = kwargs['length']
 
-    ellipse = make_ellipse(**kwargs)
-    display_shapely(ellipse, ax=ax)
+    ellipse = shapely_ellipse([poi[0], poi[1], width, length, 0])
 
-    plt.scatter(*poi)
+    return ellipse
 
 
-def display_shapely(shape, ax=None):
-    if ax is None:
-        fig = plt.figure()
-        ax = fig.add_subplot(111)
+def make_shapely(**kwargs):
+    XCoords = kwargs['XCoords']
+    YCoords = kwargs['YCoords']
 
-    patch = des.PolygonPatch(
-        shape,
-        fc=np.random.uniform(size=3),
-        alpha=0.5)
-    ax.add_patch(patch)
+    shape = geo.Polygon(np.transpose((XCoords, YCoords)))
 
-    ax.axis("equal")
-    plt.grid(True)
+    return shape

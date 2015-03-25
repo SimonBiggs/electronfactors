@@ -27,9 +27,9 @@ def single_angle_gap(xTest, yTest, xData, yData, xScale, yScale):
     dx = xi - xVal
     dy = yi - yVal
 
-    if any((dx == 0) & (dy == 0)):
-        gap = 0
-        return gap
+    same_position = (dx == 0) & (dy == 0)
+    dx = dx[~same_position]
+    dy = dy[~same_position]
 
     theta = np.arctan(dy/dx)
     theta[dx < 0] = theta[dx < 0] + np.pi

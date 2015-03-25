@@ -50,6 +50,7 @@ def convert_raw(**kwargs):
         data[index]['energy'] = float(metadata['energy'].values[i])
         data[index]['applicator'] = float(metadata['applicator'].values[i])
         data[index]['ssd'] = float(metadata['ssd'].values[i])
+        data[index]['factor'] = float(round(metadata['factor'].values[i], 4))
 
     with open(outputFilepath, 'w') as outfile:
         outfile.write(yaml.dump(data, default_flow_style=False))

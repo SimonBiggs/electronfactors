@@ -773,6 +773,7 @@ P10:
   - -2.36
   applicator: 10.0
   energy: 12.0
+  factor: 0.9602
   ssd: 100.0
 P12_1:
   XCoords:
@@ -919,6 +920,7 @@ P12_1:
   - 3.75
   applicator: 10.0
   energy: 12.0
+  factor: 1.0145
   ssd: 100.0
 P12_2:
   XCoords:
@@ -971,6 +973,7 @@ P12_2:
   - -1.03
   applicator: 10.0
   energy: 18.0
+  factor: 1.0049
   ssd: 100.0
 P13:
   XCoords:
@@ -1367,6 +1370,7 @@ P13:
   - 3.67
   applicator: 10.0
   energy: 18.0
+  factor: 1.0183
   ssd: 100.0
 P14_1:
   XCoords:
@@ -2029,6 +2033,7 @@ P14_1:
   - 0.25
   applicator: 14.0
   energy: 9.0
+  factor: 1.0165
   ssd: 100.0
 P14_2:
   XCoords:
@@ -2223,6 +2228,7 @@ P14_2:
   - 4.25
   applicator: 14.0
   energy: 9.0
+  factor: 1.0178
   ssd: 100.0
 P15_1:
   XCoords:
@@ -2601,6 +2607,7 @@ P15_1:
   - 3.56
   applicator: 14.0
   energy: 12.0
+  factor: 1.0106
   ssd: 100.0
 P15_2:
   XCoords:
@@ -2963,6 +2970,7 @@ P15_2:
   - 5.85
   applicator: 14.0
   energy: 15.0
+  factor: 1.0219
   ssd: 100.0
 P17:
   XCoords:
@@ -3133,6 +3141,7 @@ P17:
   - 4.25
   applicator: 10.0
   energy: 9.0
+  factor: 1.0111
   ssd: 100.0
 P18:
   XCoords:
@@ -3323,6 +3332,7 @@ P18:
   - 4.25
   applicator: 14.0
   energy: 9.0
+  factor: 1.0101
   ssd: 100.0
 P19:
   XCoords:
@@ -3521,6 +3531,7 @@ P19:
   - 5.35
   applicator: 14.0
   energy: 15.0
+  factor: 1.0215
   ssd: 100.0
 P2:
   XCoords:
@@ -4795,6 +4806,7 @@ P2:
   - 1.81
   applicator: 6.0
   energy: 9.0
+  factor: 0.9728
   ssd: 100.0
 P20:
   XCoords:
@@ -4861,6 +4873,7 @@ P20:
   - -0.67
   applicator: 14.0
   energy: 6.0
+  factor: 1.006
   ssd: 100.0
 P21:
   XCoords:
@@ -5071,6 +5084,7 @@ P21:
   - 4.65
   applicator: 14.0
   energy: 12.0
+  factor: 1.002
   ssd: 100.0
 P22:
   XCoords:
@@ -5201,6 +5215,7 @@ P22:
   - 4.15
   applicator: 10.0
   energy: 12.0
+  factor: 0.999
   ssd: 100.0
 P23:
   XCoords:
@@ -5279,6 +5294,7 @@ P23:
   - 4.79
   applicator: 14.0
   energy: 6.0
+  factor: 1.005
   ssd: 100.0
 P24:
   XCoords:
@@ -5937,6 +5953,7 @@ P24:
   - 0.12
   applicator: 10.0
   energy: 6.0
+  factor: 0.995
   ssd: 100.0
 P25:
   XCoords:
@@ -5975,6 +5992,7 @@ P25:
   - 3.19
   applicator: 10.0
   energy: 9.0
+  factor: 0.9852
   ssd: 100.0
 P26:
   XCoords:
@@ -6261,6 +6279,7 @@ P26:
   - 3.05
   applicator: 14.0
   energy: 9.0
+  factor: 1.003
   ssd: 100.0
 P27:
   XCoords:
@@ -6479,6 +6498,7 @@ P27:
   - 4.65
   applicator: 14.0
   energy: 15.0
+  factor: 1.0132
   ssd: 100.0
 P28:
   XCoords:
@@ -6661,6 +6681,7 @@ P28:
   - 3.65
   applicator: 10.0
   energy: 15.0
+  factor: 1.0
   ssd: 100.0
 P3:
   XCoords:
@@ -6723,6 +6744,7 @@ P3:
   - 1.37
   applicator: 10.0
   energy: 12.0
+  factor: 0.9756
   ssd: 100.0
 P30:
   XCoords:
@@ -6797,6 +6819,7 @@ P30:
   - 2.18
   applicator: 6.0
   energy: 9.0
+  factor: 0.9597
   ssd: 100.0
 P31_1:
   XCoords:
@@ -6907,6 +6930,7 @@ P31_1:
   - 2.15
   applicator: 10.0
   energy: 18.0
+  factor: 0.9911
   ssd: 100.0
 P31_2:
   XCoords:
@@ -7189,6 +7213,7 @@ P31_2:
   - 7.95
   applicator: 20.0
   energy: 18.0
+  factor: 1.0142
   ssd: 100.0
 P32:
   XCoords:
@@ -7223,6 +7248,7 @@ P32:
   - 7.0
   applicator: 20.0
   energy: 9.0
+  factor: 1.0111
   ssd: 100.0
 P33:
   XCoords:
@@ -7283,6 +7309,7 @@ P33:
   - 4.8
   applicator: 14.0
   energy: 6.0
+  factor: 0.999
   ssd: 100.0
 P34_1:
   XCoords:
@@ -7589,6 +7616,7 @@ P34_1:
   - 4.95
   applicator: 14.0
   energy: 9.0
+  factor: 1.0064
   ssd: 100.0
 P34_2:
   XCoords:
@@ -7815,6 +7843,7 @@ P34_2:
   - 3.95
   applicator: 10.0
   energy: 9.0
+  factor: 0.9975
   ssd: 100.0
 P34_3:
   XCoords:
@@ -8123,6 +8152,7 @@ P34_3:
   - 4.24
   applicator: 10.0
   energy: 9.0
+  factor: 0.9971
   ssd: 100.0
 P35_1:
   XCoords:
@@ -8211,6 +8241,7 @@ P35_1:
   - 5.0
   applicator: 14.0
   energy: 6.0
+  factor: 1.0091
   ssd: 100.0
 P35_2:
   XCoords:
@@ -8401,6 +8432,7 @@ P35_2:
   - 4.15
   applicator: 10.0
   energy: 6.0
+  factor: 0.9943
   ssd: 100.0
 P35_3:
   XCoords:
@@ -9063,6 +9095,7 @@ P35_3:
   - -0.66
   applicator: 6.0
   energy: 6.0
+  factor: 0.939
   ssd: 100.0
 P36_1:
   XCoords:
@@ -9173,6 +9206,7 @@ P36_1:
   - 2.15
   applicator: 10.0
   energy: 18.0
+  factor: 0.9936
   ssd: 100.0
 P36_2:
   XCoords:
@@ -9287,6 +9321,7 @@ P36_2:
   - 4.15
   applicator: 10.0
   energy: 15.0
+  factor: 0.9909
   ssd: 100.0
 P37_1:
   XCoords:
@@ -9437,6 +9472,7 @@ P37_1:
   - 4.15
   applicator: 10.0
   energy: 15.0
+  factor: 1.005
   ssd: 100.0
 P37_3:
   XCoords:
@@ -9739,6 +9775,7 @@ P37_3:
   - 4.25
   applicator: 14.0
   energy: 18.0
+  factor: 1.0132
   ssd: 100.0
 P37_4:
   XCoords:
@@ -9893,6 +9930,7 @@ P37_4:
   - 3.15
   applicator: 10.0
   energy: 18.0
+  factor: 1.0081
   ssd: 100.0
 P38_1:
   XCoords:
@@ -10115,6 +10153,7 @@ P38_1:
   - 3.85
   applicator: 10.0
   energy: 12.0
+  factor: 1.0101
   ssd: 100.0
 P38_2:
   XCoords:
@@ -10301,6 +10340,7 @@ P38_2:
   - 4.05
   applicator: 14.0
   energy: 18.0
+  factor: 1.0173
   ssd: 100.0
 P38_3:
   XCoords:
@@ -11111,6 +11151,7 @@ P38_3:
   - 6.51
   applicator: 14.0
   energy: 6.0
+  factor: 1.003
   ssd: 100.0
 P4:
   XCoords:
@@ -11145,6 +11186,7 @@ P4:
   - 0.2
   applicator: 10.0
   energy: 12.0
+  factor: 0.9443
   ssd: 100.0
 P40:
   XCoords:
@@ -11299,6 +11341,7 @@ P40:
   - 2.95
   applicator: 10.0
   energy: 12.0
+  factor: 0.9872
   ssd: 100.0
 P41:
   XCoords:
@@ -11665,6 +11708,7 @@ P41:
   - 10.95
   applicator: 20.0
   energy: 9.0
+  factor: 1.0111
   ssd: 100.0
 P42:
   XCoords:
@@ -11723,6 +11767,7 @@ P42:
   - -4.29
   applicator: 10.0
   energy: 18.0
+  factor: 0.998
   ssd: 100.0
 P45:
   XCoords:
@@ -11965,6 +12010,7 @@ P45:
   - 5.95
   applicator: 14.0
   energy: 12.0
+  factor: 1.0091
   ssd: 100.0
 P46:
   XCoords:
@@ -12091,6 +12137,7 @@ P46:
   - 2.85
   applicator: 10.0
   energy: 9.0
+  factor: 0.9606
   ssd: 100.0
 P53:
   XCoords:
@@ -12969,6 +13016,7 @@ P53:
   - 1.85
   applicator: 10.0
   energy: 9.0
+  factor: 0.9756
   ssd: 100.0
 P5_2:
   XCoords:
@@ -13275,6 +13323,7 @@ P5_2:
   - 4.35
   applicator: 10.0
   energy: 15.0
+  factor: 0.996
   ssd: 100.0
 P6:
   XCoords:
@@ -13341,6 +13390,7 @@ P6:
   - -1.61
   applicator: 10.0
   energy: 6.0
+  factor: 0.999
   ssd: 100.0
 P7:
   XCoords:
@@ -13769,6 +13819,7 @@ P7:
   - 2.84
   applicator: 10.0
   energy: 6.0
+  factor: 0.9823
   ssd: 100.0
 P8:
   XCoords:
@@ -13959,6 +14010,7 @@ P8:
   - 3.25
   applicator: 10.0
   energy: 9.0
+  factor: 0.9775
   ssd: 100.0
 'Simon #104 cutout':
   XCoords:
@@ -14073,6 +14125,7 @@ P8:
   - 4.15
   applicator: 10.0
   energy: 12.0
+  factor: 0.9934
   ssd: 100.0
 'Simon #106 cutout':
   XCoords:
@@ -14131,6 +14184,7 @@ P8:
   - 4.25
   applicator: 10.0
   energy: 12.0
+  factor: 0.9991
   ssd: 100.0
 'Simon #109 cutout':
   XCoords:
@@ -14533,6 +14587,7 @@ P8:
   - -0.55
   applicator: 10.0
   energy: 12.0
+  factor: 0.9931
   ssd: 100.0
 'Simon #112 cutout':
   XCoords:
@@ -14741,6 +14796,7 @@ P8:
   - 0.56
   applicator: 10.0
   energy: 12.0
+  factor: 0.9489
   ssd: 100.0
 'Simon #14 cutout':
   XCoords:
@@ -14803,6 +14859,7 @@ P8:
   - 1.93
   applicator: 10.0
   energy: 12.0
+  factor: 0.9587
   ssd: 100.0
 'Simon #16 cutout':
   XCoords:
@@ -14863,6 +14920,7 @@ P8:
   - 4.8
   applicator: 10.0
   energy: 12.0
+  factor: 1.0004
   ssd: 100.0
 'Simon #18 cutout':
   XCoords:
@@ -15053,6 +15111,7 @@ P8:
   - 4.15
   applicator: 10.0
   energy: 12.0
+  factor: 1.0019
   ssd: 100.0
 'Simon #19 cutout':
   XCoords:
@@ -15207,6 +15266,7 @@ P8:
   - 2.95
   applicator: 10.0
   energy: 12.0
+  factor: 0.9989
   ssd: 100.0
 'Simon #20 cutout':
   XCoords:
@@ -15795,6 +15855,7 @@ P8:
   - 2.07
   applicator: 10.0
   energy: 12.0
+  factor: 0.9634
   ssd: 100.0
 'Simon #22 cutout':
   XCoords:
@@ -15845,6 +15906,7 @@ P8:
   - 3.31
   applicator: 10.0
   energy: 12.0
+  factor: 0.9884
   ssd: 100.0
 'Simon #3 cutout':
   XCoords:
@@ -15971,6 +16033,7 @@ P8:
   - 2.85
   applicator: 10.0
   energy: 12.0
+  factor: 0.9683
   ssd: 100.0
 'Simon #32 cutout':
   XCoords:
@@ -16277,6 +16340,7 @@ P8:
   - 4.95
   applicator: 10.0
   energy: 12.0
+  factor: 1.0067
   ssd: 100.0
 'Simon #33 cutout':
   XCoords:
@@ -16319,6 +16383,7 @@ P8:
   - 2.19
   applicator: 10.0
   energy: 12.0
+  factor: 0.9933
   ssd: 100.0
 'Simon #34 cutout':
   XCoords:
@@ -16525,6 +16590,7 @@ P8:
   - 4.15
   applicator: 10.0
   energy: 12.0
+  factor: 1.0067
   ssd: 100.0
 'Simon #38 cutout':
   XCoords:
@@ -17799,6 +17865,7 @@ P8:
   - 1.81
   applicator: 10.0
   energy: 12.0
+  factor: 0.9735
   ssd: 100.0
 'Simon #41 cutout':
   XCoords:
@@ -18107,6 +18174,7 @@ P8:
   - 4.24
   applicator: 10.0
   energy: 12.0
+  factor: 1.0052
   ssd: 100.0
 'Simon #43 cutout':
   XCoords:
@@ -18323,6 +18391,7 @@ P8:
   - 3.15
   applicator: 10.0
   energy: 12.0
+  factor: 0.9923
   ssd: 100.0
 'Simon #57 cutout':
   XCoords:
@@ -18985,6 +19054,7 @@ P8:
   - -0.66
   applicator: 10.0
   energy: 12.0
+  factor: 0.9437
   ssd: 100.0
 'Simon #58 cutout':
   XCoords:
@@ -19413,6 +19483,7 @@ P8:
   - 2.84
   applicator: 10.0
   energy: 12.0
+  factor: 0.9911
   ssd: 100.0
 'Simon #6 cutout':
   XCoords:
@@ -19583,6 +19654,7 @@ P8:
   - 4.65
   applicator: 10.0
   energy: 12.0
+  factor: 0.9987
   ssd: 100.0
 'Simon #70 cutout':
   XCoords:
@@ -19769,6 +19841,7 @@ P8:
   - 3.85
   applicator: 10.0
   energy: 12.0
+  factor: 1.0028
   ssd: 100.0
 'Simon #73 cutout':
   XCoords:
@@ -19991,6 +20064,7 @@ P8:
   - 3.35
   applicator: 10.0
   energy: 12.0
+  factor: 1.0045
   ssd: 100.0
 'Simon #82 cutout':
   XCoords:
@@ -20657,6 +20731,7 @@ P8:
   - -3.51
   applicator: 10.0
   energy: 12.0
+  factor: 0.9991
   ssd: 100.0
 'Simon #83 cutout':
   XCoords:
@@ -20827,6 +20902,7 @@ P8:
   - 3.45
   applicator: 10.0
   energy: 12.0
+  factor: 0.9896
   ssd: 100.0
 Simon 3cm circle:
   XCoords:

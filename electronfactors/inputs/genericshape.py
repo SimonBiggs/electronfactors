@@ -58,31 +58,30 @@ def convert_generic(**kwargs):
     inputpath = kwargs['inputFilepath']
     outputpath = kwargs['outputFilepath']
 
-    genericShapeData = pd.read_csv(inputpath)
+    input_data = pd.read_csv(inputpath)
 
-    width = genericShapeData['width'].values
-    length = genericShapeData['length'].values
-    shape = genericShapeData['shape'].values
+    width = input_data['width'].values
+    length = input_data['length'].values
+    shape = input_data['shape'].values
 
     data = dict()
 
-    for i, index in enumerate(genericShapeData['index'].values):
+    for i, index in enumerate(input_data['index'].values):
 
         data[index] = dict()
 
         XCoords, YCoords = generic_shape_convert(width[i], length[i], shape[i])
 
-        XCoords = [round(item, 2) for item in XCoords]
-        YCoords = [round(item, 2) for item in YCoords]
+        XCoords = [float(round(item, 2)) for item in XCoords]
+        YCoords = [float(round(item, 2)) for item in YCoords]
 
-        data[index]['XCoords'] = list(XCoords)
-        data[index]['YCoords'] = list(YCoords)
+        data[index]['XCoords'] = XCoords
+        data[index]['YCoords'] = YCoords
 
-        data[index]['energy'] = float(genericShapeData['energy'].values[i])
-        data[index]['applicator'] = float(
-            genericShapeData['applicator'].values[i])
-        data[index]['ssd'] = float(genericShapeData['ssd'].values[i])
-        data[index]['factor'] = float(genericShapeData['factor'].values[i])
+        data[index]['energy'] = float(input_data['energy'].values[i])
+        data[index]['applicator'] = float(input_data['applicator'].values[i])
+        data[index]['ssd'] = float(input_data['ssd'].values[i])
+        data[index]['factor'] = float(round(input_data['factor'].values[i], 4))
 
     with open(outputpath, 'w') as outfile:
         outfile.write(yaml.dump(data, default_flow_style=False))

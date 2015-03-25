@@ -70,7 +70,6 @@ def create_segment(region, ratio):
 
 
 def straighten(poi=[0, 0], **kwargs):
-
     XCoords = kwargs['XCoords']
     YCoords = kwargs['YCoords']
     cutout = shapely_cutout(XCoords, YCoords)

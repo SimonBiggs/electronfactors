@@ -15,7 +15,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 # from matplotlib import pylab
 
-from scipy.interpolate import interp2d
+from scipy.interpolate import RectBivariateSpline
 
 
 def energy_to_reference_depth(input_energy):
@@ -112,11 +112,10 @@ def TRS398_table7():
 
 def find_stop_power(**kwargs):
     data = TRS398_table7()
-    stop_power_interp = interp2d(
-        data['R50'],
-        data['depth/R50'],
-        data['contents'],
-        kind='cubic'
+    stop_power_interp = RectBivariateSpline(
+        np.array(data['depth/R50']),
+        np.array(data['R50']),
+        np.array(data['contents'])
     )
 
     energy = kwargs['energy']
@@ -127,10 +126,11 @@ def find_stop_power(**kwargs):
     R50_cm = R50_mm / 10
 
     depth_over_R50 = depth_cm / R50_cm
+    index = np.argsort(depth_over_R50)
 
-    stop_power = np.ravel(stop_power_interp(R50_cm, depth_over_R50))
+    stop_power = np.ravel(stop_power_interp.ev(depth_over_R50, R50_cm))
 
-    return stop_power[-1::-1]
+    return stop_power
 
 
 def calc_and_display(**kwargs):
@@ -145,7 +145,7 @@ def calc_and_display(**kwargs):
 
     if len(ionisation) == 1:
         field_stop_power = find_stop_power(
-            energy=energy, depth=depth[0])
+            energy=energy, depth=depth)
         stop_power_ratio = field_stop_power / reference_stop_power
 
         factor = ionisation / reference * stop_power_ratio

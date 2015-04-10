@@ -23,7 +23,7 @@ import os
 
 def print_to_pdf(shapley_list, filename):
 
-    pylab.rcParams['savefig.dpi'] = 254
+    pylab.rcParams['savefig.dpi'] = 254 * 0.95
 
     x_min = []
     x_max = []

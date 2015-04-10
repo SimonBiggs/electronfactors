@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 import descartes as des
 
 from .utilities import make_ellipse
+from ..ellipse.utilities import shapely_cutout
 
 
 def display_equivalent_ellipse(ax=None, **kwargs):
@@ -40,3 +41,22 @@ def display_shapely(shape, ax=None):
 
     ax.axis("equal")
     plt.grid(True)
+
+
+def display_stored_cutout(**kwargs):
+    XCoords = kwargs['XCoords']
+    YCoords = kwargs['YCoords']
+    poi = kwargs['poi']
+    width = kwargs['width']
+    length = kwargs['length']
+
+    cutout = shapely_cutout(XCoords, YCoords)
+
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+
+    display_shapely(cutout, ax=ax)
+
+    plt.scatter(*poi)
+    display_equivalent_ellipse(ax=ax, poi=poi, width=width, length=length)
+    plt.show()

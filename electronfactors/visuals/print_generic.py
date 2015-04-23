@@ -11,30 +11,26 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-import numpy as np
-import shapely.geometry as geo
 
-from ..ellipse.utilities import shapely_ellipse
-
-
-def make_ellipse(**kwargs):
-    if 'poi' in kwargs:
-        poi = kwargs['poi']
-    else:
-        poi = [0, 0]
-
-    width = kwargs['width']
-    length = kwargs['length']
-
-    ellipse = shapely_ellipse([poi[0], poi[1], width, length, 0])
-
-    return ellipse
+from .print_to_scale import print_to_pdf
+from .utilities import make_ellipse
 
 
-def make_shapely(**kwargs):
-    XCoords = kwargs['XCoords']
-    YCoords = kwargs['YCoords']
+def print_ellipse(width_array,
+                  length_array,
+                  directory="scale_prints",
+                  scale=0.95):
 
-    shape = geo.Polygon(np.transpose((XCoords, YCoords)))
+    for i, width in enumerate(width_array):
+        length = length_array[i]
 
-    return shape
+        ellipse = make_ellipse(width=width, length=length)
+
+        filename = (
+            directory + "/" +
+            "ellipse_" +
+            str(width) + "x" + str(length) +
+            "_scale=" + str(scale) +
+            ".pdf")
+
+        print_to_pdf([ellipse], filename, scale=scale)

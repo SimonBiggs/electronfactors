@@ -126,8 +126,6 @@ def find_stop_power(**kwargs):
     R50_cm = R50_mm / 10
 
     depth_over_R50 = depth_cm / R50_cm
-    index = np.argsort(depth_over_R50)
-
     stop_power = np.ravel(stop_power_interp.ev(depth_over_R50, R50_cm))
 
     return stop_power
@@ -176,6 +174,22 @@ def calc_and_display(**kwargs):
     )
 
     return factor
+
+
+def initialise(**kwargs):
+    reference = kwargs['reference']
+    energy = kwargs['energy']
+    key = kwargs['key']
+    data = kwargs['data']
+
+    data[key] = dict()
+
+    data[key]['depth'] = []
+    data[key]['ionisation'] = []
+    data[key]['reference'] = reference
+    data[key]['energy'] = energy
+
+    return data
 
 
 def new_reading(**kwargs):

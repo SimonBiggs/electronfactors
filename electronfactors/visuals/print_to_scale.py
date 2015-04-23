@@ -13,6 +13,8 @@
 
 import numpy as np
 
+import shapely.affinity as aff
+
 import matplotlib.pyplot as plt
 from matplotlib import pylab
 import descartes as des
@@ -21,9 +23,10 @@ import subprocess
 import os
 
 
-def print_to_pdf(shapley_list, filename):
+def print_to_pdf(shapley_list, filename, **kwargs):
 
-    pylab.rcParams['savefig.dpi'] = 254 * 0.95
+    scale = kwargs['scale']
+    pylab.rcParams['savefig.dpi'] = 254
 
     x_min = []
     x_max = []
@@ -48,8 +51,11 @@ def print_to_pdf(shapley_list, filename):
     ax = fig.add_subplot(111)
 
     for shape in shapley_list:
+
+        scaled_shape = aff.scale(
+            shape, xfact=scale, yfact=scale)
         patch = des.PolygonPatch(
-            shape, fc=np.random.uniform(size=3), alpha=0.5
+            scaled_shape, fc=np.random.uniform(size=3), alpha=0.5
         )
         ax.add_patch(patch)
 

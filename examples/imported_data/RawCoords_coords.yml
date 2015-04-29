@@ -6744,7 +6744,7 @@ P3:
   - 1.37
   applicator: 10.0
   energy: 12.0
-  factor: 0.9756
+  factor: 0.999
   ssd: 100.0
 P30:
   XCoords:

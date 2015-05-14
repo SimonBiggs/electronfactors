@@ -24,7 +24,7 @@ def energy_to_reference_depth(input_energy):
         raise Exception("Not valid energy")
 
     reference = input_energy == valid_energies
-    depths = np.array([13, 20, 25, 30, 30])
+    depths = np.array([13, 20, 25, 27, 30])
     depth = depths[reference]
 
     return depth

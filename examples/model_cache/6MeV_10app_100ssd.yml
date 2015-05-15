@@ -1933,7 +1933,7 @@ Simon 6.7x12cm_6MeV:
   - -2.39
   applicator: 10.0
   energy: 6.0
-  factor: 1.01
+  factor: 0.998
   length: 12.0
   poi:
   - 0.0

@@ -52,7 +52,7 @@ P12_2:
   factor: 1.0049
   length: 9.19
   poi:
-  - 0.07
+  - 0.08
   - 0.3
   ssd: 100.0
   width: 6.83
@@ -451,7 +451,7 @@ P13:
   - 3.67
   applicator: 10.0
   energy: 18.0
-  factor: 1.0183
+  factor: 0.997
   length: 8.79
   poi:
   - -0.03
@@ -1483,7 +1483,7 @@ Simon 6.7x12cm_18MeV:
   - -2.39
   applicator: 10.0
   energy: 18.0
-  factor: 1.012
+  factor: 0.999
   length: 12.0
   poi:
   - 0.0

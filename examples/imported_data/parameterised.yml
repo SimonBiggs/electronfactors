@@ -986,7 +986,7 @@ P12_2:
   factor: 1.0049
   length: 9.19
   poi:
-  - 0.07
+  - 0.08
   - 0.3
   ssd: 100.0
   width: 6.83
@@ -1385,7 +1385,7 @@ P13:
   - 3.67
   applicator: 10.0
   energy: 18.0
-  factor: 1.0183
+  factor: 0.997
   length: 8.79
   poi:
   - -0.03
@@ -2256,7 +2256,7 @@ P14_2:
   factor: 1.0178
   length: 12.47
   poi:
-  - -0.12
+  - -0.11
   - 0.7
   ssd: 100.0
   width: 7.03
@@ -4862,10 +4862,10 @@ P2:
   applicator: 6.0
   energy: 9.0
   factor: 0.9728
-  length: 5.98
+  length: 5.97
   poi:
-  - 0.14
-  - -0.0
+  - 0.15
+  - 0.0
   ssd: 100.0
   width: 4.43
 P20:
@@ -4936,7 +4936,7 @@ P20:
   factor: 1.006
   length: 9.24
   poi:
-  - -0.56
+  - -0.55
   - -0.2
   ssd: 100.0
   width: 8.6
@@ -5372,7 +5372,7 @@ P23:
   factor: 1.005
   length: 13.16
   poi:
-  - 0.39
+  - 0.38
   - -0.14
   ssd: 100.0
   width: 9.87
@@ -6078,12 +6078,12 @@ P25:
   applicator: 10.0
   energy: 9.0
   factor: 0.9852
-  length: 8.21
+  length: 8.23
   poi:
-  - -0.37
-  - 0.4
+  - -0.35
+  - 0.32
   ssd: 100.0
-  width: 5.39
+  width: 5.37
 P26:
   XCoords:
   - -0.1
@@ -6930,12 +6930,12 @@ P30:
   applicator: 6.0
   energy: 9.0
   factor: 0.9597
-  length: 5.22
+  length: 5.21
   poi:
-  - -0.12
-  - -0.29
+  - -0.1
+  - -0.33
   ssd: 100.0
-  width: 4.11
+  width: 4.13
 P31_1:
   XCoords:
   - -2.1
@@ -8298,10 +8298,10 @@ P34_3:
   applicator: 10.0
   energy: 9.0
   factor: 0.9971
-  length: 10.23
+  length: 10.24
   poi:
-  - 0.26
-  - 0.2
+  - 0.24
+  - 0.18
   ssd: 100.0
   width: 6.72
 P35_1:
@@ -9495,7 +9495,7 @@ P36_2:
   length: 9.15
   poi:
   - -0.68
-  - 0.52
+  - 0.51
   ssd: 100.0
   width: 5.07
 P37_1:
@@ -10346,7 +10346,7 @@ P38_1:
   factor: 1.0101
   length: 9.03
   poi:
-  - 0.01
+  - 0.02
   - 0.2
   ssd: 100.0
   width: 7.21
@@ -12236,12 +12236,12 @@ P45:
   applicator: 14.0
   energy: 12.0
   factor: 1.0091
-  length: 12.39
+  length: 12.34
   poi:
-  - -0.14
-  - -0.49
+  - -0.16
+  - -0.65
   ssd: 100.0
-  width: 9.08
+  width: 9.11
 P46:
   XCoords:
   - -0.3
@@ -13566,7 +13566,7 @@ P5_2:
   factor: 0.996
   length: 9.79
   poi:
-  - 0.05
+  - 0.04
   - 0.37
   ssd: 100.0
   width: 6.97
@@ -15074,10 +15074,10 @@ P8:
   factor: 0.9489
   length: 4.37
   poi:
-  - 0.11
+  - 0.12
   - -0.08
   ssd: 100.0
-  width: 3.71
+  width: 3.7
 'Simon #14 cutout':
   XCoords:
   - 1.81
@@ -15206,12 +15206,12 @@ P8:
   applicator: 10.0
   energy: 12.0
   factor: 1.0004
-  length: 10.98
+  length: 10.99
   poi:
-  - -0.13
-  - -0.7
+  - -0.12
+  - -0.63
   ssd: 100.0
-  width: 6.54
+  width: 6.53
 'Simon #18 cutout':
   XCoords:
   - -3.16
@@ -15407,7 +15407,7 @@ P8:
   - -0.01
   - -0.51
   ssd: 100.0
-  width: 7.82
+  width: 7.81
 'Simon #19 cutout':
   XCoords:
   - -3.26
@@ -16916,10 +16916,10 @@ P8:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 10.97
+  length: 10.98
   poi:
-  - -0.36
-  - -0.16
+  - -0.35
+  - -0.17
   ssd: 100.0
   width: 6.78
 'Simon #38 cutout':
@@ -18196,12 +18196,12 @@ P8:
   applicator: 10.0
   energy: 12.0
   factor: 0.9735
-  length: 6.3
+  length: 6.28
   poi:
-  - 0.13
-  - -0.01
+  - 0.15
+  - 0.0
   ssd: 100.0
-  width: 4.65
+  width: 4.67
 'Simon #41 cutout':
   XCoords:
   - 1.63
@@ -18512,8 +18512,8 @@ P8:
   factor: 1.0052
   length: 10.77
   poi:
-  - 0.29
-  - 0.24
+  - 0.28
+  - 0.22
   ssd: 100.0
   width: 7.08
 'Simon #43 cutout':
@@ -25165,7 +25165,7 @@ Simon 6.7x12cm_15MeV:
   - -2.39
   applicator: 10.0
   energy: 15.0
-  factor: 1.012
+  factor: 0.999
   length: 12.0
   poi:
   - 0.0
@@ -25309,7 +25309,7 @@ Simon 6.7x12cm_18MeV:
   - -2.39
   applicator: 10.0
   energy: 18.0
-  factor: 1.012
+  factor: 0.999
   length: 12.0
   poi:
   - 0.0
@@ -25453,7 +25453,7 @@ Simon 6.7x12cm_6MeV:
   - -2.39
   applicator: 10.0
   energy: 6.0
-  factor: 1.01
+  factor: 0.998
   length: 12.0
   poi:
   - 0.0
@@ -25597,7 +25597,7 @@ Simon 6.7x12cm_9MeV:
   - -2.39
   applicator: 10.0
   energy: 9.0
-  factor: 1.009
+  factor: 1.0
   length: 12.0
   poi:
   - 0.0
@@ -26464,7 +26464,7 @@ Simon 7cm circle:
   factor: 1.0032
   length: 7.37
   poi:
-  - 0.0
+  - -0.0
   - 0.0
   ssd: 100.0
   width: 7.36

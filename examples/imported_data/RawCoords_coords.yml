@@ -1370,7 +1370,7 @@ P13:
   - 3.67
   applicator: 10.0
   energy: 18.0
-  factor: 1.0183
+  factor: 0.997
   ssd: 100.0
 P14_1:
   XCoords:

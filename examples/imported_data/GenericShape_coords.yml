@@ -3749,7 +3749,7 @@ Simon 6.7x12cm_15MeV:
   - -2.39
   applicator: 10.0
   energy: 15.0
-  factor: 1.012
+  factor: 0.999
   ssd: 100.0
 Simon 6.7x12cm_18MeV:
   XCoords:
@@ -3888,7 +3888,7 @@ Simon 6.7x12cm_18MeV:
   - -2.39
   applicator: 10.0
   energy: 18.0
-  factor: 1.012
+  factor: 0.999
   ssd: 100.0
 Simon 6.7x12cm_6MeV:
   XCoords:
@@ -4027,7 +4027,7 @@ Simon 6.7x12cm_6MeV:
   - -2.39
   applicator: 10.0
   energy: 6.0
-  factor: 1.01
+  factor: 0.998
   ssd: 100.0
 Simon 6.7x12cm_9MeV:
   XCoords:
@@ -4166,7 +4166,7 @@ Simon 6.7x12cm_9MeV:
   - -2.39
   applicator: 10.0
   energy: 9.0
-  factor: 1.009
+  factor: 1.0
   ssd: 100.0
 Simon 6cm circle:
   XCoords:

@@ -20,7 +20,7 @@ Simon 3x13cm oval,12,10,3.16,13.68,ellipse,100,0.953
 Simon 9.5cm_6MeV,6,10,9.5,9.5,circle,100,1.005
 Simon 7.25cm_6MeV,6,10,7.25,7.25,circle,100,1.007
 Simon 8.5x10.9cm_6MeV,6,10,8.5,10.87,ellipse,100,1.003
-Simon 6.7x12cm_6MeV,6,10,6.75,12.03,ellipse,100,1.01
+Simon 6.7x12cm_6MeV,6,10,6.75,12.03,ellipse,100,0.998
 Simon 5.3x12.5cm_6MeV,6,10,5.25,12.49,ellipse,100,0.996
 Simon 5cm_6MeV,6,10,5,5,circle,100,0.977
 Simon 8.3cm_6MeV,6,10,8.3,8.3,circle,100,1.006
@@ -28,7 +28,7 @@ Simon 6.1cm_6MeV,6,10,6.1,6.1,circle,100,0.99
 Simon 5cm_9MeV,9,10,5,5,circle,100,0.959
 Simon 5.3x12.5cm_9MeV,9,10,5.25,12.49,ellipse,100,0.99
 Simon 6.1cm_9MeV,9,10,6.1,6.1,circle,100,0.982
-Simon 6.7x12cm_9MeV,9,10,6.75,12.03,ellipse,100,1.009
+Simon 6.7x12cm_9MeV,9,10,6.75,12.03,ellipse,100,1.000
 Simon 7.25cm_9MeV,9,10,7.25,7.25,circle,100,1.005
 Simon 8.5x10.9cm_9MeV,9,10,8.5,10.87,ellipse,100,1.005
 Simon 9.5cm_9MeV,9,10,9.5,9.5,circle,100,1.007
@@ -45,7 +45,7 @@ Simon 6.1cm_15MeV,15,10,6.1,6.1,circle,100,0.979
 Simon 6.1cm_18MeV,18,10,6.1,6.1,circle,100,0.988
 Simon 5.3x12.5cm_15MeV,15,10,5.25,12.49,ellipse,100,0.992
 Simon 5.3x12.5cm_18MeV,18,10,5.25,12.49,ellipse,100,0.995
-Simon 6.7x12cm_15MeV,15,10,6.75,12.03,ellipse,100,1.012
-Simon 6.7x12cm_18MeV,18,10,6.75,12.03,ellipse,100,1.012
+Simon 6.7x12cm_15MeV,15,10,6.75,12.03,ellipse,100,0.999
+Simon 6.7x12cm_18MeV,18,10,6.75,12.03,ellipse,100,0.999
 Simon 7.25cm_15MeV,15,10,7.25,7.25,circle,100,1.003
 Simon 7.25cm_18MeV,18,10,7.25,7.25,circle,100,1.001

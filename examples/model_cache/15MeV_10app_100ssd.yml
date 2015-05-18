@@ -456,10 +456,10 @@ P37_1:
   applicator: 10.0
   energy: 15.0
   factor: 1.005
-  length: 9.66
+  length: 9.65
   poi:
   - 0.09
-  - 0.09
+  - 0.1
   ssd: 100.0
   width: 7.73
 P5_2:

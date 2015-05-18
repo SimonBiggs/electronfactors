@@ -13819,7 +13819,7 @@ P7:
   - 2.84
   applicator: 10.0
   energy: 6.0
-  factor: 0.9823
+  factor: 0.995
   ssd: 100.0
 P8:
   XCoords:

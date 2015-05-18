@@ -776,8 +776,8 @@ P10:
   factor: 0.9602
   length: 7.29
   poi:
-  - -0.54
-  - -0.21
+  - -0.55
+  - -0.2
   ssd: 100.0
   width: 4.48
 P12_1:
@@ -2056,8 +2056,8 @@ P14_1:
   factor: 1.0165
   length: 12.03
   poi:
-  - 0.73
-  - 0.41
+  - 0.77
+  - 0.42
   ssd: 100.0
   width: 8.61
 P14_2:
@@ -4936,7 +4936,7 @@ P20:
   factor: 1.006
   length: 9.24
   poi:
-  - -0.55
+  - -0.56
   - -0.2
   ssd: 100.0
   width: 8.6
@@ -6078,10 +6078,10 @@ P25:
   applicator: 10.0
   energy: 9.0
   factor: 0.9852
-  length: 8.23
+  length: 8.24
   poi:
   - -0.35
-  - 0.32
+  - 0.3
   ssd: 100.0
   width: 5.37
 P26:
@@ -6930,12 +6930,12 @@ P30:
   applicator: 6.0
   energy: 9.0
   factor: 0.9597
-  length: 5.21
+  length: 5.22
   poi:
-  - -0.1
-  - -0.33
+  - -0.11
+  - -0.3
   ssd: 100.0
-  width: 4.13
+  width: 4.12
 P31_1:
   XCoords:
   - -2.1
@@ -7440,10 +7440,10 @@ P33:
   applicator: 14.0
   energy: 6.0
   factor: 0.999
-  length: 10.44
+  length: 10.43
   poi:
   - -0.11
-  - -0.6
+  - -0.62
   ssd: 100.0
   width: 6.21
 P34_1:
@@ -8298,10 +8298,10 @@ P34_3:
   applicator: 10.0
   energy: 9.0
   factor: 0.9971
-  length: 10.24
+  length: 10.23
   poi:
-  - 0.24
-  - 0.18
+  - 0.26
+  - 0.21
   ssd: 100.0
   width: 6.72
 P35_1:
@@ -9648,10 +9648,10 @@ P37_1:
   applicator: 10.0
   energy: 15.0
   factor: 1.005
-  length: 9.66
+  length: 9.65
   poi:
   - 0.09
-  - 0.09
+  - 0.1
   ssd: 100.0
   width: 7.73
 P37_3:
@@ -9956,12 +9956,12 @@ P37_3:
   applicator: 14.0
   energy: 18.0
   factor: 1.0132
-  length: 12.97
+  length: 12.98
   poi:
-  - -0.62
-  - 0.52
+  - -0.6
+  - 0.5
   ssd: 100.0
-  width: 7.3
+  width: 7.29
 P37_4:
   XCoords:
   - -0.6
@@ -10539,7 +10539,7 @@ P38_2:
   length: 11.49
   poi:
   - 0.25
-  - -0.35
+  - -0.36
   ssd: 100.0
   width: 8.69
 P38_3:
@@ -14069,7 +14069,7 @@ P7:
   - 2.84
   applicator: 10.0
   energy: 6.0
-  factor: 0.9823
+  factor: 0.995
   length: 7.58
   poi:
   - -0.39
@@ -15072,12 +15072,12 @@ P8:
   applicator: 10.0
   energy: 12.0
   factor: 0.9489
-  length: 4.37
+  length: 4.36
   poi:
-  - 0.12
-  - -0.08
+  - 0.08
+  - -0.09
   ssd: 100.0
-  width: 3.7
+  width: 3.72
 'Simon #14 cutout':
   XCoords:
   - 1.81
@@ -16214,7 +16214,7 @@ P8:
   factor: 0.9884
   length: 11.4
   poi:
-  - -0.58
+  - -0.59
   - -0.29
   ssd: 100.0
   width: 5.21
@@ -16916,10 +16916,10 @@ P8:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 10.98
+  length: 10.97
   poi:
-  - -0.35
-  - -0.17
+  - -0.36
+  - -0.16
   ssd: 100.0
   width: 6.78
 'Simon #38 cutout':
@@ -18198,7 +18198,7 @@ P8:
   factor: 0.9735
   length: 6.28
   poi:
-  - 0.15
+  - 0.16
   - 0.0
   ssd: 100.0
   width: 4.67
@@ -18512,7 +18512,7 @@ P8:
   factor: 1.0052
   length: 10.77
   poi:
-  - 0.28
+  - 0.27
   - 0.22
   ssd: 100.0
   width: 7.08
@@ -26464,7 +26464,7 @@ Simon 7cm circle:
   factor: 1.0032
   length: 7.37
   poi:
-  - -0.0
+  - 0.0
   - 0.0
   ssd: 100.0
   width: 7.36

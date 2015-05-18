@@ -70,13 +70,17 @@ def angle_gap(xTest, yTest, xData, yData, xScale, yScale):
     return gap
 
 
-def single_fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=2):
-
-    initialFitReturn = SmoothBivariateSpline(
-        xData, yData, zData, kx=kx, ky=ky, s=s).ev(xTest, yTest)
+def single_fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
 
     adjXData = np.append(xData, xTest)
     adjYData = np.append(yData, yTest)
+
+    bbox = [
+        min(adjXData), max(adjXData),
+        min(adjYData), max(adjYData)]
+
+    initialFitReturn = SmoothBivariateSpline(
+        xData, yData, zData, bbox=bbox, kx=kx, ky=ky, s=s).ev(xTest, yTest)
 
     posAdjZData = np.append(zData, initialFitReturn + 1)
     negAdjZData = np.append(zData, initialFitReturn - 1)
@@ -94,7 +98,7 @@ def single_fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=2):
     return give
 
 
-def fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=2):
+def fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
 
     dim = np.core.fromnumeric.shape(xTest)
 

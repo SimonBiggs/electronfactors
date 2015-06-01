@@ -15,19 +15,18 @@ import yaml
 
 
 def create_cache(input_directory="imported_data/",
-                 filepath=None, ssd=100, **kwargs):
+                 output_directory="model_cache/",
+                 ssd=100, **kwargs):
 
     input_filepath = input_directory + "parameterised.yml"
     energy = kwargs['energy']
     applicator = kwargs['applicator']
 
-    if filepath is None:
-        filepath = (
-            "model_cache/" +
-            str(energy) + "MeV_" +
-            str(applicator) + "app_" +
-            str(ssd) + "ssd.yml"
-        )
+    filepath = (
+        output_directory +
+        str(energy) + "MeV_" +
+        str(applicator) + "app_" +
+        str(ssd) + "ssd.yml")
 
     with open(input_filepath, 'r') as file:
         input_dict = yaml.load(file)

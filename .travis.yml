@@ -12,8 +12,8 @@ before_install:
   - conda update --yes conda
 
 install:
-  - conda install --yes python=$TRAVIS_PYTHON_VERSION statsmodels numpy scipy nose shapely pandas matplotlib
-  - pip install coveralls descartes
+  - conda install --yes python=$TRAVIS_PYTHON_VERSION statsmodels numpy scipy nose shapely pandas matplotlib bokeh 
+  - pip install coveralls descartes yaml 
 
 script:
   - nosetests --with-coverage

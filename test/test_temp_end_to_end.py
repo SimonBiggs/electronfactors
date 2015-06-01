@@ -65,7 +65,7 @@ def test_partial_end_to_end():
     for energy in energy_list:
         create_cache(
             input_directory="examples/imported_data/",
-            output_directory="examples/model_cache",
+            output_directory="examples/model_cache/",
             energy=energy,
             applicator=10)
 

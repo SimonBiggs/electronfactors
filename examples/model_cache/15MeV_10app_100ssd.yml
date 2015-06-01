@@ -303,7 +303,7 @@ P36_2:
   length: 9.15
   poi:
   - -0.68
-  - 0.51
+  - 0.53
   ssd: 100.0
   width: 5.07
 P37_1:
@@ -456,10 +456,10 @@ P37_1:
   applicator: 10.0
   energy: 15.0
   factor: 1.005
-  length: 9.65
+  length: 9.66
   poi:
   - 0.09
-  - 0.1
+  - 0.09
   ssd: 100.0
   width: 7.73
 P5_2:

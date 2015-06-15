@@ -758,12 +758,12 @@ P34_3:
   applicator: 10.0
   energy: 9.0
   factor: 0.9971
-  length: 10.23
+  length: 10.35
   poi:
-  - 0.26
-  - 0.21
+  - -0.02
+  - -0.16
   ssd: 100.0
-  width: 6.72
+  width: 6.65
 P46:
   XCoords:
   - -0.3

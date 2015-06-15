@@ -1,0 +1,102 @@
+# Copyright (C) 2015 Simon Biggs
+# This program is free software: you can redistribute it and/or
+# modify it under the terms of the GNU Affero General Public
+# License as published by the Free Software Foundation, either
+# version 3 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Affero General Public License for more details.
+# You should have received a copy of the GNU Affero General Public
+# License along with this program. If not, see
+# http://www.gnu.org/licenses/.
+
+import numpy as np
+import yaml
+from scipy.interpolate import SmoothBivariateSpline
+
+from scipy.special import gamma
+
+
+def to_eqPonA(width, length):
+    perimeter = (
+        np.pi / 2 *
+        (3*(width + length) - np.sqrt((3*width + length)*(3*length + width)))
+    )
+    area = np.pi / 4 * width * length
+
+    eqPonA = perimeter / area
+
+    return eqPonA
+
+
+def create_model(width, eqPonA, factor):
+
+    def model(x, y):
+
+        spline = SmoothBivariateSpline(
+            width, eqPonA, factor, kx=2, ky=1)
+
+        result = spline.ev(x, y)
+
+        return result
+
+    return model
+
+
+def pull_data(energy=12, applicator=10, ssd=100):
+    with open("model_cache/" +
+              str(energy) + "MeV_" +
+              str(applicator) + "app_" +
+              str(ssd) + "ssd.yml", 'r') as file:
+        cutout_data = yaml.load(file)
+
+    label = np.array([key for key in cutout_data])
+    width = np.array([cutout_data[key]['width'] for key in label])
+    length = np.array([cutout_data[key]['length'] for key in label])
+    factor = np.array([cutout_data[key]['factor'] for key in label])
+    eqPonA = to_eqPonA(width, length)
+
+    return width, eqPonA, factor
+
+
+def calculate_percent_prediction_differences(width, eqPonA, factor):
+
+    predictions = np.zeros(len(width))
+
+    for i in range(len(width)):
+
+        widthTest = np.delete(width, i)
+        eqPonATest = np.delete(eqPonA, i)
+        factorTest = np.delete(factor, i)
+
+        modelTest = create_model(widthTest, eqPonATest, factorTest)
+
+        predictions[i] = modelTest(width[i], eqPonA[i])
+
+    percent_prediction_differences = 100*(factor - predictions) / factor
+
+    return percent_prediction_differences
+
+
+def prediction_uncertainty(width, eqPonA, factor):
+
+    percent_prediction_differences = calculate_percent_prediction_differences(
+        width, eqPonA, factor)
+    prediction_uncertainty = (
+        np.std(percent_prediction_differences, ddof=1) /
+        c4(len(percent_prediction_differences)))
+    total = (
+        prediction_uncertainty +
+        np.abs(np.mean(percent_prediction_differences)))
+
+    return total
+
+
+def c4(n):
+
+    output = np.sqrt(2/(n-1)) * gamma(n/2) / gamma((n-1)/2)
+    if np.isnan(output):
+        output = 1
+
+    return output

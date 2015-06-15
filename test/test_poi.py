@@ -12,7 +12,7 @@
 # http://www.gnu.org/licenses/.
 
 import numpy as np
-from electronfactors.ellipse.poi import find_poi
+from electronfactors.ellipse.equivalent import poi_distance_method
 
 
 def test_centre_of_square():
@@ -20,7 +20,7 @@ def test_centre_of_square():
     XCoords = np.array([-3, 3, 3, -3])
     YCoords = np.array([3, 3, -3, -3])
 
-    poi = find_poi(
+    poi = poi_distance_method(
         XCoords=XCoords, YCoords=YCoords
     )
 
@@ -33,7 +33,7 @@ def test_centre_of_arbitrary_cutout():
     XCoords = np.array([-1, -0.2, 0, 0.7, 1, 0]) * 4 + 1
     YCoords = np.array([0, -1, -.8, 0, .6, 1]) * 4 - 1
 
-    poi = find_poi(
+    poi = poi_distance_method(
         XCoords=XCoords, YCoords=YCoords
     )
 

@@ -16,6 +16,7 @@ import yaml
 from scipy.interpolate import SmoothBivariateSpline
 
 from scipy.special import gamma
+from .threshold import fit_give
 
 
 def to_eqPonA(width, length):
@@ -30,12 +31,12 @@ def to_eqPonA(width, length):
     return eqPonA
 
 
-def create_model(width, eqPonA, factor):
+def create_model(width, eqPonA, factor, bbox=[None, None, None, None]):
 
     def model(x, y):
 
         spline = SmoothBivariateSpline(
-            width, eqPonA, factor, kx=2, ky=1)
+            width, eqPonA, factor, kx=2, ky=1, bbox=bbox)
 
         result = spline.ev(x, y)
 
@@ -57,12 +58,16 @@ def pull_data(energy=12, applicator=10, ssd=100):
     factor = np.array([cutout_data[key]['factor'] for key in label])
     eqPonA = to_eqPonA(width, length)
 
-    return width, eqPonA, factor
+    return width, length, eqPonA, factor
 
 
 def calculate_percent_prediction_differences(width, eqPonA, factor):
 
     predictions = np.zeros(len(width))
+    give = np.zeros(len(width))
+
+    bbox = [np.min(width), np.max(width),
+            np.min(eqPonA), np.max(eqPonA)]
 
     for i in range(len(width)):
 
@@ -70,11 +75,16 @@ def calculate_percent_prediction_differences(width, eqPonA, factor):
         eqPonATest = np.delete(eqPonA, i)
         factorTest = np.delete(factor, i)
 
-        modelTest = create_model(widthTest, eqPonATest, factorTest)
+        modelTest = create_model(widthTest, eqPonATest, factorTest, bbox=bbox)
 
         predictions[i] = modelTest(width[i], eqPonA[i])
+        give[i] = fit_give(
+            width[i], eqPonA[i], widthTest, eqPonATest, factorTest)
 
     percent_prediction_differences = 100*(factor - predictions) / factor
+
+    invalid = give > 0.5
+    percent_prediction_differences = percent_prediction_differences[~invalid]
 
     return percent_prediction_differences
 
@@ -83,12 +93,16 @@ def prediction_uncertainty(width, eqPonA, factor):
 
     percent_prediction_differences = calculate_percent_prediction_differences(
         width, eqPonA, factor)
-    prediction_uncertainty = (
-        np.std(percent_prediction_differences, ddof=1) /
-        c4(len(percent_prediction_differences)))
-    total = (
-        prediction_uncertainty +
-        np.abs(np.mean(percent_prediction_differences)))
+
+    if len(percent_prediction_differences) > 1:
+        prediction_uncertainty = (
+            np.std(percent_prediction_differences, ddof=1) /
+            c4(len(percent_prediction_differences)))
+        total = (
+            prediction_uncertainty +
+            np.abs(np.mean(percent_prediction_differences)))
+    else:
+        total = np.nan
 
     return total
 

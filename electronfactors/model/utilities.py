@@ -31,9 +31,14 @@ def to_eqPonA(width, length):
     return eqPonA
 
 
-def create_model(width, eqPonA, factor, bbox=[None, None, None, None]):
+def create_model(width, eqPonA, factor):
 
     def model(x, y):
+        bbox = [
+            np.min([np.min(width), np.min(x)]),
+            np.max([np.max(width), np.max(x)]),
+            np.min([np.min(eqPonA), np.min(y)]),
+            np.max([np.max(eqPonA), np.max(y)])]
 
         spline = SmoothBivariateSpline(
             width, eqPonA, factor, kx=2, ky=1, bbox=bbox)
@@ -66,16 +71,13 @@ def calculate_percent_prediction_differences(width, eqPonA, factor):
     predictions = np.zeros(len(width))
     give = np.zeros(len(width))
 
-    bbox = [np.min(width), np.max(width),
-            np.min(eqPonA), np.max(eqPonA)]
-
     for i in range(len(width)):
 
         widthTest = np.delete(width, i)
         eqPonATest = np.delete(eqPonA, i)
         factorTest = np.delete(factor, i)
 
-        modelTest = create_model(widthTest, eqPonATest, factorTest, bbox=bbox)
+        modelTest = create_model(widthTest, eqPonATest, factorTest)
 
         predictions[i] = modelTest(width[i], eqPonA[i])
         give[i] = fit_give(

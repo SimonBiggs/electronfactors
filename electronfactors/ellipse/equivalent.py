@@ -67,62 +67,10 @@ def poi_distance_method(n=5, confidence=0.001, **kwargs):
     return poi
 
 
-# def poi_enclosed_circle_method(weighting=1, n=5, confidence=0.001, **kwargs):
-#     XCoords = kwargs['XCoords']
-#     YCoords = kwargs['YCoords']
-#
-#     cutout = shapely_cutout(XCoords, YCoords)
-#     centroid = cutout.centroid
-#
-#     initial = np.array([0, 0, 1])
-#
-#     bound = np.hypot(
-#         np.diff(cutout.bounds[::2]),
-#         np.diff(cutout.bounds[1::2]))
-#
-#     step_noise = [bound] * 3
-#
-#     def to_minimise(optimiser_input):
-#         x = optimiser_input[0]
-#         y = optimiser_input[1]
-#         width = optimiser_input[2]
-#
-#         point = geo.Point(x, y)
-#         circle = point.buffer(width/2)
-#
-#         disjoint_overshoot = circle.difference(cutout).area
-#         disjoint_undershoot = cutout.difference(circle).area
-#
-#         centroid_weighting = point.distance(centroid) / bound
-#
-#         return (
-#             disjoint_overshoot * weighting +
-#             disjoint_undershoot +
-#             centroid_weighting)
-#
-#     optimiser = _CustomBasinhopping(
-#         to_minimise=to_minimise,
-#         initial=initial,
-#         step_noise=step_noise,
-#         n=n,
-#         confidence=confidence
-#     )
-#
-#     poi = np.array([
-#         optimiser.result[0],
-#         optimiser.result[1]
-#     ])
-#
-#     width = optimiser.result[2]
-#
-#     return poi, width
-
-
 def equivalent_ellipse(display=False, **kwargs):
     XCoords = kwargs['XCoords']
     YCoords = kwargs['YCoords']
 
-    # poi, width = poi_enclosed_circle_method(XCoords=XCoords, YCoords=YCoords)
     poi = poi_distance_method(XCoords=XCoords, YCoords=YCoords)
 
     width = find_width(XCoords=XCoords, YCoords=YCoords, poi=poi)

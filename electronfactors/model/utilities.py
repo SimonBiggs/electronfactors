@@ -109,6 +109,11 @@ def prediction_uncertainty(width, eqPonA, factor):
     return total
 
 
+def estimate_population_uncertainty(data):
+    uncertainty = np.std(data, ddof=1) / c4(len(data))
+    return uncertainty
+
+
 def c4(n):
 
     output = np.sqrt(2/(n-1)) * gamma(n/2) / gamma((n-1)/2)

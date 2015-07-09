@@ -14,6 +14,7 @@
 import numpy as np
 import yaml
 from scipy.interpolate import SmoothBivariateSpline
+from scipy.optimize import minimize
 
 from scipy.special import gamma
 from .threshold import fit_give
@@ -29,6 +30,21 @@ def to_eqPonA(width, length):
     eqPonA = perimeter / area
 
     return eqPonA
+
+
+def to_length(width_array, eqPonA_array):
+    def to_minimise(length, width, eqPonA):
+        return (eqPonA - to_eqPonA(width, length))**2
+
+    length_array = np.zeros(len(width_array))
+
+    for i, width in enumerate(width_array):
+        eqPonA = eqPonA_array[i]
+        length_array[i] = minimize(
+            to_minimise, [1], args=(width, eqPonA),
+            method='L-BFGS-B', bounds=((width, None),)).x
+
+    return length_array
 
 
 def create_model(width, eqPonA, factor):

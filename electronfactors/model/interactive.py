@@ -20,7 +20,7 @@ from matplotlib import cm
 from matplotlib import colors
 
 from .threshold import fit_give
-from .utilities import create_model, to_eqPonA
+from .utilities import create_model, to_eqPonA, to_length
 
 
 def create_native_plot_mesh(width, eqPonA, factor):
@@ -73,6 +73,22 @@ def interactive_native_contourf(width, eqPonA, factor):
     hover_labels = ["Width", "Length", "P/A", "Factor"]
     hover_values = [hover_width, hover_length, hover_eqPonA, hover_factor]
 
+    bokeh_contourf(xx, yy, zz, hover_labels, hover_values, "Native domain")
+
+
+def convert_to_source(hover_labels, hover_values):
+    data = dict()
+    for i in range(len(hover_labels)):
+        data[hover_labels[i]] = hover_values[i]
+
+    source = bkh.ColumnDataSource(
+        data=data)
+
+    return source
+
+def convert_to_tooltips(hover_labels, hover_values):
+
+
 
 def bokeh_contourf(xx, yy, zz, hover_labels, hover_values, title):
     xx_flat = np.ravel(xx)
@@ -89,18 +105,11 @@ def bokeh_contourf(xx, yy, zz, hover_labels, hover_values, title):
     rgb = rgb[:, 0:3]
     color = [colors.rgb2hex(tuple(item)) for item in rgb]
 
-    fig = bkh.figure(title=title, 
+    fig = bkh.figure(title=title,
              tools="resize, hover",
              plot_height=400, plot_width=600)
 
-    source = bkh.ColumnDataSource(
-        data=dict(
-            width=hover_width,
-            length=hover_length,
-            eqPonA=hover_eqPonA,
-            factor=hover_factor
-        )
-    )
+    source = convert_to_source(hover_labels, hover_values)
 
     fig.rect(xx_flat, yy_flat, 0.1, 0.01, color=color, source=source)
     hover = fig.select(dict(type=HoverTool))

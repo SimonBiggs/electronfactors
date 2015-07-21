@@ -82,7 +82,8 @@ def pull_data(energy=12, applicator=10, ssd=100):
     return width, length, eqPonA, factor
 
 
-def calculate_percent_prediction_differences(width, eqPonA, factor):
+def calculate_percent_prediction_differences(width, eqPonA, factor,
+                                             keep_nans=False):
 
     predictions = np.zeros(len(width))
     give = np.zeros(len(width))
@@ -102,7 +103,12 @@ def calculate_percent_prediction_differences(width, eqPonA, factor):
     percent_prediction_differences = 100*(factor - predictions) / factor
 
     invalid = give > 0.5
-    percent_prediction_differences = percent_prediction_differences[~invalid]
+
+    if keep_nans:
+        percent_prediction_differences[invalid] = np.nan
+    else:
+        percent_prediction_differences = (
+            percent_prediction_differences[~invalid])
 
     return percent_prediction_differences
 

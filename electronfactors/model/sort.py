@@ -12,6 +12,32 @@
 # http://www.gnu.org/licenses/.
 
 import yaml
+import numpy as np
+
+
+def cache_all():
+
+    input_filepath = "imported_data/parameterised.yml"
+    with open(input_filepath, 'r') as file:
+        input_dict = yaml.load(file)
+
+    energy = []
+    applicator = []
+    ssd = []
+
+    for i, key in enumerate(input_dict):
+        energy.append(input_dict[key]['energy'])
+        applicator.append(input_dict[key]['applicator'])
+        ssd.append(input_dict[key]['ssd'])
+
+    energy_array = np.unique(energy)
+    applicator_array = np.unique(applicator)
+    ssd_array = np.unique(ssd)
+
+    for energy in energy_array:
+        for applicator in applicator_array:
+            for ssd in ssd_array:
+                create_cache(energy=energy, applicator=applicator, ssd=ssd)
 
 
 def create_cache(input_directory="imported_data/",
@@ -41,8 +67,23 @@ def create_cache(input_directory="imported_data/",
         if sameenergy and sameapplicator and samessd:
             output_dict[key] = input_dict[key]
 
-    if len(output_dict.keys()) >= 8:
+    number_of_points = len(output_dict.keys())
+
+    if number_of_points >= 8:
         with open(filepath, 'w') as file:
             file.write(yaml.dump(output_dict, default_flow_style=False))
+        print(
+            "Sufficient data -- Cache created\n"
+            "Number of measurements = %d\n"
+            "Energy = %d\n"
+            "Applicator = %d"
+            "\nSSD = %d\n" %
+            (number_of_points, energy, applicator, ssd))
     else:
-        raise Exception("Not sufficient data points")
+        print(
+            "Insufficient data -- Cache not created\n"
+            "Number of measurements = %d\n"
+            "Energy = %d\n"
+            "Applicator = %d"
+            "\nSSD = %d\n" %
+            (number_of_points, energy, applicator, ssd))

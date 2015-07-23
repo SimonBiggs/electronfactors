@@ -16,7 +16,6 @@ import numpy as np
 
 
 def cache_all():
-
     input_filepath = "imported_data/parameterised.yml"
     with open(input_filepath, 'r') as file:
         input_dict = yaml.load(file)
@@ -30,9 +29,9 @@ def cache_all():
         applicator.append(input_dict[key]['applicator'])
         ssd.append(input_dict[key]['ssd'])
 
-    energy_array = np.unique(energy)
-    applicator_array = np.unique(applicator)
-    ssd_array = np.unique(ssd)
+    energy_array = np.unique(energy).astype(int)
+    applicator_array = np.unique(applicator).astype(int)
+    ssd_array = np.unique(ssd).astype(int)
 
     for energy in energy_array:
         for applicator in applicator_array:
@@ -69,21 +68,12 @@ def create_cache(input_directory="imported_data/",
 
     number_of_points = len(output_dict.keys())
 
-    if number_of_points >= 8:
-        with open(filepath, 'w') as file:
-            file.write(yaml.dump(output_dict, default_flow_style=False))
-        print(
-            "Sufficient data -- Cache created\n"
-            "Number of measurements = %d\n"
-            "Energy = %d\n"
-            "Applicator = %d"
-            "\nSSD = %d\n" %
-            (number_of_points, energy, applicator, ssd))
-    else:
-        print(
-            "Insufficient data -- Cache not created\n"
-            "Number of measurements = %d\n"
-            "Energy = %d\n"
-            "Applicator = %d"
-            "\nSSD = %d\n" %
-            (number_of_points, energy, applicator, ssd))
+    with open(filepath, 'w') as file:
+        file.write(yaml.dump(output_dict, default_flow_style=False))
+    print(
+        "Cache created\n"
+        "Number of measurements = %d\n"
+        "Energy = %d\n"
+        "Applicator = %d"
+        "\nSSD = %d\n" %
+        (number_of_points, energy, applicator, ssd))

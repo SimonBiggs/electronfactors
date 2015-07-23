@@ -776,7 +776,7 @@ P10:
   factor: 0.9602
   length: 7.29
   poi:
-  - -0.54
+  - -0.55
   - -0.21
   ssd: 100.0
   width: 4.48
@@ -1361,7 +1361,7 @@ P38_1:
   length: 9.03
   poi:
   - 0.02
-  - 0.21
+  - 0.2
   ssd: 100.0
   width: 7.21
 P4:
@@ -2501,7 +2501,7 @@ P40:
   length: 10.99
   poi:
   - -0.12
-  - -0.63
+  - -0.67
   ssd: 100.0
   width: 6.53
 'Simon #18 cutout':
@@ -2699,7 +2699,7 @@ P40:
   - -0.01
   - -0.51
   ssd: 100.0
-  width: 7.81
+  width: 7.82
 'Simon #19 cutout':
   XCoords:
   - -3.26
@@ -3450,7 +3450,7 @@ P40:
   factor: 0.9634
   length: 5.47
   poi:
-  - 0.01
+  - 0.0
   - -0.51
   ssd: 100.0
   width: 4.38
@@ -4208,10 +4208,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
-  length: 10.97
+  length: 10.98
   poi:
-  - -0.36
-  - -0.16
+  - -0.35
+  - -0.17
   ssd: 100.0
   width: 6.78
 'Simon #38 cutout':
@@ -7722,10 +7722,10 @@ P40:
   applicator: 10.0
   energy: 12.0
   factor: 1.0045
-  length: 10.05
+  length: 10.06
   poi:
-  - -0.2
-  - -0.46
+  - -0.19
+  - -0.45
   ssd: 100.0
   width: 7.56
 'Simon #82 cutout':

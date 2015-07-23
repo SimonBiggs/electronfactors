@@ -24,6 +24,7 @@ from ..visuals.utilities import create_green_cm
 
 
 green_cm = create_green_cm()
+default_tools = "hover, box_zoom, reset"
 
 
 def create_native_plot_mesh(width, eqPonA, factor):
@@ -76,7 +77,13 @@ def interactive_native_contourf(width, eqPonA, factor):
     hover_labels = ["Width", "Length", "PonA", "Factor"]
     hover_values = [hover_width, hover_length, hover_eqPonA, hover_factor]
 
-    bokeh_contourf(xx, yy, zz, hover_labels, hover_values, "Native domain")
+    fig = bokeh_contourf(xx, yy, zz, hover_labels, hover_values)
+
+    fig.title = "Native domain"
+    fig.xaxis.axis_label = "Width (cm)"
+    fig.yaxis.axis_label = "Perimeter / Area (cm^-1)"
+
+    return fig
 
 
 def create_transformed_plot_mesh(width, length, factor):
@@ -130,8 +137,47 @@ def interactive_transformed_contourf(width, length, factor):
     hover_labels = ["Width", "Length", "PonA", "Factor"]
     hover_values = [hover_width, hover_length, hover_eqPonA, hover_factor]
 
-    bokeh_contourf(
-        xx, yy, zz, hover_labels, hover_values, "Transformed domain")
+    fig = bokeh_contourf(
+        xx, yy, zz, hover_labels, hover_values)
+
+    fig.title = "Transformed domain"
+    fig.xaxis.axis_label = "Width (cm)"
+    fig.yaxis.axis_label = "Length (cm)"
+
+    return fig
+
+
+def fallback_scatter(width, length, factor, label):
+    hover_labels = ["Width", "Length", "Factor", "Label"]
+
+    hover_width = [" %0.1f cm" % (num) for num in width]
+    hover_length = [" %0.1f cm" % (num) for num in length]
+    hover_factor = [" %0.3f" % (num) for num in factor]
+
+    hover_values = [hover_width, hover_length, hover_factor, label]
+
+    fig = bokeh_scatter(width, factor, hover_labels, hover_values)
+
+    fig.title = "Fallback scatter plot"
+    fig.xaxis.axis_label = "Width (cm)"
+    fig.yaxis.axis_label = "Factor"
+
+    return fig
+
+
+def bokeh_scatter(x, y, hover_labels, hover_values):
+    fig = bkh.figure(
+        tools=default_tools,
+        plot_height=400, plot_width=600)
+
+    source = convert_to_source(hover_labels, hover_values)
+    tooltips = convert_to_tooltips(hover_labels, hover_values)
+
+    fig.scatter(x, y, source=source, size=20)
+    hover = fig.select(dict(type=HoverTool))
+    hover.tooltips = tooltips
+
+    return fig
 
 
 def convert_to_source(hover_labels, hover_values):
@@ -150,7 +196,7 @@ def convert_to_tooltips(hover_labels, hover_values):
     return tooltips
 
 
-def bokeh_contourf(xx, yy, zz, hover_labels, hover_values, title):
+def bokeh_contourf(xx, yy, zz, hover_labels, hover_values):
     dx = xx[0, 1] - xx[0, 0]
     dy = yy[1, 0] - yy[0, 0]
 
@@ -169,8 +215,7 @@ def bokeh_contourf(xx, yy, zz, hover_labels, hover_values, title):
     color = [colors.rgb2hex(tuple(item)) for item in rgb]
 
     fig = bkh.figure(
-        title=title,
-        tools="resize, hover",
+        tools=default_tools,
         plot_height=400, plot_width=600)
 
     source = convert_to_source(hover_labels, hover_values)
@@ -180,4 +225,4 @@ def bokeh_contourf(xx, yy, zz, hover_labels, hover_values, title):
     hover = fig.select(dict(type=HoverTool))
     hover.tooltips = tooltips
 
-    bkh.show(fig)
+    return fig

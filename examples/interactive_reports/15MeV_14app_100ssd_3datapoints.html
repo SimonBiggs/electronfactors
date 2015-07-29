@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <title>Electron factors | 15 MeV | 14 app | 100 ssd</title>
+
+                <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.9.0.min.js"></script>
+            <script type="text/javascript">
+    Bokeh.$(function() {
+        var modelid = "8e513424-6baf-4fec-8714-01a1a13ffd66";
+        var modeltype = "Plot";
+        var elementid = "993c8bb2-8d99-4aa0-b432-5f889ddfef87";
+        Bokeh.logger.info("Realizing plot:")
+        Bokeh.logger.info(" - modeltype: Plot");
+        Bokeh.logger.info(" - modelid: 8e513424-6baf-4fec-8714-01a1a13ffd66");
+        Bokeh.logger.info(" - elementid: 993c8bb2-8d99-4aa0-b432-5f889ddfef87");
+        var all_models = [{"type": "HoverTool", "attributes": {"doc": null, "always_active": true, "id": "002bf31b-72bb-48be-bbc5-91ac4d5bf4be", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "renderers": [], "tags": [], "names": [], "tooltips": [["Label", " @Label"], ["Width", " @Width"], ["Length", " @Length"], ["Factor", " @Factor"]]}, "id": "002bf31b-72bb-48be-bbc5-91ac4d5bf4be"}, {"type": "ToolEvents", "attributes": {"doc": null, "id": "36fb6744-0290-401a-8bed-41edfe033be7", "tags": [], "geometries": []}, "id": "36fb6744-0290-401a-8bed-41edfe033be7"}, {"type": "DataRange1d", "attributes": {"doc": null, "id": "594622b8-eb53-435d-8f47-6f08459ceb4b", "renderers": [], "tags": [], "names": []}, "id": "594622b8-eb53-435d-8f47-6f08459ceb4b"}, {"type": "Grid", "attributes": {"doc": null, "ticker": {"type": "BasicTicker", "id": "b6ebe3fe-cb09-4acb-8520-62ea78a2e97e"}, "id": "20c22d0c-10c2-4cc7-aaf9-87ad8781d12a", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "dimension": 0, "tags": []}, "id": "20c22d0c-10c2-4cc7-aaf9-87ad8781d12a"}, {"type": "BasicTickFormatter", "attributes": {"doc": null, "id": "e93d8b8b-269d-4fd9-9f5d-bbdd5765ae93", "tags": []}, "id": "e93d8b8b-269d-4fd9-9f5d-bbdd5765ae93"}, {"type": "Circle", "attributes": {"doc": null, "fill_color": {"value": "#1f77b4"}, "line_color": {"value": "#1f77b4"}, "id": "167f2ed9-f0c9-4fe3-adaa-ce13a1b4d942", "line_alpha": {"value": 0.1}, "size": {"units": "screen", "value": 10}, "x": {"field": "x"}, "tags": [], "y": {"field": "y"}, "fill_alpha": {"value": 0.1}}, "id": "167f2ed9-f0c9-4fe3-adaa-ce13a1b4d942"}, {"type": "GlyphRenderer", "attributes": {"doc": null, "name": null, "id": "dd1e8de8-eebc-48eb-b68f-d51e387868bf", "glyph": {"type": "Circle", "id": "7420c3fe-dc24-424f-801f-7e7f6c066f4b"}, "data_source": {"type": "ColumnDataSource", "id": "0ae8e0cb-46e2-4792-afae-b257caff0d84"}, "selection_glyph": null, "tags": [], "nonselection_glyph": {"type": "Circle", "id": "167f2ed9-f0c9-4fe3-adaa-ce13a1b4d942"}}, "id": "dd1e8de8-eebc-48eb-b68f-d51e387868bf"}, {"type": "LinearAxis", "attributes": {"doc": null, "formatter": {"type": "BasicTickFormatter", "id": "e93d8b8b-269d-4fd9-9f5d-bbdd5765ae93"}, "ticker": {"type": "BasicTicker", "id": "b6ebe3fe-cb09-4acb-8520-62ea78a2e97e"}, "id": "459f0378-8ef2-4661-8dfb-30716d990d89", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "tags": [], "axis_label": "Width (cm)"}, "id": "459f0378-8ef2-4661-8dfb-30716d990d89"}, {"type": "BasicTicker", "attributes": {"doc": null, "id": "00b12a9b-4f14-4f82-82d4-28cec0e84fe9", "mantissas": [2, 5, 10], "tags": [], "num_minor_ticks": 5}, "id": "00b12a9b-4f14-4f82-82d4-28cec0e84fe9"}, {"type": "DataRange1d", "attributes": {"doc": null, "id": "483f8dca-c3e5-4930-9b15-5b006f1252a7", "renderers": [], "tags": [], "names": []}, "id": "483f8dca-c3e5-4930-9b15-5b006f1252a7"}, {"type": "Circle", "attributes": {"doc": null, "fill_color": {"value": "#1f77b4"}, "line_color": {"value": "#1f77b4"}, "id": "7420c3fe-dc24-424f-801f-7e7f6c066f4b", "x": {"field": "x"}, "size": {"units": "screen", "value": 10}, "tags": [], "line_alpha": {"value": 1.0}, "fill_alpha": {"value": 1.0}, "y": {"field": "y"}}, "id": "7420c3fe-dc24-424f-801f-7e7f6c066f4b"}, {"type": "ResetTool", "attributes": {"doc": null, "id": "3d512ad8-a458-482f-973c-bfb294456271", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "tags": []}, "id": "3d512ad8-a458-482f-973c-bfb294456271"}, {"type": "BasicTickFormatter", "attributes": {"doc": null, "id": "14900783-3faa-4f6b-9847-416581b5f00f", "tags": []}, "id": "14900783-3faa-4f6b-9847-416581b5f00f"}, {"type": "Grid", "attributes": {"doc": null, "ticker": {"type": "BasicTicker", "id": "00b12a9b-4f14-4f82-82d4-28cec0e84fe9"}, "id": "d17a6d13-d295-492a-8aaa-d66afef1cad9", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "dimension": 1, "tags": []}, "id": "d17a6d13-d295-492a-8aaa-d66afef1cad9"}, {"type": "ColumnDataSource", "attributes": {"doc": null, "callback": null, "column_names": ["Label", "Length", "Factor", "Width", "_autoindex", "Series 5", "x", "y"], "id": "0ae8e0cb-46e2-4792-afae-b257caff0d84", "selected": {"1d": {"indices": []}, "2d": {"indices": []}, "0d": {"indices": [], "flag": false}}, "data": {"_autoindex": [8.57, 9.25, 7.08], "Width": [" 8.6 cm", " 9.2 cm", " 7.1 cm"], "Series 5": [1.0219, 1.0132, 1.0215], "x": [8.57, 9.25, 7.08], "Label": ["P15_2", "P27", "P19"], "Length": [" 12.9 cm", " 11.4 cm", " 8.8 cm"], "Factor": [" 1.022", " 1.013", " 1.022"], "y": [1.0219, 1.0132, 1.0215]}, "tags": []}, "id": "0ae8e0cb-46e2-4792-afae-b257caff0d84"}, {"type": "LinearAxis", "attributes": {"doc": null, "formatter": {"type": "BasicTickFormatter", "id": "14900783-3faa-4f6b-9847-416581b5f00f"}, "ticker": {"type": "BasicTicker", "id": "00b12a9b-4f14-4f82-82d4-28cec0e84fe9"}, "id": "57c2ee83-0539-4395-a437-d0c976bb1acd", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "tags": [], "axis_label": "Factor"}, "id": "57c2ee83-0539-4395-a437-d0c976bb1acd"}, {"type": "BoxZoomTool", "attributes": {"doc": null, "id": "92918308-2898-482c-9d79-d37760978851", "plot": {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66"}, "dimensions": ["width", "height"], "tags": []}, "id": "92918308-2898-482c-9d79-d37760978851"}, {"type": "BasicTicker", "attributes": {"doc": null, "id": "b6ebe3fe-cb09-4acb-8520-62ea78a2e97e", "mantissas": [2, 5, 10], "tags": [], "num_minor_ticks": 5}, "id": "b6ebe3fe-cb09-4acb-8520-62ea78a2e97e"}, {"type": "Plot", "subtype": "Figure", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66", "attributes": {"doc": null, "tool_events": {"type": "ToolEvents", "id": "36fb6744-0290-401a-8bed-41edfe033be7"}, "plot_width": 600, "x_range": {"type": "DataRange1d", "id": "594622b8-eb53-435d-8f47-6f08459ceb4b"}, "renderers": [{"type": "LinearAxis", "id": "459f0378-8ef2-4661-8dfb-30716d990d89"}, {"type": "Grid", "id": "20c22d0c-10c2-4cc7-aaf9-87ad8781d12a"}, {"type": "LinearAxis", "id": "57c2ee83-0539-4395-a437-d0c976bb1acd"}, {"type": "Grid", "id": "d17a6d13-d295-492a-8aaa-d66afef1cad9"}, {"type": "GlyphRenderer", "id": "dd1e8de8-eebc-48eb-b68f-d51e387868bf"}], "plot_height": 400, "extra_y_ranges": {}, "above": [], "y_range": {"type": "DataRange1d", "id": "483f8dca-c3e5-4930-9b15-5b006f1252a7"}, "title": "Fallback scatter plot", "id": "8e513424-6baf-4fec-8714-01a1a13ffd66", "right": [], "tools": [{"type": "HoverTool", "id": "002bf31b-72bb-48be-bbc5-91ac4d5bf4be"}, {"type": "BoxZoomTool", "id": "92918308-2898-482c-9d79-d37760978851"}, {"type": "ResetTool", "id": "3d512ad8-a458-482f-973c-bfb294456271"}], "extra_x_ranges": {}, "tags": [], "below": [{"type": "LinearAxis", "id": "459f0378-8ef2-4661-8dfb-30716d990d89"}], "left": [{"type": "LinearAxis", "id": "57c2ee83-0539-4395-a437-d0c976bb1acd"}]}}];
+        Bokeh.load_models(all_models);
+        var model = Bokeh.Collections(modeltype).get(modelid);
+        var view = new model.default_view({model: model, el: '#993c8bb2-8d99-4aa0-b432-5f889ddfef87'});
+        Bokeh.index[modelid] = view
+    });
+</script>
+                <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.9.0.min.css" type="text/css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style>
+            body {
+                width: 80%;
+                margin: 60px auto;
+            }
+        </style>
+            </head>
+            <body>
+                <section>
+        <h1>Electron cutout factor spline modelling</h1>
+        </section>
+
+        <section>
+        <h2>Energy: 15 MeV &emsp;&emsp;
+        Applicator: 14 cm &emsp;&emsp;
+        SSD: 100</h2>
+        </section><section>
+            Insufficient data was available so only the fallback plot was
+            included
+            <div class="plotdiv" id="993c8bb2-8d99-4aa0-b432-5f889ddfef87"></div>
+            </section>
+            </body>
+        </html>

@@ -18,8 +18,8 @@ from bokeh.models import HoverTool
 
 from matplotlib import colors
 
-from .threshold import fit_give
-from .utilities import create_model, to_eqPonA, to_length
+from ..model.threshold import fit_give
+from ..model.utilities import create_model, to_eqPonA, to_length
 from ..visuals.utilities import create_green_cm
 
 
@@ -148,13 +148,12 @@ def interactive_transformed_contourf(width, length, factor):
 
 
 def fallback_scatter(width, length, factor, label):
-    hover_labels = ["Width", "Length", "Factor", "Label"]
-
     hover_width = [" %0.1f cm" % (num) for num in width]
     hover_length = [" %0.1f cm" % (num) for num in length]
     hover_factor = [" %0.3f" % (num) for num in factor]
 
-    hover_values = [hover_width, hover_length, hover_factor, label]
+    hover_labels = ["Label", "Width", "Length", "Factor"]
+    hover_values = [label, hover_width, hover_length, hover_factor]
 
     fig = bokeh_scatter(width, factor, hover_labels, hover_values)
 
@@ -173,7 +172,7 @@ def bokeh_scatter(x, y, hover_labels, hover_values):
     source = convert_to_source(hover_labels, hover_values)
     tooltips = convert_to_tooltips(hover_labels, hover_values)
 
-    fig.scatter(x, y, source=source, size=20)
+    fig.scatter(x, y, source=source, size=10)
     hover = fig.select(dict(type=HoverTool))
     hover.tooltips = tooltips
 

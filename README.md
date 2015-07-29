@@ -1,4 +1,4 @@
-# Equivalent Ellipse Spline Modelling
+# Spline modelling of electron cutout factors
 
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/equivalent-ellipse-spline-modelling/badge.svg)](https://coveralls.io/r/SimonBiggs/equivalent-ellipse-spline-modelling)

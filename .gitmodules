@@ -1,3 +1,0 @@
-[submodule "install/nbopen"]
-	path = install/nbopen
-	url = https://github.com/takluyver/nbopen.git

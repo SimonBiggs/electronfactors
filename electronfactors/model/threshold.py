@@ -70,7 +70,8 @@ def angle_gap(xTest, yTest, xData, yData, xScale, yScale):
     return gap
 
 
-def single_fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
+def single_fit_give(xTest, yTest, xData, yData, zData,
+                    s=None, kx=2, ky=1, deviation=1):
 
     adjXData = np.append(xData, xTest)
     adjYData = np.append(yData, yTest)
@@ -82,29 +83,31 @@ def single_fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
     initialFitReturn = SmoothBivariateSpline(
         xData, yData, zData, bbox=bbox, kx=kx, ky=ky, s=s).ev(xTest, yTest)
 
-    posAdjZData = np.append(zData, initialFitReturn + 1)
-    negAdjZData = np.append(zData, initialFitReturn - 1)
+    posAdjZData = np.append(zData, initialFitReturn + deviation)
+    negAdjZData = np.append(zData, initialFitReturn - deviation)
 
     posFitReturn = SmoothBivariateSpline(
         adjXData, adjYData, posAdjZData, kx=kx, ky=ky, s=s).ev(xTest, yTest)
     negFitReturn = SmoothBivariateSpline(
         adjXData, adjYData, negAdjZData, kx=kx, ky=ky, s=s).ev(xTest, yTest)
 
-    posGive = posFitReturn - initialFitReturn
-    negGive = initialFitReturn - negFitReturn
+    posGive = (posFitReturn - initialFitReturn) / deviation
+    negGive = (initialFitReturn - negFitReturn) / deviation
 
     give = np.mean([posGive, negGive])
 
     return give
 
 
-def fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
+def fit_give(xTest, yTest, xData, yData, zData,
+             s=None, kx=2, ky=1, deviation=1):
 
     dim = np.core.fromnumeric.shape(xTest)
 
     if np.size(dim) == 0:
         give = single_fit_give(
-            xTest, yTest, xData, yData, zData, s=s, kx=kx, ky=ky)
+            xTest, yTest, xData, yData, zData, s=s, kx=kx, ky=ky,
+            deviation=deviation)
 
         return give
 
@@ -113,7 +116,8 @@ def fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
     if np.size(dim) == 1:
         for i in range(dim[0]):
             give[i] = single_fit_give(
-                xTest[i], yTest[i], xData, yData, zData, s=s, kx=kx, ky=ky)
+                xTest[i], yTest[i], xData, yData, zData, s=s, kx=kx, ky=ky,
+                deviation=deviation)
 
         return give
 
@@ -122,6 +126,7 @@ def fit_give(xTest, yTest, xData, yData, zData, s=None, kx=2, ky=1):
             give[i, j] = single_fit_give(
                 xTest[i, j], yTest[i, j],
                 xData, yData, zData,
-                s=s, kx=kx, ky=ky)
+                s=s, kx=kx, ky=ky,
+                deviation=deviation)
 
     return give

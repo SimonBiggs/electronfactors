@@ -1352,12 +1352,12 @@ P30:
   applicator: 6.0
   energy: 9.0
   factor: 0.9597
-  length: 5.22
+  length: 5.2
   poi:
-  - -0.12
-  - -0.3
+  - -0.1
+  - -0.33
   ssd: 100.0
-  width: 4.12
+  width: 4.13
 P52:
   XCoords:
   - 1.73

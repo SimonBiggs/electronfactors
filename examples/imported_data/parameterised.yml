@@ -776,7 +776,7 @@ P10:
   factor: 0.9602
   length: 7.29
   poi:
-  - -0.55
+  - -0.54
   - -0.21
   ssd: 100.0
   width: 4.48
@@ -986,7 +986,7 @@ P12_2:
   factor: 1.0049
   length: 9.19
   poi:
-  - 0.07
+  - 0.08
   - 0.3
   ssd: 100.0
   width: 6.83
@@ -1391,7 +1391,7 @@ P13:
   - -0.03
   - -0.41
   ssd: 100.0
-  width: 7.09
+  width: 7.1
 P14_1:
   XCoords:
   - -5.73
@@ -7218,12 +7218,12 @@ P30:
   applicator: 6.0
   energy: 9.0
   factor: 0.9597
-  length: 5.22
+  length: 5.2
   poi:
-  - -0.12
-  - -0.3
+  - -0.1
+  - -0.33
   ssd: 100.0
-  width: 4.12
+  width: 4.13
 P31_1:
   XCoords:
   - -2.1
@@ -7728,7 +7728,7 @@ P33:
   applicator: 14.0
   energy: 6.0
   factor: 0.999
-  length: 10.44
+  length: 10.43
   poi:
   - -0.11
   - -0.61
@@ -8586,10 +8586,10 @@ P34_3:
   applicator: 10.0
   energy: 9.0
   factor: 0.9971
-  length: 10.23
+  length: 10.24
   poi:
-  - 0.26
-  - 0.21
+  - 0.25
+  - 0.2
   ssd: 100.0
   width: 6.72
 P35_1:
@@ -9783,7 +9783,7 @@ P36_2:
   length: 9.15
   poi:
   - -0.68
-  - 0.52
+  - 0.5
   ssd: 100.0
   width: 5.07
 P37_1:
@@ -10391,7 +10391,7 @@ P37_3:
   length: 12.97
   poi:
   - -0.62
-  - 0.51
+  - 0.52
   ssd: 100.0
   width: 7.3
 P37_4:
@@ -10779,7 +10779,7 @@ P38_1:
   length: 9.03
   poi:
   - 0.02
-  - 0.2
+  - 0.21
   ssd: 100.0
   width: 7.21
 P38_2:
@@ -10968,9 +10968,9 @@ P38_2:
   applicator: 14.0
   energy: 18.0
   factor: 1.0173
-  length: 11.49
+  length: 11.5
   poi:
-  - 0.25
+  - 0.24
   - -0.36
   ssd: 100.0
   width: 8.69
@@ -12500,7 +12500,7 @@ P41:
   applicator: 20.0
   energy: 9.0
   factor: 1.0111
-  length: 24.61
+  length: 24.62
   poi:
   - -0.2
   - 6.91
@@ -15175,7 +15175,7 @@ P5_2:
   - 0.05
   - 0.37
   ssd: 100.0
-  width: 6.96
+  width: 6.97
 P6:
   XCoords:
   - -3.77
@@ -16966,9 +16966,9 @@ P9_2:
   applicator: 10.0
   energy: 12.0
   factor: 0.9489
-  length: 4.36
+  length: 4.37
   poi:
-  - 0.1
+  - 0.11
   - -0.08
   ssd: 100.0
   width: 3.71
@@ -17103,7 +17103,7 @@ P9_2:
   length: 10.99
   poi:
   - -0.12
-  - -0.67
+  - -0.63
   ssd: 100.0
   width: 6.53
 'Simon #18 cutout':
@@ -18052,7 +18052,7 @@ P9_2:
   factor: 0.9634
   length: 5.47
   poi:
-  - 0.0
+  - 0.01
   - -0.51
   ssd: 100.0
   width: 4.38
@@ -18108,8 +18108,8 @@ P9_2:
   factor: 0.9884
   length: 11.4
   poi:
-  - -0.57
-  - -0.28
+  - -0.58
+  - -0.29
   ssd: 100.0
   width: 5.21
 'Simon #3 cutout':
@@ -20628,7 +20628,7 @@ P9_2:
   factor: 0.9923
   length: 8.24
   poi:
-  - -0.26
+  - -0.25
   - 0.05
   ssd: 100.0
   width: 6.31
@@ -22324,10 +22324,10 @@ P9_2:
   applicator: 10.0
   energy: 12.0
   factor: 1.0045
-  length: 10.06
+  length: 10.05
   poi:
-  - -0.19
-  - -0.45
+  - -0.22
+  - -0.46
   ssd: 100.0
   width: 7.56
 'Simon #82 cutout':

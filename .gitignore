@@ -15,4 +15,4 @@ dist
 .~*
 clinic/*
 *.exe
-*.png
+install/nbopen/build/*

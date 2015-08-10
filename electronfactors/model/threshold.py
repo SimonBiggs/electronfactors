@@ -71,7 +71,7 @@ def angle_gap(xTest, yTest, xData, yData, xScale, yScale):
 
 
 def single_fit_give(xTest, yTest, xData, yData, zData,
-                    s=None, kx=2, ky=1, deviation=1):
+                    s=None, kx=2, ky=1, deviation=0.02):
 
     adjXData = np.append(xData, xTest)
     adjYData = np.append(yData, yTest)
@@ -100,7 +100,7 @@ def single_fit_give(xTest, yTest, xData, yData, zData,
 
 
 def fit_give(xTest, yTest, xData, yData, zData,
-             s=None, kx=2, ky=1, deviation=1):
+             s=None, kx=2, ky=1, deviation=0.02):
 
     dim = np.core.fromnumeric.shape(xTest)
 

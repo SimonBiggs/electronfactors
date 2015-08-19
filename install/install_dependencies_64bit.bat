@@ -1,6 +1,6 @@
 ECHO OFF
 
-conda install statsmodels numpy scipy nose pandas matplotlib bokeh ipython ipython-notebook ipython-qtconsole
+conda install statsmodels numpy scipy nose pandas matplotlib bokeh ipython jupyter notebook qtconsole
 pip install --upgrade coveralls descartes pyyaml nbopen
 
 :choice1

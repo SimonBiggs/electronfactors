@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/equivalent-ellipse-spline-modelling/badge.svg)](https://coveralls.io/r/SimonBiggs/equivalent-ellipse-spline-modelling)
 
 ## Description
-The methodology this code employs is currently undergoing peer review. Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer who understands the procedure and requirements of your centre identifies whether or not the code is fit for your use.
+The methodology this code employs is currently undergoing peer review. Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure and requirements of your centre identifies whether or not the code is fit for your use.
 
 Seeing as currently the very methodology this code is based on is still undergoing peer review I would recommend any implementation of this code only be as a second check of an already rigorous procedure.
 

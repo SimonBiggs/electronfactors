@@ -28,7 +28,7 @@ from electronfactors.inputs.convert_merge import convert_merge
 from electronfactors.model.parameterise import parameterise
 from electronfactors.model.sort import create_cache
 from electronfactors.ellipse.equivalent import equivalent_ellipse
-from electronfactors.model.threshold import angle_gap, fit_give
+from electronfactors.model.threshold import fit_give
 
 
 def create_model(width, eqPonA, factor):

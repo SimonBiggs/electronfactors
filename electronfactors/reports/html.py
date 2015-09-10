@@ -17,7 +17,7 @@ from bokeh.embed import components
 from .interactive import (
     fallback_scatter, interactive_native_contourf,
     interactive_transformed_contourf)
-from ..model.utilities import pull_data
+from ..model.utilities import pull_data, prediction_uncertainty
 
 
 def create_report(energy=None, applicator=None, ssd=None, filepath=None,
@@ -57,6 +57,8 @@ def create_report(energy=None, applicator=None, ssd=None, filepath=None,
             width, length, factor)
         script_transformed, div_transformed = components(fig_transformed)
 
+        uncertainty = prediction_uncertainty(width, eqPonA, factor)
+
     title = (
         "Electron factors | " + str(energy) + " MeV | " +
         str(applicator) + " app | " +
@@ -95,9 +97,16 @@ def create_report(energy=None, applicator=None, ssd=None, filepath=None,
         </section>'''
 
     if sufficient:
+        uncertainty_str = "+/- {0:0.1f}% (1SD)".format(uncertainty)
         body += '''<section>
-            Sufficient data is avalaible in this data set therefore
-            all models are included
+                Sufficient data is avalaible in this data set therefore
+                all models are included.
+            </section>
+            <section>
+                The prediction uncertainty for this model is approximately
+                ''' + uncertainty_str + '''
+            </section>
+            <section>
             ''' + div_native + div_transformed + div_fallback + '''
             </section>'''
     else:

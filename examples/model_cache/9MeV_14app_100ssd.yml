@@ -660,12 +660,12 @@ P14_1:
   applicator: 14.0
   energy: 9.0
   factor: 1.0165
-  length: 12.03
+  length: 12.13
   poi:
-  - 0.72
-  - 0.41
+  - 0.28
+  - 0.35
   ssd: 100.0
-  width: 8.61
+  width: 8.54
 P14_2:
   XCoords:
   - -2.2

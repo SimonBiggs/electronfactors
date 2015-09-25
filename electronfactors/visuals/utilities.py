@@ -300,7 +300,7 @@ def create_green_cm():
         [ 0.97441665,  0.90358991,  0.13021494],
         [ 0.98386829,  0.90486726,  0.13689671],
         [ 0.99324789,  0.90615657,  0.1439362 ]]
-    
+
     cm_green = LinearSegmentedColormap.from_list('optionD', cm_data)
-    
+
     return cm_green

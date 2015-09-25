@@ -358,10 +358,10 @@ P33:
   applicator: 14.0
   energy: 6.0
   factor: 0.999
-  length: 10.43
+  length: 10.42
   poi:
-  - -0.11
-  - -0.61
+  - -0.12
+  - -0.67
   ssd: 100.0
   width: 6.21
 P35_1:
@@ -1412,9 +1412,9 @@ P38_3:
   applicator: 14.0
   energy: 6.0
   factor: 1.003
-  length: 15.52
+  length: 15.53
   poi:
   - 0.6
   - -2.52
   ssd: 100.0
-  width: 8.84
+  width: 8.83

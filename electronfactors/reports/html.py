@@ -14,9 +14,12 @@
 from bokeh.resources import CDN
 from bokeh.embed import components
 
+from bokeh.plotting import show
+from bokeh.io import output_file
+
 from .interactive import (
     fallback_scatter, interactive_native_contourf,
-    interactive_transformed_contourf)
+    interactive_transformed_contourf, interactive_v2)
 from ..model.utilities import pull_data, prediction_uncertainty
 
 
@@ -133,3 +136,36 @@ def create_report(energy=None, applicator=None, ssd=None, filepath=None,
     f = open(filepath, 'w')
     f.write(html_string)
     f.close()
+
+
+def create_report_v2(energy=None, applicator=None, ssd=None, filepath=None,
+                     inverted_factor=False):
+    width, length, eqPonA, factor, label = pull_data(
+        energy=energy, applicator=applicator, ssd=ssd, return_label=True)
+
+    if inverted_factor:
+        factor = 1/factor
+        tag = "!!INVERTED_FACTOR!!"
+    else:
+        tag = ""
+
+    number_of_measurements = len(width)
+    if number_of_measurements < 8:
+        sufficient = False
+    else:
+        sufficient = True
+
+    if filepath is None:
+        filepath = (
+            "interactive_reports/" +
+            str(energy) + "MeV_" +
+            str(applicator) + "app_" +
+            str(ssd) + "ssd_" +
+            str(number_of_measurements) + "datapoints" +
+            tag + ".html")
+
+    output_file(filepath)
+
+    if sufficient:
+        result = interactive_v2(width, length, eqPonA, factor, label)
+        show(result)

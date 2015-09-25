@@ -212,12 +212,12 @@ P25:
   applicator: 10.0
   energy: 9.0
   factor: 0.9852
-  length: 8.24
+  length: 8.22
   poi:
-  - -0.35
-  - 0.31
+  - -0.36
+  - 0.37
   ssd: 100.0
-  width: 5.37
+  width: 5.38
 P34_2:
   XCoords:
   - -2.0
@@ -760,7 +760,7 @@ P34_3:
   factor: 0.9971
   length: 10.24
   poi:
-  - 0.25
+  - 0.26
   - 0.2
   ssd: 100.0
   width: 6.72

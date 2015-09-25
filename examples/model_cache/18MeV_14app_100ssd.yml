@@ -492,9 +492,9 @@ P38_2:
   applicator: 14.0
   energy: 18.0
   factor: 1.0173
-  length: 11.5
+  length: 11.49
   poi:
-  - 0.24
-  - -0.36
+  - 0.25
+  - -0.35
   ssd: 100.0
   width: 8.69

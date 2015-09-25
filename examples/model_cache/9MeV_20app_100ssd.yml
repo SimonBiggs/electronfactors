@@ -35,7 +35,7 @@ P32:
   length: 22.7
   poi:
   - 0.66
-  - -0.17
+  - -0.16
   ssd: 100.0
   width: 9.3
 P41:
@@ -404,7 +404,7 @@ P41:
   applicator: 20.0
   energy: 9.0
   factor: 1.0111
-  length: 24.62
+  length: 24.61
   poi:
   - -0.2
   - 6.91

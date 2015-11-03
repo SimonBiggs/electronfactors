@@ -16,5 +16,3 @@ dist
 clinic/*
 *.exe
 install/nbopen/build/*
-*.png
-*.eps

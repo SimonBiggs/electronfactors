@@ -25,10 +25,15 @@ def make_ellipse(**kwargs):
     else:
         poi = [0, 0]
 
+    if 'angle' in kwargs:
+        angle = kwargs['angle']
+    else:
+        angle = 0
+
     width = kwargs['width']
     length = kwargs['length']
 
-    ellipse = shapely_ellipse([poi[0], poi[1], width, length, 0])
+    ellipse = shapely_ellipse([poi[0], poi[1], width, length, angle])
 
     return ellipse
 

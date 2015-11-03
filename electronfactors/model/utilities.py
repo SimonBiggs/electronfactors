@@ -66,7 +66,8 @@ def create_model(width, eqPonA, factor):
     return model
 
 
-def pull_data(energy=12, applicator=10, ssd=100, return_label=False):
+def pull_data(energy=12, applicator=10, ssd=100, return_label=False,
+              return_all=False):
     with open("model_cache/" +
               str(energy) + "MeV_" +
               str(applicator) + "app_" +
@@ -79,10 +80,18 @@ def pull_data(energy=12, applicator=10, ssd=100, return_label=False):
     factor = np.array([cutout_data[key]['factor'] for key in label])
     eqPonA = to_eqPonA(width, length)
 
-    if return_label:
-        return width, length, eqPonA, factor, label
+    if return_all:
+        XCoords = [cutout_data[key]['XCoords'] for key in label]
+        YCoords = [cutout_data[key]['YCoords'] for key in label]
+        poi = [cutout_data[key]['poi'] for key in label]
+
+        return width, length, eqPonA, factor, label, XCoords, YCoords, poi
+
     else:
-        return width, length, eqPonA, factor
+        if return_label:
+            return width, length, eqPonA, factor, label
+        else:
+            return width, length, eqPonA, factor
 
 
 def calculate_percent_prediction_differences(width, eqPonA, factor,

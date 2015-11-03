@@ -12,11 +12,18 @@
 # http://www.gnu.org/licenses/.
 
 import yaml
+import numpy as np
+import matplotlib.pyplot as plt
+import shapely.affinity as aff
 
+from ..visuals.shape_display import display_shapely
 from ..ellipse.equivalent import equivalent_ellipse
+from ..ellipse.utilities import (
+    shapely_ellipse, shapely_cutout, _CustomBasinhopping)
 
 
-def parameterise(display=False, working_directory="imported_data/", **kwargs):
+def parameterise(display=False, working_directory="imported_data/",
+                 optimise_position=False, **kwargs):
 
     input_filepath = working_directory + "merged.yml"
     output_filepath = working_directory + "parameterised.yml"
@@ -32,12 +39,35 @@ def parameterise(display=False, working_directory="imported_data/", **kwargs):
         if display:
             print(str(key) + ":")
 
-        ellipse = equivalent_ellipse(
-            XCoords=XCoords, YCoords=YCoords, display=display)
+        ellipse_values = equivalent_ellipse(
+            XCoords=XCoords, YCoords=YCoords)
 
-        width = float(round(ellipse['width'], 2))
-        length = float(round(ellipse['length'], 2))
-        poi = [float(round(item, 2)) for item in ellipse['poi']]
+        cutout = shapely_cutout(XCoords, YCoords)
+        ellipse = shapely_ellipse([
+            0, 0,
+            ellipse_values['width'], ellipse_values['length'],
+            0])
+
+        if optimise_position:
+            mid, angle, ellipse = calculate_optimal_position(cutout, ellipse)
+            mid = [float(round(item, 2)) for item in mid]
+            angle = float(round(angle, 2))
+
+            output_dict[key]['mid'] = mid
+            output_dict[key]['angle'] = angle
+
+        if display:
+            fig = plt.figure()
+            ax = fig.add_subplot(111)
+
+            display_shapely(cutout, ax=ax)
+            display_shapely(ellipse, ax=ax)
+
+            plt.show()
+
+        width = float(round(ellipse_values['width'], 2))
+        length = float(round(ellipse_values['length'], 2))
+        poi = [float(round(item, 2)) for item in ellipse_values['poi']]
 
         output_dict[key]['width'] = width
         output_dict[key]['length'] = length
@@ -45,3 +75,45 @@ def parameterise(display=False, working_directory="imported_data/", **kwargs):
 
     with open(output_filepath, 'w') as file:
         file.write(yaml.dump(output_dict, default_flow_style=False))
+
+
+def calculate_optimal_position(cutout, ellipse):
+    initial = np.array([0, 0, 0])
+
+    bound = np.hypot(
+        np.diff(cutout.bounds[::2]),
+        np.diff(cutout.bounds[1::2])
+    )
+
+    step_noise = [bound] * 2
+    step_noise.append(90)
+
+    def to_minimise(optimiser_input):
+        rotated = aff.rotate(
+            ellipse, optimiser_input[2], origin='centroid')
+        translated = aff.translate(
+            rotated, xoff=optimiser_input[0], yoff=optimiser_input[1])
+
+        disjoint_area = (
+            translated.difference(cutout).area +
+            cutout.difference(ellipse).area
+        )
+        return disjoint_area
+
+    optimiser = _CustomBasinhopping(
+        to_minimise=to_minimise,
+        initial=initial,
+        step_noise=step_noise,
+        n=2,
+        confidence=0.0001
+    )
+
+    mid = optimiser.result[0:2]
+    angle = optimiser.result[2]
+
+    rotated = aff.rotate(
+        ellipse, angle, origin='centroid')
+    translated = aff.translate(
+        rotated, xoff=mid[0], yoff=mid[1])
+
+    return mid, angle, translated

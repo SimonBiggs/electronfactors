@@ -57,19 +57,19 @@ def c4(n):
 def test_partial_end_to_end():
 
     convert_merge(
-        input_directory="examples/user_inputs/",
-        output_directory="examples/imported_data/")
-    parameterise(working_directory="examples/imported_data/")
+        input_directory="paper/user_inputs/",
+        output_directory="paper/imported_data/")
+    parameterise(working_directory="paper/imported_data/")
 
     energy_list = [6, 9, 12, 15, 18]
     for energy in energy_list:
         create_cache(
-            input_directory="examples/imported_data/",
-            output_directory="examples/model_cache/",
+            input_directory="paper/imported_data/",
+            output_directory="paper/model_cache/",
             energy=energy,
             applicator=10)
 
-    with open("examples/model_cache/12MeV_10app_100ssd.yml", 'r') as file:
+    with open("paper/model_cache/12MeV_10app_100ssd.yml", 'r') as file:
         cutout_data = yaml.load(file)
 
     custom_label = np.array([key for key in cutout_data])

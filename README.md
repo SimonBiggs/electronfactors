@@ -16,7 +16,7 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
  * Download the source code for the most recent release from [releases](https://github.com/SimonBiggs/electronfactors/releases).
  * Installing shapely
   * Download the relevant shapely package from [http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
-    * If you have 64-bit windows you will be looking for Shapely-*.*.*-cp35-none-win_amd64.whl
+    * If you have 64-bit windows you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
   * Install shapely by:
     * Opening a command prompt and "cd" into the directory with the downloaded file
     * Then running `pip install Shapely-*.*.*-cp35-none-win_*.whl` (with * replaced with relevant file name).
@@ -30,7 +30,7 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
   
 ## Explanation of use
 ### Importing your insert shapes
-For now the easiest method of use is to directly edit the files found within `demo/user_inputs`. There are currently two methods to import insert shapes, generic shape import, and shape coordinate import. All shape labels used throughout these import files must be unique.
+For now the easiest method of use is to directly edit the files found within `demo/user_inputs`. There are currently two methods to import insert shapes, generic shape import, and shape coordinate import. Each shape is indexed by an identifier, this can be whatever is most useful and informative for you however they must be unique throughout the import files. The units used in defining width / length / coords must simply be consistent throughout, in my examples I used all shape dimensions defined in cm at isocentre however as long as the user is consistent this is not necessary.
 
 #### Generic shape import
 The first is by importing generic shapes (such as ellipses or rectangles). An example input csv is found here:
@@ -40,7 +40,7 @@ The first is by importing generic shapes (such as ellipses or rectangles). An ex
 By deleting the contents of that file and replacing it with your desired insert shapes and measurements you can input generic shapes.
 
 #### Coordinate based import
-The second method is by importing arbitrary shape Cartesian coordinates. This requires three csv files. One containing all the labelled x-coordinates, the second containing all the labelled y-coordinates, the third containing the meta data such as energy, applicator, ssd, and measured factor.
+The second method is by importing arbitrary shape Cartesian coordinates. This requires three csv files. One containing all the labelled x-coordinates, the second containing all the labelled y-coordinates, the third containing the meta data such as energy, applicator, ssd, and measured factor. Of importance is that the index used to label the shape within each of the three files must agree.
 
 Examples of these files are found here:
 
@@ -53,15 +53,17 @@ By deleting the contents of those files and replacing them with your own you wil
 ### Opening the jupyter notebook server
 The jupyter notebook server can be started by changing directory within a command prompt into the demo folder and then running the following: `jupyter notebook`. Alternatively I have created a windows shortcut within the demo directory which can be clicked and will do this automatically.
 
+Details about what the jupyter notebook is can be found [here](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html).
+
 ### Parametrising and caching the modelling
-Firstly, to delete the demo model cache delete all files found within `demo/model_cache`. To create your own cache pulling from the shapes you have inputted simply run the `01 Model -- Load, parameterise, and cache.ipynb` notebook from within the notebook server.
+Delete the demo model cache delete all files found within `demo/model_cache`. To create your own cache pulling from the shapes you have inputted simply run the `01 Model -- Load, parameterise, and cache.ipynb` notebook from within the notebook server.
 
 Run this notebook going `Cell > Run All`.
 
 Once this notebook has finished go on to the next step.
 
 ### Creating interactive reports for everyday clinical use
-Firstly, delete the demo report(s) found within `demo/interactive_reports`. Then as in the previous step load up and run the notebook labelled `02 Model -- Create reports.ipynb`. This will create a report for each energy/applicator/ssd combination available within the model cache. The resulting reports can be placed on a clinical shared drive for use on any computer (python not required to interactively use these report files).
+Delete the demo report(s) found within `demo/interactive_reports`. Then as in the previous step load up and run the notebook labelled `02 Model -- Create reports.ipynb`. This will create a report for each energy/applicator/ssd combination available within the model cache. The resulting reports can be placed on a clinical shared drive for use on any computer (python not required to interactively use these interactive report files).
 
 
 ## Copyright information

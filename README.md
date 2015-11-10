@@ -12,14 +12,14 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 
 
 ## Installation for Windows
- * Download the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
+ * Download and install the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
  * Download the source code for the most recent release from [releases](https://github.com/SimonBiggs/electronfactors/releases).
  * Installing shapely
   * Download the relevant shapely package from [http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
-   * If you have 64-bit windows you will be looking for Shapely-*.*.*-cp35-none-win_amd64.whl
+    * If you have 64-bit windows you will be looking for Shapely-*.*.*-cp35-none-win_amd64.whl
   * Install shapely by:
-   * Opening a command prompt and "cd" into the directory with the downloaded file
-   * Then running `pip install Shapely-*.*.*-cp35-none-win_*.whl` (with * replaced with relevant file name).
+    * Opening a command prompt and "cd" into the directory with the downloaded file
+    * Then running `pip install Shapely-*.*.*-cp35-none-win_*.whl` (with * replaced with relevant file name).
  * Installing descartes
   * Run the following in a command prompt, `pip install descartes`
  * Installing RISE (optional). This is only required if you want to see the live demo slideshow, not required for actual use.

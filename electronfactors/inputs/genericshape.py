@@ -84,4 +84,4 @@ def convert_generic(**kwargs):
         data[index]['factor'] = float(round(input_data['factor'].values[i], 4))
 
     with open(outputpath, 'w') as outfile:
-        outfile.write(yaml.dump(data, default_flow_style=False))
+        outfile.write(yaml.dump(data))

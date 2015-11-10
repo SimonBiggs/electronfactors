@@ -109,7 +109,7 @@
   - 3.95
   - 4.05
   - 4.37
-  angle: 161.05
+  angle: -18.95
   applicator: 10.0
   energy: 12.0
   factor: 0.9934
@@ -589,7 +589,7 @@
   - -1.35
   - -0.58
   - -0.58
-  angle: 209.76
+  angle: 29.76
   applicator: 10.0
   energy: 12.0
   factor: 0.9931
@@ -879,11 +879,11 @@
   - 1.63
   - 2.05
   - 2.03
-  angle: -204.38
+  angle: -24.37
   applicator: 10.0
   energy: 12.0
   factor: 0.9587
-  length: 5.68
+  length: 5.67
   mid:
   - 0.17
   - -0.52
@@ -1149,7 +1149,7 @@
   - 4.32
   - 4.32
   - 4.37
-  angle: -126.48
+  angle: 53.53
   applicator: 10.0
   energy: 12.0
   factor: 1.0019
@@ -1161,7 +1161,7 @@
   - -0.01
   - -0.51
   ssd: 100.0
-  width: 7.81
+  width: 7.82
 'Simon #19 cutout':
   XCoords:
   - -3.26
@@ -1980,7 +1980,7 @@
   - -0.46
   - -0.12
   poi:
-  - -0.58
+  - -0.59
   - -0.29
   ssd: 100.0
   width: 5.21
@@ -2107,7 +2107,7 @@
   - 2.84
   - 2.84
   - 3.0
-  angle: -9.42
+  angle: 170.58
   applicator: 10.0
   energy: 12.0
   factor: 0.9683
@@ -2423,7 +2423,7 @@
   - 5.16
   - 5.16
   - 5.21
-  angle: 60.74
+  angle: -119.26
   applicator: 10.0
   energy: 12.0
   factor: 1.0067
@@ -3975,7 +3975,7 @@
   - 1.93
   - 1.93
   - 1.91
-  angle: -238.63
+  angle: -58.63
   applicator: 10.0
   energy: 12.0
   factor: 0.9735
@@ -4519,7 +4519,7 @@
   - 3.37
   - 3.32
   - 3.32
-  angle: -245.38
+  angle: -65.38
   applicator: 10.0
   energy: 12.0
   factor: 0.9923
@@ -4528,7 +4528,7 @@
   - -0.12
   - 0.11
   poi:
-  - -0.26
+  - -0.25
   - 0.05
   ssd: 100.0
   width: 6.31
@@ -5191,7 +5191,7 @@
   - -0.58
   - -0.64
   - -0.69
-  angle: -0.89
+  angle: 179.11
   applicator: 10.0
   energy: 12.0
   factor: 0.9437
@@ -5809,7 +5809,7 @@
   - 4.47
   - 4.68
   - 4.89
-  angle: 26.19
+  angle: 26.18
   applicator: 10.0
   energy: 12.0
   factor: 0.9987
@@ -6237,17 +6237,17 @@
   - 3.47
   - 3.47
   - 3.53
-  angle: -65.5
+  angle: 114.52
   applicator: 10.0
   energy: 12.0
   factor: 1.0045
-  length: 10.05
+  length: 10.06
   mid:
   - 0.01
   - -0.3
   poi:
-  - -0.22
-  - -0.46
+  - -0.19
+  - -0.45
   ssd: 100.0
   width: 7.56
 'Simon #82 cutout':
@@ -7093,7 +7093,7 @@
   - 3.58
   - 3.58
   - 3.63
-  angle: 163.58
+  angle: -16.42
   applicator: 10.0
   energy: 12.0
   factor: 0.9896
@@ -7685,7 +7685,7 @@ Simon 3x6.5cm oval:
   - -0.87
   - -1.12
   - -1.12
-  angle: -45.0
+  angle: -225.0
   applicator: 10.0
   energy: 12.0
   factor: 0.9484
@@ -7981,13 +7981,13 @@ Simon 4cm circle:
   - -1.34
   - -1.49
   - -1.49
-  angle: 129.35
+  angle: 61.84
   applicator: 10.0
   energy: 12.0
   factor: 0.9562
   length: 4.21
   mid:
-  - -0.0
+  - 0.0
   - 0.0
   poi:
   - -0.0
@@ -8573,7 +8573,7 @@ Simon 4x8cm oval:
   - -1.19
   - -1.49
   - -1.49
-  angle: 135.0
+  angle: -225.0
   applicator: 10.0
   energy: 12.0
   factor: 0.9708
@@ -9017,7 +9017,7 @@ Simon 5x13cm oval:
   - -1.38
   - -1.86
   - -1.86
-  angle: -225.0
+  angle: 135.0
   applicator: 10.0
   energy: 12.0
   factor: 0.9868
@@ -9165,7 +9165,7 @@ Simon 5x8cm oval:
   - -1.56
   - -1.86
   - -1.86
-  angle: -225.0
+  angle: 135.0
   applicator: 10.0
   energy: 12.0
   factor: 0.9831
@@ -9313,14 +9313,14 @@ Simon 6cm circle:
   - -2.0
   - -2.23
   - -2.23
-  angle: 135.0
+  angle: -39.34
   applicator: 10.0
   energy: 12.0
   factor: 0.9858
   length: 6.33
   mid:
   - -0.0
-  - -0.0
+  - 0.0
   poi:
   - 0.0
   - 0.0
@@ -9461,14 +9461,14 @@ Simon 7cm circle:
   - -2.34
   - -2.61
   - -2.61
-  angle: -50.65
+  angle: -28.11
   applicator: 10.0
   energy: 12.0
   factor: 1.0032
   length: 7.37
   mid:
-  - -0.0
   - 0.0
+  - -0.0
   poi:
   - 0.0
   - 0.0
@@ -9757,14 +9757,14 @@ Simon 9cm circle:
   - -3.0
   - -3.35
   - -3.35
-  angle: 219.4
+  angle: -101.28
   applicator: 10.0
   energy: 12.0
   factor: 1.0084
   length: 9.47
   mid:
   - -0.0
-  - -0.0
+  - 0.0
   poi:
   - 0.0
   - 0.0

@@ -53,4 +53,4 @@ def convert_raw(**kwargs):
         data[index]['factor'] = float(round(metadata['factor'].values[i], 4))
 
     with open(outputFilepath, 'w') as outfile:
-        outfile.write(yaml.dump(data, default_flow_style=False))
+        outfile.write(yaml.dump(data))

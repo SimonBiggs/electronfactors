@@ -58,7 +58,7 @@ def merge(working_directory="imported_data/"):
             merged_dict.update(yaml.load(inputFile))
 
     with open(output_filepath, 'w') as outfile:
-        outfile.write(yaml.dump(merged_dict, default_flow_style=False))
+        outfile.write(yaml.dump(merged_dict))
 
 
 def convert_merge(input_directory="user_inputs/",

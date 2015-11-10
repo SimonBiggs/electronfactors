@@ -69,7 +69,9 @@ Delete the demo model cache delete all files found within `demo/model_cache`. To
 
 Run this notebook going `Cell > Run All`.
 
-Once this notebook has finished go on to the next step.
+Of high importance at this step as that each shape and the resulting equivalent ellipse is visually checked. It needs to be confirmed by the user at this stage that the expected loss of lateral scatter is sufficiently equivalent between each equivalent ellipse and its corresponding insert. This is of particular issue if the long axis of the shape is becoming small enough to a point that lateral scatter along this axis may not be equivalent between the two shapes.
+
+Of second note is that specifically placed "saw tooth" indents may result in the width being underestimated. Although I have not observed this being an issue in clinical shapes, nevertheless, at this stage the user needs to visually confirm that the equivalent ellipse algorithim is working as intended.
 
 ### Creating interactive reports for everyday clinical use
 Delete the demo report(s) found within `demo/interactive_reports`. Then as in the previous step load up and run the notebook labelled `02 Model -- Create reports.ipynb`. This will create a report for each energy/applicator/ssd combination available within the model cache. The resulting reports can be placed on a clinical shared drive for use on any computer (python not required to interactively use these interactive report files).

@@ -69,7 +69,7 @@ def create_cache(input_directory="imported_data/",
     number_of_points = len(output_dict.keys())
 
     with open(filepath, 'w') as file:
-        file.write(yaml.dump(output_dict, default_flow_style=False))
+        file.write(yaml.dump(output_dict))
     print(
         "Cache created\n"
         "Number of measurements = %d\n"

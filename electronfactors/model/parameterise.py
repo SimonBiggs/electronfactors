@@ -74,7 +74,7 @@ def parameterise(display=False, working_directory="imported_data/",
         output_dict[key]['poi'] = poi
 
     with open(output_filepath, 'w') as file:
-        file.write(yaml.dump(output_dict, default_flow_style=False))
+        file.write(yaml.dump(output_dict))
 
 
 def calculate_optimal_position(cutout, ellipse):

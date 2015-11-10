@@ -33,14 +33,14 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 For now the easiest method of use is to directly edit the files found within `demo/user_inputs`. There are currently two methods to import insert shapes, generic shape import, and shape coordinate import. Each shape is indexed by an identifier, this can be whatever is most useful and informative for you however they must be unique throughout the import files. The units used in defining width / length / coords must simply be consistent throughout, in my examples I used all shape dimensions defined in cm at isocentre however as long as the user is consistent this is not necessary.
 
 #### Generic shape import
-The first is by importing generic shapes (such as ellipses or rectangles). An example input csv is found here:
+The first import method is by importing generic shapes (such as ellipses or rectangles). An example input csv is found here:
 
  * https://github.com/SimonBiggs/electronfactors/blob/master/demo/user_inputs/GenericShapeImport.csv
  
 By deleting the contents of that file and replacing it with your desired insert shapes and measurements you can input generic shapes.
 
 #### Coordinate based import
-The second method is by importing arbitrary shape Cartesian coordinates. This requires three csv files. One containing all the labelled x-coordinates, the second containing all the labelled y-coordinates, the third containing the meta data such as energy, applicator, ssd, and measured factor. Of importance is that the index used to label the shape within each of the three files must agree.
+The second import method is by importing arbitrary shape Cartesian coordinates. This requires three csv files. One containing all the labelled x-coordinates, the second containing all the labelled y-coordinates, the third containing the meta data such as energy, applicator, ssd, and measured factor. Of importance is that the index used to label the shape within each of the three files must agree.
 
 Examples of these files are found here:
 
@@ -48,7 +48,16 @@ Examples of these files are found here:
  * https://github.com/SimonBiggs/electronfactors/blob/master/demo/user_inputs/RawCoordsImport_XCoords.csv
  * https://github.com/SimonBiggs/electronfactors/blob/master/demo/user_inputs/RawCoordsImport_YCoords.csv
 
-By deleting the contents of those files and replacing them with your own you will be able to import your own generic shapes. 
+By deleting the contents of those files and replacing them with your own you will be able to import your own generic shapes.
+
+#### Creating a custom import method
+There is no reason why a custom import method cannot be created (such as directly pulling from the treatment planning system files). The only requirement is that the created import method appends your shapes into `demo/imported_data/merged.yml`. Its format is yaml and an example of how the data is stored can be found here:
+
+ * https://github.com/SimonBiggs/electronfactors/blob/master/demo/imported_data/merged.yml
+
+I use pyyaml for easy loading and saving of yaml files.
+ 
+Your custom import script needs to be called within the `01 Model -- Load, parameterise, and cache.ipynb` notebook after the `convert_merge()` function and before the `patameterise()` function.
 
 ### Opening the jupyter notebook server
 The jupyter notebook server can be started by changing directory within a command prompt into the demo folder and then running the following: `jupyter notebook`. Alternatively I have created a windows shortcut within the demo directory which can be clicked and will do this automatically.

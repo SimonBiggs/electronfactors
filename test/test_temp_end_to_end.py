@@ -22,8 +22,6 @@ from scipy.interpolate import SmoothBivariateSpline
 from scipy.stats import shapiro, probplot, ttest_1samp
 from scipy.special import gamma
 
-import statsmodels.api as sm
-
 from electronfactors.inputs.convert_merge import convert_merge
 from electronfactors.model.parameterise import parameterise
 from electronfactors.model.sort import create_cache

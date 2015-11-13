@@ -29,20 +29,19 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 
 
 ## Installation for Ubuntu 
-
+### Core
 From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.
 
     sudo apt-get build-dep python-numpy matplotlib python-scipy pandas ipython pyzmq python-shapely pyyaml
     sudo apt-get install python3-pip
     sudo pip3 install --upgrade numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter
     
-If you wish to run the demo slideshow RISE is required to do so I followed the following steps
+### Optional
+If you wish to run the demo slideshow RISE is required. I followed the following steps to install RISE:
 
-    jupyter migrate
-    
-cd into the [downloaded](https://github.com/damianavila/RISE/releases/) RISE directory
-
-    python3 setup.py install
+ * `jupyter migrate`
+ * cd into the [downloaded](https://github.com/damianavila/RISE/releases/) RISE directory
+ * `python3 setup.py install`
 
 
 ## Explanation of use

@@ -59,6 +59,10 @@ I use pyyaml for easy loading and saving of yaml files.
  
 Your custom import script needs to be called within the [`01 Model -- Load, parameterise, and cache.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb) notebook after the `convert_merge()` function and before the `parameterise()` function.
 
+An example of a utlitiy I made for pulling the insert shapes directly from the XiO server within our centre can be found here (please note this example is minimally tested and will likely need adaptation and bug fixing):
+
+ * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/historical_exploration_and_measurement/scripts/xio.ipynb
+
 ### Opening the jupyter notebook server
 The jupyter notebook server can be started by changing directory within a command prompt into the demo folder and then running the following: `jupyter notebook`. Alternatively I have created a windows shortcut within the demo directory which can be clicked and will do this automatically.
 

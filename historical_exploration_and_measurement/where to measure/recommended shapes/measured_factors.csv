@@ -1,0 +1,27 @@
+energy,applicator,width,length,cutoutFactor,label
+,,4.5,6.1,1.0327,Simon #3 cutout
+,,4.4,5.3,1.043,Simon #14 cutout
+,,4.3,5.1,1.038,Simon #20 cutout
+,,5.9,6.2,1.0068,Simon #33 cutout
+,,4.7,5.7,1.0272,Simon #38 cutout
+,,3.6,4.6,1.0597,Simon #57 cutout
+,,3.5,4.2,1.0539,Simon #112 cutout
+12,10,6,6,1.0144,Simon 6cm circle
+12,10,4,4,1.0458,Simon 4cm circle
+12,10,3,3,1.0758,Simon 3cm circle
+12,10,5,5,1.0304,Simon 5cm circle
+,,4,6.5,1.0407,Simon 4x6.5cm oval
+,,3,6.5,1.0544,Simon 3x6.5cm oval
+12,10,3,5,1.0697,Simon 3x5cm oval
+12,10,3.5,3.5,1.0608,dummy
+12,10,2.5,2.5,1.0908,dummy
+12,10,2,2,1.1058,dummy
+12,10,5.5,5.5,1.0189,dummy
+12,10,2,3,1.0908,dummy
+12,10,3.7,2.8,1.0784,dummy
+,,4.5,6,1.0324,dummy
+,,3.9,5.4,1.0447,dummy
+12,10,5.5,6.2,1.0172,dummy
+12,10,4.5,6.5,1.0304,dummy
+12,10,3.5,6,1.0496,dummy
+12,10,4.3,5.3,1.0389,

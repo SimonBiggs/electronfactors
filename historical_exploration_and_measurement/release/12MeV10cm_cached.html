@@ -1,0 +1,116 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <style>
+        
+            body { 
+                margin:60 130;
+                background:whitesmoke; 
+            }
+            
+            section.left {
+                width:65%;
+                float:left;
+            }
+            
+            section {
+                padding:20px
+            
+            }
+            
+            aside {
+                padding:20px
+            
+            }
+            
+            td {
+                padding:20px;            
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <section>
+        <h1>Electron modelling report</h1>
+
+        <h2>Energy: 12 MeV &emsp;&emsp;
+        Applicator: 10 cm &emsp;&emsp;
+        <i>Include reference conditions here</i></h2>
+        </section>
+        
+        <section class="left">
+        <h3>Width alone fits for lookup purposes</h3>
+       
+            <p>Your measured data is given as blue dots. Hovering your mouse over these dots will provide 
+            you with the relevant information for that datapoint.</p>
+
+            <p>The univariate fits provided, in the figure just below, are intented to be used 
+            as a guide for lookup purposes.</p>
+        </section>
+        
+        <section>
+            <iframe width="100%" height="400px" frameborder="0" seamless="seamless" scrolling="no"     src="https://plot.ly/~SimonBiggs/107.embed?width=100%&height=100%"></iframe>
+        </section>
+            
+            <section class="left">
+            <h3>Bivariate spline fit for interpolation purposes</h3>
+                        
+            <p>Below is the bivariate spline fit formed using the parameters <i>width</i> and <i>equivalent perimeter on area</i>.
+            For ease of use the results are plotted with respect to <i>length</i> and <i>width</i>. The valid fitting region is given as a
+            colourwash. The colour of the colourwash is representative of the fitted cutout factor.</p>
+            
+            <p>Hovering your mouse over the righthand plot will give the cutout factor results in the <i>z</i> parameter.
+            Where the <i>z</i> paramater returns null, and there is no colour wash, is not a valid fitting region. This
+            may be due either to not having enough points in the direct vicinity, or the region being outside the external data 
+            boundary.</p>
+            
+            <p>Hovering your mouse over the lefthand plot will provide you with a way to lookup individual measured data points.
+            Your measured data is given in blue. The equivalent shape with <i>width</i> and <i>length</i> inverted is given in orange.</p>
+            
+            </section>
+            
+            <aside><i>Diagram of length and width using an ellipse goes here... 
+            maybe have a semi irregular cutout and an equivalent ellipse overlay to represent length and width</i></aside>
+            
+            <section>
+                <iframe width="100%" height="600px" frameborder="0" seamless="seamless" scrolling="no"     src="https://plot.ly/~SimonBiggs/108.embed?width=100%&height=100%"></iframe>
+            </section>
+                       
+            <section class="left">
+                <h4>Histogram of differences between measured cutout factors and fitted factors</h4>
+                <p>The blue data points are your measured data grouped according to which histogram bin
+                it was placed within. Just as before hovering your mouse over these data points will allow you
+                to lookup the relevant datapoint.</p>
+             </section>
+             
+             <section>             
+                    <iframe width="100%" height="600px" frameborder="0" seamless="seamless" scrolling="no"         src="https://plot.ly/~SimonBiggs/109.embed?width=100%&height=100%"></iframe>
+            </section>
+            
+            <section>
+                <h4>Statistics with respect to the cutout factor residual error given in the prior histogram</h4>
+
+                <table>
+                    <tr>
+                        <td>Mean:</td> <td>-0.0000</td>
+                    </tr>
+                    <tr>
+                        <td>Individual T-test for zero population mean p-value:</td> <td>1.0000</td>
+                    </tr>
+                    <tr>
+                        <td>Standard deviation:</td> <td>0.0029</td>
+                    </tr>
+                    <tr>
+                        <td>Shapiro normality p-value:</td> <td>0.5519</td>
+                    </tr>
+                </table>
+            </section>
+
+    
+    
+    <br><br><br>
+
+    </body>
+</html>

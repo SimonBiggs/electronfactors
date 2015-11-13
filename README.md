@@ -27,7 +27,24 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
   * Extract the zip and change directory within a command prompt into the extracted file
   * Run the following within the RISE directory `python setup.py install`.
 
-  
+
+## Installation for Ubuntu 
+
+From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.
+
+    sudo apt-get build-dep python-numpy matplotlib python-scipy pandas ipython pyzmq python-shapely pyyaml
+    sudo apt-get install python3-pip
+    sudo pip3 install --upgrade numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter
+    
+If you wish to run the demo slideshow RISE is required to do so I followed the following steps
+
+    jupyter migrate
+    
+cd into the [downloaded](https://github.com/damianavila/RISE/releases/) RISE directory
+
+    python3 setup.py install
+
+
 ## Explanation of use
 ### Importing your insert shapes
 For now the easiest method of use is to directly edit the files found within `demo/user_inputs`. There are currently two methods to import insert shapes, generic shape import, and shape coordinate import. Each shape is indexed by an identifier, this can be whatever is most useful and informative for you however they must be unique throughout the import files. The units used in defining width / length / coords must simply be consistent throughout, in my examples I used all shape dimensions defined in cm at isocentre however as long as the user is consistent this is not necessary.
@@ -59,7 +76,7 @@ I use pyyaml for easy loading and saving of yaml files.
  
 Your custom import script needs to be called within the [`01 Model -- Load, parameterise, and cache.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb) notebook after the `convert_merge()` function and before the `parameterise()` function.
 
-An example of a utlitiy I made for pulling the insert shapes directly from the XiO server within our centre can be found here (please note this example is minimally tested and will likely need adaptation and bug fixing):
+An example of a utlitiy I made for pulling the insert shapes directly from the XiO server within our centre can be found here (please note this example is intended as an example only, it is minimally tested and will likely need adaptation and bug fixing):
 
  * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/historical_exploration_and_measurement/scripts/xio.ipynb
 

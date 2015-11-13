@@ -6,7 +6,11 @@
 ## Description
 The code here provided is for the modelling of the portion of the electron output factor that is dependent on the shape of the shielding insert mounted within the applicator. This allows modelling insert factors using only the measured factors already available at a centre. Should all outliers be removed from the data set the user might expect as low as 0.5% standard uncertainty for factor prediction with as little as 8 data points.
 
-The paper outlining the method, once published will be available using the doi link: [10.1016/j.ejmp.2015.11.002](http://dx.doi.org/10.1016/j.ejmp.2015.11.002). A pre-print of the accepted manuscript is available at my personal website: [simonbiggs.net/paper1](http://simonbiggs.net/paper1). If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help. 
+The paper outlining this method is currently in press:
+ 
+ > S. Biggs, M. Sobolewski, R. Murry, J. Kenny, Spline modelling electron insert factors using routine measurements. Physica Medica (2015), [doi:10.1016/j.ejmp.2015.11.002](http://dx.doi.org/10.1016/j.ejmp.2015.11.002). 
+
+A pre-print of the accepted manuscript is available at my personal website: [simonbiggs.net/paper1](http://simonbiggs.net/paper1). If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help. 
 
 Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure outlined in the paper and the requirements of your centre identifies whether or not this method and code is fit for your use.
 

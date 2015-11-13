@@ -8,12 +8,12 @@ The code here provided is for the modelling of the portion of the electron outpu
 
 The paper outlining the method, once published will be available using the doi link: [10.1016/j.ejmp.2015.11.002](http://dx.doi.org/10.1016/j.ejmp.2015.11.002). A pre-print of the accepted manuscript is available at my personal website: [simonbiggs.net/paper1](http://simonbiggs.net/paper1). If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help. 
 
-Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure and requirements of your centre identifies whether or not the code is fit for your use.
+Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure outlined in the paper and the requirements of your centre identifies whether or not this method and code is fit for your use.
 
 
 ## Installation for Windows
  * Download and install the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
- * Download the source code for the most recent release from [releases](https://github.com/SimonBiggs/electronfactors/releases).
+ * Download the source code of this electronfactors program from [releases](https://github.com/SimonBiggs/electronfactors/releases).
  * Installing shapely
   * Download the relevant shapely package from [http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
     * If you have 64-bit windows you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
@@ -57,7 +57,7 @@ There is no reason why a custom import method cannot be created (such as directl
 
 I use pyyaml for easy loading and saving of yaml files.
  
-Your custom import script needs to be called within the `01 Model -- Load, parameterise, and cache.ipynb` notebook after the `convert_merge()` function and before the `parameterise()` function.
+Your custom import script needs to be called within the [`01 Model -- Load, parameterise, and cache.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb) notebook after the `convert_merge()` function and before the `parameterise()` function.
 
 ### Opening the jupyter notebook server
 The jupyter notebook server can be started by changing directory within a command prompt into the demo folder and then running the following: `jupyter notebook`. Alternatively I have created a windows shortcut within the demo directory which can be clicked and will do this automatically.
@@ -65,15 +65,23 @@ The jupyter notebook server can be started by changing directory within a comman
 Details about what the jupyter notebook is can be found [here](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html).
 
 ### Parametrising and caching the modelling
-Delete the demo model cache delete all files found within `demo/model_cache`. To create your own cache pulling from the shapes you have inputted simply run the `01 Model -- Load, parameterise, and cache.ipynb` notebook from within the notebook server.
+Before creating your own model the cache of the demo model needs to be deleted. This is achieved by deleting all files found within `demo/model_cache`. To create your own cache pulling from the shapes you have inputted simply run the [`01 Model -- Load, parameterise, and cache.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb) notebook from within the notebook server. This notebook will look something like this:
+
+ * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb
 
 Run this notebook going `Cell > Run All`.
 
-Once this notebook has finished go on to the next step.
+Of high importance at this step as that each shape and the resulting equivalent ellipse is visually checked. It needs to be confirmed by the user at this stage that the expected loss of lateral scatter is sufficiently equivalent between each equivalent ellipse and its corresponding insert. This is of particular issue if the long axis of the shape is becoming small enough to a point that lateral scatter along this axis may not be equivalent between the two shapes.
 
-### Creating interactive reports for everyday clinical use
-Delete the demo report(s) found within `demo/interactive_reports`. Then as in the previous step load up and run the notebook labelled `02 Model -- Create reports.ipynb`. This will create a report for each energy/applicator/ssd combination available within the model cache. The resulting reports can be placed on a clinical shared drive for use on any computer (python not required to interactively use these interactive report files).
+Of second note is that specifically placed "saw tooth" indents may result in the width being underestimated. Although I have not observed this being an issue in clinical shapes, nevertheless, at this stage the user needs to visually confirm that the equivalent ellipse algorithim is working intelligently.
 
+### Creating interactive reports
+Delete the demo report(s) found within `demo/interactive_reports`. Then as in the previous step load up and run the notebook labelled [`02 Model -- Create reports.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/02%20Model%20--%20Create%20reports.ipynb). This will create a report for each energy/applicator/ssd combination available within the model cache. The resulting reports can be placed on a shared drive for use on any computer (python not required to interactively use these report files).
+
+An example of one such of these interactive reports can be found here:
+ * http://simonbiggs.net/electronfactors
+
+Be sure to observe the "prediction differences" column in these reports as this represents the percent prediction difference that results when a shape is removed from the model and then predicted by the model. It is important that a sufficient number of shapes are measured so that the user can observe the resulting prediction differences over the range of the desired use of the model.
 
 ## Copyright information
 Copyright &#169; 2015  Simon Biggs

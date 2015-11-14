@@ -7,7 +7,7 @@
 ## Quick standalone overview of code and use
 To be able to quickly make use of this code, and be able to see a brief overview of what it can achieve please see the "standalone example" provided here:
 
- > http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb
+ > [Spline modelling electron insert factors standalone example.ipynb](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb)
 
 This file can be downloaded and the instructions followed and used as is.
 

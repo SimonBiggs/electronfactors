@@ -4,13 +4,6 @@
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/equivalent-ellipse-spline-modelling/badge.svg)](https://coveralls.io/r/SimonBiggs/equivalent-ellipse-spline-modelling)
 
 
-## Quick standalone overview of code and use
-To be able to quickly make use of this code, and be able to see a brief overview of what it can achieve please see the "standalone example" provided here:
-
- > [Spline modelling electron insert factors standalone example.ipynb](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb)
-
-This file can be downloaded and the instructions followed and used as is.
-
 ## Description
 The code here provided is for the modelling of the portion of the electron output factor that is dependent on the shape of the shielding insert mounted within the applicator. This allows modelling insert factors using only the measured factors already available at a centre. Should all outliers be removed from the data set the user might expect as low as 0.5% standard uncertainty for factor prediction with as little as 8 data points.
 

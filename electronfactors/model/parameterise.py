@@ -25,11 +25,14 @@ from ..ellipse.utilities import (
 def parameterise(display=False, working_directory="imported_data/",
                  optimise_position=False, **kwargs):
 
-    input_filepath = working_directory + "merged.yml"
-    output_filepath = working_directory + "parameterised.yml"
+    if working_directory is not None:
+        input_filepath = working_directory + "merged.yml"
+        output_filepath = working_directory + "parameterised.yml"
 
-    with open(input_filepath, 'r') as file:
-        input_dict = yaml.load(file)
+        with open(input_filepath, 'r') as file:
+            input_dict = yaml.load(file)
+    else:
+        input_dict = kwargs['input_dict']
 
     output_dict = input_dict.copy()
     for i, key in enumerate(input_dict):
@@ -73,8 +76,11 @@ def parameterise(display=False, working_directory="imported_data/",
         output_dict[key]['length'] = length
         output_dict[key]['poi'] = poi
 
-    with open(output_filepath, 'w') as file:
-        file.write(yaml.dump(output_dict))
+    if working_directory is not None:
+        with open(output_filepath, 'w') as file:
+            file.write(yaml.dump(output_dict))
+    else:
+        return output_dict
 
 
 def calculate_optimal_position(cutout, ellipse):

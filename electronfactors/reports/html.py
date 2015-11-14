@@ -138,7 +138,7 @@ from ..model.utilities import pull_data, prediction_uncertainty
 #     f.close()
 
 
-def create_report_v2(input_dict=None, output_to_file=True,
+def create_report_v2(input_dict=None, standard_output=True,
                      energy=None, applicator=None, ssd=None, filepath=None,
                      inverted_factor=False):
     if input_dict is None:
@@ -169,7 +169,7 @@ def create_report_v2(input_dict=None, output_to_file=True,
             str(number_of_measurements) + "datapoints" +
             tag + ".html")
 
-    if output_to_file:
+    if standard_output:
         output_file(filepath)
 
     if sufficient:

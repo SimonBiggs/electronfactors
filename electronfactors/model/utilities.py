@@ -67,12 +67,15 @@ def create_model(width, eqPonA, factor):
 
 
 def pull_data(energy=12, applicator=10, ssd=100, return_label=False,
-              return_all=False):
-    with open("model_cache/" +
-              str(energy) + "MeV_" +
-              str(applicator) + "app_" +
-              str(ssd) + "ssd.yml", 'r') as file:
-        cutout_data = yaml.load(file)
+              return_all=False, input_dict=None):
+    if input_dict is None:
+        with open("model_cache/" +
+                  str(energy) + "MeV_" +
+                  str(applicator) + "app_" +
+                  str(ssd) + "ssd.yml", 'r') as file:
+            cutout_data = yaml.load(file)
+    else:
+        cutout_data = input_dict
 
     label = np.array([key for key in cutout_data])
     width = np.array([cutout_data[key]['width'] for key in label])

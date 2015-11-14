@@ -355,7 +355,7 @@ def interactive_v2(width, length, eqPonA, factor, label):
     ]
 
     data_table = DataTable(
-        source=measurements_source, columns=columns, width=1000, height=500)
+        source=measurements_source, columns=columns, width=900, height=500)
 
     tools = "box_select, tap, crosshair"
     unselect_rectangle = Rect(line_alpha=0, fill_alpha=0)
@@ -368,7 +368,7 @@ def interactive_v2(width, length, eqPonA, factor, label):
         native_data['width'].max() + 0.05 + native_data['width'].ptp()*0.03)
 
     native = figure(
-        tools=tools, width=450, height=350,
+        tools=tools, width=400, height=350,
         title="Native domain",
         x_axis_label="Width (cm)", y_axis_label="Perimeter / Area cm^-1)",
         x_range=native_x_range, y_range=native_y_range)
@@ -407,7 +407,7 @@ def interactive_v2(width, length, eqPonA, factor, label):
         transformed_data['width'].ptp()*0.03)
 
     transformed = figure(
-        tools=tools, width=450, height=350,
+        tools=tools, width=400, height=350,
         title="Transformed domain",
         x_axis_label="Width (cm)", y_axis_label="Length (cm)",
         x_range=trans_x_range, y_range=trans_y_range)

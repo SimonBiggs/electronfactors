@@ -3,14 +3,22 @@
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/equivalent-ellipse-spline-modelling/badge.svg)](https://coveralls.io/r/SimonBiggs/equivalent-ellipse-spline-modelling)
 
+
+## Quick standalone overview of code and use
+To be able to quickly make use of this code, and be able to see a brief overview of what it can achieve please see the "standalone example" provided here:
+
+ > http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb
+
+This file can be downloaded and the instructions followed and used as is.
+
 ## Description
 The code here provided is for the modelling of the portion of the electron output factor that is dependent on the shape of the shielding insert mounted within the applicator. This allows modelling insert factors using only the measured factors already available at a centre. Should all outliers be removed from the data set the user might expect as low as 0.5% standard uncertainty for factor prediction with as little as 8 data points.
 
 The paper outlining this method is currently in press:
- 
- > S. Biggs, M. Sobolewski, R. Murry, J. Kenny, Spline modelling electron insert factors using routine measurements. Physica Medica (2015), [doi:10.1016/j.ejmp.2015.11.002](http://dx.doi.org/10.1016/j.ejmp.2015.11.002). 
 
-A pre-print of the accepted manuscript is available at my personal website: [simonbiggs.net/paper1](http://simonbiggs.net/paper1). If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help. 
+ > S. Biggs, M. Sobolewski, R. Murry, J. Kenny, Spline modelling electron insert factors using routine measurements. Physica Medica (2015), [doi:10.1016/j.ejmp.2015.11.002](http://dx.doi.org/10.1016/j.ejmp.2015.11.002).
+
+A pre-print of the accepted manuscript is available at my personal website: [simonbiggs.net/paper1](http://simonbiggs.net/paper1). If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help.
 
 Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure outlined in the paper and the requirements of your centre identifies whether or not this method and code is fit for your use.
 
@@ -33,14 +41,14 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
   * Run the following within the RISE directory `python setup.py install`.
 
 
-## Installation for Ubuntu 
+## Installation for Ubuntu
 ### Core
 From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.
 
     sudo apt-get build-dep python-numpy matplotlib python-scipy pandas ipython pyzmq python-shapely pyyaml
     sudo apt-get install python3-pip
     sudo pip3 install --upgrade numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter electronfactors
-    
+
 ### Optional
 If you wish to run the demo slideshow RISE is required. I followed the following steps to install RISE:
 
@@ -57,7 +65,7 @@ For now the easiest method of use is to directly edit the files found within `de
 The first import method is by importing generic shapes (such as ellipses or rectangles). An example input csv is found here:
 
  * https://github.com/SimonBiggs/electronfactors/blob/master/demo/user_inputs/GenericShapeImport.csv
- 
+
 By deleting the contents of that file and replacing it with your desired insert shapes and measurements you can input generic shapes.
 
 #### Coordinate based import
@@ -77,7 +85,7 @@ There is no reason why a custom import method cannot be created (such as directl
  * https://github.com/SimonBiggs/electronfactors/blob/master/demo/imported_data/merged.yml
 
 I use pyyaml for easy loading and saving of yaml files.
- 
+
 Your custom import script needs to be called within the [`01 Model -- Load, parameterise, and cache.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb) notebook after the `convert_merge()` function and before the `parameterise()` function.
 
 An example of a utlitiy I made for pulling the insert shapes directly from the XiO server within our centre can be found here (please note this example is intended as an example only, it is minimally tested and will likely need adaptation and bug fixing):

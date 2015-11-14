@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = "electronfactors",
-    version = "0.1.1",
+    version = "0.1.2",
     author = "Simon Biggs",
     author_email = "mail@simonbiggs.net",
     description = "Predict electron insert factors",

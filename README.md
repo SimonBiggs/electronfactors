@@ -18,6 +18,7 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 ## Installation for Windows
  * Download and install the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
  * Download the source code of this electronfactors program from [releases](https://github.com/SimonBiggs/electronfactors/releases).
+ * Install this package by running in a command prompt, `pip install electronfactors`
  * Installing shapely
   * Download the relevant shapely package from [http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
     * If you have 64-bit windows you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
@@ -38,7 +39,7 @@ From a fresh install of Ubuntu, using pip to install all dependencies the follow
 
     sudo apt-get build-dep python-numpy matplotlib python-scipy pandas ipython pyzmq python-shapely pyyaml
     sudo apt-get install python3-pip
-    sudo pip3 install --upgrade numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter
+    sudo pip3 install --upgrade numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter electronfactors
     
 ### Optional
 If you wish to run the demo slideshow RISE is required. I followed the following steps to install RISE:

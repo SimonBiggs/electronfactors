@@ -1,7 +1,7 @@
 # Spline modelling electron insert factors using routine measurements
 
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
-[![Coverage Status](https://coveralls.io/repos/SimonBiggs/equivalent-ellipse-spline-modelling/badge.svg)](https://coveralls.io/r/SimonBiggs/equivalent-ellipse-spline-modelling)
+[![Coverage Status](https://coveralls.io/repos/SimonBiggs/electronfactors/badge.svg?branch=master&service=github)](https://coveralls.io/github/SimonBiggs/electronfactors?branch=master)
 
 
 ## Description

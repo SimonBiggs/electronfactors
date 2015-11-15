@@ -19,7 +19,6 @@ install:
   - jupyter migrate
 
 script:
-
   - nosetests --with-coverage --cover-package=electronfactors
 
 after_success:

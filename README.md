@@ -51,6 +51,12 @@ If you wish to run the demo slideshow RISE is required. I followed the following
 
 
 ## Explanation of use
+At this point of time there are two options available for using this code. The first method is outlined in detail below and requires using the example files that comes with downloading the code from [releases](https://github.com/SimonBiggs/electronfactors/releases). This involves using csv files which can be edited with microsoft excel or libre office calc (and resaved as .csv, not .xls) and then the ready made notebooks can be used to pull from these csv files.
+
+The second option requires only the jupyter notebook (or just python if you choose) and python dictionaries are used to input the cutout shapes. This method is explained in detail in the standalone notebook found here:
+
+ > [Spline modelling electron insert factors using routine measurements.ipynb](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb)
+
 ### Importing your insert shapes
 For now the easiest method of use is to directly edit the files found within `demo/user_inputs`. There are currently two methods to import insert shapes, generic shape import, and shape coordinate import. Each shape is indexed by an identifier, this can be whatever is most useful and informative for you however they must be unique throughout the import files. The units used in defining width / length / coords must simply be consistent throughout, in my examples I used all shape dimensions defined in cm at isocentre however as long as the user is consistent this is not necessary.
 

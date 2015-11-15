@@ -12,6 +12,7 @@ before_install:
   - conda update --yes conda
 
 install:
+  - pip uninstall numpy
   - conda install --yes python=$TRAVIS_PYTHON_VERSION ipython jupyter numpy scipy nose shapely pandas matplotlib bokeh
   - pip install coveralls nose-cov descartes pyyaml
 

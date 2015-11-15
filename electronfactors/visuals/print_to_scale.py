@@ -23,7 +23,7 @@ import subprocess
 import os
 
 
-def print_to_pdf(shapley_list, filename, **kwargs):
+def print_to_pdf(shapley_list, filename, random_colours=True, **kwargs):
 
     scale = kwargs['scale']
     pylab.rcParams['savefig.dpi'] = 254
@@ -52,10 +52,16 @@ def print_to_pdf(shapley_list, filename, **kwargs):
 
     for shape in shapley_list:
 
+        if random_colours:
+            colours = np.append(
+                np.random.uniform(size=3), 0.3)
+        else:
+            colours = [0, 0, 0, 0.3]
+
         scaled_shape = aff.scale(
             shape, xfact=scale, yfact=scale)
         patch = des.PolygonPatch(
-            scaled_shape, fc=np.random.uniform(size=3), alpha=0.5
+            scaled_shape, fc=colours
         )
         ax.add_patch(patch)
 

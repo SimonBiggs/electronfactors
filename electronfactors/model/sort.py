@@ -15,8 +15,8 @@ import yaml
 import numpy as np
 
 
-def cache_all():
-    input_filepath = "imported_data/parameterised.yml"
+def cache_all(input_directory, output_directory):
+    input_filepath = input_directory + "parameterised.yml"
     with open(input_filepath, 'r') as file:
         input_dict = yaml.load(file)
 
@@ -36,11 +36,12 @@ def cache_all():
     for energy in energy_array:
         for applicator in applicator_array:
             for ssd in ssd_array:
-                create_cache(energy=energy, applicator=applicator, ssd=ssd)
+                create_cache(
+                    input_directory, output_directory,
+                    energy=energy, applicator=applicator, ssd=ssd)
 
 
-def create_cache(input_directory="imported_data/",
-                 output_directory="model_cache/",
+def create_cache(input_directory, output_directory,
                  ssd=100, **kwargs):
 
     input_filepath = input_directory + "parameterised.yml"

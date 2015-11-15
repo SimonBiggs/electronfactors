@@ -23,20 +23,25 @@ def display_equivalent_ellipse(ax=None, **kwargs):
     poi = kwargs['poi']
 
     ellipse = make_ellipse(**kwargs)
-    display_shapely(ellipse, ax=ax)
+    display_shapely(ellipse, ax=ax, random_colours=False)
 
     plt.scatter(*poi)
 
 
-def display_shapely(shape, ax=None):
+def display_shapely(shape, ax=None, random_colours=True, alpha=0.3):
     if ax is None:
         fig = plt.figure()
         ax = fig.add_subplot(111)
 
+    if random_colours:
+        colours = np.append(
+            np.random.uniform(size=3), alpha)
+    else:
+        colours = [0, 0, 0, alpha]
+
     patch = des.PolygonPatch(
         shape,
-        fc=np.random.uniform(size=3),
-        alpha=0.5)
+        fc=colours)
     ax.add_patch(patch)
 
     ax.axis("equal")

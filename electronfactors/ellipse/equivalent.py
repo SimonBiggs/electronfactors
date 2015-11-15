@@ -82,7 +82,7 @@ def equivalent_ellipse(display=False, **kwargs):
         fig = plt.figure()
         ax = fig.add_subplot(111)
 
-        display_shapely(cutout, ax=ax)
+        display_shapely(cutout, ax=ax, random_colours=False)
 
         plt.scatter(*poi)
         display_equivalent_ellipse(ax=ax, poi=poi, width=width, length=length)

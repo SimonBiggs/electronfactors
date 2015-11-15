@@ -14,6 +14,8 @@
 import yaml
 import numpy as np
 import matplotlib.pyplot as plt
+
+import shapely.geometry as geo
 import shapely.affinity as aff
 
 from ..visuals.shape_display import display_shapely
@@ -22,7 +24,7 @@ from ..ellipse.utilities import (
     shapely_ellipse, shapely_cutout, _CustomBasinhopping)
 
 
-def parameterise(display=False, working_directory="imported_data/",
+def parameterise(working_directory, display=False,
                  optimise_position=False, **kwargs):
 
     if working_directory is not None:
@@ -35,12 +37,11 @@ def parameterise(display=False, working_directory="imported_data/",
         input_dict = kwargs['input_dict']
 
     output_dict = input_dict.copy()
-    for i, key in enumerate(input_dict):
+    keys = np.sort([key for key in input_dict])
+
+    for i, key in enumerate(keys):
         XCoords = input_dict[key]['XCoords']
         YCoords = input_dict[key]['YCoords']
-
-        if display:
-            print(str(key) + ":")
 
         ellipse_values = equivalent_ellipse(
             XCoords=XCoords, YCoords=YCoords)
@@ -60,11 +61,20 @@ def parameterise(display=False, working_directory="imported_data/",
             output_dict[key]['angle'] = angle
 
         if display:
+            circle = geo.Point(
+                *ellipse_values['poi']).buffer(ellipse_values['width']/2)
+
+            print(str(key) + ":")
+
             fig = plt.figure()
             ax = fig.add_subplot(111)
 
-            display_shapely(cutout, ax=ax)
-            display_shapely(ellipse, ax=ax)
+            display_shapely(
+                cutout, ax=ax, random_colours=False, alpha=0.5)
+            display_shapely(
+                circle, ax=ax, random_colours=False, alpha=0)
+            display_shapely(
+                ellipse, ax=ax, random_colours=False, alpha=0)
 
             plt.show()
 

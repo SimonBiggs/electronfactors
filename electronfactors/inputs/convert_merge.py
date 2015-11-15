@@ -21,8 +21,7 @@ from .rawcoords import convert_raw
 # This finder function can be used to find the regex the input files
 # That way, simply call all finder functions in existance and for those files
 # found import the data :)
-def convert(input_directory="user_inputs/",
-            output_directory="imported_data/"):
+def convert(input_directory, output_directory):
 
     XCoords_filepath = input_directory + "RawCoordsImport_XCoords.csv"
     YCoords_filepath = input_directory + "RawCoordsImport_YCoords.csv"
@@ -44,7 +43,7 @@ def convert(input_directory="user_inputs/",
         outputFilepath=output_filepath)
 
 
-def merge(working_directory="imported_data/"):
+def merge(working_directory):
     input_paths = [
         working_directory + "RawCoords_coords.yml",
         working_directory + "GenericShape_coords.yml"
@@ -61,7 +60,6 @@ def merge(working_directory="imported_data/"):
         outfile.write(yaml.dump(merged_dict))
 
 
-def convert_merge(input_directory="user_inputs/",
-                  output_directory="imported_data/"):
+def convert_merge(input_directory, output_directory):
     convert(input_directory=input_directory, output_directory=output_directory)
     merge(working_directory=output_directory)

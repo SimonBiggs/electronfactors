@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = "electronfactors",
-    version = "0.1.4",
+    version = "0.1.5",
     author = "Simon Biggs",
     author_email = "mail@simonbiggs.net",
     description = "Predict electron insert factors",
@@ -14,7 +14,15 @@ For more information visit the gihub repository, https://github.com/SimonBiggs/e
     
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.""",
     keywords = [],
-    packages = ["electronfactors"],
+    packages = [
+      "electronfactors",
+      "electronfactors.ellipse",
+      "electronfactors.inputs",
+      "electronfactors.measurement",
+      "electronfactors.model",
+      "electronfactors.reports",
+      "electronfactors.visuals",
+      ],
     license='AGPL3+',
     classifiers = [],
     url = "https://github.com/SimonBiggs/electronfactors"

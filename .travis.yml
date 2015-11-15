@@ -14,13 +14,13 @@ before_install:
 
 install:
   - conda install --yes python=$TRAVIS_PYTHON_VERSION ipython jupyter numpy scipy nose shapely pandas matplotlib bokeh
-  - pip install --upgrade numpy coveralls nose-cov descartes pyyaml
+  - pip install coveralls descartes pyyaml
   - pip install -e .
   - jupyter migrate
 
 script:
 
-  - nosetests --with-coverage --cover-package=electronfactors --rcfile=.coveragerc
+  - nosetests --with-coverage --cover-package=electronfactors
 
 after_success:
-  - coveralls --config_file .coveragerc
+  - coveralls

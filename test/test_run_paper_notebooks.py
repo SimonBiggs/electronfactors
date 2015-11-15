@@ -11,80 +11,59 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from runipy.notebook_runner import NotebookRunner
-from nbformat import read
 
-import os, contextlib
-
-@contextlib.contextmanager
-def temp_chdir(path):
-    """
-    Usage:
-    >>> with temp_chdir(gitrepo_path):
-    ...   subprocess.call('git status')
-    """
-    starting_directory = os.getcwd()
-    try:
-        os.chdir(path)
-        yield
-    finally:
-        os.chdir(starting_directory)
-
+from nbconvert.exporters import Exporter
+from nbconvert.preprocessors import ExecutePreprocessor
 
 def run_notebook(filename):
-    notebook = read(open(filename), as_version=3)
-    r = NotebookRunner(notebook)
-    r.run_notebook()
+    export = Exporter()
+    export.register_preprocessor(ExecutePreprocessor, True)
+    export.from_filename(filename)
 
 def test_where_to_measure():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Discussion -- Example of where to first measure.ipynb")
+    run_notebook(
+        "paper/Discussion -- Example of where to first measure.ipynb")
 
 def test_equivalent_ellipse_example():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Method -- Equivalent ellipse example.ipynb")
+    run_notebook(
+        "paper/Method -- Equivalent ellipse example.ipynb")
 
 def test_deformability_example():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Method -- Fit deformability example.ipynb")
+    run_notebook(
+        "paper/Method -- Fit deformability example.ipynb")
 
 def test_change_uncertainty_with_num_meas():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Results -- "
-            "Change in uncertainty with number of measurements.ipynb")
+    run_notebook(
+        "paper/"
+        "Results -- Change in uncertainty with number of measurements.ipynb")
 
 def test_collated_prediction_uncertainties():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Results -- Collated prediction uncertainties.ipynb")
+    run_notebook(
+        "paper/"
+        "Results -- Collated prediction uncertainties.ipynb")
 
 def test_contour_plots():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Results -- Contour plots of model.ipynb")
+    run_notebook(
+        "paper/"
+        "Results -- Contour plots of model.ipynb")
 
 def test_prediction_diff_histograms():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Results -- Percent prediction difference histograms.ipynb")
+    run_notebook(
+        "paper/"
+        "Results -- Percent prediction difference histograms.ipynb")
 
 def test_automatically_discerning_outliers():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Results -- "
-            "Point at which an outlier is automatically discernable.ipynb")
+    run_notebook(
+        "paper/"
+        "Results -- "
+        "Point at which an outlier is automatically discernable.ipynb")
 
 def test_prediction_diffs_of_eight():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Results -- Prediction with eight point data subsets.ipynb")
+    run_notebook(
+        "paper/"
+        "Results -- Prediction with eight point data subsets.ipynb")
 
 def test_printing_utility():
-    with temp_chdir("paper/"):
-        run_notebook(
-            "Utility -- "
-            "Printing shapes to scale for subsequent measurement.ipynb")
+    run_notebook(
+        "paper/"
+        "Utility -- Printing shapes to scale for subsequent measurement.ipynb")

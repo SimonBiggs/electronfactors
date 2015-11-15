@@ -11,14 +11,13 @@
 # License along with this program. If not, see
 # http://www.gnu.org/licenses/.
 
-from runipy.notebook_runner import NotebookRunner
-from nbformat import read
-
+from nbconvert.exporters import Exporter
+from nbconvert.preprocessors import ExecutePreprocessor
 
 def run_notebook(filename):
-    notebook = read(open(filename), as_version=3)
-    r = NotebookRunner(notebook)
-    r.run_notebook()
+    export = Exporter()
+    export.register_preprocessor(ExecutePreprocessor, True)
+    export.from_filename(filename)
 
 def test_standalone():
     run_notebook(

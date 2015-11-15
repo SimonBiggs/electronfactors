@@ -17,7 +17,9 @@ from nbconvert.preprocessors import ExecutePreprocessor
 
 def run_notebook(filename):
     export = Exporter()
-    export.register_preprocessor(ExecutePreprocessor, True)
+    execute = ExecutePreprocessor()
+    execute.timeout = 600
+    export.register_preprocessor(execute, True)
     export.from_filename(filename)
 
 # def test_demo_load_parameterise_cache():

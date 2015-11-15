@@ -15,7 +15,7 @@ before_install:
 install:
   - conda install --yes python=$TRAVIS_PYTHON_VERSION ipython jupyter numpy scipy nose shapely pandas matplotlib bokeh
   - pip install --upgrade numpy coveralls nose-cov descartes pyyaml
-  - pip install -e SimonBiggs/electronfactors
+  - pip install -e .
 
 script:
   - nosetests --with-cov --cov electronfactors --cov-config .coveragerc --logging-level=INFO

@@ -22,13 +22,13 @@ def run_notebook(filename):
     export.register_preprocessor(execute, True)
     export.from_filename(filename)
 
-# def test_demo_load_parameterise_cache():
-#     run_notebook(
-#         "demo/01 Model -- Load, parameterise, and cache.ipynb")
-#
-# def test_demo_create_reports():
-#     run_notebook(
-#         "demo/02 Model -- Create reports.ipynb")
+def test_demo_load_parameterise_cache():
+    run_notebook(
+        "demo/01 Model -- Load, parameterise, and cache.ipynb")
+
+def test_demo_create_reports():
+    run_notebook(
+        "demo/02 Model -- Create reports.ipynb")
 
 def test_demo_slideshow():
     run_notebook(

@@ -19,7 +19,8 @@ install:
   - jupyter migrate
 
 script:
-  - nosetests --with-cov --cov electronfactors --cov-config .coveragerc --logging-level=INFO
+
+  - nosetests --with-coverage --cover-package=electronfactors --rcfile=.coveragerc
 
 after_success:
   - coveralls --config_file .coveragerc

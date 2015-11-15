@@ -53,7 +53,7 @@ If you wish to run the demo slideshow RISE is required. I followed the following
 ## Explanation of use
 At this point of time there are two options available for using this code. The first method is outlined in detail below and requires using the example files that comes with downloading the code from [releases](https://github.com/SimonBiggs/electronfactors/releases). This involves using csv files which can be edited with microsoft excel or libre office calc (and resaved as .csv, not .xls) and then the ready made notebooks can be used to pull from these csv files.
 
-The second option requires only the jupyter notebook (or just python if you choose) and python dictionaries are used to input the cutout shapes. This method is explained in detail in the standalone notebook found here:
+The second option requires only the jupyter notebook (or just python if you choose) and python dictionaries are used to input the cutout shapes. This second option  is explained in detail in the standalone notebook found here:
 
  > [Spline modelling electron insert factors using routine measurements.ipynb](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb)
 

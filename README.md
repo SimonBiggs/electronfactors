@@ -27,7 +27,7 @@ Download the Shapely module from [here](http://www.lfd.uci.edu/~gohlke/pythonlib
 
 Open jupyter qtconsole:
  * Press [Windows Key] + R
- * Type: jupyter qtconsole
+ * Type: `jupyter qtconsole`
  * Press Enter
 
 To install electronfactors and descartes, within the jupyter console, type:

@@ -18,6 +18,7 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 
 ## Installation for Windows
 Download Anaconda Python 3.5 from [continuum.io/downloads](https://www.continuum.io/downloads).
+
 Install Anaconda
  * Make sure "Add Anaconda to my PATH environment variable" and "Register Anaconda as my default Python 3.5" are ticked.
 Download the Shapely module from [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).

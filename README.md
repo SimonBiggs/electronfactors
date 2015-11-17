@@ -31,8 +31,8 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
  * Installing descartes
   * Run the following in a command prompt, `pip install descartes`
  * Installing RISE (optional). This is only required if you want to see the live demo slideshow, not required for actual use.
-  * Download the most recent version of RISE at [github.com/damianavila/RISE/releases/](https://github.com/damianavila/RISE/releases/).
-  * Extract the zip and change directory within a command prompt into the extracted file
+  * Download the most recent version of RISE [here](https://github.com/damianavila/RISE/archive/master.zip).
+  * Extract the zip and change directory within a command prompt into the extracted folder
   * Run the following within the RISE directory `python setup.py install`.
 
 

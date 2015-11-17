@@ -21,6 +21,7 @@ Download Anaconda Python 3.5 from [continuum.io/downloads](https://www.continuum
 
 Install Anaconda
  * Make sure "Add Anaconda to my PATH environment variable" and "Register Anaconda as my default Python 3.5" are ticked.
+
 Download the Shapely module from [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
  * If you have 64-bit windows with python 3.5 you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
 

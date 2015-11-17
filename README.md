@@ -17,9 +17,12 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 
 
 ## Installation for Windows
- * Download and install the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
- * For easiest use download the examples with this code by downloading the source code from [releases](https://github.com/SimonBiggs/electronfactors/releases).
- * Install this package by running in a command prompt, `pip install electronfactors`
+ * Installing Anaconda Python 3.5, complete this before going on to the next step
+   * Download installer from [continuum.io/downloads](https://www.continuum.io/downloads)
+   * Install Anaconda
+   * Reset Windows
+ * To have a copy of the provided examples download the electronfactors source code from [releases](https://github.com/SimonBiggs/electronfactors/releases).
+ * Install the electronfactors package by running in a command prompt, `pip install electronfactors`
  * Installing shapely
   * Download the relevant shapely package from [http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
     * If you have 64-bit windows you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).

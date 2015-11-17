@@ -17,39 +17,35 @@ Any use of the code accepts the AGPL3+ license which includes no warranty that t
 
 
 ## Installation for Windows
- * Installing Anaconda Python 3.5, complete this before going on to the next step
-   * Download installer from [continuum.io/downloads](https://www.continuum.io/downloads)
-   * Install Anaconda -- Make sure to tick "add Anaconda to my PATH"
- * To have a copy of the provided examples download the electronfactors source code from [releases](https://github.com/SimonBiggs/electronfactors/releases).
- * Install the electronfactors package by running in a command prompt, `pip install electronfactors`
- * Installing shapely
-  * Download the relevant shapely package from [http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
-    * If you have 64-bit windows you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
-  * Install shapely by:
-    * Opening a command prompt and "cd" into the directory with the downloaded file
-    * Then running `pip install Shapely-*.*.*-cp35-none-win_*.whl` (with * replaced with relevant file name).
- * Installing descartes
-  * Run the following in a command prompt, `pip install descartes`
- * Installing RISE (optional). This is only required if you want to see the live demo slideshow, not required for actual use.
-  * Download the most recent version of RISE [here](https://github.com/damianavila/RISE/archive/master.zip).
-  * Extract the zip and change directory within a command prompt into the extracted folder
-  * Run the following within the RISE directory `python setup.py install`.
+Download Anaconda Python 3.5 from [continuum.io/downloads](https://www.continuum.io/downloads).
+Install Anaconda
+ * Make sure "Add Anaconda to my PATH environment variable" and "Register Anaconda as my default Python 3.5" are ticked.
+Download the Shapely module from [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
+ * If you have 64-bit windows with python 3.5 you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
+
+Open jupyter qtconsole:
+ * Press [Windows Key] + R
+ * Type: jupyter qtconsole
+ * Press Enter
+
+To install electronfactors and descartes, within the jupyter console, type:
+
+    !pip install descartes electronfactors
+
+To install the downloaded shapely file I assume the shapely file was downloaded into your Downloads library and the version downloaded was 1.5.13. If this is not the case change what is written here to match the downloaded file. Within the jupyter console type:
+
+    !pip install Downloads/Shapely-1.5.13-cp35-none-win_amd64.whl
+
+To be able to make use of the examples referred to for the remaining of this guide make sure you download the most recent electronfactors source code found [here](https://github.com/SimonBiggs/electronfactors/releases).
 
 
 ## Installation for Ubuntu
-### Core
 From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.
 
     sudo apt-get build-dep python-numpy matplotlib python-scipy pandas ipython pyzmq python-shapely pyyaml
     sudo apt-get install python3-pip
-    sudo pip3 install --upgrade numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter electronfactors
+    sudo pip3 install --upgrade pip numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter electronfactors
 
-### Optional
-If you wish to run the demo slideshow RISE is required. I followed the following steps to install RISE:
-
- * `jupyter migrate`
- * cd into the [downloaded](https://github.com/damianavila/RISE/releases/) RISE directory
- * `python3 setup.py install`
 
 
 ## Explanation of use

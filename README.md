@@ -34,7 +34,7 @@ To install electronfactors and descartes, within the jupyter console, type:
 
     !pip install descartes electronfactors
 
-To install the downloaded shapely file I assume the shapely file was downloaded into your Downloads library and the version downloaded was 1.5.13. If this is not the case change what is written here to match the downloaded file. Within the jupyter console type:
+To install the downloaded shapely file within the jupyter console type the line of code following. I assume the shapely file was downloaded into your Downloads library and the version downloaded was 1.5.13. If this is not the case change what is written here to match the downloaded file.
 
     !pip install Downloads/Shapely-1.5.13-cp35-none-win_amd64.whl
 

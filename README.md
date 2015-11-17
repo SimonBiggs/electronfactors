@@ -16,7 +16,8 @@ A pre-print of the accepted manuscript is available at my personal website: [sim
 Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure outlined in the paper and the requirements of your centre identifies whether or not this method and code is fit for your use.
 
 
-## Installation for Windows
+## Installation
+### Windows
 Download Anaconda Python 3.5 from [continuum.io/downloads](https://www.continuum.io/downloads).
 
 Install Anaconda
@@ -41,7 +42,7 @@ To install the downloaded shapely file within the jupyter console type the line 
 To be able to make use of the examples referred to for the remaining of this guide make sure you download the most recent electronfactors source code found [here](https://github.com/SimonBiggs/electronfactors/releases).
 
 
-## Installation for Ubuntu
+### Ubuntu
 From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.
 
     sudo apt-get build-dep python-numpy matplotlib python-scipy pandas ipython pyzmq python-shapely pyyaml

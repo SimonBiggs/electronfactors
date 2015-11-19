@@ -48,7 +48,7 @@ My code currently successfully builds on [Travis Cl](https://travis-ci.org/Simon
 
 If you have a different version of python to this I have successfully got my code up and running within the "Portable Python distribution", [WinPython](https://github.com/winpython/winpython/releases/tag/1.2.20151029). This allows you to run Python 3.4 in a stand alone environment, with the scipy stack built in, without having to affect your current python distribution.
 
-The only requirements is that descartes, electronfactors, and shapely are also installed as given in the previous section.
+The only requirements is that descartes, electronfactors, and shapely are also installed as given in the previous section. To install these use the shortcuts within the WinPython directory to open either the console, winpython control panel, or qtconsole, to install in the WinPython environment.
 
 ### Ubuntu
 From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.

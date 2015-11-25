@@ -66,6 +66,9 @@ The second option requires only the jupyter notebook (or just python if you choo
 
  > [Spline modelling electron insert factors using routine measurements.ipynb](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.ipynb)
 
+Or if you would prefer not to use the jupyter notebook altogether a stand alone python script---which has been tested running in an IPython terminal within IDEs such as Spyder---demonstrating the use of this code can be found here:
+
+ > [Spline modelling electron insert factors using routine measurements.py](https://github.com/SimonBiggs/electronfactors/blob/master/Spline%20modelling%20electron%20insert%20factors%20standalone%20example.py)
 
 ## Explaination for use with importing shapes via csv files
 ### Importing your insert shapes

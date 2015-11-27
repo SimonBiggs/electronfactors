@@ -118,7 +118,7 @@ An example of a utlitiy I made for pulling the insert shapes directly from the X
 
 ##### Example pulling from DICOM
 
-Another example for pulling energy, ssd, applicator, and cutout shape coordinates from a DICOM file can be found here:
+An example for pulling energy, ssd, applicator, and cutout shape coordinates from a DICOM file can be found here:
 
  * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/Make-DICOM-import-method/dicom/Importing%20from%20Dicom.ipynb
 

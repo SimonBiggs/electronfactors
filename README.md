@@ -108,9 +108,26 @@ I use pyyaml for easy loading and saving of yaml files.
 
 Your custom import script needs to be called within the [`01 Model -- Load, parameterise, and cache.ipynb`](http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/demo/01%20Model%20--%20Load%2C%20parameterise%2C%20and%20cache.ipynb) notebook after the `convert_merge()` function and before the `parameterise()` function.
 
+If you do make a custom import method please let me know. It might be worth including it within the electronfactors package.
+
+##### Example pulling from XiO
+
 An example of a utlitiy I made for pulling the insert shapes directly from the XiO server within our centre can be found here (please note this example is intended as an example only, it is minimally tested and will likely need adaptation and bug fixing):
 
  * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/historical_exploration_and_measurement/scripts/xio.ipynb
+
+##### Example pullig from DICOM
+
+Another example for pulling energy, ssd, applicator, and cutout shape coordinates from a DICOM file can be found here:
+
+ * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/Make-DICOM-import-method/dicom/Importing%20from%20Dicom.ipynb
+
+It requires the following package installation:
+
+    pip install pydicom
+    
+This has not been tested in anything but a contrived example. It is meant as an example only to be adapted for your particular use case. A pure dicom import method would be able to be created by placing all the required dicom files within a directory, combined with a single csv metadata file containing the columns index, dicom filename, and factor measurement.
+
 
 ### Opening the jupyter notebook server
 The jupyter notebook server can be started by changing directory within a command prompt into the demo folder and then running the following: `jupyter notebook`. Alternatively I have created a windows shortcut within the demo directory which can be clicked and will do this automatically.

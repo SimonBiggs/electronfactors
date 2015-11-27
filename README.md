@@ -55,7 +55,7 @@ If you have a different version of python I have successfully got my code up and
 The only requirements is that descartes, electronfactors, and shapely are also installed as given in the previous section. To install these use the shortcuts within the WinPython directory to open either the console, winpython control panel, or qtconsole, to install in the WinPython environment.
 
 #### Limited user access rights
-If you find yourself with limited user access rights I have outlined a few tips for installing the required python environment over at the [wiki](https://github.com/SimonBiggs/electronfactors/wiki/Creating-the-required-python-environment-with-limited-user-access-rights).
+If you find yourself with limited user access rights I have outlined a few tips for installing the required python environment over at the [wiki](https://github.com/SimonBiggs/electronfactors/wiki/Creating-the-required-python-environment-when-constrained-by-limited-user-access-rights).
 
 ### Ubuntu
 From a fresh install of Ubuntu, using pip to install all dependencies the following method can be used. However, of course if you prefer, system packages may be used from apt-get, or conda from anaconda.

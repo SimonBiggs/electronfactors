@@ -116,7 +116,7 @@ An example of a utlitiy I made for pulling the insert shapes directly from the X
 
  * http://nbviewer.ipython.org/github/SimonBiggs/electronfactors/blob/master/historical_exploration_and_measurement/scripts/xio.ipynb
 
-##### Example pullig from DICOM
+##### Example pulling from DICOM
 
 Another example for pulling energy, ssd, applicator, and cutout shape coordinates from a DICOM file can be found here:
 

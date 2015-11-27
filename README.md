@@ -27,22 +27,22 @@ Install Anaconda
 Download the Shapely module from [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely).
  * If you have 64-bit windows with python 3.5 you will be looking for `Shapely-*.*.*-cp35-none-win_amd64.whl` (with * replaced by most recent shapely version).
 
-Open jupyter qtconsole:
+Open the command window:
  * Press [Windows Key] + R
- * Type: `jupyter qtconsole`
+ * Type: `cmd`
  * Press Enter
 
-To install electronfactors and descartes, within the jupyter console, type:
+To install electronfactors and descartes, within the command window, type:
 
-    !pip install descartes electronfactors
+    pip install descartes electronfactors
 
-To install the downloaded shapely file within the jupyter console type the line of code following. I assume the shapely file was downloaded into your Downloads library and the version downloaded was 1.5.13. If this is not the case change what is written here to match the downloaded file.
+To install the downloaded shapely file within the command window type the line of code following. I assume the shapely file was downloaded into your Downloads library and the version downloaded was 1.5.13. If this is not the case change what is written here to match the downloaded file.
 
-    !pip install Downloads/Shapely-1.5.13-cp35-none-win_amd64.whl
+    pip install Downloads/Shapely-1.5.13-cp35-none-win_amd64.whl
 
 To be able to make use of the examples referred to for the remaining of this guide make sure you download the most recent electronfactors source code found [here](https://github.com/SimonBiggs/electronfactors/releases).
 
-If you used Anaconda Python 3.4 you may need to run the following to have the latest version of bokeh and the jupyter notebook:
+If you used Anaconda Python 3.4 you may need to run the following within the command window to have the latest version of bokeh and the jupyter notebook:
 
     conda install jupyter bokeh
 

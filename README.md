@@ -42,6 +42,10 @@ To install the downloaded shapely file within the jupyter console type the line 
 
 To be able to make use of the examples referred to for the remaining of this guide make sure you download the most recent electronfactors source code found [here](https://github.com/SimonBiggs/electronfactors/releases).
 
+If you used Anaconda Python 3.4 you may need to run the following to have the latest version of bokeh and the jupyter notebook:
+
+    conda install jupyter bokeh
+
 
 #### Other options for Windows
 My code currently successfully builds on [Travis Cl](https://travis-ci.org/SimonBiggs/electronfactors) under Python 3.4 and Python 3.5 only.

@@ -331,7 +331,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -346,7 +346,10 @@
        x="-2117.55"
        y="-976.146"
        id="text3868"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3870"
          x="-2117.55"
@@ -363,7 +366,10 @@
        width="816.56958"
        height="287.99814"
        x="-2527.865"
-       y="-1081.288" />
+       y="-1081.288"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3946"
@@ -388,17 +394,23 @@
          y="559.28247"
          style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif" /></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleOutL-61-4)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
        d="m -736.8369,-624.60385 68.79702,0 0,-611.58675 52.60946,0"
        id="path4253"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="-1154.5206"
        y="-1221.1998"
        id="text3868-38"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          x="-1154.5206"
          y="-1221.1998"
@@ -420,7 +432,10 @@
        x="-1149.4167"
        y="-663.69983"
        id="text3868-38-8"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          x="-1149.4167"
          y="-663.69983"
@@ -437,7 +452,10 @@
        x="-127.48733"
        y="-1275.5834"
        id="text3868-38-8-1"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          x="-127.48733"
          y="-1275.5834"
@@ -454,7 +472,10 @@
        x="-118.82089"
        y="-853.8689"
        id="text3868-38-8-1-9"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          x="-118.82089"
          y="-853.8689"
@@ -466,7 +487,10 @@
        x="-130.88417"
        y="-564.79742"
        id="text3868-38-8-1-9-2"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          x="-118.38417"
          y="-564.79742"
@@ -483,7 +507,10 @@
        x="935.44049"
        y="-965.86884"
        id="text3868-38-8-1-9-2-2"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          x="935.44049"
          y="-965.86884"
@@ -500,67 +527,100 @@
        width="835.77551"
        height="450.06116"
        x="-1574.3252"
-       y="-1343.7538" />
+       y="-1343.7538"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3872-0-7"
        width="836.21515"
        height="327.64365"
        x="-1573.1166"
-       y="-789.40222" />
+       y="-789.40222"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3872-0-8"
        width="959.03827"
        height="293.32376"
        x="-598.81372"
-       y="-1382.2423" />
+       y="-1382.2423"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3872-0-8-1"
        width="959.46234"
        height="205.17657"
        x="-601.31165"
-       y="-985.88287" />
+       y="-985.88287"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3872-0-8-1-5"
        width="659.49005"
        height="290.91861"
        x="-449.89676"
-       y="-674.18243" />
+       y="-674.18243"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3872-0-8-8"
        width="919.10107"
        height="293.38657"
        x="493.15482"
-       y="-1073.9879" />
+       y="-1073.9879"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleOutL-61)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
        d="m -101.00893,-1087.7067 0,86.4047"
        id="path4008-2"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleOutL-61)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
        d="m -103.58036,-777.99246 0,86.40478"
        id="path4008-8"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleOutL-61)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
        d="m -1132.1518,-891.70675 0,86.40478"
        id="path4008-5"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleOutL-61-4)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
        d="m 208.60507,-520.23135 207.68899,0 0,-413.33386 60.79208,0"
        id="path4253-2"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#TriangleOutL-61-4)"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
        d="m -1710.1338,-934.86089 69.4549,0 0,-198.95881 53.1123,0"
        id="path4253-1"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\sbiggs\Documents\GitHub\electronfactors\demo\flow_diagram.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

@@ -13,6 +13,8 @@ The paper outlining this method is currently in press:
 
 If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help.
 
+If you desire to get behind this project please consider uploading your data to be used by the wider community. Until such time as a streamlined method for submitting data is provided please contact me for submissions (mail@simonbiggs.net). I do request that all shared data be licensed under a creative commons share alike licence (https://creativecommons.org/licenses/by-sa/4.0/). I will collate and upload your data within this repository for all to download and use.
+
 Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure outlined in the paper and the requirements of your centre identifies whether or not this method and code is fit for your use.
 
 

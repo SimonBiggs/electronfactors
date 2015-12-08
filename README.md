@@ -13,8 +13,6 @@ The paper outlining this method is currently in press:
 
 If you have any issues please don't hesitate to contact me (mail@simonbiggs.net), I likely will be more than happy to help.
 
-If you desire to get behind this project please consider providing your data for use by the wider community. Until such time as a streamlined method for submitting data is provided please contact me for submissions (mail@simonbiggs.net). My desire is to collate and upload your data within this repository for all to download and use. To do this I need to have your permission to inlcude your data as source code within this repository which places it under the AGPL3+ licence. Be aware that this licence has the clause that the data will be distributed without any warranty, without even the implied warranty of merchantability or fitness for a particular purpose. It will be up to the users of the data to confirm whether or not it is fit for their use.
-
 Any use of the code accepts the AGPL3+ license which includes no warranty that this code is fit for a particular purpose. Attempts have been made to make the code transparent and it is recommended that an experienced python programmer and physicist who understands the procedure outlined in the paper and the requirements of your centre identifies whether or not this method and code is fit for your use.
 
 
@@ -66,6 +64,14 @@ From a fresh install of Ubuntu, using pip to install all dependencies the follow
     sudo apt-get install python3-pip
     sudo pip3 install --upgrade pip numpy matplotlib scipy pandas shapely descartes bokeh pyyaml jupyter electronfactors
 
+
+## Providing data
+
+If you desire to get behind this project please consider providing your data for use by the wider community. Until such time as a streamlined method for submitting data is provided please contact me for submissions (mail@simonbiggs.net). 
+
+My desire is to run your data through a series of sanity checks, identify outliers, confirm with you whether or not these are outliers, intellegntly deal with these outliers, then---with your permission---collate and upload your data within this repository for all to download and use. 
+
+To do this I need to have your permission to inlcude your data as source code within this repository which places it under the AGPL3+ licence. Be aware that this licence has the clause that the data will be distributed without any warranty, without even the implied warranty of merchantability or fitness for a particular purpose. It will be up to the users of the data to confirm whether or not it is fit for their use.
 
 
 ## Two options currently for use

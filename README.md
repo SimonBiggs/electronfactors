@@ -69,7 +69,7 @@ From a fresh install of Ubuntu, using pip to install all dependencies the follow
 
 If you desire to get behind this project please consider providing your data for use by the wider community. Until such time as a streamlined method for submitting data is provided please contact me for submissions (mail@simonbiggs.net). 
 
-My desire is to run your data through a series of sanity checks, identify outliers, confirm with you whether or not these are outliers, intellegntly deal with these outliers, then---with your permission---collate and upload your data within this repository for all to download and use. 
+My desire is to run your data through a series of sanity checks, identify outliers, confirm with you whether or not these are outliers, intelligently deal with these outliers, then---with your permission---collate and upload your data within this repository for all to download and use. 
 
 To do this I need to have your permission to inlcude your data as source code within this repository which places it under the AGPL3+ licence. Be aware that this licence has the clause that the data will be distributed without any warranty, without even the implied warranty of merchantability or fitness for a particular purpose. It will be up to the users of the data to confirm whether or not it is fit for their use.
 

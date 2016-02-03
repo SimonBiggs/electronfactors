@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/electronfactors/badge.svg?branch=master&service=github)](https://coveralls.io/github/SimonBiggs/electronfactors?branch=master)
-[![Analytics](https://ga-beacon.appspot.com/UA-26591325-2/github/electronfactors)](https://github.com/igrigorik/ga-beacon)
 
 
 ## Description

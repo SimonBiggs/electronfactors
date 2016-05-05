@@ -3,6 +3,10 @@
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/electronfactors/badge.svg?branch=master&service=github)](https://coveralls.io/github/SimonBiggs/electronfactors?branch=master)
 
+## Note on future development
+
+This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here and so that those who have decided to use this code base to set up their centre can also continue to do so. However I am currently putting work into simplifying the code base down to its bare essentials and making it as simple as possible (and no simpler to set up). If you wish to use this repositories code feel free, and skip this section. However if you wish to benefit from any simplifications and usability improvements I make in the future please head on over to https://github.com/SimonBiggs/electroninserts_bundle/blob/master/README.md.
+
 
 ## Description
 The code here provided is for the modelling of the portion of the electron output factor that is dependent on the shape of the shielding insert mounted within the applicator. This allows modelling insert factors using only the measured factors already available at a centre. Should all outliers be removed from the data set the user might expect as low as 0.5% standard uncertainty for factor prediction with as little as 8 data points.

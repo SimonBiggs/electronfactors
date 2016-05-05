@@ -5,7 +5,7 @@
 
 ## Note on future development
 
-This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here and so that those who have decided to use this code base to set up their centre can also continue to do so. However I am currently putting work into simplifying the code base down to its bare essentials and making it as simple as possible (and no simpler to set up). If you wish to use this repositories code feel free, and skip this section. However if you wish to benefit from any simplifications and usability improvements I make in the future please head on over to https://github.com/SimonBiggs/electroninserts_bundle/blob/master/README.md.
+This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here and so that those who have decided to use this code base to set up their centre can also continue to do so. However I am currently putting work into simplifying the code base down to its bare essentials and making it as simple as possible (and no simpler) to set up. If you wish to use this repositories code feel free, and skip this section. However if you wish to benefit from any simplifications and usability improvements I make in the future please head on over to https://github.com/SimonBiggs/electroninserts_bundle/blob/master/README.md.
 
 
 ## Description

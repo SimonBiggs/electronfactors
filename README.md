@@ -1,4 +1,6 @@
-# Take me straight to a working online version so that I can test this out
+# Spline modelling electron insert factors using routine measurements
+
+## Online web app
 An online web app has been built implimenting this method:
     
  * http://electrons.simonbiggs.net/
@@ -13,11 +15,6 @@ The most up to date python script file that impliments this method is found at:
  * https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
     
 
-# Spline modelling electron insert factors using routine measurements
-
-[![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
-[![Coverage Status](https://coveralls.io/repos/SimonBiggs/electronfactors/badge.svg?branch=master&service=github)](https://coveralls.io/github/SimonBiggs/electronfactors?branch=master)
-
 ## Note on future development
 
 This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the following python script file:
@@ -26,6 +23,9 @@ This repository will be left in its current state so that those wishing to repli
 
 
 ## Description
+[![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
+[![Coverage Status](https://coveralls.io/repos/SimonBiggs/electronfactors/badge.svg?branch=master&service=github)](https://coveralls.io/github/SimonBiggs/electronfactors?branch=master)
+
 The code here provided is for the modelling of the portion of the electron output factor that is dependent on the shape of the shielding insert mounted within the applicator. This allows modelling insert factors using only the measured factors already available at a centre. Should all outliers be removed from the data set the user might expect as low as 0.5% standard uncertainty for factor prediction with as little as 8 data points.
 
 The paper outlining this method is currently in press:

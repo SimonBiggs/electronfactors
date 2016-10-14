@@ -1,7 +1,7 @@
 # Take me straight to a working online version so that I can test this out
 An online web app has been built implimenting this method:
     
-    http://electrons.simonbiggs.net/
+ * http://electrons.simonbiggs.net/
     
 The source code for the online web app is found in two parts:
 
@@ -10,7 +10,7 @@ The source code for the online web app is found in two parts:
  
 The most up to date python script file that impliments this method is found at:
 
-    https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
+ * https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
     
 
 # Spline modelling electron insert factors using routine measurements
@@ -22,7 +22,7 @@ The most up to date python script file that impliments this method is found at:
 
 This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the following python script file:
 
-    https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
+ * https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
 
 
 ## Description

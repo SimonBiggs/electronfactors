@@ -1,7 +1,7 @@
 # Electron insert factor modelling
 
 ## Online web app
-An online web app has been built implimenting this method:
+An online web app has been built implementing this method:
     
  * http://electrons.simonbiggs.net/
     
@@ -10,7 +10,7 @@ The source code for the online web app is found in two parts:
  * Server -- https://github.com/SimonBiggs/electronfactor-server
  * Client -- https://github.com/SimonBiggs/electroninserts-webapp
  
-The most up to date python script file that impliments this method is found at:
+The most up to date python script file that implements this method is found at:
 
  * https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
     

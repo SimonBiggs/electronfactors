@@ -1,4 +1,4 @@
-# Spline modelling electron insert factors using routine measurements
+# Electron insert factor modelling
 
 ## Online web app
 An online web app has been built implimenting this method:

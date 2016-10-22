@@ -1,9 +1,8 @@
 # Electron insert factor modelling
 
 ## Online web app
-An online web app has been built implementing this method:
-    
- * http://electrons.simonbiggs.net/
+
+At http://electrons.simonbiggs.net/ is an online web app that implements this method.
     
 The source code for the online web app is found in two parts:
 

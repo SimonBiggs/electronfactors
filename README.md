@@ -1,5 +1,11 @@
 # Electron insert factor modelling
 
+## Deprecation notice
+
+This application is deprecated and no longer in use by the author. All future development of the electron model will be undergone within the pymedphys package:
+
+> https://github.com/CCA-Physics/pymedphys/blob/master/pymedphys/level1/electronfactors.py
+
 ## Online web app
 
 At http://electrons.simonbiggs.net/ is an online web app that implements this method.

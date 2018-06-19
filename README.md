@@ -8,6 +8,8 @@ The underlying electron model is still in use and being maintained. It can be fo
 
 This repository was linked to by a published paper, and as such, it will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the python module linked above.
 
+If you wish to use this model in production please use the `pymedphys` library (https://pypi.org/project/pymedphys/).
+
 ## Description
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)
 [![Coverage Status](https://coveralls.io/repos/SimonBiggs/electronfactors/badge.svg?branch=master&service=github)](https://coveralls.io/github/SimonBiggs/electronfactors?branch=master)

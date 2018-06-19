@@ -24,7 +24,7 @@ The most up to date python script file that implements this method is found at:
 
 This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the following python script file:
 
- * https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
+ * https://github.com/CCA-Physics/pymedphys/blob/master/pymedphys/level1/electronfactors.py
 
 
 ## Description

@@ -2,7 +2,7 @@
 
 ## Deprecation notice
 
-This application is deprecated and no longer in use by the author. All future development of the electron model will be undergone within the pymedphys package:
+This version of this library is deprecated and no longer in use by the author. The underlying electron model is still in use and being maintained. It can be found within the pymedphys package:
 
 > https://github.com/CCA-Physics/pymedphys/blob/master/pymedphys/level1/electronfactors.py
 

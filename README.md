@@ -2,30 +2,11 @@
 
 ## Deprecation notice
 
-This version of this library is deprecated and no longer in use by the author. The underlying electron model is still in use and being maintained. It can be found within the pymedphys package:
+The underlying electron model is still in use and being maintained. It can be found within the pymedphys package:
 
 > https://github.com/CCA-Physics/pymedphys/blob/master/pymedphys/level1/electronfactors.py
 
-## Online web app
-
-At http://electrons.simonbiggs.net/ is an online web app that implements this method.
-    
-The source code for the online web app is found in two parts:
-
- * Server -- https://github.com/SimonBiggs/electronfactor-server
- * Client -- https://github.com/SimonBiggs/electroninserts-webapp
- 
-The most up to date python script file that implements this method is found at:
-
- * https://github.com/SimonBiggs/electronfactor-server/blob/master/electroninserts.py
-    
-
-## Note on future development
-
-This repository will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the following python script file:
-
- * https://github.com/CCA-Physics/pymedphys/blob/master/pymedphys/level1/electronfactors.py
-
+This repository was linked to by a published paper, and as such, it will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the python module linked above.
 
 ## Description
 [![Build Status](https://travis-ci.org/SimonBiggs/electronfactors.svg?branch=master)](https://travis-ci.org/SimonBiggs/electronfactors)

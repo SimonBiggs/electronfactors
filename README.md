@@ -2,9 +2,9 @@
 
 ## Deprecation notice
 
-The underlying electron model is still in use and being maintained. It can be found within the pymedphys package:
+The underlying electron model is still in use and being maintained. It is within the pymedphys package and its usage is documented at 
 
-> https://github.com/CCA-Physics/pymedphys/blob/master/pymedphys/level1/electronfactors.py
+> http://pymedphys.com/en/latest/user/electronfactors.html
 
 This repository was linked to by a published paper, and as such, it will be left in its current state so that those wishing to replicate the findings of the paper can do so here. Bear in mind however that any future bug fixes or code development will be limited to the python module linked above.
 
